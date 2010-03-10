@@ -10,7 +10,7 @@
 
 #define kSwitchesSegmentIndex 0
 
-@interface ControlFunViewController : UIViewController {
+@interface ControlFunViewController : UIViewController <UIActionSheetDelegate> {
 	UITextField *nameField;
 	UITextField *numberField;
 	UILabel *sliderLabel;
