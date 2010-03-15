@@ -37,7 +37,7 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	UIImage *buttonImageNormal = [UIImage imageNamed:@"whileButton.png"];
+	UIImage *buttonImageNormal = [UIImage imageNamed:@"whiteButton.png"];
 	UIImage *stretchableButtonImageNormal = [buttonImageNormal stretchableImageWithLeftCapWidth:12 topCapHeight:0];
 	[doSomethingButton setBackgroundImage:stretchableButtonImageNormal forState:UIControlStateNormal];
 	
@@ -45,7 +45,7 @@
 	UIImage *stretchableButtonImagePressed = [buttonImagePressed stretchableImageWithLeftCapWidth:12	topCapHeight:0];
 	[doSomethingButton setBackgroundImage:stretchableButtonImagePressed forState:UIControlStateHighlighted];
 	
-    [super viewDidLoad];
+    //[super viewDidLoad];
 }
 
 
