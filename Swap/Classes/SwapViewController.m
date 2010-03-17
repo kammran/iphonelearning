@@ -16,7 +16,10 @@
 @synthesize portraitFooButton;
 @synthesize portraitBarButton;
 
-- (void)willAnimateRotationToInterfaceOritentation:(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
+	
+- (void)willAnimateRotationToInterfaceOrientation:
+	(UIInterfaceOrientation)interfaceOrientation duration:(NSTimeInterval)duration {
+
 	if (interfaceOrientation == UIInterfaceOrientationPortrait) {
 		self.view = self.portrait;
 		self.view.transform = CGAffineTransformIdentity;
