@@ -40,10 +40,10 @@
 				<int key="NSvFlags">292</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIButton" id="465417430">
+					<object class="IBUIButton" id="21145164">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{87, 170}, {90, 37}}</string>
+						<string key="NSFrame">{{115, 149}, {90, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -74,7 +74,7 @@
 				<reference key="NSSuperview"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">1</int>
-					<bytes key="NSRGB">MC40MDIyODU1MDkzIDAuNjE4NTU2OTEwMSAxAA</bytes>
+					<bytes key="NSRGB">MSAwLjk3NDQ1Nzk5NjEgMC43OTc1MTU4MDkxAA</bytes>
 				</object>
 				<object class="IBUISimulatedStatusBarMetrics" key="IBUISimulatedStatusBarMetrics"/>
 				<object class="IBUISimulatedToolbarMetrics" key="IBUISimulatedBottomBarMetrics"/>
@@ -93,8 +93,8 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchEventConnection" key="connection">
-						<string key="label">blueButtonPressed:</string>
-						<reference key="source" ref="465417430"/>
+						<string key="label">yellowButtonPressed:</string>
+						<reference key="source" ref="21145164"/>
 						<reference key="destination" ref="372490531"/>
 						<int key="IBEventType">7</int>
 					</object>
@@ -115,10 +115,10 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="465417430"/>
+							<reference ref="21145164"/>
 						</object>
 						<reference key="parent" ref="0"/>
-						<string key="objectName">BlueView</string>
+						<string key="objectName">YellowView</string>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">-1</int>
@@ -133,7 +133,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="465417430"/>
+						<reference key="object" ref="21145164"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -150,9 +150,9 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>BlueViewController</string>
+					<string>YellowViewController</string>
 					<string>UIResponder</string>
-					<string>{{699, 223}, {320, 480}}</string>
+					<string>{{646, 162}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
@@ -179,15 +179,15 @@
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">BlueViewController</string>
+					<string key="className">YellowViewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
-						<string key="NS.key.0">blueButtonPressed:</string>
+						<string key="NS.key.0">yellowButtonPressed:</string>
 						<string key="NS.object.0">id</string>
 					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/BlueViewController.h</string>
+						<string key="minorKey">Classes/YellowViewController.h</string>
 					</object>
 				</object>
 			</object>
@@ -307,7 +307,7 @@
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">NSObject</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="482158207">
+					<object class="IBClassDescriptionSource" key="sourceIdentifier" id="14170749">
 						<string key="majorKey">IBFrameworkSource</string>
 						<string key="minorKey">UIKit.framework/Headers/UIResponder.h</string>
 					</object>
@@ -331,7 +331,7 @@
 				<object class="IBPartialClassDescription">
 					<string key="className">UIResponder</string>
 					<string key="superclassName">NSObject</string>
-					<reference key="sourceIdentifier" ref="482158207"/>
+					<reference key="sourceIdentifier" ref="14170749"/>
 				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">UISearchBar</string>
