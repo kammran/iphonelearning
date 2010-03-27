@@ -38,7 +38,7 @@
 	[UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
 	
 	
-	if (self.yellowViewController.view.subviews == nil)
+	if (self.yellowViewController.view.superview == nil)
 	{
 		if (self.yellowViewController == nil)
 		{
@@ -58,7 +58,7 @@
 		[blueViewController.view removeFromSuperview];
 		[self.view insertSubview:yellowViewController.view atIndex:0];	 
 		
-		[yellowViewController viewDidAppear:YES];
+		[yellowViewController viewDidDisappear:YES];
 		[blueViewController viewDidAppear:YES];
 	}
 	else
