@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0959E28C115BA9C2001048C7 /* YellowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0959E28B115BA9C2001048C7 /* YellowView.xib */; };
+		097475921160594000986F3C /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097475911160594000986F3C /* TestViewController.m */; };
 		09A15F3E115BA85200BAC560 /* BlueView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09A15F3D115BA85200BAC560 /* BlueView.xib */; };
 		1AEEAD791157DE3E003398E9 /* SwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEAD781157DE3E003398E9 /* SwitchViewController.m */; };
 		1AEEAD7C1157DE54003398E9 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AEEAD7B1157DE54003398E9 /* BlueViewController.m */; };
@@ -24,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		0959E28B115BA9C2001048C7 /* YellowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YellowView.xib; sourceTree = "<group>"; };
+		097475901160594000986F3C /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		097475911160594000986F3C /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		09A15F3D115BA85200BAC560 /* BlueView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BlueView.xib; sourceTree = "<group>"; };
 		1AEEAD771157DE3E003398E9 /* SwitchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitchViewController.h; sourceTree = "<group>"; };
 		1AEEAD781157DE3E003398E9 /* SwitchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitchViewController.m; sourceTree = "<group>"; };
@@ -63,6 +66,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0974757A1160567A00986F3C /* Model */,
 				1D3623240D0F684500981E51 /* View_SwitcherAppDelegate.h */,
 				1D3623250D0F684500981E51 /* View_SwitcherAppDelegate.m */,
 				1AEEAD771157DE3E003398E9 /* SwitchViewController.h */,
@@ -73,6 +77,15 @@
 				1AEEAD7E1157DE63003398E9 /* YellowViewController.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0974757A1160567A00986F3C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				097475901160594000986F3C /* TestViewController.h */,
+				097475911160594000986F3C /* TestViewController.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -188,6 +201,7 @@
 				1AEEAD791157DE3E003398E9 /* SwitchViewController.m in Sources */,
 				1AEEAD7C1157DE54003398E9 /* BlueViewController.m in Sources */,
 				1AEEAD7F1157DE63003398E9 /* YellowViewController.m in Sources */,
+				097475921160594000986F3C /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
