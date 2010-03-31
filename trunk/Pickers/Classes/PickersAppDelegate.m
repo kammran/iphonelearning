@@ -11,16 +11,18 @@
 @implementation PickersAppDelegate
 
 @synthesize window;
-
+@synthesize rootController;
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
     // Override point for customization after application launch
-    [window makeKeyAndVisible];
+    [window addSubview:rootController.view];
+	[window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
+	[rootController release];
     [window release];
     [super dealloc];
 }

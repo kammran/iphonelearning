@@ -197,7 +197,49 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>09DD28CD116393230089859A</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>PickersAppDelegate.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>09DD28CE116393230089859A</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>PickersAppDelegate.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>09DD28D1116393230089859A</string>
+						<key>history</key>
+						<array>
+							<string>09DD28CF116393230089859A</string>
+							<string>09DD28D0116393230089859A</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1387, 882}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>676 234 1387 923 0 0 1920 1178 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -273,22 +315,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
-									<integer>15</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>17</integer>
-									<integer>15</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>18</integer>
-									<integer>15</integer>
-									<integer>0</integer>
-								</array>
-								<array>
-									<integer>19</integer>
+									<integer>26</integer>
 									<integer>15</integer>
 									<integer>0</integer>
 								</array>
@@ -313,7 +340,7 @@
 							<real>460</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>790 149 1354 920 0 0 1920 1178 </string>
+						<string>1439 96 1354 920 0 0 1920 1178 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -341,7 +368,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>09DD28B511638C350089859A</string>
+										<string>09DD28CC116393230089859A</string>
 										<key>history</key>
 										<array>
 											<string>09DD28A411638C090089859A</string>
@@ -362,7 +389,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {872, 693}}</string>
 								<key>RubberWindowFrame</key>
-								<string>790 149 1354 920 0 0 1920 1178 </string>
+								<string>1439 96 1354 920 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -382,7 +409,7 @@
 								<key>Frame</key>
 								<string>{{0, 698}, {872, 181}}</string>
 								<key>RubberWindowFrame</key>
-								<string>790 149 1354 920 0 0 1920 1178 </string>
+								<string>1439 96 1354 920 0 0 1920 1178 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -550,9 +577,10 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>09DD288411638B0E0089859A</string>
 		<string>/Users/baby/iphone/iphonelearning/Pickers/Pickers.xcodeproj</string>
+		<string>09DD28CD116393230089859A</string>
 	</array>
 	<key>WindowString</key>
-	<string>790 149 1354 920 0 0 1920 1178 </string>
+	<string>1439 96 1354 920 0 0 1920 1178 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
