@@ -127,7 +127,12 @@
 		vrLen = 264;
 		vrLoc = 0;
 	};
-	09DD28A911638C090089859A /* PBXTextBookmark */ = {
+	09DD28B711638D800089859A /* clockicon.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{84, 131}, {1387, 979}}";
+		};
+	};
+	09DD28CC116393230089859A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 09DD289311638BD00089859A /* DoubleComponentPickerViewController.h */;
 		name = "DoubleComponentPickerViewController.h: 1";
@@ -137,15 +142,47 @@
 		vrLen = 264;
 		vrLoc = 0;
 	};
-	09DD28B511638C350089859A /* PBXTextBookmark */ = {
+	09DD28CF116393230089859A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 09DD289311638BD00089859A /* DoubleComponentPickerViewController.h */;
-		name = "DoubleComponentPickerViewController.h: 1";
+		fRef = 1D3623240D0F684500981E51 /* PickersAppDelegate.h */;
+		name = "PickersAppDelegate.h: 17";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 429;
 		rType = 0;
-		vrLen = 264;
+		vrLen = 436;
 		vrLoc = 0;
+	};
+	09DD28D0116393230089859A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PickersAppDelegate.m */;
+		rLen = 0;
+		rLoc = 9223372036854775903;
+		rType = 0;
+	};
+	09DD28D1116393230089859A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* PickersAppDelegate.m */;
+		name = "PickersAppDelegate.m: 25";
+		rLen = 0;
+		rLoc = 522;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 0;
+	};
+	1D3623240D0F684500981E51 /* PickersAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 851}}";
+			sepNavSelRange = "{429, 0}";
+			sepNavVisRange = "{0, 436}";
+		};
+	};
+	1D3623250D0F684500981E51 /* PickersAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1328, 851}}";
+			sepNavSelRange = "{522, 0}";
+			sepNavVisRange = "{0, 575}";
+			sepNavWindowFrame = "{{676, 178}, {1387, 979}}";
+		};
 	};
 	1D6058900D05DD3D006BFB54 /* Pickers */ = {
 		activeExec = 0;
@@ -196,8 +233,10 @@
 			09DD28A611638C090089859A /* PBXTextBookmark */ = 09DD28A611638C090089859A /* PBXTextBookmark */;
 			09DD28A711638C090089859A /* PBXTextBookmark */ = 09DD28A711638C090089859A /* PBXTextBookmark */;
 			09DD28A811638C090089859A /* PBXTextBookmark */ = 09DD28A811638C090089859A /* PBXTextBookmark */;
-			09DD28A911638C090089859A /* PBXTextBookmark */ = 09DD28A911638C090089859A /* PBXTextBookmark */;
-			09DD28B511638C350089859A /* PBXTextBookmark */ = 09DD28B511638C350089859A /* PBXTextBookmark */;
+			09DD28CC116393230089859A /* PBXTextBookmark */ = 09DD28CC116393230089859A /* PBXTextBookmark */;
+			09DD28CF116393230089859A /* PBXTextBookmark */ = 09DD28CF116393230089859A /* PBXTextBookmark */;
+			09DD28D0116393230089859A /* PBXTextBookmark */ = 09DD28D0116393230089859A /* PBXTextBookmark */;
+			09DD28D1116393230089859A /* PBXTextBookmark */ = 09DD28D1116393230089859A /* PBXTextBookmark */;
 		};
 		sourceControlManager = 09DD288611638B0E0089859A /* Source Control */;
 		userBuildSettings = {

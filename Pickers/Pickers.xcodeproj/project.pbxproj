@@ -17,6 +17,11 @@
 		09DD289C11638BE50089859A /* DependentComponentPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DD289A11638BE50089859A /* DependentComponentPickerViewController.xib */; };
 		09DD28A011638BFB0089859A /* CustomPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DD289E11638BFB0089859A /* CustomPickerViewController.m */; };
 		09DD28A111638BFB0089859A /* CustomPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DD289F11638BFB0089859A /* CustomPickerViewController.xib */; };
+		09DD28BC11638D800089859A /* clockicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DD28B711638D800089859A /* clockicon.png */; };
+		09DD28BD11638D800089859A /* dependenticon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DD28B811638D800089859A /* dependenticon.png */; };
+		09DD28BE11638D800089859A /* doubleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DD28B911638D800089859A /* doubleicon.png */; };
+		09DD28BF11638D800089859A /* singleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DD28BA11638D800089859A /* singleicon.png */; };
+		09DD28C011638D800089859A /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09DD28BB11638D800089859A /* toolicon.png */; };
 		1D3623260D0F684500981E51 /* PickersAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PickersAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -41,6 +46,11 @@
 		09DD289D11638BFB0089859A /* CustomPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomPickerViewController.h; sourceTree = "<group>"; };
 		09DD289E11638BFB0089859A /* CustomPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomPickerViewController.m; sourceTree = "<group>"; };
 		09DD289F11638BFB0089859A /* CustomPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = CustomPickerViewController.xib; path = Classes/CustomPickerViewController.xib; sourceTree = "<group>"; };
+		09DD28B711638D800089859A /* clockicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clockicon.png; sourceTree = "<group>"; };
+		09DD28B811638D800089859A /* dependenticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dependenticon.png; sourceTree = "<group>"; };
+		09DD28B911638D800089859A /* doubleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doubleicon.png; sourceTree = "<group>"; };
+		09DD28BA11638D800089859A /* singleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleicon.png; sourceTree = "<group>"; };
+		09DD28BB11638D800089859A /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PickersAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickersAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PickersAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickersAppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +128,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09DD28B711638D800089859A /* clockicon.png */,
+				09DD28B811638D800089859A /* dependenticon.png */,
+				09DD28B911638D800089859A /* doubleicon.png */,
+				09DD28BA11638D800089859A /* singleicon.png */,
+				09DD28BB11638D800089859A /* toolicon.png */,
 				09DD288F11638B980089859A /* SingleComponentPickerViewController.xib */,
 				09DD289511638BD00089859A /* DoubleComponentPickerViewController.xib */,
 				09DD289A11638BE50089859A /* DependentComponentPickerViewController.xib */,
@@ -187,6 +202,11 @@
 				09DD289711638BD00089859A /* DoubleComponentPickerViewController.xib in Resources */,
 				09DD289C11638BE50089859A /* DependentComponentPickerViewController.xib in Resources */,
 				09DD28A111638BFB0089859A /* CustomPickerViewController.xib in Resources */,
+				09DD28BC11638D800089859A /* clockicon.png in Resources */,
+				09DD28BD11638D800089859A /* dependenticon.png in Resources */,
+				09DD28BE11638D800089859A /* doubleicon.png in Resources */,
+				09DD28BF11638D800089859A /* singleicon.png in Resources */,
+				09DD28C011638D800089859A /* toolicon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
