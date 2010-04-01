@@ -8,6 +8,22 @@
 			sepNavWindowFrame = "{{15, 103}, {1262, 670}}";
 		};
 	};
+	09DD288D11638B980089859A /* SingleComponentPickerViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {869, 437}}";
+			sepNavSelRange = "{293, 0}";
+			sepNavVisRange = "{0, 357}";
+			sepNavWindowFrame = "{{15, 103}, {1262, 670}}";
+		};
+	};
+	09DD288E11638B980089859A /* SingleComponentPickerViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {924, 1805}}";
+			sepNavSelRange = "{2377, 5}";
+			sepNavVisRange = "{2041, 341}";
+			sepNavWindowFrame = "{{36, 87}, {1262, 670}}";
+		};
+	};
 	1A7ABFFD1163B93D00849058 /* Pickers */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -29,8 +45,12 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = Pickers;
+		savedGlobals = {
+		};
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	1A7AC0061163B94100849058 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -42,6 +62,24 @@
 	1A7AC0071163B94100849058 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	1A83066611650A20002C9E8E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "error: cannot find protocol declaration for 'UIPickerViewDatasource'";
+		fRef = 09DD288D11638B980089859A /* SingleComponentPickerViewController.h */;
+		rLen = 1;
+		rLoc = 12;
+		rType = 1;
+	};
+	1A8306C811651A20002C9E8E /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09DD288D11638B980089859A /* SingleComponentPickerViewController.h */;
+		name = "SingleComponentPickerViewController.h: 13";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
 	};
 	1D3623240D0F684500981E51 /* PickersAppDelegate.h */ = {
 		uiCtxt = {
@@ -70,6 +108,8 @@
 		activeExecutable = 1A7ABFFD1163B93D00849058 /* Pickers */;
 		activeSDKPreference = iphonesimulator3.1.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Pickers */;
+		breakpoints = (
+		);
 		codeSenseManager = 1A7AC0071163B94100849058 /* Code sense */;
 		executables = (
 			1A7ABFFD1163B93D00849058 /* Pickers */,
@@ -82,7 +122,7 @@
 					20,
 					691,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -97,8 +137,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 291748157;
-			PBXWorkspaceStateSaveDate = 291748157;
+			PBXPerProjectTemplateStateSaveDate = 291833275;
+			PBXWorkspaceStateSaveDate = 291833275;
+		};
+		perUserProjectItems = {
+			1A83066611650A20002C9E8E /* PBXTextBookmark */ = 1A83066611650A20002C9E8E /* PBXTextBookmark */;
+			1A8306C811651A20002C9E8E /* PBXTextBookmark */ = 1A8306C811651A20002C9E8E /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1A7AC0061163B94100849058 /* Source Control */;
 		userBuildSettings = {
