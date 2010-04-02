@@ -18,10 +18,26 @@
 	};
 	09DD288E11638B980089859A /* SingleComponentPickerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {924, 1805}}";
-			sepNavSelRange = "{2377, 5}";
-			sepNavVisRange = "{2041, 341}";
+			sepNavIntBoundsRect = "{{0, 0}, {924, 1748}}";
+			sepNavSelRange = "{2096, 0}";
+			sepNavVisRange = "{1901, 481}";
 			sepNavWindowFrame = "{{36, 87}, {1262, 670}}";
+		};
+	};
+	09DD289311638BD00089859A /* DoubleComponentPickerViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1203, 551}}";
+			sepNavSelRange = "{239, 0}";
+			sepNavVisRange = "{0, 614}";
+			sepNavWindowFrame = "{{15, 103}, {1262, 670}}";
+		};
+	};
+	09DD289411638BD00089859A /* DoubleComponentPickerViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1203, 1995}}";
+			sepNavSelRange = "{227, 35}";
+			sepNavVisRange = "{3, 1038}";
+			sepNavWindowFrame = "{{15, 103}, {1262, 670}}";
 		};
 	};
 	1A7ABFFD1163B93D00849058 /* Pickers */ = {
@@ -63,15 +79,7 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	1A83066611650A20002C9E8E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		comments = "error: cannot find protocol declaration for 'UIPickerViewDatasource'";
-		fRef = 09DD288D11638B980089859A /* SingleComponentPickerViewController.h */;
-		rLen = 1;
-		rLoc = 12;
-		rType = 1;
-	};
-	1A8306C811651A20002C9E8E /* PBXTextBookmark */ = {
+	1AB72E29116655760047139F /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 09DD288D11638B980089859A /* SingleComponentPickerViewController.h */;
 		name = "SingleComponentPickerViewController.h: 13";
@@ -80,6 +88,30 @@
 		rType = 0;
 		vrLen = 357;
 		vrLoc = 0;
+	};
+	1AB72E2A116655760047139F /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 09DD288E11638B980089859A /* SingleComponentPickerViewController.m */;
+	};
+	1AB72E2B116655760047139F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09DD288D11638B980089859A /* SingleComponentPickerViewController.h */;
+		name = "SingleComponentPickerViewController.h: 13";
+		rLen = 0;
+		rLoc = 293;
+		rType = 0;
+		vrLen = 357;
+		vrLoc = 0;
+	};
+	1AB72E58116660150047139F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09DD288E11638B980089859A /* SingleComponentPickerViewController.m */;
+		name = "SingleComponentPickerViewController.m: 79";
+		rLen = 0;
+		rLoc = 2096;
+		rType = 0;
+		vrLen = 481;
+		vrLoc = 1901;
 	};
 	1D3623240D0F684500981E51 /* PickersAppDelegate.h */ = {
 		uiCtxt = {
@@ -137,12 +169,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 291833275;
-			PBXWorkspaceStateSaveDate = 291833275;
+			PBXPerProjectTemplateStateSaveDate = 291919212;
+			PBXWorkspaceStateSaveDate = 291919212;
 		};
 		perUserProjectItems = {
-			1A83066611650A20002C9E8E /* PBXTextBookmark */ = 1A83066611650A20002C9E8E /* PBXTextBookmark */;
-			1A8306C811651A20002C9E8E /* PBXTextBookmark */ = 1A8306C811651A20002C9E8E /* PBXTextBookmark */;
+			1AB72E29116655760047139F /* PBXTextBookmark */ = 1AB72E29116655760047139F /* PBXTextBookmark */;
+			1AB72E2A116655760047139F /* PBXBookmark */ = 1AB72E2A116655760047139F /* PBXBookmark */;
+			1AB72E2B116655760047139F /* PBXTextBookmark */ = 1AB72E2B116655760047139F /* PBXTextBookmark */;
+			1AB72E58116660150047139F /* PBXTextBookmark */ = 1AB72E58116660150047139F /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1A7AC0061163B94100849058 /* Source Control */;
 		userBuildSettings = {
