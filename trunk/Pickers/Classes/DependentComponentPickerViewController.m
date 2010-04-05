@@ -38,13 +38,10 @@
 	NSArray *components = [self.stateZips allKeys];
 	NSArray *sorted = [components sortedArrayUsingSelector:@selector(compare:)];
 	self.states = sorted;
-	//TODO: why can't release?
-	//[sorted release];
-
+	
 	NSString *selectedState = [self.states objectAtIndex:0];
 	NSArray *array = [self.stateZips objectForKey:selectedState];
 	self.zips = array;
-	[array release];
 }
 
 - (void)didReceiveMemoryWarning {
