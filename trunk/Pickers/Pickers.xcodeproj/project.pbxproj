@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09C9570D116AF86E002576E9 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C95707116AF86E002576E9 /* apple.png */; };
+		09C9570E116AF86E002576E9 /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C95708116AF86E002576E9 /* bar.png */; };
+		09C9570F116AF86E002576E9 /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C95709116AF86E002576E9 /* cherry.png */; };
+		09C95710116AF86E002576E9 /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C9570A116AF86E002576E9 /* crown.png */; };
+		09C95711116AF86E002576E9 /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C9570B116AF86E002576E9 /* lemon.png */; };
+		09C95712116AF86E002576E9 /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C9570C116AF86E002576E9 /* seven.png */; };
 		09DD288B11638B690089859A /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DD288911638B690089859A /* DatePickerViewController.m */; };
 		09DD288C11638B690089859A /* DatePickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09DD288A11638B690089859A /* DatePickerView.xib */; };
 		09DD289011638B980089859A /* SingleComponentPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09DD288E11638B980089859A /* SingleComponentPickerViewController.m */; };
@@ -23,12 +29,6 @@
 		1A5B4B771169CD0A009E611E /* singleicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4B721169CD0A009E611E /* singleicon.png */; };
 		1A5B4B781169CD0A009E611E /* toolicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4B731169CD0A009E611E /* toolicon.png */; };
 		1A5B4B951169CD83009E611E /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4B941169CD83009E611E /* statedictionary.plist */; };
-		1A5B4CC11169E3B4009E611E /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CBB1169E3B4009E611E /* apple.png */; };
-		1A5B4CC21169E3B4009E611E /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CBC1169E3B4009E611E /* bar.png */; };
-		1A5B4CC31169E3B4009E611E /* cherry.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CBD1169E3B4009E611E /* cherry.png */; };
-		1A5B4CC41169E3B4009E611E /* crown.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CBE1169E3B4009E611E /* crown.png */; };
-		1A5B4CC51169E3B4009E611E /* lemon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CBF1169E3B4009E611E /* lemon.png */; };
-		1A5B4CC61169E3B4009E611E /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5B4CC01169E3B4009E611E /* seven.png */; };
 		1A65CEDE116A5196003CA21E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A65CEDD116A5196003CA21E /* AudioToolbox.framework */; };
 		1A905337116A4B5700CF6FB6 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A905336116A4B5700CF6FB6 /* icon.png */; };
 		1A90534B116A4D8900CF6FB6 /* crunch.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1A905349116A4D8900CF6FB6 /* crunch.wav */; };
@@ -42,6 +42,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09C95707116AF86E002576E9 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		09C95708116AF86E002576E9 /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		09C95709116AF86E002576E9 /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
+		09C9570A116AF86E002576E9 /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
+		09C9570B116AF86E002576E9 /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
+		09C9570C116AF86E002576E9 /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		09DD288811638B690089859A /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
 		09DD288911638B690089859A /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		09DD288A11638B690089859A /* DatePickerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DatePickerView.xib; path = Classes/DatePickerView.xib; sourceTree = "<group>"; };
@@ -63,12 +69,6 @@
 		1A5B4B721169CD0A009E611E /* singleicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = singleicon.png; sourceTree = "<group>"; };
 		1A5B4B731169CD0A009E611E /* toolicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolicon.png; sourceTree = "<group>"; };
 		1A5B4B941169CD83009E611E /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
-		1A5B4CBB1169E3B4009E611E /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
-		1A5B4CBC1169E3B4009E611E /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
-		1A5B4CBD1169E3B4009E611E /* cherry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cherry.png; sourceTree = "<group>"; };
-		1A5B4CBE1169E3B4009E611E /* crown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crown.png; sourceTree = "<group>"; };
-		1A5B4CBF1169E3B4009E611E /* lemon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemon.png; sourceTree = "<group>"; };
-		1A5B4CC01169E3B4009E611E /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
 		1A65CEDD116A5196003CA21E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		1A905336116A4B5700CF6FB6 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1A905349116A4D8900CF6FB6 /* crunch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = crunch.wav; sourceTree = "<group>"; };
@@ -119,6 +119,19 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		09C95706116AF840002576E9 /* Custom Picker Images */ = {
+			isa = PBXGroup;
+			children = (
+				09C95707116AF86E002576E9 /* apple.png */,
+				09C95708116AF86E002576E9 /* bar.png */,
+				09C95709116AF86E002576E9 /* cherry.png */,
+				09C9570A116AF86E002576E9 /* crown.png */,
+				09C9570B116AF86E002576E9 /* lemon.png */,
+				09C9570C116AF86E002576E9 /* seven.png */,
+			);
+			path = "Custom Picker Images";
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,19 +151,6 @@
 				1A5B4B731169CD0A009E611E /* toolicon.png */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		1A5B4CBA1169E378009E611E /* Custom Picker Images */ = {
-			isa = PBXGroup;
-			children = (
-				1A5B4CBB1169E3B4009E611E /* apple.png */,
-				1A5B4CBC1169E3B4009E611E /* bar.png */,
-				1A5B4CBD1169E3B4009E611E /* cherry.png */,
-				1A5B4CBE1169E3B4009E611E /* crown.png */,
-				1A5B4CBF1169E3B4009E611E /* lemon.png */,
-				1A5B4CC01169E3B4009E611E /* seven.png */,
-			);
-			path = "Custom Picker Images";
 			sourceTree = "<group>";
 		};
 		1A905348116A4D5700CF6FB6 /* Sounds */ = {
@@ -186,8 +186,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				09C95706116AF840002576E9 /* Custom Picker Images */,
 				1A905348116A4D5700CF6FB6 /* Sounds */,
-				1A5B4CBA1169E378009E611E /* Custom Picker Images */,
 				1A5B4B941169CD83009E611E /* statedictionary.plist */,
 				1A5B4B691169CCB2009E611E /* Images */,
 				09DD288F11638B980089859A /* SingleComponentPickerView.xib */,
@@ -267,15 +267,15 @@
 				1A5B4B771169CD0A009E611E /* singleicon.png in Resources */,
 				1A5B4B781169CD0A009E611E /* toolicon.png in Resources */,
 				1A5B4B951169CD83009E611E /* statedictionary.plist in Resources */,
-				1A5B4CC11169E3B4009E611E /* apple.png in Resources */,
-				1A5B4CC21169E3B4009E611E /* bar.png in Resources */,
-				1A5B4CC31169E3B4009E611E /* cherry.png in Resources */,
-				1A5B4CC41169E3B4009E611E /* crown.png in Resources */,
-				1A5B4CC51169E3B4009E611E /* lemon.png in Resources */,
-				1A5B4CC61169E3B4009E611E /* seven.png in Resources */,
 				1A905337116A4B5700CF6FB6 /* icon.png in Resources */,
 				1A90534B116A4D8900CF6FB6 /* crunch.wav in Resources */,
 				1A90534C116A4D8900CF6FB6 /* win.wav in Resources */,
+				09C9570D116AF86E002576E9 /* apple.png in Resources */,
+				09C9570E116AF86E002576E9 /* bar.png in Resources */,
+				09C9570F116AF86E002576E9 /* cherry.png in Resources */,
+				09C95710116AF86E002576E9 /* crown.png in Resources */,
+				09C95711116AF86E002576E9 /* lemon.png in Resources */,
+				09C95712116AF86E002576E9 /* seven.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
