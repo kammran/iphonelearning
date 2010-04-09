@@ -63,27 +63,25 @@
 	self.button.hidden = NO;
 }
 
-- (void)win {
-	[self performSelector:@selector(playWinSound)];
-	winLabel.text = @"WIN!";
-	[self performSelector:@selector(showButton) withObject:nil afterDelay:1.5];
-}
-
--(void)playWinSound {
-	[self performSelector:@selector(playSound:) withObject:@"win"];
-}
-
--(void)playCrunchSound {
-	[self performSelector:@selector(playSound:) withObject:@"crunch"];
-}
-
 -(void)playSound:(NSString *)name {
-	NSLog([NSString stringWithFormat:@"Name -> %@", name]);
 	NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"wav"];
-	NSLog([NSString stringWithFormat:@"Name -> %@", name]);
 	SystemSoundID soundID;
 	AudioServicesCreateSystemSoundID((CFURLRef) [NSURL fileURLWithPath:path], &soundID);
 	AudioServicesPlaySystemSound(soundID);
+}
+
+-(void)playWinSound {
+	[self playSound:@"win"];
+}
+
+-(void)playCrunchSound {
+	[self playSound:@"crunch"];
+}
+
+- (void)win {
+	[self playWinSound];
+	winLabel.text = @"WIN!";
+	[self performSelector:@selector(showButton) withObject:nil afterDelay:1.5];
 }
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
