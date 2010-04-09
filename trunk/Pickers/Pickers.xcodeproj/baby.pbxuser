@@ -10,29 +10,25 @@
 		vrLen = 264;
 		vrLoc = 0;
 	};
-	093DBF1511649B1800B7ED81 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 09DD288911638B690089859A /* DatePickerViewController.m */;
-	};
-	093DBF2711649BB500B7ED81 /* PBXTextBookmark */ = {
+	09BDCAA2116F5B0F00AE5EA0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 09DD288911638B690089859A /* DatePickerViewController.m */;
-		name = "DatePickerViewController.m: 8";
+		name = "DatePickerViewController.m: 28";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 702;
 		rType = 0;
-		vrLen = 821;
-		vrLoc = 0;
+		vrLen = 1037;
+		vrLoc = 188;
 	};
-	09C95702116AF7E0002576E9 /* PBXTextBookmark */ = {
+	09BDCAE5116F5F1E00AE5EA0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 09DD288911638B690089859A /* DatePickerViewController.m */;
-		name = "DatePickerViewController.m: 8";
+		name = "DatePickerViewController.m: 28";
 		rLen = 0;
-		rLoc = 149;
+		rLoc = 702;
 		rType = 0;
-		vrLen = 705;
-		vrLoc = 0;
+		vrLen = 1038;
+		vrLoc = 187;
 	};
 	09DD287711638B0C0089859A /* Pickers */ = {
 		isa = PBXExecutable;
@@ -58,6 +54,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = Pickers;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -85,9 +83,9 @@
 	};
 	09DD288911638B690089859A /* DatePickerViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1019.83, 1407}}";
-			sepNavSelRange = "{149, 0}";
-			sepNavVisRange = "{0, 705}";
+			sepNavIntBoundsRect = "{{0, 0}, {1221, 1323}}";
+			sepNavSelRange = "{702, 0}";
+			sepNavVisRange = "{187, 1038}";
 			sepNavWindowFrame = "{{533, 64}, {1387, 979}}";
 		};
 	};
@@ -117,6 +115,14 @@
 			sepNavIntBoundsRect = "{{0, 0}, {811, 661}}";
 			sepNavSelRange = "{0, 0}";
 			sepNavVisRange = "{0, 246}";
+		};
+	};
+	09DD289E11638BFB0089859A /* CustomPickerViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1635, 3528}}";
+			sepNavSelRange = "{273, 0}";
+			sepNavVisRange = "{0, 887}";
+			sepNavWindowFrame = "{{15, 68}, {1694, 1110}}";
 		};
 	};
 	09DD28A411638C090089859A /* PBXTextBookmark */ = {
@@ -182,9 +188,9 @@
 		);
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 09DD287711638B0C0089859A /* Pickers */;
-		activeSDKPreference = iphonesimulator3.1.2;
+		activeSDKPreference = iphonesimulator3.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Pickers */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* Pickers */,
@@ -199,7 +205,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					633,
+					1043,
 					20,
 					48,
 					43,
@@ -216,18 +222,17 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 292219127;
-			PBXWorkspaceStateSaveDate = 292219127;
+			PBXPerProjectTemplateStateSaveDate = 292510489;
+			PBXWorkspaceStateSaveDate = 292510489;
 		};
 		perUserProjectItems = {
-			093DBF1411649B1800B7ED81 = 093DBF1411649B1800B7ED81 /* PBXTextBookmark */;
-			093DBF1511649B1800B7ED81 = 093DBF1511649B1800B7ED81 /* PBXBookmark */;
-			093DBF2711649BB500B7ED81 = 093DBF2711649BB500B7ED81 /* PBXTextBookmark */;
-			09C95702116AF7E0002576E9 /* PBXTextBookmark */ = 09C95702116AF7E0002576E9 /* PBXTextBookmark */;
-			09DD28A411638C090089859A = 09DD28A411638C090089859A /* PBXTextBookmark */;
-			09DD28A511638C090089859A = 09DD28A511638C090089859A /* PBXTextBookmark */;
-			09DD28A611638C090089859A = 09DD28A611638C090089859A /* PBXTextBookmark */;
-			09DD28A711638C090089859A = 09DD28A711638C090089859A /* PBXTextBookmark */;
+			093DBF1411649B1800B7ED81 /* PBXTextBookmark */ = 093DBF1411649B1800B7ED81 /* PBXTextBookmark */;
+			09BDCAA2116F5B0F00AE5EA0 /* PBXTextBookmark */ = 09BDCAA2116F5B0F00AE5EA0 /* PBXTextBookmark */;
+			09BDCAE5116F5F1E00AE5EA0 /* PBXTextBookmark */ = 09BDCAE5116F5F1E00AE5EA0 /* PBXTextBookmark */;
+			09DD28A411638C090089859A /* PBXTextBookmark */ = 09DD28A411638C090089859A /* PBXTextBookmark */;
+			09DD28A511638C090089859A /* PBXTextBookmark */ = 09DD28A511638C090089859A /* PBXTextBookmark */;
+			09DD28A611638C090089859A /* PBXTextBookmark */ = 09DD28A611638C090089859A /* PBXTextBookmark */;
+			09DD28A711638C090089859A /* PBXTextBookmark */ = 09DD28A711638C090089859A /* PBXTextBookmark */;
 		};
 		sourceControlManager = 09DD288611638B0E0089859A /* Source Control */;
 		userBuildSettings = {
