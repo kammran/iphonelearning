@@ -197,49 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>0904601F116B7C1600E53295</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>Simple_TableViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>09046020116B7C1600E53295</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>Simple_TableViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>09046023116B7C1600E53295</string>
-						<key>history</key>
-						<array>
-							<string>09046021116B7C1600E53295</string>
-							<string>09046022116B7C1600E53295</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1387, 1017}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 120 1387 1058 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -562,12 +520,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0904601F116B7C1600E53295</string>
 		<string>09045FD1116B75A600E53295</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>09045FB4116B700300E53295</string>
 		<string>/Users/baby/iphone/iphonelearning/Simple Table/Simple Table.xcodeproj</string>
-		<string>0904601F116B7C1600E53295</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1920 1059 0 0 1920 1178 </string>

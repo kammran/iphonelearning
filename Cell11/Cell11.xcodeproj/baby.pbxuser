@@ -1,13 +1,13 @@
 // !$*UTF8*$!
 {
-	09045FA5116B6FFE00E53295 /* Simple Table */ = {
+	09BDCB4B116F643200AE5EA0 /* Cell11 */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -23,12 +23,14 @@
 		executableSystemSymbolLevel = 0;
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
-		name = "Simple Table";
+		name = Cell11;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
 	};
-	09045FBD116B700300E53295 /* Source Control */ = {
+	09BDCB59116F645000AE5EA0 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -38,41 +40,59 @@
 			};
 		};
 	};
-	09045FBE116B700300E53295 /* Code sense */ = {
+	09BDCB5A116F645000AE5EA0 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	1D6058900D05DD3D006BFB54 /* Simple Table */ = {
+	09BDCB74116F650300AE5EA0 /* Cell11ViewController.m:50 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* Cell11ViewController.m */;
+		functionName = "-tableView:numberOfRowsInSection:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 50;
+		location = Cell11;
+		modificationTime = 292513033.891714;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	1D6058900D05DD3D006BFB54 /* Cell11 */ = {
 		activeExec = 0;
 		executables = (
-			09045FA5116B6FFE00E53295 /* Simple Table */,
+			09BDCB4B116F643200AE5EA0 /* Cell11 */,
 		);
 	};
-	28D7ACF60DDB3853001CB0EB /* Simple_TableViewController.h */ = {
+	28D7ACF60DDB3853001CB0EB /* Cell11ViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 963}}";
-			sepNavSelRange = "{239, 19}";
-			sepNavVisRange = "{0, 373}";
+			sepNavIntBoundsRect = "{{0, 0}, {1635, 963}}";
+			sepNavSelRange = "{394, 0}";
+			sepNavVisRange = "{0, 396}";
 		};
 	};
-	28D7ACF70DDB3853001CB0EB /* Simple_TableViewController.m */ = {
+	28D7ACF70DDB3853001CB0EB /* Cell11ViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1328, 2163}}";
-			sepNavSelRange = "{2368, 0}";
-			sepNavVisRange = "{1540, 1541}";
-			sepNavWindowFrame = "{{15, 64}, {1387, 1114}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1635, 2163}}";
+			sepNavSelRange = "{1460, 21}";
+			sepNavVisRange = "{1099, 1574}";
+			sepNavWindowFrame = "{{677, 64}, {1694, 1114}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
-		activeExecutable = 09045FA5116B6FFE00E53295 /* Simple Table */;
-		activeTarget = 1D6058900D05DD3D006BFB54 /* Simple Table */;
-		addToTargets = (
-			1D6058900D05DD3D006BFB54 /* Simple Table */,
+		activeExecutable = 09BDCB4B116F643200AE5EA0 /* Cell11 */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Cell11 */;
+		breakpoints = (
+			09BDCB74116F650300AE5EA0 /* Cell11ViewController.m:50 */,
 		);
-		codeSenseManager = 09045FBE116B700300E53295 /* Code sense */;
+		codeSenseManager = 09BDCB5A116F645000AE5EA0 /* Code sense */;
 		executables = (
-			09045FA5116B6FFE00E53295 /* Simple Table */,
+			09BDCB4B116F643200AE5EA0 /* Cell11 */,
 		);
 		perUserDictionary = {
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
@@ -80,7 +100,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1248,
+					712,
 					20,
 					48.16259765625,
 					43,
@@ -97,10 +117,10 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 292253694;
-			PBXWorkspaceStateSaveDate = 292253694;
+			PBXPerProjectTemplateStateSaveDate = 292512818;
+			PBXWorkspaceStateSaveDate = 292512818;
 		};
-		sourceControlManager = 09045FBD116B700300E53295 /* Source Control */;
+		sourceControlManager = 09BDCB59116F645000AE5EA0 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
