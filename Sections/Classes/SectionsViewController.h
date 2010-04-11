@@ -8,13 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SectionsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-	NSDictionary *names;
-	NSArray *keys;
+@interface SectionsViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate> {
+	UITableView *table;
+	UISearchBar *search;
+	NSMutableDictionary *names;
+	NSMutableArray *keys;
+	NSDictionary *allNames;
 }
 
-@property (nonatomic, retain) NSDictionary *names;
-@property (nonatomic, retain) NSArray *keys;
+@property (nonatomic, retain) IBOutlet UITableView *table;
+@property (nonatomic, retain) IBOutlet UISearchBar *search;
+@property (nonatomic, retain) NSMutableDictionary *names;
+@property (nonatomic, retain) NSMutableArray *keys;
+@property (nonatomic, retain) NSDictionary *allNames;
+
+- (void)resetSearch;
+- (void)handleSearchForTerm:(NSString *) searchTerm;
 
 @end
 
