@@ -197,48 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>1AB4B4591172455200AE5457</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>SectionsViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>1AB4B45A1172455200AE5457</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>SectionsViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>1AB4B4781172496900AE5457</string>
-						<key>history</key>
-						<array>
-							<string>1AB4B4551172449D00AE5457</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1223, 619}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>50 118 1223 660 0 0 1280 778 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -367,7 +326,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AB4B4771172496900AE5457</string>
+										<string>1AB4B47B11724AA500AE5457</string>
 										<key>history</key>
 										<array>
 											<string>1AC6D2961172266F00D8E2DD</string>
@@ -571,6 +530,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1AB4B4591172455200AE5457</string>
 		<string>1AB4B430117242BE00AE5457</string>
 		<string>1AB4B33D117237CC00AE5457</string>
 		<string>1AB4B33E117237CC00AE5457</string>
@@ -578,7 +538,6 @@
 		<string>1AC6D26211720EA600D8E2DD</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/James/iphone/iphonelearning/Sections/Sections.xcodeproj</string>
-		<string>1AB4B4591172455200AE5457</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
