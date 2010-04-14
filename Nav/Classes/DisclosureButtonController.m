@@ -52,4 +52,26 @@
 	return cell;
 }
 
+#pragma mark UITableView Delegate Methods
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hey, do you see the disclosure button?" 
+													message:@"If you are tring to trill down, touch that instead." 
+												   delegate:nil 
+										  cancelButtonTitle:@"Won't happen again." 
+										  otherButtonTitles:nil];
+	[alert show];
+	[alert release];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+	if (detailController == nil) {
+		detailController = [[DisclosureDetailController alloc] initWithNibName:@"DisclosureDetail" bundle:nil];
+	}
+	
+	detailController.title = @"Detail";
+	detailController.message = [NSString stringWithFormat:@"Detail information for %@", [self.list objectAtIndex:[indexPath row]]];
+	
+	[self.navigationController pushViewController:detailController animated:YES];
+}
+
 @end

@@ -10,7 +10,7 @@
 		09074CD41175F5870064DF24 /* SecondLevelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09074CD31175F5870064DF24 /* SecondLevelViewController.m */; };
 		09074CDD117604E10064DF24 /* DisclosureButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09074CDC117604E10064DF24 /* DisclosureButtonController.m */; };
 		09074D03117607340064DF24 /* DisclosureDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09074D02117607340064DF24 /* DisclosureDetailController.m */; };
-		09074D07117608880064DF24 /* DiscloureDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09074D06117608880064DF24 /* DiscloureDetail.xib */; };
+		09074D07117608880064DF24 /* DisclosureDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09074D06117608880064DF24 /* DisclosureDetail.xib */; };
 		09074D1D11760A330064DF24 /* button_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 09074D1511760A330064DF24 /* button_down.png */; };
 		09074D1E11760A330064DF24 /* button_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 09074D1611760A330064DF24 /* button_up.png */; };
 		09074D1F11760A330064DF24 /* checkmarkControllerIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 09074D1711760A330064DF24 /* checkmarkControllerIcon.png */; };
@@ -35,7 +35,7 @@
 		09074CDC117604E10064DF24 /* DisclosureButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureButtonController.m; sourceTree = "<group>"; };
 		09074D01117607340064DF24 /* DisclosureDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisclosureDetailController.h; sourceTree = "<group>"; };
 		09074D02117607340064DF24 /* DisclosureDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisclosureDetailController.m; sourceTree = "<group>"; };
-		09074D06117608880064DF24 /* DiscloureDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscloureDetail.xib; sourceTree = "<group>"; };
+		09074D06117608880064DF24 /* DisclosureDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisclosureDetail.xib; sourceTree = "<group>"; };
 		09074D1511760A330064DF24 /* button_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_down.png; sourceTree = "<group>"; };
 		09074D1611760A330064DF24 /* button_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_up.png; sourceTree = "<group>"; };
 		09074D1711760A330064DF24 /* checkmarkControllerIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmarkControllerIcon.png; sourceTree = "<group>"; };
@@ -139,7 +139,7 @@
 				09074D0F117609D50064DF24 /* Images */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* Nav-Info.plist */,
-				09074D06117608880064DF24 /* DiscloureDetail.xib */,
+				09074D06117608880064DF24 /* DisclosureDetail.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -197,7 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
-				09074D07117608880064DF24 /* DiscloureDetail.xib in Resources */,
+				09074D07117608880064DF24 /* DisclosureDetail.xib in Resources */,
 				09074D1D11760A330064DF24 /* button_down.png in Resources */,
 				09074D1E11760A330064DF24 /* button_up.png in Resources */,
 				09074D1F11760A330064DF24 /* checkmarkControllerIcon.png in Resources */,
