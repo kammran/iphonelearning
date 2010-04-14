@@ -20,7 +20,7 @@
 	//Disclosure Button
 	DisclosureButtonController *disclosureButtonController = [[DisclosureButtonController alloc] initWithStyle:UITableViewStylePlain];
 	disclosureButtonController.title = @"Disclosure Buttons";
-	
+	disclosureButtonController.rowImage = [UIImage imageNamed:@"disclosureButtonControllerIcon.png"];
 	[array addObject:disclosureButtonController];
 	[disclosureButtonController release];
 	
