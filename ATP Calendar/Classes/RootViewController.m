@@ -20,7 +20,7 @@
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
-	self.title = @"Month List";
+	self.title = @"ATP Tour Calendar";
 	[super viewDidLoad];
 }
 
