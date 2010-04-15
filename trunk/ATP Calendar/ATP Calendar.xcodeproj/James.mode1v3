@@ -305,7 +305,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>1AE360D31177916F001243DD</string>
+								<string>1AE3617811779F29001243DD</string>
 								<string>1AE3602D11778800001243DD</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
@@ -315,8 +315,6 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>8</integer>
-									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -356,7 +354,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ATP_CalendarAppDelegate.m</string>
+								<string>ATP_CalendarAppDelegate.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -364,11 +362,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ATP_CalendarAppDelegate.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>1AE3616711779D0E001243DD</string>
+										<string>ATP_CalendarAppDelegate.h</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -383,7 +377,9 @@
 											<string>1AE360E3117795F1001243DD</string>
 											<string>1AE360E4117795F1001243DD</string>
 											<string>1AE361041177994F001243DD</string>
-											<string>1AE361051177994F001243DD</string>
+											<string>1AE3617311779E67001243DD</string>
+											<string>1AE3617411779E67001243DD</string>
+											<string>1AE3617F11779F44001243DD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
