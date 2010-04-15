@@ -67,11 +67,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1AE360D31177916F001243DD /* model */,
-				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
-				28C286E00D94DF7D0034E888 /* RootViewController.m */,
-				1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */,
-				1D3623250D0F684500981E51 /* ATP_CalendarAppDelegate.m */,
+				1AE360D31177916F001243DD /* models */,
+				1AE3616E11779E51001243DD /* controllers */,
+				1AE3617811779F29001243DD /* delegate */,
 				1AE3602D11778800001243DD /* helper */,
 			);
 			path = Classes;
@@ -106,7 +104,7 @@
 			path = helper;
 			sourceTree = "<group>";
 		};
-		1AE360D31177916F001243DD /* model */ = {
+		1AE360D31177916F001243DD /* models */ = {
 			isa = PBXGroup;
 			children = (
 				1AE360D5117791E8001243DD /* Month2Matches.h */,
@@ -114,7 +112,25 @@
 				1AE360D911779263001243DD /* Match.h */,
 				1AE360DA11779263001243DD /* Match.m */,
 			);
-			path = model;
+			path = models;
+			sourceTree = "<group>";
+		};
+		1AE3616E11779E51001243DD /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				28C286E00D94DF7D0034E888 /* RootViewController.m */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		1AE3617811779F29001243DD /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ATP_CalendarAppDelegate.m */,
+			);
+			path = delegate;
 			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {

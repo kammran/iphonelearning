@@ -134,7 +134,7 @@
 		fRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */;
 		name = "RootViewController.m: 52";
 		rLen = 0;
-		rLoc = 1230;
+		rLoc = 1237;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 700;
@@ -522,11 +522,91 @@
 		vrLen = 930;
 		vrLoc = 145;
 	};
-	1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */ = {
+	1AE3617311779E67001243DD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* ATP_CalendarAppDelegate.m */;
+		name = "ATP_CalendarAppDelegate.m: 25";
+		rLen = 0;
+		rLoc = 769;
+		rType = 0;
+		vrLen = 929;
+		vrLoc = 145;
+	};
+	1AE3617411779E67001243DD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+	};
+	1AE3617511779E67001243DD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28C286DF0D94DF7D0034E888 /* RootViewController.h */;
+		name = "RootViewController.h: 10";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	1AE3617611779EBB001243DD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1AE3617711779EBB001243DD /* RootViewController.h */;
+		name = "RootViewController.h: 10";
+		rLen = 0;
+		rLoc = 165;
+		rType = 0;
+		vrLen = 230;
+		vrLoc = 0;
+	};
+	1AE3617711779EBB001243DD /* RootViewController.h */ = {
+		isa = PBXFileReference;
+		name = RootViewController.h;
+		path = "/Users/James/iphone/iphonelearning/ATP Calendar/Classes/RootViewController.h";
+		sourceTree = "<absolute>";
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1164, 588}}";
+			sepNavIntBoundsRect = "{{0, 0}, {904, 390}}";
+			sepNavSelRange = "{165, 0}";
+			sepNavVisRange = "{0, 230}";
+		};
+	};
+	1AE3617F11779F44001243DD /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */;
+	};
+	1AE3618011779F44001243DD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */;
+		name = "ATP_CalendarAppDelegate.h: 16";
+		rLen = 17;
+		rLoc = 322;
+		rType = 0;
+		vrLen = 532;
+		vrLoc = 0;
+	};
+	1AE3618111779F71001243DD /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1AE3618211779F71001243DD /* ATP_CalendarAppDelegate.h */;
+		name = "ATP_CalendarAppDelegate.h: 16";
+		rLen = 17;
+		rLoc = 322;
+		rType = 0;
+		vrLen = 538;
+		vrLoc = 0;
+	};
+	1AE3618211779F71001243DD /* ATP_CalendarAppDelegate.h */ = {
+		isa = PBXFileReference;
+		name = ATP_CalendarAppDelegate.h;
+		path = "/Users/James/iphone/iphonelearning/ATP Calendar/Classes/ATP_CalendarAppDelegate.h";
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {904, 416}}";
 			sepNavSelRange = "{322, 17}";
 			sepNavVisRange = "{0, 538}";
+		};
+	};
+	1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {904, 416}}";
+			sepNavSelRange = "{322, 17}";
+			sepNavVisRange = "{0, 532}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -534,7 +614,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {924, 832}}";
 			sepNavSelRange = "{769, 0}";
-			sepNavVisRange = "{145, 930}";
+			sepNavVisRange = "{145, 929}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -554,7 +634,7 @@
 	};
 	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1164, 565}}";
+			sepNavIntBoundsRect = "{{0, 0}, {904, 390}}";
 			sepNavSelRange = "{165, 0}";
 			sepNavVisRange = "{0, 230}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
@@ -562,10 +642,10 @@
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{1510, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{1561, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{1611, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 2307}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1164, 1552}}";
-			sepNavSelRange = "{427, 0}";
-			sepNavVisRange = "{0, 760}";
+			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{1517, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{1568, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{1618, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 2314}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1164, 1504}}";
+			sepNavSelRange = "{2225, 0}";
+			sepNavVisRange = "{1480, 777}";
 			sepNavWindowFrame = "{{57, 62}, {1223, 716}}";
 		};
 	};
@@ -646,6 +726,13 @@
 			1AE3613411779ACB001243DD /* PBXTextBookmark */ = 1AE3613411779ACB001243DD /* PBXTextBookmark */;
 			1AE3615211779CD9001243DD /* PBXTextBookmark */ = 1AE3615211779CD9001243DD /* PBXTextBookmark */;
 			1AE3616711779D0E001243DD /* PBXTextBookmark */ = 1AE3616711779D0E001243DD /* PBXTextBookmark */;
+			1AE3617311779E67001243DD /* PBXTextBookmark */ = 1AE3617311779E67001243DD /* PBXTextBookmark */;
+			1AE3617411779E67001243DD /* PBXBookmark */ = 1AE3617411779E67001243DD /* PBXBookmark */;
+			1AE3617511779E67001243DD /* PBXTextBookmark */ = 1AE3617511779E67001243DD /* PBXTextBookmark */;
+			1AE3617611779EBB001243DD /* PBXTextBookmark */ = 1AE3617611779EBB001243DD /* PBXTextBookmark */;
+			1AE3617F11779F44001243DD /* PBXBookmark */ = 1AE3617F11779F44001243DD /* PBXBookmark */;
+			1AE3618011779F44001243DD /* PBXTextBookmark */ = 1AE3618011779F44001243DD /* PBXTextBookmark */;
+			1AE3618111779F71001243DD /* PBXTextBookmark */ = 1AE3618111779F71001243DD /* PBXTextBookmark */;
 		};
 		sourceControlManager = 1AE35FCF117780D4001243DD /* Source Control */;
 		userBuildSettings = {
