@@ -8,8 +8,7 @@
 
 #import "ATP_CalendarAppDelegate.h"
 #import "RootViewController.h"
-#import "Month2Matches.h"
-#import "Match.h"
+#import "ResourceProvider.h"
 
 @implementation ATP_CalendarAppDelegate
 
@@ -18,13 +17,7 @@
 @synthesize store;
 
 - (void)initStore {
-	Match *dubai = [[Match alloc] initWithName:@"dubai" date:nil city:nil website:nil introduction:nil];
-	NSArray *januaryMatches = [[NSArray alloc] initWithObjects:dubai, nil];
-	Month2Matches *january = [[Month2Matches alloc] initWithMonth:@"January" matches:januaryMatches];
-	Match *maimi = [[Match alloc] initWithName:@"maimi" date:nil city:nil website:nil introduction:nil];
-	NSArray *februraryMatches = [[NSArray alloc] initWithObjects:maimi, nil];
-	Month2Matches *februrary = [[Month2Matches alloc] initWithMonth:@"February" matches:februraryMatches];
-	self.store = [[NSArray alloc] initWithObjects:january, februrary, nil];
+	self.store = [ResourceProvider loadData];
 }
 
 #pragma mark -

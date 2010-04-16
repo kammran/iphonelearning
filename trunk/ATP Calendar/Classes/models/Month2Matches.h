@@ -17,6 +17,6 @@
 @property (nonatomic, retain) NSString *month;
 @property (nonatomic, retain) NSArray *matches;
 
-- (id)initWithMonth:(NSString *)month matches:(NSArray *)matches;
+- (id)initWithMonth:(NSString *)theMonth matches:(NSArray *)theMatches;
 
 @end

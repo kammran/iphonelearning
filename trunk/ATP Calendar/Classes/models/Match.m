@@ -10,25 +10,29 @@
 
 
 @implementation Match
+
+@synthesize level;
 @synthesize name;
 @synthesize date;
 @synthesize city;
+@synthesize country;
+@synthesize surface;
+@synthesize prizeMoney;
+@synthesize totalFinancialCommitment;
+@synthesize singleDraw;
+@synthesize doubleDraw;
+@synthesize ticketPhone;
+@synthesize ticketEmail;
+@synthesize singleWinner;
+@synthesize doubleWinners;
 @synthesize website;
 @synthesize introduction;
 
 
-- (id)initWithName:(NSString *)theName 
-			  date:(NSString *)theDate 
-			  city:(NSString *)theCity 
-		   website:(NSString *)theWebsite 
-	  introduction:(NSString *)theIntroduction {
+- (id)initWithName:(NSString *)theName {
 
 	if (self = [super init]) {
 		self.name = theName;
-		self.date = theDate;
-		self.city = theCity;
-		self.website = theWebsite;
-		self.introduction = theIntroduction;
 	}
 	return self;
 }

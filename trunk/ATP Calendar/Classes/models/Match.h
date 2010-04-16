@@ -8,25 +8,49 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum {
+	Atp250,
+	Atp500,
+	Atp1000,
+	Open
+} MatchLevel;
 
 @interface Match : NSObject {
+	MatchLevel level;
 	NSString *name;
 	NSString *date;
 	NSString *city;
+	NSString *country;
+	NSString *surface;
+	NSString *prizeMoney;
+	NSString *totalFinancialCommitment;
+	NSInteger singleDraw;
+	NSInteger doubleDraw;
+	NSString *ticketPhone;
+	NSString *ticketEmail;
+	NSString *singleWinner;
+	NSArray *doubleWinners;
 	NSString *website;
 	NSString *introduction;
 }
 
+@property (nonatomic) MatchLevel level;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, retain) NSString *city;
+@property (nonatomic, retain) NSString *country;
+@property (nonatomic, retain) NSString *surface;
+@property (nonatomic, retain) NSString *prizeMoney;
+@property (nonatomic, retain) NSString *totalFinancialCommitment;
+@property (nonatomic) NSInteger singleDraw;
+@property (nonatomic) NSInteger doubleDraw;
+@property (nonatomic, retain) NSString *ticketPhone;
+@property (nonatomic, retain) NSString *ticketEmail;
+@property (nonatomic, retain) NSString *singleWinner;
+@property (nonatomic, retain) NSArray *doubleWinners;
 @property (nonatomic, retain) NSString *website;
 @property (nonatomic, retain) NSString *introduction;
 
-- (id)initWithName:(NSString *)theName 
-			  date:(NSString *)theDate 
-			  city:(NSString *)theCity 
-		   website:(NSString *)theWebsite 
-	  introduction:(NSString *)theIntroduction;
+- (id)initWithName:(NSString *)theName;
 
 @end

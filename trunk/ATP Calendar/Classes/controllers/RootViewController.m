@@ -12,6 +12,7 @@
 #import "UITableView-WithCell.h"
 #import "Month2Matches.h"
 #import "Match.h"
+#include <CoreGraphics/CGColor.h>
 
 @implementation RootViewController
 
@@ -38,17 +39,50 @@
 }
 
 
-// Customize the appearance of table view cells.
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueOrInit:@"FirstLevelCell"];
-	NSInteger row = [indexPath row];
-	Month2Matches *onemonth = [[Context store] objectAtIndex:row];
-	cell.textLabel.text = onemonth.month;
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    return cell;
+- (void)setMatchesCount: (NSInteger) matchesCount cell: (UITableViewCell *) cell  {
+	CGRect matchecCountRect = CGRectMake(200, 15, 70, 15);
+	UILabel *matchesCountLabel = [[UILabel alloc] initWithFrame:matchecCountRect];
+	
+	NSString *matchesCountText = nil;	
+	if (matchesCount == 1) {
+		matchesCountText = [[NSString alloc] initWithFormat:@"%d Match", matchesCount];
+	} else {
+		matchesCountText = [[NSString alloc] initWithFormat:@"%d Matches", matchesCount];
+	}
+	
+	matchesCountLabel.text = matchesCountText;
+	matchesCountLabel.textAlignment = UITextAlignmentRight;
+	matchesCountLabel.font = [UIFont systemFontOfSize:12];
+	matchesCountLabel.textColor = [UIColor blueColor];
+	[cell.contentView addSubview: matchesCountLabel];
+	[matchesCountLabel release];
+	[matchesCountText release];
 }
 
+- (void) setDetailText: (NSArray *) matches cell: (UITableViewCell *) cell  {
+	NSMutableString *detail = [[NSMutableString alloc] init];
+	
+	for (NSInteger i = 0; i < [matches count]; i++) {
+		[detail appendString:[[matches objectAtIndex:i] name]];
+		if (i < [matches count] - 1) {
+			[detail appendString:@", "];
+		}
+	}
+	
+	cell.detailTextLabel.text = detail;
+	[detail release];
+}
 
+// Customize the appearance of table view cells.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueOrInit:@"FirstLevelCell" withStyle:UITableViewCellStyleSubtitle];
+	Month2Matches *onemonth = [[Context store] objectAtIndex:[indexPath row]];
+	cell.textLabel.text = onemonth.month;
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	[self setMatchesCount: [onemonth.matches count] cell: cell];
+	[self setDetailText: onemonth.matches cell: cell];
+    return cell;
+}
 
 
 #pragma mark -
@@ -67,6 +101,9 @@
 	 */
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 70;
+}
 
 #pragma mark -
 #pragma mark Memory management
