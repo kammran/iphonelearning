@@ -340,6 +340,22 @@
 		vrLen = 1588;
 		vrLoc = 0;
 	};
+	099669A11178AC5500AEF5AC /* MatchListViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1635, 963}}";
+			sepNavSelRange = "{308, 0}";
+			sepNavVisRange = "{0, 315}";
+			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
+		};
+	};
+	099669A21178AC5500AEF5AC /* MatchListViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1635, 963}}";
+			sepNavSelRange = "{364, 0}";
+			sepNavVisRange = "{0, 861}";
+			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
+		};
+	};
 	1AE35FF911778560001243DD /* Context.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1635, 963}}";
@@ -382,9 +398,9 @@
 	};
 	1AE360DA11779263001243DD /* Match.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1525, 882}}";
+			sepNavIntBoundsRect = "{{0, 0}, {553.846, 924}}";
 			sepNavSelRange = "{171, 0}";
-			sepNavVisRange = "{0, 472}";
+			sepNavVisRange = "{127, 81}";
 			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
 		};
 	};
@@ -405,17 +421,16 @@
 	28C286DF0D94DF7D0034E888 /* RootViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1635, 963}}";
-			sepNavSelRange = "{198, 21}";
-			sepNavVisRange = "{0, 230}";
+			sepNavSelRange = "{337, 23}";
+			sepNavVisRange = "{0, 392}";
 			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
 		};
 	};
 	28C286E00D94DF7D0034E888 /* RootViewController.m */ = {
 		uiCtxt = {
-			sepNavFolds = "{\n    c =     (\n                {\n            l = DetailViewController;\n            r = \"{2848, 24}\";\n            s = 1;\n        },\n                {\n            l = DetailViewController;\n            r = \"{2899, 24}\";\n            s = 1;\n        },\n                {\n            l = \"Nib name\";\n            r = \"{2949, 12}\";\n            s = 1;\n        }\n    );\n    r = \"{0, 3756}\";\n    s = 0;\n}";
-			sepNavIntBoundsRect = "{{0, 0}, {1635, 2626}}";
-			sepNavSelRange = "{2639, 0}";
-			sepNavVisRange = "{0, 1099}";
+			sepNavIntBoundsRect = "{{0, 0}, {1525, 2856}}";
+			sepNavSelRange = "{635, 0}";
+			sepNavVisRange = "{369, 697}";
 			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
 		};
 	};
