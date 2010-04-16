@@ -8,7 +8,7 @@
 
 #import "ATP_CalendarAppDelegate.h"
 #import "RootViewController.h"
-#import "ResourceProvider.h"
+#import "ResourceLoader.h"
 
 @implementation ATP_CalendarAppDelegate
 
@@ -17,7 +17,7 @@
 @synthesize store;
 
 - (void)initStore {
-	self.store = [ResourceProvider loadData];
+	self.store = [ResourceLoader loadData];
 }
 
 #pragma mark -

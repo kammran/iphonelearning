@@ -9,6 +9,8 @@
 #import "MatchListViewController.h"
 #import "Context.h"
 #import "UITableView-WithCell.h"
+#import "Match.h"
+#import "MatchDetailViewController.h"
 
 @implementation MatchListViewController
 @synthesize matches;
@@ -29,10 +31,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueOrInit:@"MatchListCell"];
-	cell.textLabel.text = [[matches objectAtIndex:[indexPath row]] name];
-	//TODO by level
-	cell.imageView.image = [UIImage imageNamed:@"ATP250.png"];
+	UITableViewCell *cell = [tableView dequeueOrInit:@"MatchListCell" withStyle:UITableViewCellStyleSubtitle];
+	Match * match = [matches objectAtIndex:[indexPath row]];
+	cell.textLabel.text = match.name;
+	NSString *detail = [[NSString alloc] initWithFormat:@"%@ %@, %@", match.date, match.city, match.country];
+	cell.detailTextLabel.text = detail;
+	[detail release];
+	NSString * imageName = [[NSString alloc] initWithFormat:@"%@.png", match.level];
+	cell.imageView.image = [UIImage imageNamed:imageName];
+	[imageName release];
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	return cell;
 }
@@ -41,7 +48,11 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	//TODO
+	Match *match = [matches objectAtIndex:[indexPath row]];
+	MatchDetailViewController *detailViewController = [[MatchDetailViewController alloc] initWithNibName:@"MatchDetailView" bundle:nil];
+	detailViewController.match = match;
+	[self.navigationController pushViewController:detailViewController animated:YES];
+	[detailViewController release];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

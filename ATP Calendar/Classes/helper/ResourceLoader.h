@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#define ATP250		@"ATP250";
+#define GRAND_SLAM	@"GrandSlam";
 
-@interface ResourceProvider : NSObject {
+@interface ResourceLoader : NSObject {
 
 }
 

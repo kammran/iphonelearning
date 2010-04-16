@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		099668BC1178989C00AEF5AC /* ResourceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 099668BB1178989C00AEF5AC /* ResourceProvider.m */; };
+		099668BC1178989C00AEF5AC /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */; };
 		099669A31178AC5500AEF5AC /* MatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */; };
 		099669C01178B19B00AEF5AC /* ATP250.png in Resources */ = {isa = PBXBuildFile; fileRef = 099669BF1178B19B00AEF5AC /* ATP250.png */; };
+		1A9BD9221178CAD800245AE6 /* GrandSlam.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9211178CAD800245AE6 /* GrandSlam.png */; };
+		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
+		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
+		1A9BDA301178D8B300245AE6 /* Brisbane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BDA2F1178D8B300245AE6 /* Brisbane.jpg */; };
 		1AE35FD411778100001243DD /* atp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE35FD311778100001243DD /* atp.png */; };
 		1AE35FFA11778560001243DD /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE35FF911778560001243DD /* Context.m */; };
 		1AE36060117788F9001243DD /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3605F117788F9001243DD /* NSObject-Dialog.m */; };
@@ -27,11 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		099668BA1178989C00AEF5AC /* ResourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceProvider.h; sourceTree = "<group>"; };
-		099668BB1178989C00AEF5AC /* ResourceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceProvider.m; sourceTree = "<group>"; };
+		099668BA1178989C00AEF5AC /* ResourceLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceLoader.h; sourceTree = "<group>"; };
+		099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceLoader.m; sourceTree = "<group>"; };
 		099669A11178AC5500AEF5AC /* MatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchListViewController.h; sourceTree = "<group>"; };
 		099669A21178AC5500AEF5AC /* MatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchListViewController.m; sourceTree = "<group>"; };
 		099669BF1178B19B00AEF5AC /* ATP250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP250.png; sourceTree = "<group>"; };
+		1A9BD9211178CAD800245AE6 /* GrandSlam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrandSlam.png; sourceTree = "<group>"; };
+		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
+		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
+		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
+		1A9BDA2F1178D8B300245AE6 /* Brisbane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Brisbane.jpg; sourceTree = "<group>"; };
 		1AE35FD311778100001243DD /* atp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atp.png; sourceTree = "<group>"; };
 		1AE35FF811778560001243DD /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		1AE35FF911778560001243DD /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
@@ -91,9 +100,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		1A9BDA2E1178D89500245AE6 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				1A9BDA2F1178D8B300245AE6 /* Brisbane.jpg */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
 		1AE35FD2117780D8001243DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A9BDA2E1178D89500245AE6 /* Matches */,
+				1A9BD9211178CAD800245AE6 /* GrandSlam.png */,
 				099669BF1178B19B00AEF5AC /* ATP250.png */,
 				1AE35FD311778100001243DD /* atp.png */,
 			);
@@ -109,8 +128,8 @@
 				1AE3605F117788F9001243DD /* NSObject-Dialog.m */,
 				1AE360A211778E02001243DD /* UITableView-WithCell.h */,
 				1AE360A311778E02001243DD /* UITableView-WithCell.m */,
-				099668BA1178989C00AEF5AC /* ResourceProvider.h */,
-				099668BB1178989C00AEF5AC /* ResourceProvider.m */,
+				099668BA1178989C00AEF5AC /* ResourceLoader.h */,
+				099668BB1178989C00AEF5AC /* ResourceLoader.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -133,6 +152,8 @@
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				099669A11178AC5500AEF5AC /* MatchListViewController.h */,
 				099669A21178AC5500AEF5AC /* MatchListViewController.m */,
+				1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */,
+				1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -174,6 +195,7 @@
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* ATP_Calendar-Info.plist */,
+				1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -241,6 +263,9 @@
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				1AE35FD411778100001243DD /* atp.png in Resources */,
 				099669C01178B19B00AEF5AC /* ATP250.png in Resources */,
+				1A9BD9221178CAD800245AE6 /* GrandSlam.png in Resources */,
+				1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */,
+				1A9BDA301178D8B300245AE6 /* Brisbane.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +284,9 @@
 				1AE360A411778E02001243DD /* UITableView-WithCell.m in Sources */,
 				1AE360D7117791E8001243DD /* Month2Matches.m in Sources */,
 				1AE360DB11779263001243DD /* Match.m in Sources */,
-				099668BC1178989C00AEF5AC /* ResourceProvider.m in Sources */,
+				099668BC1178989C00AEF5AC /* ResourceLoader.m in Sources */,
 				099669A31178AC5500AEF5AC /* MatchListViewController.m in Sources */,
+				1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
