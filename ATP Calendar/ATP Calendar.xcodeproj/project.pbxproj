@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099668BC1178989C00AEF5AC /* ResourceProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 099668BB1178989C00AEF5AC /* ResourceProvider.m */; };
 		1AE35FD411778100001243DD /* atp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE35FD311778100001243DD /* atp.png */; };
 		1AE35FFA11778560001243DD /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE35FF911778560001243DD /* Context.m */; };
 		1AE36060117788F9001243DD /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3605F117788F9001243DD /* NSObject-Dialog.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		099668BA1178989C00AEF5AC /* ResourceProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResourceProvider.h; sourceTree = "<group>"; };
+		099668BB1178989C00AEF5AC /* ResourceProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceProvider.m; sourceTree = "<group>"; };
 		1AE35FD311778100001243DD /* atp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atp.png; sourceTree = "<group>"; };
 		1AE35FF811778560001243DD /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		1AE35FF911778560001243DD /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
@@ -100,6 +103,8 @@
 				1AE3605F117788F9001243DD /* NSObject-Dialog.m */,
 				1AE360A211778E02001243DD /* UITableView-WithCell.h */,
 				1AE360A311778E02001243DD /* UITableView-WithCell.m */,
+				099668BA1178989C00AEF5AC /* ResourceProvider.h */,
+				099668BB1178989C00AEF5AC /* ResourceProvider.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -245,6 +250,7 @@
 				1AE360A411778E02001243DD /* UITableView-WithCell.m in Sources */,
 				1AE360D7117791E8001243DD /* Month2Matches.m in Sources */,
 				1AE360DB11779263001243DD /* Match.m in Sources */,
+				099668BC1178989C00AEF5AC /* ResourceProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,10 +13,10 @@
 @synthesize month;
 @synthesize matches;
 
-- (id)initWithMonth:(NSString *)month matches:(NSArray *)matches {
+- (id)initWithMonth:(NSString *)theMonth matches:(NSArray *)theMatches {
 	if (self = [super init]) {
-		self.month = month;
-		self.matches = matches;
+		self.month = theMonth;
+		self.matches = theMatches;
 	}
 	return self;
 }
