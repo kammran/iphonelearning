@@ -6,11 +6,11 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "ResourceProvider.h"
+#import "ResourceLoader.h"
 #import "Month2Matches.h"
 #import "Match.h"
 
-@implementation ResourceProvider
+@implementation ResourceLoader
 
 
 + (NSArray *)loadData {
@@ -18,11 +18,26 @@
 	
 	
 	Match *Brisbane_International = [[Match alloc] initWithName:@"Brisbane International"];
+	Brisbane_International.level = ATP250;
+	Brisbane_International.date = @"03.01.2010";
+	Brisbane_International.city = @"Brisbane";
+	Brisbane_International.country = @"Austrilia";
+	
 	Match *Aircel_Chennai_Open = [[Match alloc] initWithName:@"Aircel Chennai Open"];
+	Aircel_Chennai_Open.level = ATP250;
+	
 	Match *Qatar_ExxonMobil_Open = [[Match alloc] initWithName:@"Qatar ExxonMobil Open"];
+	Qatar_ExxonMobil_Open.level = ATP250;
+	
 	Match *Medibank_International_Sydney = [[Match alloc] initWithName:@"Medibank International Sydney"];
+	Medibank_International_Sydney.level = ATP250;
+	
 	Match *Heineken_Open = [[Match alloc] initWithName:@"Heineken Open"];
+	Heineken_Open.level = ATP250;
+	
 	Match *Australian_Open = [[Match alloc] initWithName:@"Australian Open"];
+	Australian_Open.level = GRAND_SLAM;
+	
 	NSArray *januaryMatches = [[NSArray alloc] initWithObjects:
 							   Brisbane_International, 
 							   Aircel_Chennai_Open, 

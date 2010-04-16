@@ -8,15 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum {
-	Atp250,
-	Atp500,
-	Atp1000,
-	Open
-} MatchLevel;
-
 @interface Match : NSObject {
-	MatchLevel level;
+	NSString *level;
 	NSString *name;
 	NSString *date;
 	NSString *city;
@@ -34,7 +27,7 @@ typedef enum {
 	NSString *introduction;
 }
 
-@property (nonatomic) MatchLevel level;
+@property (nonatomic, retain) NSString *level;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, retain) NSString *city;

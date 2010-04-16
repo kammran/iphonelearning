@@ -15,14 +15,12 @@
 #import "MatchListViewController.h"
 
 @implementation RootViewController
-@synthesize matchListViewController;
 
 #pragma mark -
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
-	self.title = @"ATP Tour Calendar";
-	self.matchListViewController = [[MatchListViewController alloc] initWithStyle:UITableViewStylePlain];
+	self.title = @"ATP Tour 2010 Calendar";
 	[super viewDidLoad];
 }
 
@@ -64,7 +62,8 @@
 	NSMutableString *detail = [[NSMutableString alloc] init];
 	
 	for (NSInteger i = 0; i < [matches count]; i++) {
-		[detail appendString:[[matches objectAtIndex:i] name]];
+		Match *match = [matches objectAtIndex:i];
+		[detail appendString:match.name];
 		if (i < [matches count] - 1) {
 			[detail appendString:@", "];
 		}
@@ -91,9 +90,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	Month2Matches *onemonth = [[Context store] objectAtIndex:[indexPath row]];    
-	self.matchListViewController.title = onemonth.month;
-	self.matchListViewController.matches = onemonth.matches;
+	MatchListViewController *matchListViewController = [[MatchListViewController alloc] initWithStyle:UITableViewStylePlain];
+	matchListViewController.title = onemonth.month;
+	matchListViewController.matches = onemonth.matches;
 	[self.navigationController pushViewController:matchListViewController animated:YES];
+	[matchListViewController release];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,12 +112,10 @@
 }
 
 - (void)viewDidUnload {
-	self.matchListViewController = nil;
 }
 
 
 - (void)dealloc {
-	[self.matchListViewController release];
     [super dealloc];
 }
 
