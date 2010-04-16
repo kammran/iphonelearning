@@ -12,16 +12,17 @@
 #import "UITableView-WithCell.h"
 #import "Month2Matches.h"
 #import "Match.h"
-#include <CoreGraphics/CGColor.h>
+#import "MatchListViewController.h"
 
 @implementation RootViewController
-
+@synthesize matchListViewController;
 
 #pragma mark -
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
 	self.title = @"ATP Tour Calendar";
+	self.matchListViewController = [[MatchListViewController alloc] initWithStyle:UITableViewStylePlain];
 	[super viewDidLoad];
 }
 
@@ -89,16 +90,10 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	Month2Matches *onemonth = [[Context store] objectAtIndex:[indexPath row]];
-	[onemonth showInDialog];
-    
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+	Month2Matches *onemonth = [[Context store] objectAtIndex:[indexPath row]];    
+	self.matchListViewController.title = onemonth.month;
+	self.matchListViewController.matches = onemonth.matches;
+	[self.navigationController pushViewController:matchListViewController animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -116,12 +111,12 @@
 }
 
 - (void)viewDidUnload {
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
+	self.matchListViewController = nil;
 }
 
 
 - (void)dealloc {
+	[self.matchListViewController release];
     [super dealloc];
 }
 

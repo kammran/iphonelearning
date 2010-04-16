@@ -7,8 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MatchListViewController;
 
 @interface RootViewController : UITableViewController {
+	MatchListViewController *matchListViewController;
 }
-
+@property (nonatomic, retain) MatchListViewController *matchListViewController;
 @end
