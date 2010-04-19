@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Match : NSObject {
-	NSString *level;
+	NSString *category;
 	NSString *name;
 	NSString *date;
 	NSString *city;
@@ -27,7 +27,7 @@
 	NSString *introduction;
 }
 
-@property (nonatomic, retain) NSString *level;
+@property (nonatomic, retain) NSString *category;
 @property (nonatomic, retain) NSString *name;
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, retain) NSString *city;
@@ -45,5 +45,6 @@
 @property (nonatomic, retain) NSString *introduction;
 
 - (id)initWithName:(NSString *)theName;
+- (UIImage *)categoryImage;
 
 @end

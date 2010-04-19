@@ -59,18 +59,12 @@
 }
 
 - (void) setDetailText: (NSArray *) matches cell: (UITableViewCell *) cell  {
-	NSMutableString *detail = [[NSMutableString alloc] init];
-	
-	for (NSInteger i = 0; i < [matches count]; i++) {
-		Match *match = [matches objectAtIndex:i];
-		[detail appendString:match.name];
-		if (i < [matches count] - 1) {
-			[detail appendString:@", "];
-		}
+	NSMutableArray *names = [[NSMutableArray alloc] init];
+	for (Match *match in matches) {
+		[names addObject:match.name];
 	}
-	
-	cell.detailTextLabel.text = detail;
-	[detail release];
+	cell.detailTextLabel.text = [names componentsJoinedByString:@", "];
+	[names release];
 }
 
 // Customize the appearance of table view cells.
