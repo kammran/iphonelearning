@@ -11,7 +11,7 @@
 
 @implementation Match
 
-@synthesize level;
+@synthesize category;
 @synthesize name;
 @synthesize date;
 @synthesize city;
@@ -36,5 +36,12 @@
 	return self;
 }
 
+
+- (UIImage *)categoryImage {
+	NSString *imageName = [[NSString alloc] initWithFormat:@"%@.png", self.category];
+	UIImage *categoryImage = [UIImage imageNamed:imageName];
+	[imageName release];
+	return categoryImage;
+}
 
 @end

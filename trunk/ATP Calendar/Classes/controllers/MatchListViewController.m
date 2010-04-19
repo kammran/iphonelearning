@@ -37,9 +37,7 @@
 	NSString *detail = [[NSString alloc] initWithFormat:@"%@ %@, %@", match.date, match.city, match.country];
 	cell.detailTextLabel.text = detail;
 	[detail release];
-	NSString * imageName = [[NSString alloc] initWithFormat:@"%@.png", match.level];
-	cell.imageView.image = [UIImage imageNamed:imageName];
-	[imageName release];
+	cell.imageView.image = [match categoryImage];
 	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	return cell;
 }
