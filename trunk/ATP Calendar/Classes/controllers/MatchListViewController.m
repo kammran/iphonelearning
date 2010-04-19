@@ -48,7 +48,11 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	Match *match = [matches objectAtIndex:[indexPath row]];
 	MatchDetailViewController *detailViewController = [[MatchDetailViewController alloc] initWithNibName:@"MatchDetailView" bundle:nil];
+	detailViewController.title = match.name;
 	detailViewController.match = match;
+	UIScrollView *view = (UIScrollView *) detailViewController.view;
+	view.scrollEnabled = YES;
+	[view setContentSize:CGSizeMake(320, 460)];
 	[self.navigationController pushViewController:detailViewController animated:YES];
 	[detailViewController release];
 }

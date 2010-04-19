@@ -18,8 +18,10 @@
 	UILabel *surfaceLabel;
 	UILabel *prizeMoneyLabel;
 	UILabel *drawLabel;
+	UIButton *websiteButton;
 	UILabel *ticketInfoLabel;
-	UILabel *winnersLabel;
+	UILabel *singleWinnerLabel;
+	UILabel *doubleWinnersLabel;
 }
 @property (nonatomic, retain) Match *match;
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
@@ -29,6 +31,11 @@
 @property (nonatomic, retain) IBOutlet UILabel *surfaceLabel;
 @property (nonatomic, retain) IBOutlet UILabel *prizeMoneyLabel;
 @property (nonatomic, retain) IBOutlet UILabel *drawLabel;
+@property (nonatomic, retain) IBOutlet UIButton *websiteButton;
 @property (nonatomic, retain) IBOutlet UILabel *ticketInfoLabel;
-@property (nonatomic, retain) IBOutlet UILabel *winnersLabel;
+@property (nonatomic, retain) IBOutlet UILabel *singleWinnerLabel;
+@property (nonatomic, retain) IBOutlet UILabel *doubleWinnersLabel;
+
+- (IBAction)hyperlinkPressed:(id)sender;
+
 @end
