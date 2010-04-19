@@ -27,6 +27,7 @@
 	Brisbane_International.totalFinancialCommitment = @"$ 424,250";
 	Brisbane_International.singleDraw = 32;
 	Brisbane_International.doubleDraw = 16;
+	Brisbane_International.website = @"http://www.brisbaneinternational.com.au/";
 	Brisbane_International.ticketPhone = @"+61 8 8225 8888";
 	Brisbane_International.singleWinner = @"Andy Roddick";
 	NSArray *doubleWinners = [[NSArray alloc] initWithObjects:@"Marc Gicquel", @"Jeremy Chardy", nil];

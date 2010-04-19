@@ -18,8 +18,10 @@
 @synthesize surfaceLabel;
 @synthesize prizeMoneyLabel;
 @synthesize drawLabel;
+@synthesize websiteButton;
 @synthesize ticketInfoLabel;
-@synthesize winnersLabel;
+@synthesize singleWinnerLabel;
+@synthesize doubleWinnersLabel;
 
 
 - (void)extractData {
@@ -36,6 +38,7 @@
 	NSString *draw = [[NSString alloc] initWithFormat:@"SGL %d DBL %d", match.singleDraw, match.doubleDraw];
 	self.drawLabel.text = draw;
 	[draw release];
+	[self.websiteButton setTitle:match.website forState:UIControlStateNormal];
 	NSString *ticketInfo = nil;
 	if (match.ticketEmail != nil) {
 		ticketInfo = [[NSString alloc] initWithFormat:@"%@ %@", match.ticketEmail, match.ticketPhone];
@@ -45,14 +48,14 @@
 	self.ticketInfoLabel.text = ticketInfo;
 	[ticketInfo release];			  
 	NSMutableString *winners = [[NSMutableString alloc] init];
-	if (match.singleWinner != nil) {
-		[winners appendString:@"Single Winner : "];
-		[winners appendString:match.singleWinner];
-		[winners appendString:@"\n"];
-		[winners appendString:[match.doubleWinners componentsJoinedByString:@", "]];
-	}
-	self.winnersLabel.text = winners;
+	self.singleWinnerLabel.text = [NSString stringWithFormat:@"Singles : %@", match.singleWinner];
+	self.doubleWinnersLabel.text = [NSString stringWithFormat:@"Doubles : %@", [match.doubleWinners componentsJoinedByString:@", "]];
 	[winners release];
+}
+
+- (IBAction)hyperlinkPressed:(id)sender {
+	UIButton *button = (UIButton *)sender;
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:button.currentTitle]];
 }
 
 - (void)viewDidLoad {
@@ -72,7 +75,8 @@
 	self.prizeMoneyLabel = nil;
 	self.drawLabel = nil;
 	self.ticketInfoLabel = nil;
-	self.winnersLabel = nil;
+	self.singleWinnerLabel = nil;
+	self.doubleWinnersLabel = nil;
 	[super viewDidUnload];
 }
 
@@ -85,7 +89,8 @@
 	[self.prizeMoneyLabel release];
 	[self.drawLabel release];
 	[self.ticketInfoLabel release];
-	[self.winnersLabel release];
+	[self.singleWinnerLabel release];
+	[self.doubleWinnersLabel release];
 	[super dealloc];
 }
 
