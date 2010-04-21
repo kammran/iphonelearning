@@ -11,7 +11,7 @@
 	<key>CFBundleIconFile</key>
 	<string>atp.png</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.james.ATPCalendar</string>
+	<string>com.james.iphone.ATPCalendar</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
