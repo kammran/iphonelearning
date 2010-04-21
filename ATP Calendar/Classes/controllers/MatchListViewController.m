@@ -11,6 +11,7 @@
 #import "UITableView-WithCell.h"
 #import "Match.h"
 #import "MatchDetailViewController.h"
+#import "MatchImageCoverFlowViewController.h"
 
 @implementation MatchListViewController
 @synthesize matches;
@@ -45,8 +46,11 @@
 #pragma mark -
 #pragma mark Table view delegate
 
+- (Match *) match: (NSIndexPath *) indexPath  {
+	return [matches objectAtIndex:[indexPath row]];
+}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	Match *match = [matches objectAtIndex:[indexPath row]];
+	Match *match = [self match: indexPath];
 	MatchDetailViewController *detailViewController = [[MatchDetailViewController alloc] initWithNibName:@"MatchDetailView" bundle:nil];
 	detailViewController.title = match.name;
 	detailViewController.match = match;
@@ -55,6 +59,13 @@
 	[view setContentSize:CGSizeMake(320, 460)];
 	[self.navigationController pushViewController:detailViewController animated:YES];
 	[detailViewController release];
+}
+
+- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
+	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
+	coverFlowController.match = [self match:indexPath];
+	[self.navigationController pushViewController:coverFlowController animated:YES];
+	[coverFlowController release];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
