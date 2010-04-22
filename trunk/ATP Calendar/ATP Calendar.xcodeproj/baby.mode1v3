@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>0952A83B11808C8A008970A6</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>MatchListViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>0952A83C11808C8A008970A6</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>MatchListViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0952A84111808CC2008970A6</string>
-						<key>history</key>
-						<array>
-							<string>0952A83711808BFD008970A6</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1694, 1017}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 120 1694 1058 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>0952A80E11808AC9008970A6</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>MatchImageCoverFlowViewController.m</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0952A84211808CC2008970A6</string>
+						<string>0952A84611808D02008970A6</string>
 						<key>history</key>
 						<array>
 							<string>0952A82211808B2D008970A6</string>
@@ -277,47 +237,6 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>290 116 1694 1058 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>0952A81111808AC9008970A6</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>MatchImageCoverFlowViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>0952A81211808AC9008970A6</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>MatchImageCoverFlowViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0952A84311808CC2008970A6</string>
-						<key>history</key>
-						<array>
-							<string>0952A81311808AC9008970A6</string>
-							<string>0952A82011808B2D008970A6</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1694, 1017}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>15 120 1694 1058 0 0 1920 1178 </string>
 			</dict>
 		</dict>
 	</array>
@@ -404,7 +323,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>16</integer>
+									<integer>20</integer>
 									<integer>12</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -458,7 +377,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0952A84011808CC2008970A6</string>
+										<string>0952A84511808D02008970A6</string>
 										<key>history</key>
 										<array>
 											<string>0996697B1178AA5300AEF5AC</string>
@@ -670,13 +589,13 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0952A81111808AC9008970A6</string>
 		<string>0952A79C1180828D008970A6</string>
 		<string>0952A79D1180828D008970A6</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0996693A1178A1B800AEF5AC</string>
 		<string>0952A80E11808AC9008970A6</string>
 		<string>/Users/baby/iphone/iphonelearning/ATP Calendar/ATP Calendar.xcodeproj</string>
-		<string>0952A83B11808C8A008970A6</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1920 1059 0 0 1920 1178 </string>
