@@ -19,7 +19,7 @@
 	
 	Match *Brisbane_International = [[Match alloc] initWithName:@"Brisbane International"];
 	Brisbane_International.category = ATP250;
-	Brisbane_International.date = @"03.01.2010";
+	Brisbane_International.date = @"03.01.2010-10.01.2010";
 	Brisbane_International.city = @"Brisbane";
 	Brisbane_International.country = @"Austrilia";
 	Brisbane_International.surface = @"Hard";
