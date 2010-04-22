@@ -32,6 +32,8 @@
 - (id)initWithName:(NSString *)theName {
 	if (self = [super init]) {
 		self.name = theName;
+		self.singleWinner = @"";
+		self.doubleWinners = [[NSArray alloc] initWithObjects:nil];
 	}
 	return self;
 }
@@ -42,6 +44,24 @@
 	UIImage *categoryImage = [UIImage imageNamed:imageName];
 	[imageName release];
 	return categoryImage;
+}
+
+- (void) dealloc {
+	[self.category release];
+	[self.name release];
+	[self.date release];
+	[self.country release];
+	[self.city release];
+	[self.surface release];
+	[self.prizeMoney release];
+	[self.totalFinancialCommitment release];
+	[self.ticketPhone release];
+	[self.ticketEmail release];
+	[self.singleWinner release];
+	[self.doubleWinners release];
+	[self.website release];
+	[self.introduction release];
+	[super dealloc];
 }
 
 @end

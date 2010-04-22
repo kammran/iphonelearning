@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0952A759118079FB008970A6 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952A758118079FB008970A6 /* DataCache.m */; };
+		0952A76C11807A8A008970A6 /* FlowCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952A76B11807A8A008970A6 /* FlowCoverView.m */; };
+		0952A78F11808261008970A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952A78E11808261008970A6 /* QuartzCore.framework */; };
+		0952A7AB118082B5008970A6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952A7AA118082B5008970A6 /* OpenGLES.framework */; };
 		09946FA1117F372800A0403D /* MatchImageCoverFlowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */; };
 		09946FA4117F374400A0403D /* MatchImageCoverFlowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09946FA3117F374400A0403D /* MatchImageCoverFlowView.xib */; };
 		09946FC6117F3BB700A0403D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09946FC5117F3BB700A0403D /* Default.png */; };
@@ -34,6 +38,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0952A757118079FB008970A6 /* DataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
+		0952A758118079FB008970A6 /* DataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
+		0952A76A11807A8A008970A6 /* FlowCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCoverView.h; sourceTree = "<group>"; };
+		0952A76B11807A8A008970A6 /* FlowCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlowCoverView.m; sourceTree = "<group>"; };
+		0952A78E11808261008970A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0952A7AA118082B5008970A6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		09946F9F117F372800A0403D /* MatchImageCoverFlowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchImageCoverFlowViewController.h; sourceTree = "<group>"; };
 		09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchImageCoverFlowViewController.m; sourceTree = "<group>"; };
 		09946FA3117F374400A0403D /* MatchImageCoverFlowView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchImageCoverFlowView.xib; sourceTree = "<group>"; };
@@ -82,6 +92,8 @@
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
+				0952A78F11808261008970A6 /* QuartzCore.framework in Frameworks */,
+				0952A7AB118082B5008970A6 /* OpenGLES.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,12 +103,24 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0952A72F1180789B008970A6 /* coverflow */,
 				1AE360D31177916F001243DD /* models */,
 				1AE3616E11779E51001243DD /* controllers */,
 				1AE3617811779F29001243DD /* delegate */,
 				1AE3602D11778800001243DD /* helper */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0952A72F1180789B008970A6 /* coverflow */ = {
+			isa = PBXGroup;
+			children = (
+				0952A757118079FB008970A6 /* DataCache.h */,
+				0952A758118079FB008970A6 /* DataCache.m */,
+				0952A76A11807A8A008970A6 /* FlowCoverView.h */,
+				0952A76B11807A8A008970A6 /* FlowCoverView.m */,
+			);
+			path = coverflow;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -217,6 +241,8 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
+				0952A78E11808261008970A6 /* QuartzCore.framework */,
+				0952A7AA118082B5008970A6 /* OpenGLES.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,6 +327,8 @@
 				099669A31178AC5500AEF5AC /* MatchListViewController.m in Sources */,
 				1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */,
 				09946FA1117F372800A0403D /* MatchImageCoverFlowViewController.m in Sources */,
+				0952A759118079FB008970A6 /* DataCache.m in Sources */,
+				0952A76C11807A8A008970A6 /* FlowCoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
