@@ -68,6 +68,7 @@
 	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
 	coverFlowController.title = title;
 	[title release];
+	[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
 	[self.navigationController pushViewController:coverFlowController animated:YES];
 	[coverFlowController release];
 }

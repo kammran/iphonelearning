@@ -8,7 +8,7 @@
 
 #import "MatchImageCoverFlowViewController.h"
 #import "FlowCoverView.h"
-
+#import "Match.h"
 
 @implementation MatchImageCoverFlowViewController
 @synthesize match;
@@ -19,7 +19,7 @@
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return interfaceOrientation == UIInterfaceOrientationLandscapeLeft || interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+	return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }
 
 
@@ -49,21 +49,17 @@
 	return 10;
 }
 
-- (UIImage *)flowCover:(FlowCoverView *)view cover:(int)image
+- (UIImage *)flowCover:(FlowCoverView *)view cover:(int)index
 {
-	switch (image % 6) {
-		case 0:
-		default:
-			return [UIImage imageNamed:@"Default.png"];
-		case 1:
-			return [UIImage imageNamed:@"Brisbane.jpg"];
-		
-	}
+	NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d.png", match.name, index];
+	UIImage *image = [UIImage imageNamed:imageName];
+	[imageName release];
+	return image;
 }
 
-- (void)flowCover:(FlowCoverView *)view didSelect:(int)image
+- (void)flowCover:(FlowCoverView *)view didSelect:(int)index
 {
-	NSLog(@"Selected Index %d",image);
+	NSLog(@"Selected Index %d", index);
 }
 
 @end
