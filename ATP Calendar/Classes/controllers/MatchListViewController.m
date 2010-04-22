@@ -63,7 +63,11 @@
 
 - (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
 	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
-	coverFlowController.match = [self match:indexPath];
+	Match *match = [self match: indexPath];
+	coverFlowController.match = match;
+	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
+	coverFlowController.title = title;
+	[title release];
 	[self.navigationController pushViewController:coverFlowController animated:YES];
 	[coverFlowController release];
 }

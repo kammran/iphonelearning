@@ -55,7 +55,10 @@
 
 - (IBAction)hyperlinkPressed:(id)sender {
 	UIButton *button = (UIButton *)sender;
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:button.currentTitle]];
+	NSString *currentTitle = button.currentTitle;
+	if (currentTitle != nil) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:currentTitle]];
+	}
 }
 
 - (void)viewDidLoad {

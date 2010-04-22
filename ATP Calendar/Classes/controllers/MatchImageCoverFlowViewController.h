@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FlowCoverView.h"
 @class Match;
 
-@interface MatchImageCoverFlowViewController : UIViewController {
-	UIImageView *imageView;
+
+@interface MatchImageCoverFlowViewController : UIViewController <FlowCoverViewDelegate> {
 	Match *match;
 }
-@property (nonatomic, retain) IBOutlet UIImageView *imageView;
 @property (nonatomic, retain) Match *match;
 @end

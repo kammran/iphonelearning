@@ -7,26 +7,14 @@
 //
 
 #import "MatchImageCoverFlowViewController.h"
+#import "FlowCoverView.h"
 
 
 @implementation MatchImageCoverFlowViewController
-@synthesize imageView;
 @synthesize match;
-
-- (void)loadImages {
-	UIImage *image1 = [UIImage imageNamed:@"Default.png"];
-	UIImage *image2 = [UIImage imageNamed:@"Brisbane.jpg"];
-	NSArray *images = [[NSArray alloc] initWithObjects:image1, image2, nil];
-//	self.imageView = [[UIImageView alloc] initWithImage:image2];
-	//self.imageView.image = image1;
-	self.imageView.animationImages = images;
-	self.imageView.animationDuration = 5;
-	[self.imageView startAnimating];
-}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	[self loadImages];
     [super viewDidLoad];
 }
 
@@ -44,16 +32,38 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-    self.imageView = nil;
 	self.match = nil;
 }
 
 
 - (void)dealloc {
-	[self.imageView release];
 	[self.match release];
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark FlowCoverView Delegate Methods
+
+- (int)flowCoverNumberImages:(FlowCoverView *)view
+{
+	return 10;
+}
+
+- (UIImage *)flowCover:(FlowCoverView *)view cover:(int)image
+{
+	switch (image % 6) {
+		case 0:
+		default:
+			return [UIImage imageNamed:@"Default.png"];
+		case 1:
+			return [UIImage imageNamed:@"Brisbane.jpg"];
+		
+	}
+}
+
+- (void)flowCover:(FlowCoverView *)view didSelect:(int)image
+{
+	NSLog(@"Selected Index %d",image);
+}
 
 @end
