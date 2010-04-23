@@ -200,7 +200,7 @@ const GLshort GTextures[] = {
 		[self release];
 		return nil;
 	}
-	self.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+//	self.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
 	
 	cache = [[DataCache alloc] initWithCapacity:MAXTILES];
 	offset = 0;
