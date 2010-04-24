@@ -15,6 +15,7 @@
 
 + (NSArray *)loadData {
 	NSMutableArray *array = [[NSMutableArray alloc] init];
+	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];
 	
 	NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"xml"]];
 	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
@@ -44,6 +45,7 @@
 			match.ticketEmail = [matchElement stringValueForName:@"email"];
 			match.ticketPhone = [matchElement stringValueForName:@"tel"];
 			match.totalFinancialCommitment = [matchElement stringValueForName:@"total"];
+			match.website = [websites valueForKey:match.name];
 			[month2Matches addMatch:match];
 		}
 	}
