@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1A5A5848118370FF00499565</string>
+						<string>1A5A58661183765700499565</string>
 						<key>history</key>
 						<array>
 							<string>1A474AA21180CEC5004A9572</string>
@@ -270,8 +270,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -316,8 +314,6 @@
 								<string>1AE3602D11778800001243DD</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>1AE35FD2117780D8001243DD</string>
-								<string>1A5A582911836F3900499565</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
@@ -325,14 +321,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>44</integer>
-									<integer>43</integer>
-									<integer>41</integer>
+									<integer>37</integer>
+									<integer>29</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 329}, {293, 602}}</string>
+							<string>{{0, 472}, {293, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -367,7 +363,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ResourceLoader.m</string>
+								<string>websites.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -375,11 +371,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ResourceLoader.m</string>
+										<string>websites.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A5A5847118370FF00499565</string>
+										<string>1A5A58651183765700499565</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -404,7 +400,8 @@
 											<string>1A5A56FF11835FD000499565</string>
 											<string>1A5A571A1183605100499565</string>
 											<string>1A5A57D91183681200499565</string>
-											<string>1A5A5846118370FF00499565</string>
+											<string>1A5A58631183765700499565</string>
+											<string>1A5A58641183765700499565</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -602,7 +599,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1A5A5849118370FF00499565</string>
+		<string>1A5A58671183765700499565</string>
 		<string>1A5A57D51183680C00499565</string>
 		<string>1A5A569E1183572E00499565</string>
 		<string>1A5A56071182F50F00499565</string>
