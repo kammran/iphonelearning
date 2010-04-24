@@ -8,7 +8,7 @@ require 'builder'
 class ResourceProvider
 	
 	def generate
-		xml
+		File.open('data.xml', 'w') {|f| f.write xml}
 	end
 
 	def xml
@@ -108,4 +108,4 @@ class ResourceProvider
 
 end
 
-puts ResourceProvider.new.generate
+ResourceProvider.new.generate

@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<month name="JANUARY">
+  <match>
+    <category>ATP250</category>
+    <date>03.01.2010</date>
+    <name>Brisbane International</name>
+    <city>Brisbane</city>
+    <country>Australia</country>
+    <surface>Hard</surface>
+    <prize>$ 372,500</prize>
+    <total>$ 424,250</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+61 8 8225 8888</tel>
+    <single_winner>Andy Roddick</single_winner>
+    <double_winners>Marc Gicquel, Jeremy Chardy</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>04.01.2010</date>
+    <name>Aircel Chennai Open</name>
+    <city>Chennai</city>
+    <country>India</country>
+    <surface>Hard</surface>
+    <prize>$ 398,250</prize>
+    <total>$ 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+91-44-2817-0191</tel>
+    <single_winner>Marin Cilic</single_winner>
+    <double_winners>Santiago Ventura, Marcel Granollers</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>04.01.2010</date>
+    <name>Qatar ExxonMobil Open</name>
+    <city>Doha</city>
+    <country>Qatar</country>
+    <surface>Hard</surface>
+    <prize>$ 1,024,000</prize>
+    <total>$ 1,110,250</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+974 440 9646</tel>
+    <single_winner>Nikolay Davydenko</single_winner>
+    <double_winners>Albert Montanes, Guillermo Garcia Lopez</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>11.01.2010</date>
+    <name>Medibank International Sydney</name>
+    <city>Sydney</city>
+    <country>Australia</country>
+    <surface>Hard</surface>
+    <prize>$ 372,500</prize>
+    <total>$ 424,250</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+61 1300 888 104</tel>
+    <single_winner>Marcos Baghdatis</single_winner>
+    <double_winners>Nenad Zimonjic, Daniel Nestor</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>11.01.2010</date>
+    <name>Heineken Open</name>
+    <city>Auckland</city>
+    <country>New Zealand</country>
+    <surface>Hard</surface>
+    <prize>$ 355,500</prize>
+    <total>$ 407,250</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+64/9-373-3623 (ext 6)</tel>
+    <single_winner>John Isner</single_winner>
+    <double_winners>Horia Tecau, Marcus Daniell</double_winners>
+  </match>
+  <match>
+    <category>GrandSlam</category>
+    <date>18.01.2010</date>
+    <name>Australian Open</name>
+    <city>Melbourne</city>
+    <country>Australia</country>
+    <surface>Hard</surface>
+    <prize>A$ TBD</prize>
+    <total>A$ 11,048,640</total>
+    <sgl>128</sgl>
+    <dbl>64</dbl>
+    <email></email>
+    <tel>+61 3 9299 9116</tel>
+    <single_winner>Roger Federer</single_winner>
+    <double_winners>Mike Bryan, Bob Bryan</double_winners>
+  </match>
+</month>
+<month name="FEBRUARY">
+  <match>
+    <category>ATP250</category>
+    <date>01.02.2010</date>
+    <name>SA Tennis Open</name>
+    <city>Johannesburg</city>
+    <country>South Africa</country>
+    <surface>Hard</surface>
+    <prize>$ 442,500</prize>
+    <total>$ 500,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+27 (0) 11 510 7366 or +27 (0) 11 340 8000</tel>
+    <single_winner>Feliciano Lopez</single_winner>
+    <double_winners>Aisam Ul Haq Qureshi, Rohan Bopanna</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>01.02.2010</date>
+    <name>PBZ Zagreb Indoors</name>
+    <city>Zagreb</city>
+    <country>Croatia</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email>prodaja@zagrebindoors.com</email>
+    <tel>+385 /1/ 655 2860</tel>
+    <single_winner>Marin Cilic</single_winner>
+    <double_winners>Philipp Petzschner, Jurgen Melzer</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>01.02.2010</date>
+    <name>Movistar Open</name>
+    <city>Santiago</city>
+    <country>Chile</country>
+    <surface>Clay</surface>
+    <prize>$ 398,250</prize>
+    <total>$ 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+56-2/234-3788</tel>
+    <single_winner>Thomaz Bellucci</single_winner>
+    <double_winners>Oliver Marach, Lukasz Kubot</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>08.02.2010</date>
+    <name>SAP Open</name>
+    <city>San Jose</city>
+    <country>U.S.A.</country>
+    <surface>Indoor Hard</surface>
+    <prize>$ 531,000</prize>
+    <total>$ 600,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1 408 223 2121</tel>
+    <single_winner>Fernando Verdasco</single_winner>
+    <double_winners>Sam Querrey, Mardy Fish</double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>08.02.2010</date>
+    <name>ABN AMRO World Tennis Tournament</name>
+    <city>Rotterdam</city>
+    <country>The Netherlands</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 1,150,000</prize>
+    <total>&#8364; 1,445,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+31 10 2933 810</tel>
+    <single_winner>Robin Soderling</single_winner>
+    <double_winners>Nenad Zimonjic, Daniel Nestor</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>08.02.2010</date>
+    <name>Brasil Open</name>
+    <city>Costa do Sauipe</city>
+    <country>Brazil</country>
+    <surface>Clay</surface>
+    <prize>$ 442,500</prize>
+    <total>$ 500,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email>&#65279;&#65279;</email>
+    <tel>+55-11/5643-5511</tel>
+    <single_winner>Juan Carlos Ferrero</single_winner>
+    <double_winners>Marcel Granollers, Pablo Cuevas</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>15.02.2010</date>
+    <name>Open 13</name>
+    <city>Marseille</city>
+    <country>France</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 512,750</prize>
+    <total>&#8364; 576,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>b.caujolle@open13.org</email>
+    <tel>+33 (0)4 91 60 99 44</tel>
+    <single_winner>Michael Llodra</single_winner>
+    <double_winners>Michael Llodra, Julien Benneteau</double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>15.02.2010</date>
+    <name>Regions Morgan Keegan Championships</name>
+    <city>Memphis</city>
+    <country>U.S.A</country>
+    <surface>Indoor Hard</surface>
+    <prize>$ 1,100,000</prize>
+    <total>$ 1,226,500</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1/901-765-4401</tel>
+    <single_winner>Sam Querrey</single_winner>
+    <double_winners>Sam Querrey, John Isner</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>15.02.2010</date>
+    <name>Copa Telmex</name>
+    <city>Buenos Aires</city>
+    <country>Argentina</country>
+    <surface>Clay</surface>
+    <prize>$ 475,300</prize>
+    <total>$ 544,300</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+54-115-533-5533</tel>
+    <single_winner>Juan Carlos Ferrero</single_winner>
+    <double_winners>Horacio Zeballos, Sebastian Prieto</double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>22.02.2010</date>
+    <name>Barclays Dubai Tennis Championships</name>
+    <city>Dubai</city>
+    <country>U.A.E</country>
+    <surface>Hard</surface>
+    <prize>$ 1,619,500</prize>
+    <total>$ 2,233,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email>mailto:marketing@ddf.ae</email>
+    <tel>+9714-224-4568</tel>
+    <single_winner>Novak Djokovic</single_winner>
+    <double_winners>Paul Hanley, Simon Aspelin</double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>22.02.2010</date>
+    <name>Abierto Mexicano Telcel</name>
+    <city>Acapulco</city>
+    <country>Mexico</country>
+    <surface>Clay</surface>
+    <prize>$ 955,000</prize>
+    <total>$ 1,081,500</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+(52) 5325 9000</tel>
+    <single_winner>David Ferrer</single_winner>
+    <double_winners>Oliver Marach, Lukasz Kubot</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>22.02.2010</date>
+    <name>Delray Beach International Tennis Championships</name>
+    <city>Delray Beach</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 442,500</prize>
+    <total>$ 500,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1-561/330-6000</tel>
+    <single_winner>Ernests Gulbis</single_winner>
+    <double_winners>Mike Bryan, Bob Bryan</double_winners>
+  </match>
+</month>
+<month name="MARCH">
+  <match>
+    <category>DavisCup</category>
+    <date>05.03.2010</date>
+    <name>Davis Cup First Round</name>
+    <city>Davis Cup</city>
+    <country></country>
+    <surface></surface>
+    <prize></prize>
+    <total></total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>09.03.2010</date>
+    <name>BNP Paribas Open</name>
+    <city>Indian Wells</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 3,645,000</prize>
+    <total>$ 4,500,000</total>
+    <sgl>96</sgl>
+    <dbl>32</dbl>
+    <email>mailto:tix@iwtg.net</email>
+    <tel>+1 800 999 1585</tel>
+    <single_winner>Ivan Ljubicic</single_winner>
+    <double_winners>Rafael Nadal, Marc Lopez</double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>23.03.2010</date>
+    <name>Sony Ericsson Open</name>
+    <city>Miami</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 3,645,000</prize>
+    <total>$ 4,500,000</total>
+    <sgl>96</sgl>
+    <dbl>32</dbl>
+    <email>tickets@sonyericssonopen.com</email>
+    <tel>+1-800-725-5472</tel>
+    <single_winner>Andy Roddick</single_winner>
+    <double_winners>Leander Paes, Lukas Dlouhy</double_winners>
+  </match>
+</month>
+<month name="APRIL">
+  <match>
+    <category>ATP250</category>
+    <date>05.04.2010</date>
+    <name>Grand Prix Hassan II</name>
+    <city>Casablanca</city>
+    <country>Morocco</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+212-2298-1266</tel>
+    <single_winner>Stanislas Wawrinka</single_winner>
+    <double_winners>Horia Tecau, Robert Lindstedt</double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>05.04.2010</date>
+    <name>US Men's Clay Court Championship</name>
+    <city>Houston</city>
+    <country>U.S.A.</country>
+    <surface>Clay</surface>
+    <prize>$ 442,500</prize>
+    <total>$ 500,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1-713-874-6294</tel>
+    <single_winner>Juan Ignacio Chela</single_winner>
+    <double_winners>Mike Bryan, Bob Bryan</double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>11.04.2010</date>
+    <name>Monte-Carlo Rolex Masters</name>
+    <city>Monte-Carlo</city>
+    <country>Monaco</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 2,227,500</prize>
+    <total>&#8364; 2,750,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email>info@smett.mc</email>
+    <tel>+377/97-98-70-00</tel>
+    <single_winner>Rafael Nadal</single_winner>
+    <double_winners>Nenad Zimonjic, Daniel Nestor</double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>19.04.2010Live</date>
+    <name>Barcelona Open BancSabadell</name>
+    <city>Barcelona</city>
+    <country>Spain</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 1,550,000</prize>
+    <total>&#8364; 1,995,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email>mailto:info@serviticket.es</email>
+    <tel>+34 902 33 22 11</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>25.04.2010</date>
+    <name>Internazionali BNL d'Italia</name>
+    <city>Rome</city>
+    <country>Italy</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 2,227,500</prize>
+    <total>&#8364; 2,750,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email>ticketoffice@federtennis.it</email>
+    <tel>+39/06-3685-4211</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="MAY">
+  <match>
+    <category>ATP250</category>
+    <date>02.05.2010</date>
+    <name>BMW Open</name>
+    <city>Munich</city>
+    <country>Germany</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+49/89-36-81-94-0</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>03.05.2010</date>
+    <name>Serbia Open 2010</name>
+    <city>Belgrade</city>
+    <country>Serbia</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 373,200</prize>
+    <total>&#8364; 424,950</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>mailto:office@serbiaopen.rs</email>
+    <tel>+381 11 307 77 86</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>03.05.2010</date>
+    <name>Estoril Open</name>
+    <city>Estoril</city>
+    <country>Portugal</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>tennis@lagossports.com</email>
+    <tel>+351-21/303-4900</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>09.05.2010</date>
+    <name>Mutua Madrile&#241;a Madrid Open</name>
+    <city>Madrid</city>
+    <country>Spain</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 2,835,000</prize>
+    <total>&#8364; 3,700,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email>&#65279;&#65279;&#65279;&#65279;&#65279;&#65279;&#65279;&#65279;</email>
+    <tel>+34 902-1-836-47</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>16.05.2010</date>
+    <name>ARAG ATP World Team Championship</name>
+    <city>D&#252;sseldorf</city>
+    <country>Germany</country>
+    <surface>Clay</surface>
+    <prize></prize>
+    <total></total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email>mailto:tickets@arag-world-team-cup.com</email>
+    <tel>+49-211-95-96-444</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>16.05.2010</date>
+    <name>Open de Nice C&#244;te d&#8217;Azur</name>
+    <city>Nice</city>
+    <country>France</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>TBA</email>
+    <tel>TBA</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>GrandSlam</category>
+    <date>23.05.2010</date>
+    <name>Roland Garros</name>
+    <city>Paris</city>
+    <country>France</country>
+    <surface>Clay</surface>
+    <prize></prize>
+    <total></total>
+    <sgl>128</sgl>
+    <dbl>64</dbl>
+    <email></email>
+    <tel>+33/8 2665 0000</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="JUNE">
+  <match>
+    <category>ATP250</category>
+    <date>07.06.2010</date>
+    <name>Gerry Weber Open</name>
+    <city>Halle</city>
+    <country>Germany</country>
+    <surface>Grass</surface>
+    <prize>&#8364; 663,750</prize>
+    <total>&#8364; 750,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+49 5201 81 80</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>07.06.2010</date>
+    <name>AEGON Championships</name>
+    <city>London</city>
+    <country>Great Britain</country>
+    <surface>Grass</surface>
+    <prize>&#8364; 627,700</prize>
+    <total>&#8364; 713,950</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email></email>
+    <tel>+44 207 894 5005</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>13.06.2010</date>
+    <name>UNICEF Open</name>
+    <city>'s-Hertogenbosch</city>
+    <country>The Netherlands</country>
+    <surface>Grass</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>13.06.2010</date>
+    <name>AEGON International</name>
+    <city>Eastbourne</city>
+    <country>Great Britain</country>
+    <surface>Grass</surface>
+    <prize>&#8364; 405,000</prize>
+    <total>&#8364; 456,750</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+44-(0)871-945-3000</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>GrandSlam</category>
+    <date>21.06.2010</date>
+    <name>Wimbledon</name>
+    <city>Wimbledon</city>
+    <country>Great Britain</country>
+    <surface>Grass</surface>
+    <prize></prize>
+    <total></total>
+    <sgl>128</sgl>
+    <dbl>64</dbl>
+    <email></email>
+    <tel>+44-20-8971-2473</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="JULY">
+  <match>
+    <category>ATP250</category>
+    <date>05.07.2010</date>
+    <name>Campbell&#8217;s Hall of Fame Tennis Championships</name>
+    <city>Newport</city>
+    <country>U.S.A.</country>
+    <surface>Grass</surface>
+    <prize>$ 442,500</prize>
+    <total>$ 500,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email>tournament@tennisfame.com</email>
+    <tel>+1 866 914 3263</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>DavisCup</category>
+    <date>09.07.2010</date>
+    <name>Davis Cup Quarter-finals</name>
+    <city>Davis Cup</city>
+    <country></country>
+    <surface></surface>
+    <prize></prize>
+    <total></total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>12.07.2010</date>
+    <name>MercedesCup</name>
+    <city>Stuttgart</city>
+    <country>Germany</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+49/711-1654-342</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>12.07.2010</date>
+    <name>SkiStar Swedish Open</name>
+    <city>B&#229;stad</city>
+    <country>Sweden</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+ 46 431 750 75</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>19.07.2010</date>
+    <name>International German Open</name>
+    <city>Hamburg</city>
+    <country>Germany</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 1,000,000</prize>
+    <total>&#8364; 1,115,000</total>
+    <sgl>48</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+49 40 4117 8411</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>19.07.2010</date>
+    <name>Atlanta Tennis Championships</name>
+    <city>Atlanta</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 531,000</prize>
+    <total>$ 600,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>25.07.2010</date>
+    <name>Allianz Suisse Open Gstaad</name>
+    <city>Gstaad</city>
+    <country>Switzerland</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+41 (0)33 748 81 82</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>26.07.2010</date>
+    <name>LA Tennis Open</name>
+    <city>Los Angeles</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 619,500</prize>
+    <total>$ 700,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1-877-LA-TENNIS</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>26.07.2010</date>
+    <name>ATP Studena Croatia Open</name>
+    <city>Umag</city>
+    <country>Croatia</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>dolores.krajcar@istraturist.hr</email>
+    <tel>+385 52 710 880</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="AUGUST">
+  <match>
+    <category>ATP500</category>
+    <date>01.08.2010</date>
+    <name>Legg Mason Tennis Classic</name>
+    <city>Washington D.C.</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 1,165,500</prize>
+    <total>$ 1,402,000</total>
+    <sgl>48</sgl>
+    <dbl>16</dbl>
+    <email>tournamentinfo@experienceBEST.com</email>
+    <tel>+1 202 721 9500</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>09.08.2010</date>
+    <name>Rogers Cup</name>
+    <city>Toronto</city>
+    <country>Canada</country>
+    <surface>Hard</surface>
+    <prize>$ 2,430,000</prize>
+    <total>$ 3,000,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email></email>
+    <tel>1-877-2-TENNIS (283-6647)</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>15.08.2010</date>
+    <name>Western &amp; Southern Financial Group Masters</name>
+    <city>Cincinnati</city>
+    <country>U.S.A</country>
+    <surface>Hard</surface>
+    <prize>$ 2,430,000</prize>
+    <total>$ 3,000,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email></email>
+    <tel>+1-513-651-0303</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>22.08.2010</date>
+    <name>Pilot Pen Tennis</name>
+    <city>New Haven</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize>$ 663,750</prize>
+    <total>$ 750,000</total>
+    <sgl>48</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+1 888 997 4568</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>GrandSlam</category>
+    <date>30.08.2010</date>
+    <name>US Open</name>
+    <city>New York</city>
+    <country>U.S.A.</country>
+    <surface>Hard</surface>
+    <prize></prize>
+    <total></total>
+    <sgl>128</sgl>
+    <dbl>64</dbl>
+    <email></email>
+    <tel>+1-914-696-7200</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="SEPTEMBER">
+  <match>
+    <category>DavisCup</category>
+    <date>17.09.2010</date>
+    <name>Davis Cup Semi-finals</name>
+    <city>Davis Cup</city>
+    <country></country>
+    <surface></surface>
+    <prize></prize>
+    <total></total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>20.09.2010</date>
+    <name>Open de Moselle</name>
+    <city>Metz</city>
+    <country>France</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 398,250</prize>
+    <total>&#8364; 450,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+33-(0)810-08-08-48</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>20.09.2010</date>
+    <name>BCR Open Romania</name>
+    <city>Bucharest</city>
+    <country>Romania</country>
+    <surface>Clay</surface>
+    <prize>&#8364; 368,450</prize>
+    <total>&#8364; 420,200</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+40 730 TENNIS (+40 723 836647)</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>27.09.2010</date>
+    <name>PTT Thailand Open</name>
+    <city>Bangkok</city>
+    <country>Thailand</country>
+    <surface>Hard</surface>
+    <prize>$ 551,000</prize>
+    <total>$ 608,500</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+66 2 262 3456</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>27.09.2010</date>
+    <name>Proton Malaysian Open, Kuala Lumpur 2010</name>
+    <city>Kuala Lumpur</city>
+    <country>Malaysia</country>
+    <surface>Indoor Hard</surface>
+    <prize>$ 850,000</prize>
+    <total>$ 947,750</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+60 3 7880 7999</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="OCTOBER">
+  <match>
+    <category>ATP500</category>
+    <date>04.10.2010</date>
+    <name>China Open</name>
+    <city>Beijing</city>
+    <country>China</country>
+    <surface>Hard</surface>
+    <prize>$ 2,100,000</prize>
+    <total>$ 3,336,500</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+8610-5820-8725</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>04.10.2010</date>
+    <name>Rakuten Japan Open Tennis Championships</name>
+    <city>Tokyo</city>
+    <country>Japan</country>
+    <surface>Hard</surface>
+    <prize>$ 1,100,000</prize>
+    <total>$ 1,226,500</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+ 81 3 3481 2511</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>10.10.2010</date>
+    <name>Shanghai Rolex Masters</name>
+    <city>Shanghai</city>
+    <country>China</country>
+    <surface>Hard</surface>
+    <prize>$ 3,240,000</prize>
+    <total>$ 5,250,000</total>
+    <sgl>56</sgl>
+    <dbl>24</dbl>
+    <email></email>
+    <tel>English: +8621 962288, +8621 962388, +8621 6333 6201</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>18.10.2010</date>
+    <name>If Stockholm Open</name>
+    <city>Stockholm</city>
+    <country>Sweden</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 531,000</prize>
+    <total>&#8364; 600,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+46 (0) 771 45 46 00</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>18.10.2010</date>
+    <name>Kremlin Cup</name>
+    <city>Moscow</city>
+    <country>Russia</country>
+    <surface>Indoor Hard</surface>
+    <prize>$ 1,000,000</prize>
+    <total>$ 1,080,500</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>ticket@russport.ru</email>
+    <tel>+7-495-105-7777</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>24.10.2010</date>
+    <name>St. Petersburg Open</name>
+    <city>St. Petersburg</city>
+    <country>Russia</country>
+    <surface>Indoor Hard</surface>
+    <prize>$ 663,750</prize>
+    <total>$ 750,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email>office@spbopen.ru</email>
+    <tel>+7 812 326 5544</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>25.10.2010</date>
+    <name>Bank Austria TennisTrophy</name>
+    <city>Vienna</city>
+    <country>Austria</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 575,250</prize>
+    <total>&#8364; 650,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+43 1 7999 979</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP250</category>
+    <date>25.10.2010</date>
+    <name>Grand Prix de Tennis de Lyon</name>
+    <city>Lyon</city>
+    <country>France</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 575,250</prize>
+    <total>&#8364; 650,000</total>
+    <sgl>28</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+33-(0)810-08-08-48</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP500</category>
+    <date>31.10.2010</date>
+    <name>Valencia Open 500</name>
+    <city>Valencia</city>
+    <country>Spain</country>
+    <surface>Hard</surface>
+    <prize>&#8364; 1,357,000</prize>
+    <total>&#8364; 2,019,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email>david.serrahima@octagon.com</email>
+    <tel>+34 938 182 900</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="NOVEMBER">
+  <match>
+    <category>ATP500</category>
+    <date>01.11.2010</date>
+    <name>Swiss Indoors Basel</name>
+    <city>Basel</city>
+    <country>Switzerland</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#8364; 1,225,000</prize>
+    <total>&#8364; 1,755,000</total>
+    <sgl>32</sgl>
+    <dbl>16</dbl>
+    <email></email>
+    <tel>+41 900552225</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP1000</category>
+    <date>07.11.2010</date>
+    <name>BNP Paribas Masters</name>
+    <city>Paris</city>
+    <country>France</country>
+    <surface>Hard</surface>
+    <prize>&#8364; 2,227,500</prize>
+    <total>&#8364; 2,750,000</total>
+    <sgl>48</sgl>
+    <dbl>24</dbl>
+    <email></email>
+    <tel>+33 1-46-91-57-57</tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+  <match>
+    <category>ATP_FINALS</category>
+    <date>21.11.2010</date>
+    <name>Barclays ATP World Tour Finals</name>
+    <city>London</city>
+    <country>England</country>
+    <surface>Indoor Hard</surface>
+    <prize>&#163; 2,227,500</prize>
+    <total>&#163; 5,000,000</total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
+<month name="DECEMBER">
+  <match>
+    <category>DavisCup</category>
+    <date>04.12.2009</date>
+    <name>Davis Cup World Group Final</name>
+    <city>Davis Cup</city>
+    <country></country>
+    <surface>Grass</surface>
+    <prize></prize>
+    <total></total>
+    <sgl></sgl>
+    <dbl></dbl>
+    <email></email>
+    <tel></tel>
+    <single_winner></single_winner>
+    <double_winners></double_winners>
+  </match>
+</month>
