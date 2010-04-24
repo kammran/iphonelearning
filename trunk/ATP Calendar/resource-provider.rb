@@ -18,7 +18,9 @@ class ResourceProvider
 		builder_doc = Builder::XmlMarkup.new(:target => xml, :indent => 2) 
 		builder_doc.instruct!
 
+		puts "Loading #{@@url}"
 		src_doc = open(@@url) { |f| Hpricot(f) }
+		puts "Successfully loaded #{@@url}"
 		elements = src_doc.search("//div[@class='calendarTable']")
 
 		builder_doc.root do |builder_root|		
@@ -71,12 +73,10 @@ class ResourceProvider
 							builder_match.dbl(dbl)
 						when 6 
 							ticketInfo = td.inner_html.strip
-							puts ticketInfo
 							emailHref = td.at('a')
 							email = '' if emailHref.nil?
 							email = emailHref.attributes['href'].gsub(/[mailto:]+(.*)/) {|m| $1} if !emailHref.nil?
 							tel = ticketInfo.gsub(/<a.*<\/a>/, '').gsub(/<br \/>/, '')
-							puts email
 							builder_match.email(email)
 							builder_match.tel(tel)
 						when 7
