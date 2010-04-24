@@ -7,16 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
-
+@class Match;
 
 @interface Month2Matches : NSObject {
 	NSString *month;
-	NSArray *matches;
+	NSMutableArray *matches;
 }
 
 @property (nonatomic, retain) NSString *month;
 @property (nonatomic, retain) NSArray *matches;
 
-- (id)initWithMonth:(NSString *)theMonth matches:(NSArray *)theMatches;
+- (id)initWithName:(NSString *)theName;
+- (Month2Matches *)addMatch:(Match *)match;
 
 @end

@@ -49,7 +49,7 @@
 	[ticketInfo release];			  
 	NSMutableString *winners = [[NSMutableString alloc] init];
 	self.singleWinnerLabel.text = [NSString stringWithFormat:@"Singles : %@", match.singleWinner];
-	self.doubleWinnersLabel.text = [NSString stringWithFormat:@"Doubles : %@", [match.doubleWinners componentsJoinedByString:@", "]];
+	self.doubleWinnersLabel.text = [NSString stringWithFormat:@"Doubles : %@", [match.doubleWinners componentsJoinedByString:@","]];
 	[winners release];
 }
 

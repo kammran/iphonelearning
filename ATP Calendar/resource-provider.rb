@@ -21,11 +21,14 @@ class ResourceProvider
 		src_doc = open(@@url) { |f| Hpricot(f) }
 		elements = src_doc.search("//div[@class='calendarTable']")
 
+		builder_doc.root do |builder_root|		
+
 		elements.each do |monthElement|
 			month = monthElement.at('h4').inner_text	
-			builder_doc.month(:name => month) do |builder_month|
+			builder_root.month do |builder_month|
+				builder_month.name(month)
+
 				monthElement.search("//tr[@class='calendarFilterItem']").each do |matchRow|
-					
 					builder_month.match do |builder_match|
 
 					columns = matchRow.search('td')				
@@ -68,10 +71,12 @@ class ResourceProvider
 							builder_match.dbl(dbl)
 						when 6 
 							ticketInfo = td.inner_html.strip
+							puts ticketInfo
 							emailHref = td.at('a')
 							email = '' if emailHref.nil?
-							email = emailHref.attributes['href'].gsub(/mailto:(.*)/) {|m| $1} if !emailHref.nil?
+							email = emailHref.attributes['href'].gsub(/[mailto:]+(.*)/) {|m| $1} if !emailHref.nil?
 							tel = ticketInfo.gsub(/<a.*<\/a>/, '').gsub(/<br \/>/, '')
+							puts email
 							builder_match.email(email)
 							builder_match.tel(tel)
 						when 7
@@ -85,6 +90,7 @@ class ResourceProvider
 					end
 					end					
 				end
+			end
 			end
 		end
 		

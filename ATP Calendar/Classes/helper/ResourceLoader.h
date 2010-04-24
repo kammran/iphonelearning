@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "GDataXMLNode-Extension.h"
 
 #define ATP250		@"ATP250";
 #define GRAND_SLAM	@"GrandSlam";
+
 
 @interface ResourceLoader : NSObject {
 
