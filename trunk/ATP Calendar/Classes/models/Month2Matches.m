@@ -7,18 +7,29 @@
 //
 
 #import "Month2Matches.h"
-
+#import "Match.h"
 
 @implementation Month2Matches
 @synthesize month;
 @synthesize matches;
 
-- (id)initWithMonth:(NSString *)theMonth matches:(NSArray *)theMatches {
+- (id)initWithName:(NSString *)theMonth {
 	if (self = [super init]) {
 		self.month = theMonth;
-		self.matches = theMatches;
+		self.matches = [[NSMutableArray alloc] init];
 	}
 	return self;
+}
+
+- (Month2Matches *)addMatch:(Match *)match {
+	[matches addObject:match];
+	return self;
+}
+
+- (void)dealloc {
+	[self.month release];
+	[self.matches release];
+	[super dealloc];
 }
 
 @end

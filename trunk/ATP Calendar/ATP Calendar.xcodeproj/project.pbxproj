@@ -16,7 +16,6 @@
 		09946FC6117F3BB700A0403D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09946FC5117F3BB700A0403D /* Default.png */; };
 		099668BC1178989C00AEF5AC /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */; };
 		099669A31178AC5500AEF5AC /* MatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */; };
-		099669C01178B19B00AEF5AC /* ATP250.png in Resources */ = {isa = PBXBuildFile; fileRef = 099669BF1178B19B00AEF5AC /* ATP250.png */; };
 		1A474A4C1180C3E0004A9572 /* Brisbane International-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A421180C3E0004A9572 /* Brisbane International-0.png */; };
 		1A474A4D1180C3E0004A9572 /* Brisbane International-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A431180C3E0004A9572 /* Brisbane International-1.png */; };
 		1A474A4F1180C3E0004A9572 /* Brisbane International-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A451180C3E0004A9572 /* Brisbane International-3.png */; };
@@ -27,10 +26,18 @@
 		1A474A541180C3E0004A9572 /* Brisbane International-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A4A1180C3E0004A9572 /* Brisbane International-8.png */; };
 		1A474A551180C3E0004A9572 /* Brisbane International-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A4B1180C3E0004A9572 /* Brisbane International-9.png */; };
 		1A474A591180C4E2004A9572 /* Brisbane International-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A581180C4E2004A9572 /* Brisbane International-2.png */; };
-		1A9BD9221178CAD800245AE6 /* GrandSlam.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9211178CAD800245AE6 /* GrandSlam.png */; };
+		1A5A560E11834AAD00499565 /* data.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A560D11834AAD00499565 /* data.xml */; };
+		1A5A563911834FA100499565 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A563811834FA100499565 /* GDataXMLNode.m */; };
+		1A5A56F511835E0700499565 /* GDataXMLNode-Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5A56F411835E0700499565 /* GDataXMLNode-Extension.m */; };
+		1A5A583111836F6100499565 /* atp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A582A11836F6100499565 /* atp.png */; };
+		1A5A583211836F6100499565 /* ATP_FINALS.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A582B11836F6100499565 /* ATP_FINALS.png */; };
+		1A5A583411836F6100499565 /* ATP500.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A582D11836F6100499565 /* ATP500.png */; };
+		1A5A583511836F6100499565 /* ATP1000.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A582E11836F6100499565 /* ATP1000.png */; };
+		1A5A583611836F6100499565 /* DavisCup.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A582F11836F6100499565 /* DavisCup.png */; };
+		1A5A583711836F6100499565 /* GrandSlam.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A583011836F6100499565 /* GrandSlam.png */; };
+		1A5A584C118371BC00499565 /* ATP250.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A584B118371BC00499565 /* ATP250.png */; };
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
-		1AE35FD411778100001243DD /* atp.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE35FD311778100001243DD /* atp.png */; };
 		1AE35FFA11778560001243DD /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE35FF911778560001243DD /* Context.m */; };
 		1AE36060117788F9001243DD /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3605F117788F9001243DD /* NSObject-Dialog.m */; };
 		1AE360A411778E02001243DD /* UITableView-WithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE360A311778E02001243DD /* UITableView-WithCell.m */; };
@@ -61,7 +68,6 @@
 		099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceLoader.m; sourceTree = "<group>"; };
 		099669A11178AC5500AEF5AC /* MatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchListViewController.h; sourceTree = "<group>"; };
 		099669A21178AC5500AEF5AC /* MatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchListViewController.m; sourceTree = "<group>"; };
-		099669BF1178B19B00AEF5AC /* ATP250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP250.png; sourceTree = "<group>"; };
 		1A474A421180C3E0004A9572 /* Brisbane International-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-0.png"; sourceTree = "<group>"; };
 		1A474A431180C3E0004A9572 /* Brisbane International-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-1.png"; sourceTree = "<group>"; };
 		1A474A451180C3E0004A9572 /* Brisbane International-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-3.png"; sourceTree = "<group>"; };
@@ -72,11 +78,21 @@
 		1A474A4A1180C3E0004A9572 /* Brisbane International-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-8.png"; sourceTree = "<group>"; };
 		1A474A4B1180C3E0004A9572 /* Brisbane International-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-9.png"; sourceTree = "<group>"; };
 		1A474A581180C4E2004A9572 /* Brisbane International-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-2.png"; sourceTree = "<group>"; };
-		1A9BD9211178CAD800245AE6 /* GrandSlam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrandSlam.png; sourceTree = "<group>"; };
+		1A5A560D11834AAD00499565 /* data.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = data.xml; sourceTree = "<group>"; };
+		1A5A563711834FA100499565 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		1A5A563811834FA100499565 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		1A5A56F311835E0700499565 /* GDataXMLNode-Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXMLNode-Extension.h"; sourceTree = "<group>"; };
+		1A5A56F411835E0700499565 /* GDataXMLNode-Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDataXMLNode-Extension.m"; sourceTree = "<group>"; };
+		1A5A582A11836F6100499565 /* atp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atp.png; sourceTree = "<group>"; };
+		1A5A582B11836F6100499565 /* ATP_FINALS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP_FINALS.png; sourceTree = "<group>"; };
+		1A5A582D11836F6100499565 /* ATP500.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP500.png; sourceTree = "<group>"; };
+		1A5A582E11836F6100499565 /* ATP1000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP1000.png; sourceTree = "<group>"; };
+		1A5A582F11836F6100499565 /* DavisCup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DavisCup.png; sourceTree = "<group>"; };
+		1A5A583011836F6100499565 /* GrandSlam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GrandSlam.png; sourceTree = "<group>"; };
+		1A5A584B118371BC00499565 /* ATP250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP250.png; sourceTree = "<group>"; };
 		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
 		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
-		1AE35FD311778100001243DD /* atp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = atp.png; sourceTree = "<group>"; };
 		1AE35FF811778560001243DD /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		1AE35FF911778560001243DD /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
 		1AE3605E117788F9001243DD /* NSObject-Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Dialog.h"; sourceTree = "<group>"; };
@@ -121,6 +137,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1A5A563611834F7900499565 /* xml */,
 				0952A72F1180789B008970A6 /* coverflow */,
 				1AE360D31177916F001243DD /* models */,
 				1AE3616E11779E51001243DD /* controllers */,
@@ -166,6 +183,31 @@
 			path = "Brisbane International";
 			sourceTree = "<group>";
 		};
+		1A5A563611834F7900499565 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A563711834FA100499565 /* GDataXMLNode.h */,
+				1A5A563811834FA100499565 /* GDataXMLNode.m */,
+				1A5A56F311835E0700499565 /* GDataXMLNode-Extension.h */,
+				1A5A56F411835E0700499565 /* GDataXMLNode-Extension.m */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		1A5A582911836F3900499565 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1A5A584B118371BC00499565 /* ATP250.png */,
+				1A5A582A11836F6100499565 /* atp.png */,
+				1A5A582B11836F6100499565 /* ATP_FINALS.png */,
+				1A5A582D11836F6100499565 /* ATP500.png */,
+				1A5A582E11836F6100499565 /* ATP1000.png */,
+				1A5A582F11836F6100499565 /* DavisCup.png */,
+				1A5A583011836F6100499565 /* GrandSlam.png */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
 		1A9BDA2E1178D89500245AE6 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,11 +219,9 @@
 		1AE35FD2117780D8001243DD /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1A5A582911836F3900499565 /* Categories */,
 				09946FC5117F3BB700A0403D /* Default.png */,
 				1A9BDA2E1178D89500245AE6 /* Matches */,
-				1A9BD9211178CAD800245AE6 /* GrandSlam.png */,
-				099669BF1178B19B00AEF5AC /* ATP250.png */,
-				1AE35FD311778100001243DD /* atp.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -260,6 +300,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A5A560D11834AAD00499565 /* data.xml */,
 				1AE35FD2117780D8001243DD /* Images */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
@@ -333,9 +374,6 @@
 			files = (
 				28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */,
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
-				1AE35FD411778100001243DD /* atp.png in Resources */,
-				099669C01178B19B00AEF5AC /* ATP250.png in Resources */,
-				1A9BD9221178CAD800245AE6 /* GrandSlam.png in Resources */,
 				1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */,
 				09946FA4117F374400A0403D /* MatchImageCoverFlowView.xib in Resources */,
 				09946FC6117F3BB700A0403D /* Default.png in Resources */,
@@ -349,6 +387,14 @@
 				1A474A541180C3E0004A9572 /* Brisbane International-8.png in Resources */,
 				1A474A551180C3E0004A9572 /* Brisbane International-9.png in Resources */,
 				1A474A591180C4E2004A9572 /* Brisbane International-2.png in Resources */,
+				1A5A560E11834AAD00499565 /* data.xml in Resources */,
+				1A5A583111836F6100499565 /* atp.png in Resources */,
+				1A5A583211836F6100499565 /* ATP_FINALS.png in Resources */,
+				1A5A583411836F6100499565 /* ATP500.png in Resources */,
+				1A5A583511836F6100499565 /* ATP1000.png in Resources */,
+				1A5A583611836F6100499565 /* DavisCup.png in Resources */,
+				1A5A583711836F6100499565 /* GrandSlam.png in Resources */,
+				1A5A584C118371BC00499565 /* ATP250.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +419,8 @@
 				09946FA1117F372800A0403D /* MatchImageCoverFlowViewController.m in Sources */,
 				0952A759118079FB008970A6 /* DataCache.m in Sources */,
 				0952A76C11807A8A008970A6 /* FlowCoverView.m in Sources */,
+				1A5A563911834FA100499565 /* GDataXMLNode.m in Sources */,
+				1A5A56F511835E0700499565 /* GDataXMLNode-Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +436,13 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = ATP_Calendar_Prefix.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
 				INFOPLIST_FILE = "ATP_Calendar-Info.plist";
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
 				PRODUCT_NAME = "ATP Calendar";
 			};
 			name = Debug;

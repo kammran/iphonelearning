@@ -33,7 +33,6 @@
 	if (self = [super init]) {
 		self.name = theName;
 		self.singleWinner = @"";
-		self.doubleWinners = [[NSArray alloc] initWithObjects:nil];
 	}
 	return self;
 }
