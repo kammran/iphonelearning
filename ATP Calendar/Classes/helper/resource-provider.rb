@@ -5,9 +5,13 @@ require 'open-uri'
 require 'hpricot'
 require 'builder' 
 
-class ResourceLoader
+class ResourceProvider
+	
+	def generate
+		xml
+	end
 
-	def load
+	def xml
 		xml = '' 
 		builder_doc = Builder::XmlMarkup.new(:target => xml, :indent => 2) 
 		builder_doc.instruct!
@@ -78,13 +82,11 @@ class ResourceLoader
 						end
 					end
 					end					
-
 				end
 			end
 		end
 		
 		xml
-
 	end
 
 	def strip_safely(obj)
@@ -92,11 +94,18 @@ class ResourceLoader
 	end
 	
 	def category_of(img_src)
-		#TODO implement
-		"ATP 250"
+		return "DavisCup" if img_src.nil?		
+		h = {
+			'810218DC73784BEEA6EF0978B2842A69' => 'ATP250',
+			'1DB04CA8505648B7B511FA1E37F1E3BA' => 'ATP500',
+			'F5219431817E4ED3B773BF9B006A9ACF' => 'ATP1000',
+			'47F12472FD254B08B57755E5B7565E5D' => 'ATP_FINALS',
+			'14B53566CC54409F99A8423521E30D18' => 'GrandSlam'
+		}	
+		img_name = Regexp.new("/~/media/(.+)\.ashx.*").match(img_src)[1]
+		h[img_name]
 	end
 
 end
 
-
-puts ResourceLoader.new.load
+puts ResourceProvider.new.generate
