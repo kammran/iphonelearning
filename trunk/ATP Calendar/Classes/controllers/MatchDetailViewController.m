@@ -28,11 +28,21 @@
 	self.nameLabel.text = match.name;
 	self.categoryImageView.image = [match categoryImage];
 	self.dateLabel.text = match.date;
-	NSString *tournament = [[NSString alloc] initWithFormat:@"%@, %@", match.city, match.country];
+	NSMutableString *tournament = [[NSMutableString alloc] init];
+	[tournament appendString:match.city];
+	if (match.country != nil && [match.country length] > 0) {
+		[tournament appendFormat:@", %@", match.country];
+	} 
 	self.tournamentLabel.text = tournament;
 	[tournament release];
 	self.surfaceLabel.text = match.surface;
-	NSString *prizeMoney = [[NSString alloc] initWithFormat:@"%@ (%@)", match.prizeMoney, match.totalFinancialCommitment];
+	NSMutableString *prizeMoney = [[NSMutableString alloc] init];
+	if (match.prizeMoney != nil && [match.prizeMoney length] > 0) {
+		[prizeMoney appendString:match.prizeMoney];
+	}
+	if (match.totalFinancialCommitment != nil && [match.totalFinancialCommitment length] >0) {
+		[prizeMoney appendFormat:@" (%@)", match.totalFinancialCommitment];
+	}
 	self.prizeMoneyLabel.text = prizeMoney;
 	[prizeMoney release];
 	NSString *draw = [[NSString alloc] initWithFormat:@"SGL %d DBL %d", match.singleDraw, match.doubleDraw];
@@ -40,7 +50,7 @@
 	[draw release];
 	[self.websiteButton setTitle:match.website forState:UIControlStateNormal];
 	NSString *ticketInfo = nil;
-	if (match.ticketEmail != nil) {
+	if (match.ticketEmail != nil && [match.ticketEmail length] > 0) {
 		ticketInfo = [[NSString alloc] initWithFormat:@"%@ %@", match.ticketEmail, match.ticketPhone];
 	} else {
 		ticketInfo = [[NSString alloc] initWithFormat:@"%@", match.ticketPhone];
