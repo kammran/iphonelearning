@@ -7,6 +7,8 @@ require 'builder'
 
 class ResourceProvider
 	
+	@@url = 'http://www.atpworldtour.com/Tournaments/Event-Calendar.aspx' 	
+
 	def generate
 		File.open('data.xml', 'w') {|f| f.write xml}
 	end
@@ -16,7 +18,7 @@ class ResourceProvider
 		builder_doc = Builder::XmlMarkup.new(:target => xml, :indent => 2) 
 		builder_doc.instruct!
 
-		src_doc = open("Event-Calendar.aspx") { |f| Hpricot(f) }
+		src_doc = open(@@url) { |f| Hpricot(f) }
 		elements = src_doc.search("//div[@class='calendarTable']")
 
 		elements.each do |monthElement|
