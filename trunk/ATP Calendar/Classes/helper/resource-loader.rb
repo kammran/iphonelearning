@@ -15,6 +15,11 @@ class ResourceLoader
 			month = monthElement.at('h4').inner_text	
 			puts month
 			monthElement.search("//tr[@class='calendarFilterItem']").each do |matchRow|
+				
+				#puts matchRow.inner_text
+
+				next if !(matchRow.inner_text =~ /.*Singles.*Doubles.*/m)
+
 				columns = matchRow.search('td')				
 				columns.size.times do |index|
 					td = columns[index]
@@ -46,6 +51,28 @@ class ResourceLoader
 						total = stripSafely($2)
 						puts prize
 						puts total
+					when 5
+						draw = stripSafely(td.inner_text)
+						draw =~ /SGL.*?(\d+).*DBL.*?(\d+)/m
+						sgl = stripSafely($1) 
+						dbl = stripSafely($2)
+						puts sgl
+						puts dbl
+					when 6 
+						ticketInfo = td.inner_html.strip
+						emailHref = td.at('a')
+						email = '' if emailHref.nil?
+						email = emailHref.attributes['href'].gsub(/mailto:(.*)/) {|m| $1} if !emailHref.nil?
+						puts email
+						tel = ticketInfo.gsub(/<a.*<\/a>/, '').gsub(/<br \/>/, '')
+						puts tel
+					when 7
+						winners = td.inner_text.strip
+						winners =~ /.*Singles.*:(.+)Doubles.*:(.+)/m
+						singleWinner = stripSafely($1) 
+						doubleWinners = stripSafely($2)
+						puts singleWinner
+						puts doubleWinners
 					end
 				end
 
