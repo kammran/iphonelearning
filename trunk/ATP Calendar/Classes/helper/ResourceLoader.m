@@ -36,7 +36,6 @@
 			match.date = [matchElement stringValueForName:@"date"];
 			match.doubleDraw = [[matchElement stringValueForName:@"dbl"] intValue];
 			NSString *doubleWinners = [matchElement stringValueForName:@"double_winners"];
-			NSLog(@"%@", doubleWinners);
 			match.doubleWinners = [doubleWinners componentsSeparatedByString:@","];
 			match.prizeMoney = [matchElement stringValueForName:@"prize"];
 			match.singleDraw = [[matchElement stringValueForName:@"sgl"] intValue];
