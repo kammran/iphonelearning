@@ -18,6 +18,8 @@
     [super viewDidLoad];
 }
 
+#pragma mark -
+#pragma mark Autororate Methods
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
 }

@@ -9,6 +9,7 @@
 #import "MatchDetailViewController.h"
 #import "Match.h"
 #import "MatchWebViewController.h"
+#import "MatchImageCoverFlowViewController.h"
 
 @implementation MatchDetailViewController
 @synthesize match;
@@ -70,11 +71,23 @@
 	if (currentTitle != nil) {
 		MatchWebViewController *webViewController = [[MatchWebViewController alloc] initWithNibName:@"MatchWebView" bundle:nil];
 		NSString *url = [[NSString alloc] initWithFormat:@"%@?redirect_by=iphone_atp_calendar", currentTitle];
+		webViewController.title = @"Loading...";
 		webViewController.url = url;
 		[self.navigationController pushViewController:webViewController animated:YES];								
 		[url release];
 		[webViewController release];
 	}
+}
+
+- (IBAction)showPictures:(id)sender {
+	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
+	coverFlowController.match = self.match;
+	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
+	coverFlowController.title = title;
+	[title release];
+	[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
+	[self.navigationController pushViewController:coverFlowController animated:YES];
+	[coverFlowController release];	
 }
 
 - (void)viewDidLoad {
