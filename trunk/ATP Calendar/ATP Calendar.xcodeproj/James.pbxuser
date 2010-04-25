@@ -35,7 +35,7 @@
 	099669A21178AC5500AEF5AC /* MatchListViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 1248}}";
-			sepNavSelRange = "{1293, 0}";
+			sepNavSelRange = "{1302, 0}";
 			sepNavVisRange = "{53, 475}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
@@ -418,7 +418,7 @@
 		fRef = 09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */;
 		name = "MatchImageCoverFlowViewController.m: 28";
 		rLen = 0;
-		rLoc = 685;
+		rLoc = 700;
 		rType = 0;
 		vrLen = 881;
 		vrLoc = 328;
@@ -448,7 +448,7 @@
 		fRef = 09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */;
 		name = "MatchImageCoverFlowViewController.m: 28";
 		rLen = 0;
-		rLoc = 685;
+		rLoc = 700;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 328;
@@ -1051,7 +1051,7 @@
 		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
 		name = "MatchListViewController.m: 42";
 		rLen = 0;
-		rLoc = 1293;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 53;
@@ -1060,7 +1060,7 @@
 		isa = PBXTextBookmark;
 		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
 		name = "MatchListViewController.m: 42";
-		rLen = 2;
+		rLen = 0;
 		rLoc = 1237;
 		rType = 0;
 		vrLen = 1354;
@@ -1075,7 +1075,7 @@
 		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
 		name = "MatchListViewController.m: 42";
 		rLen = 0;
-		rLoc = 1293;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 53;
@@ -1095,7 +1095,7 @@
 		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
 		name = "MatchListViewController.m: 42";
 		rLen = 0;
-		rLoc = 1293;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 475;
 		vrLoc = 53;
@@ -1109,6 +1109,40 @@
 		rType = 0;
 		vrLen = 1410;
 		vrLoc = 2413;
+	};
+	1A6DAD0311848D420035A968 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
+	};
+	1A6DAD0611848D5B0035A968 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
+		name = "MatchListViewController.m: 42";
+		rLen = 0;
+		rLoc = 1302;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 53;
+	};
+	1A6DAD0911848D5B0035A968 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
+		name = "MatchListViewController.m: 42";
+		rLen = 0;
+		rLoc = 1302;
+		rType = 0;
+		vrLen = 1196;
+		vrLoc = 407;
+	};
+	1A6DAD1211848EC30035A968 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
+		name = "MatchListViewController.m: 42";
+		rLen = 0;
+		rLoc = 1302;
+		rType = 0;
+		vrLen = 490;
+		vrLoc = 53;
 	};
 	1A9BD91E1178CA6D00245AE6 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1130,9 +1164,9 @@
 	};
 	1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1284, 1968}}";
-			sepNavSelRange = "{2839, 0}";
-			sepNavVisRange = "{2413, 1410}";
+			sepNavIntBoundsRect = "{{0, 0}, {1284, 1936}}";
+			sepNavSelRange = "{3389, 0}";
+			sepNavVisRange = "{1851, 1739}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -1168,7 +1202,7 @@
 		fRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */;
 		name = "MatchListViewController.m: 47";
 		rLen = 0;
-		rLoc = 1293;
+		rLoc = 1282;
 		rType = 0;
 		vrLen = 497;
 		vrLoc = 0;
@@ -1265,7 +1299,7 @@
 		fRef = 09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */;
 		name = "MatchImageCoverFlowViewController.m: 22";
 		rLen = 0;
-		rLoc = 622;
+		rLoc = 624;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 258;
@@ -1589,7 +1623,7 @@
 		activeArchitecturePreference = armv6;
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 1AE35FBE117780B4001243DD /* ATP Calendar */;
-		activeSDKPreference = iphonesimulator3.1.2;
+		activeSDKPreference = iphoneos3.1.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* ATP Calendar */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* ATP Calendar */,
@@ -1776,6 +1810,10 @@
 			1A6DACFC11848A760035A968 /* PBXTextBookmark */ = 1A6DACFC11848A760035A968 /* PBXTextBookmark */;
 			1A6DACFF11848A8D0035A968 /* PBXTextBookmark */ = 1A6DACFF11848A8D0035A968 /* PBXTextBookmark */;
 			1A6DAD0011848A8D0035A968 /* PBXTextBookmark */ = 1A6DAD0011848A8D0035A968 /* PBXTextBookmark */;
+			1A6DAD0311848D420035A968 /* PBXBookmark */ = 1A6DAD0311848D420035A968 /* PBXBookmark */;
+			1A6DAD0611848D5B0035A968 /* PBXTextBookmark */ = 1A6DAD0611848D5B0035A968 /* PBXTextBookmark */;
+			1A6DAD0911848D5B0035A968 /* PBXTextBookmark */ = 1A6DAD0911848D5B0035A968 /* PBXTextBookmark */;
+			1A6DAD1211848EC30035A968 /* PBXTextBookmark */ = 1A6DAD1211848EC30035A968 /* PBXTextBookmark */;
 			1A9BD91E1178CA6D00245AE6 = 1A9BD91E1178CA6D00245AE6 /* PBXTextBookmark */;
 			1A9BD9FD1178D6C100245AE6 = 1A9BD9FD1178D6C100245AE6 /* PBXTextBookmark */;
 			1A9BD9FE1178D6C100245AE6 = 1A9BD9FE1178D6C100245AE6 /* PBXTextBookmark */;
