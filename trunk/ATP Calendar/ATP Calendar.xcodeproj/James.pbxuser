@@ -2,9 +2,9 @@
 {
 	09946FA0117F372800A0403D /* MatchImageCoverFlowViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1214, 1120}}";
-			sepNavSelRange = "{685, 0}";
-			sepNavVisRange = "{328, 812}";
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 1088}}";
+			sepNavSelRange = "{698, 0}";
+			sepNavVisRange = "{240, 861}";
 			sepNavWindowFrame = "{{7, 62}, {1273, 716}}";
 		};
 	};
