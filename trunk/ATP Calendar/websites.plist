@@ -61,6 +61,88 @@
 	<key>Estoril Open</key>
 	<string>http://www.estorilopen.net/</string>
 	<key>Mutua Madrileña Madrid Open</key>
-	<string>http://aaa.com</string>
+	<string>http://www.madrid-open.com/</string>
+	<key>ARAG ATP World Team Championship</key>
+	<string>http://www.arag-world-team-cup.com/en/</string>
+	<key>Open de Nice Côte d’Azur</key>
+	<string>http://www.atpworldtour.com/Tennis/Tournaments/Nice.aspx</string>
+	<key>Roland Garros</key>
+	<string>http://www.rolandgarros.com/index.html</string>
+	<key>Gerry Weber Open</key>
+	<string>http://www.gerryweber-open.com/</string>
+	<key>AEGON Championships</key>
+	<string>http://www.aegonchampionships.atponline.net/</string>
+	<key>UNICEF Open</key>
+	<string>http://www.unicefopen.nl/</string>
+	<key>AEGON International</key>
+	<string>http://www.lta.org.uk/watch/aegon-british-tennis-series/aegon-international/</string>
+	<key>Wimbledon</key>
+	<string>http://www.wimbledon.org/en_GB/index.html</string>
+	<key>Campbell’s Hall of Fame Tennis Championships</key>
+	<string>https://www.abetterchance.org/index.aspx</string>
+	<key>Davis Cup Quarter-finals</key>
+	<string>http://www.daviscup.com/</string>
+	<key>MercedesCup</key>
+	<string>http://www.mercedescup.de/</string>
+	<key>MercedesCup</key>
+	<string>http://www.mercedescup.de/</string>
+	<key>SkiStar Swedish Open</key>
+	<string>http://men.swedishopen.org/</string>
+	<key>International German Open</key>
+	<string>http://german-open-hamburg.de/en/home/</string>
+	<key>Atlanta Tennis Championships</key>
+	<string>http://www.usopenseries.com/tournaments/atlanta.aspx</string>
+	<key>Allianz Suisse Open Gstaad</key>
+	<string>http://www.allianzsuisseopengstaad.com/</string>
+	<key>LA Tennis Open</key>
+	<string>http://www.latennisopen.com/</string>
+	<key>ATP Studena Croatia Open</key>
+	<string>http://www.croatiaopen.hr/</string>
+	<key>Legg Mason Tennis Classic</key>
+	<string>http://www.leggmasontennisclassic.com/</string>
+	<key>Rogers Cup</key>
+	<string>http://www.rogerscup.com/</string>
+	<key>Western &amp; Southern Financial Group Masters</key>
+	<string>http://www.cincytennis.com/</string>
+	<key>Pilot Pen Tennis</key>
+	<string>http://www.pilotpentennis.com/</string>
+	<key>US Open</key>
+	<string>http://www.usopen.org/</string>
+	<key>Davis Cup Semi-finals</key>
+	<string>http://www.daviscup.com/</string>
+	<key>Open de Moselle</key>
+	<string>http://www.opendemoselle.com/</string>
+	<key>BCR Open Romania</key>
+	<string>http://www.bcropenromania.ro/</string>
+	<key>PTT Thailand Open</key>
+	<string>http://www.thailandopen.org/</string>
+	<key>Proton Malaysian Open, Kuala Lumpur 2010</key>
+	<string>http://www.protonmalaysiaopen.com/</string>
+	<key>China Open</key>
+	<string>http://www.chinaopen.com.cn/en/</string>
+	<key>Rakuten Japan Open Tennis Championships</key>
+	<string>http://rakutenopen.rakuten.co.jp/en/index.html</string>
+	<key>Shanghai Rolex Masters</key>
+	<string>http://www.shanghaimasters1000.com/</string>
+	<key>If Stockholm Open</key>
+	<string>http://www.ifstockholmopen.se/</string>
+	<key>Kremlin Cup</key>
+	<string>http://www.kremlincup.ru/index-eng.html</string>
+	<key>St. Petersburg Open</key>
+	<string>http://www.spbopen.ru/eng/index.html</string>
+	<key>Bank Austria TennisTrophy</key>
+	<string>http://www.bankaustria-tennistrophy.at/en/home.html</string>
+	<key>Grand Prix de Tennis de Lyon</key>
+	<string>http://www.gptennislyon.com/</string>
+	<key>Valencia Open 500</key>
+	<string>http://www.valenciaopen500.com/</string>
+	<key>Swiss Indoors Basel</key>
+	<string>http://www.davidoffswissindoors.ch/</string>
+	<key>BNP Paribas Masters</key>
+	<string>http://www.bnpparibasopen.org/</string>
+	<key>Barclays ATP World Tour Finals</key>
+	<string>http://www.barclaysatpworldtourfinals.com/</string>
+	<key>Davis Cup World Group Final</key>
+	<string>http://www.daviscup.com/</string>
 </dict>
 </plist>
