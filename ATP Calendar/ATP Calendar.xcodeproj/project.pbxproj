@@ -40,7 +40,7 @@
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
 		1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDA118418F900F90704 /* MatchWebViewController.m */; };
-		1ACE6CDE1184192900F90704 /* MatchWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDD1184192900F90704 /* MatchWebView.xib */; };
+		1ACE6DDC11842A0D00F90704 /* MatchWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE6DDB11842A0D00F90704 /* MatchWebView.xib */; };
 		1AE35FFA11778560001243DD /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE35FF911778560001243DD /* Context.m */; };
 		1AE36060117788F9001243DD /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE3605F117788F9001243DD /* NSObject-Dialog.m */; };
 		1AE360A411778E02001243DD /* UITableView-WithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE360A311778E02001243DD /* UITableView-WithCell.m */; };
@@ -99,7 +99,7 @@
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
 		1ACE6CD9118418F900F90704 /* MatchWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchWebViewController.h; sourceTree = "<group>"; };
 		1ACE6CDA118418F900F90704 /* MatchWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchWebViewController.m; sourceTree = "<group>"; };
-		1ACE6CDD1184192900F90704 /* MatchWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchWebView.xib; sourceTree = "<group>"; };
+		1ACE6DDB11842A0D00F90704 /* MatchWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchWebView.xib; sourceTree = "<group>"; };
 		1AE35FF811778560001243DD /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		1AE35FF911778560001243DD /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
 		1AE3605E117788F9001243DD /* NSObject-Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Dialog.h"; sourceTree = "<group>"; };
@@ -317,7 +317,7 @@
 				1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */,
 				09946FA3117F374400A0403D /* MatchImageCoverFlowView.xib */,
 				1A5A5859118374F900499565 /* websites.plist */,
-				1ACE6CDD1184192900F90704 /* MatchWebView.xib */,
+				1ACE6DDB11842A0D00F90704 /* MatchWebView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 				1A5A583711836F6100499565 /* GrandSlam.png in Resources */,
 				1A5A584C118371BC00499565 /* ATP250.png in Resources */,
 				1A5A585A118374F900499565 /* websites.plist in Resources */,
-				1ACE6CDE1184192900F90704 /* MatchWebView.xib in Resources */,
+				1ACE6DDC11842A0D00F90704 /* MatchWebView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

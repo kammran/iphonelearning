@@ -13,7 +13,7 @@
 
 -(void)showInDialog {
 	NSString *message = [[NSString alloc] initWithFormat:@"%@", self];
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Dialog" 
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" 
 													message:message 
 												   delegate:nil 
 										  cancelButtonTitle:@"Ok" 

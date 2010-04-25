@@ -69,17 +69,11 @@
 	NSString *currentTitle = button.currentTitle;
 	if (currentTitle != nil) {
 		MatchWebViewController *webViewController = [[MatchWebViewController alloc] initWithNibName:@"MatchWebView" bundle:nil];
-		UIWebView *webView = (UIWebView *) [webViewController view];
 		NSString *url = [[NSString alloc] initWithFormat:@"%@?redirect_by=iphone_atp_calendar", currentTitle];
-		NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
-		[webView loadRequest:request];
+		webViewController.url = url;
 		[self.navigationController pushViewController:webViewController animated:YES];								
-		[request release];
+		[url release];
 		[webViewController release];
-		
-		//NSString *url = [[NSString alloc] initWithFormat:@"%@?redirect_by=iphone_atp_calendar", currentTitle];
-//		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-//		[url release];
 	}
 }
 
