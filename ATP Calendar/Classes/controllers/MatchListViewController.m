@@ -39,7 +39,7 @@
 	cell.detailTextLabel.text = detail;
 	[detail release];
 	cell.imageView.image = [match categoryImage];
-	cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+	//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
 	return cell;
 }
 
@@ -59,18 +59,6 @@
 	[view setContentSize:CGSizeMake(320, 460)];
 	[self.navigationController pushViewController:detailViewController animated:YES];
 	[detailViewController release];
-}
-
-- (void)tableView:(UITableView *)tableView accessoryButtonTappedForRowWithIndexPath:(NSIndexPath *)indexPath {
-	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
-	Match *match = [self match: indexPath];
-	coverFlowController.match = match;
-	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
-	coverFlowController.title = title;
-	[title release];
-	[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
-	[self.navigationController pushViewController:coverFlowController animated:YES];
-	[coverFlowController release];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

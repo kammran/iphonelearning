@@ -36,6 +36,7 @@
 @property (nonatomic, retain) IBOutlet UILabel *singleWinnerLabel;
 @property (nonatomic, retain) IBOutlet UILabel *doubleWinnersLabel;
 
+- (IBAction)showPictures:(id)sender;
 - (IBAction)hyperlinkPressed:(id)sender;
 
 @end

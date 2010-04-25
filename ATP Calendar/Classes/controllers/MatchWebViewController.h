@@ -12,13 +12,7 @@
 @interface MatchWebViewController : UIViewController <UIWebViewDelegate> {
 	NSString *url;
 	UIWebView *webView;
-	UILabel *progressLabel;
-	Boolean progressEnd;
-	NSMutableString *progressText;
 }
-@property (nonatomic) Boolean progressEnd;
-@property (nonatomic, retain) NSMutableString *progressText;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) IBOutlet UIWebView *webView;
-@property (nonatomic, retain) IBOutlet UILabel *progressLabel;
 @end
