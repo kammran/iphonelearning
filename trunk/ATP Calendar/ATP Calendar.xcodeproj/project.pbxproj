@@ -38,6 +38,7 @@
 		1A5A584C118371BC00499565 /* ATP250.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A584B118371BC00499565 /* ATP250.png */; };
 		1A5A585A118374F900499565 /* websites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A5859118374F900499565 /* websites.plist */; };
 		1A6DAD251184A5D00035A968 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD241184A5D00035A968 /* label.png */; };
+		1A6DAD4E1184B5AF0035A968 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */; };
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
 		1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDA118418F900F90704 /* MatchWebViewController.m */; };
@@ -96,6 +97,7 @@
 		1A5A584B118371BC00499565 /* ATP250.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ATP250.png; sourceTree = "<group>"; };
 		1A5A5859118374F900499565 /* websites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = websites.plist; sourceTree = "<group>"; };
 		1A6DAD241184A5D00035A968 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
+		1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
 		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
@@ -296,6 +298,7 @@
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
+				1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				1A5A585A118374F900499565 /* websites.plist in Resources */,
 				1ACE6DDC11842A0D00F90704 /* MatchWebView.xib in Resources */,
 				1A6DAD251184A5D00035A968 /* label.png in Resources */,
+				1A6DAD4E1184B5AF0035A968 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +449,39 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1A6DAD5B1184B6510035A968 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.1.2;
+			};
+			name = Distribution;
+		};
+		1A6DAD5C1184B6510035A968 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ATP_Calendar_Prefix.pch;
+				HEADER_SEARCH_PATHS = "/usr/include/libxml2/**";
+				INFOPLIST_FILE = "ATP_Calendar-Info.plist";
+				OTHER_CFLAGS = "-DDEBUG=1";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lxml2",
+				);
+				PRODUCT_NAME = "ATP Calendar";
+			};
+			name = Distribution;
+		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -519,6 +556,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
+				1A6DAD5C1184B6510035A968 /* Distribution */,
 				1D6058950D05DD3E006BFB54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -528,6 +566,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
+				1A6DAD5B1184B6510035A968 /* Distribution */,
 				C01FCF5008A954540054247B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

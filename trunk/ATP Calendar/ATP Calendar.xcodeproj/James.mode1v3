@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -277,19 +275,20 @@
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1AE35FD2117780D8001243DD</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>53</integer>
-									<integer>43</integer>
+									<integer>64</integer>
+									<integer>63</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 590}, {293, 602}}</string>
+							<string>{{0, 654}, {293, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -324,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MatchListViewController.m</string>
+								<string>GDataXMLNode.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -332,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MatchListViewController.m</string>
+										<string>GDataXMLNode.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A6DAD1211848EC30035A968</string>
+										<string>1A6DAD6D1184B7F80035A968</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -356,7 +355,6 @@
 											<string>1A9BD9FD1178D6C100245AE6</string>
 											<string>1A9BD9FE1178D6C100245AE6</string>
 											<string>1AA2A8B9117CD1A60023D768</string>
-											<string>1A5A56FE11835FD000499565</string>
 											<string>1A5A56FF11835FD000499565</string>
 											<string>1A5A571A1183605100499565</string>
 											<string>1A5A58631183765700499565</string>
@@ -365,7 +363,9 @@
 											<string>1ACE6DE111842AAD00F90704</string>
 											<string>1A6DACE4118489720035A968</string>
 											<string>1A6DACF111848A2E0035A968</string>
-											<string>1AA2A749117C92C70023D768</string>
+											<string>1A6DAD561184B6220035A968</string>
+											<string>1A6DAD571184B6220035A968</string>
+											<string>1A6DAD541184B60B0035A968</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -563,6 +563,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1A6DAD6B1184B7850035A968</string>
 		<string>1A6DAC5A11847C1F0035A968</string>
 		<string>1A6DAC5B11847C1F0035A968</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -592,7 +593,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>GDataXMLNode.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -609,6 +610,8 @@
 							<string>284pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
