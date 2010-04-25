@@ -21,7 +21,8 @@
 #pragma mark -
 #pragma mark Autororate Methods
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+	//return interfaceOrientation == UIInterfaceOrientationLandscapeRight;
+	return YES;
 }
 
 

@@ -39,7 +39,7 @@
 	cell.detailTextLabel.text = detail;
 	[detail release];
 	cell.imageView.image = [match categoryImage];
-	//cell.accessoryType = UITableViewCellAccessoryDetailDisclosureButton;
+	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	return cell;
 }
 
