@@ -8,6 +8,7 @@
 
 #import "MatchDetailViewController.h"
 #import "Match.h"
+#import "MatchWebViewController.h"
 
 @implementation MatchDetailViewController
 @synthesize match;
@@ -67,7 +68,18 @@
 	UIButton *button = (UIButton *)sender;
 	NSString *currentTitle = button.currentTitle;
 	if (currentTitle != nil) {
-		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:currentTitle]];
+		MatchWebViewController *webViewController = [[MatchWebViewController alloc] initWithNibName:@"MatchWebView" bundle:nil];
+		UIWebView *webView = (UIWebView *) [webViewController view];
+		NSString *url = [[NSString alloc] initWithFormat:@"%@?redirect_by=iphone_atp_calendar", currentTitle];
+		NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:url]];
+		[webView loadRequest:request];
+		[self.navigationController pushViewController:webViewController animated:YES];								
+		[request release];
+		[webViewController release];
+		
+		//NSString *url = [[NSString alloc] initWithFormat:@"%@?redirect_by=iphone_atp_calendar", currentTitle];
+//		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+//		[url release];
 	}
 }
 
