@@ -397,7 +397,7 @@
     </match>
     <match>
       <category>ATP500</category>
-      <date>19.04.2010Live</date>
+      <date>19.04.2010</date>
       <name>Barcelona Open BancSabadell</name>
       <city>Barcelona</city>
       <country>Spain</country>
@@ -408,12 +408,12 @@
       <dbl>24</dbl>
       <email>nfo@serviticket.es</email>
       <tel>+34 902 33 22 11</tel>
-      <single_winner></single_winner>
-      <double_winners></double_winners>
+      <single_winner>Fernando Verdasco</single_winner>
+      <double_winners>Nenad Zimonjic, Daniel Nestor</double_winners>
     </match>
     <match>
       <category>ATP1000</category>
-      <date>25.04.2010</date>
+      <date>26.04.2010</date>
       <name>Internazionali BNL d'Italia</name>
       <city>Rome</city>
       <country>Italy</country>
