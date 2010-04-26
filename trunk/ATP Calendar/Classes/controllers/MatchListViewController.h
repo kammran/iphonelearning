@@ -12,5 +12,5 @@
 @interface MatchListViewController : UITableViewController {
 	NSArray *matches;
 }
-@property (nonatomic, retain) NSArray *matches;
+@property (nonatomic, assign) NSArray *matches;
 @end

@@ -12,7 +12,7 @@
 @interface MatchDetailViewController : UIViewController {
 	Match *match;
 	UILabel *nameLabel;
-	UIImageView *categoryImageView;
+	UIButton *imageButton;
 	UILabel *dateLabel;
 	UILabel *tournamentLabel;
 	UILabel *surfaceLabel;
@@ -23,9 +23,9 @@
 	UILabel *singleWinnerLabel;
 	UILabel *doubleWinnersLabel;
 }
-@property (nonatomic, retain) Match *match;
+@property (nonatomic, assign) Match *match;
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
-@property (nonatomic, retain) IBOutlet UIImageView *categoryImageView;
+@property (nonatomic, retain) IBOutlet UIButton *imageButton;
 @property (nonatomic, retain) IBOutlet UILabel *dateLabel;
 @property (nonatomic, retain) IBOutlet UILabel *tournamentLabel;
 @property (nonatomic, retain) IBOutlet UILabel *surfaceLabel;

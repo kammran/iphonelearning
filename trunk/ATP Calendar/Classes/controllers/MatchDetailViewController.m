@@ -10,11 +10,13 @@
 #import "Match.h"
 #import "MatchWebViewController.h"
 #import "MatchImageCoverFlowViewController.h"
+#import "Context.h"
+#import "ATP_CalendarAppDelegate.h"
+#import "MatchImageFlowCoverViewDelegate.h"
 
 @implementation MatchDetailViewController
 @synthesize match;
 @synthesize nameLabel;
-@synthesize categoryImageView;
 @synthesize dateLabel;
 @synthesize tournamentLabel;
 @synthesize surfaceLabel;
@@ -24,11 +26,12 @@
 @synthesize ticketInfoLabel;
 @synthesize singleWinnerLabel;
 @synthesize doubleWinnersLabel;
-
+@synthesize imageButton;
 
 - (void)extractData {
 	self.nameLabel.text = match.name;
-	self.categoryImageView.image = [match categoryImage];
+	[self.imageButton setBackgroundImage:[match categoryImage] forState:UIControlStateNormal];
+	[self.imageButton setBackgroundImage:[match categoryImage] forState:UIControlStateHighlighted];
 	self.dateLabel.text = match.date;
 	NSMutableString *tournament = [[NSMutableString alloc] init];
 	[tournament appendString:match.city];
@@ -81,13 +84,16 @@
 
 - (IBAction)showPictures:(id)sender {
 	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
-	coverFlowController.match = self.match;
+	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
+	matchImageFlowCoverViewDelegate.matchName = self.match.name;
+	FlowCoverView *flowCoverView = (FlowCoverView *) coverFlowController.view;
+	flowCoverView.delegate = matchImageFlowCoverViewDelegate;
 	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
 	coverFlowController.title = title;
 	[title release];
 	//[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];
 	[self.navigationController pushViewController:coverFlowController animated:YES];
-	[coverFlowController release];	
+	[coverFlowController release];
 }
 
 - (void)viewDidLoad {
@@ -100,7 +106,7 @@
 
 - (void)viewDidUnload {
 	self.nameLabel = nil;
-	self.categoryImageView = nil;
+	self.imageButton = nil;
 	self.dateLabel = nil;
 	self.tournamentLabel = nil;
 	self.surfaceLabel = nil;
@@ -114,7 +120,7 @@
 
 - (void)dealloc {
 	[self.nameLabel release];
-	[self.categoryImageView release];
+	[self.imageButton release];
 	[self.dateLabel release];
 	[self.tournamentLabel release];
 	[self.surfaceLabel release];
