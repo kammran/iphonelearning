@@ -40,6 +40,16 @@
 		1A6DAD251184A5D00035A968 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD241184A5D00035A968 /* label.png */; };
 		1A6DAD4E1184B5AF0035A968 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */; };
 		1A83766911860E0100B3864D /* MatchImageFlowCoverViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */; };
+		1A8377CE1186362700B3864D /* Aircel Chennai Open-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C41186362600B3864D /* Aircel Chennai Open-0.jpg */; };
+		1A8377CF1186362700B3864D /* Aircel Chennai Open-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C51186362600B3864D /* Aircel Chennai Open-1.jpg */; };
+		1A8377D01186362700B3864D /* Aircel Chennai Open-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C61186362600B3864D /* Aircel Chennai Open-2.jpg */; };
+		1A8377D11186362700B3864D /* Aircel Chennai Open-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C71186362600B3864D /* Aircel Chennai Open-3.jpg */; };
+		1A8377D21186362700B3864D /* Aircel Chennai Open-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C81186362600B3864D /* Aircel Chennai Open-4.jpg */; };
+		1A8377D31186362700B3864D /* Aircel Chennai Open-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377C91186362700B3864D /* Aircel Chennai Open-5.jpg */; };
+		1A8377D41186362700B3864D /* Aircel Chennai Open-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377CA1186362700B3864D /* Aircel Chennai Open-6.jpg */; };
+		1A8377D51186362700B3864D /* Aircel Chennai Open-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377CB1186362700B3864D /* Aircel Chennai Open-7.jpg */; };
+		1A8377D61186362700B3864D /* Aircel Chennai Open-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377CC1186362700B3864D /* Aircel Chennai Open-8.jpg */; };
+		1A8377D71186362700B3864D /* Aircel Chennai Open-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377CD1186362700B3864D /* Aircel Chennai Open-9.jpg */; };
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
 		1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDA118418F900F90704 /* MatchWebViewController.m */; };
@@ -101,6 +111,16 @@
 		1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		1A83766711860E0100B3864D /* MatchImageFlowCoverViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchImageFlowCoverViewDelegate.h; sourceTree = "<group>"; };
 		1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchImageFlowCoverViewDelegate.m; sourceTree = "<group>"; };
+		1A8377C41186362600B3864D /* Aircel Chennai Open-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-0.jpg"; sourceTree = "<group>"; };
+		1A8377C51186362600B3864D /* Aircel Chennai Open-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-1.jpg"; sourceTree = "<group>"; };
+		1A8377C61186362600B3864D /* Aircel Chennai Open-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-2.jpg"; sourceTree = "<group>"; };
+		1A8377C71186362600B3864D /* Aircel Chennai Open-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-3.jpg"; sourceTree = "<group>"; };
+		1A8377C81186362600B3864D /* Aircel Chennai Open-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-4.jpg"; sourceTree = "<group>"; };
+		1A8377C91186362700B3864D /* Aircel Chennai Open-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-5.jpg"; sourceTree = "<group>"; };
+		1A8377CA1186362700B3864D /* Aircel Chennai Open-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-6.jpg"; sourceTree = "<group>"; };
+		1A8377CB1186362700B3864D /* Aircel Chennai Open-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-7.jpg"; sourceTree = "<group>"; };
+		1A8377CC1186362700B3864D /* Aircel Chennai Open-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-8.jpg"; sourceTree = "<group>"; };
+		1A8377CD1186362700B3864D /* Aircel Chennai Open-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Aircel Chennai Open-9.jpg"; sourceTree = "<group>"; };
 		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
 		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
@@ -222,9 +242,27 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		1A837753118620ED00B3864D /* Aircel Chennai Open */ = {
+			isa = PBXGroup;
+			children = (
+				1A8377C41186362600B3864D /* Aircel Chennai Open-0.jpg */,
+				1A8377C51186362600B3864D /* Aircel Chennai Open-1.jpg */,
+				1A8377C61186362600B3864D /* Aircel Chennai Open-2.jpg */,
+				1A8377C71186362600B3864D /* Aircel Chennai Open-3.jpg */,
+				1A8377C81186362600B3864D /* Aircel Chennai Open-4.jpg */,
+				1A8377C91186362700B3864D /* Aircel Chennai Open-5.jpg */,
+				1A8377CA1186362700B3864D /* Aircel Chennai Open-6.jpg */,
+				1A8377CB1186362700B3864D /* Aircel Chennai Open-7.jpg */,
+				1A8377CC1186362700B3864D /* Aircel Chennai Open-8.jpg */,
+				1A8377CD1186362700B3864D /* Aircel Chennai Open-9.jpg */,
+			);
+			path = "Aircel Chennai Open";
+			sourceTree = "<group>";
+		};
 		1A9BDA2E1178D89500245AE6 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				1A837753118620ED00B3864D /* Aircel Chennai Open */,
 				1A474A411180C3B5004A9572 /* Brisbane International */,
 			);
 			path = Matches;
@@ -421,6 +459,16 @@
 				1ACE6DDC11842A0D00F90704 /* MatchWebView.xib in Resources */,
 				1A6DAD251184A5D00035A968 /* label.png in Resources */,
 				1A6DAD4E1184B5AF0035A968 /* Entitlements.plist in Resources */,
+				1A8377CE1186362700B3864D /* Aircel Chennai Open-0.jpg in Resources */,
+				1A8377CF1186362700B3864D /* Aircel Chennai Open-1.jpg in Resources */,
+				1A8377D01186362700B3864D /* Aircel Chennai Open-2.jpg in Resources */,
+				1A8377D11186362700B3864D /* Aircel Chennai Open-3.jpg in Resources */,
+				1A8377D21186362700B3864D /* Aircel Chennai Open-4.jpg in Resources */,
+				1A8377D31186362700B3864D /* Aircel Chennai Open-5.jpg in Resources */,
+				1A8377D41186362700B3864D /* Aircel Chennai Open-6.jpg in Resources */,
+				1A8377D51186362700B3864D /* Aircel Chennai Open-7.jpg in Resources */,
+				1A8377D61186362700B3864D /* Aircel Chennai Open-8.jpg in Resources */,
+				1A8377D71186362700B3864D /* Aircel Chennai Open-9.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
