@@ -39,6 +39,7 @@
 		1A5A585A118374F900499565 /* websites.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A5A5859118374F900499565 /* websites.plist */; };
 		1A6DAD251184A5D00035A968 /* label.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD241184A5D00035A968 /* label.png */; };
 		1A6DAD4E1184B5AF0035A968 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */; };
+		1A83766911860E0100B3864D /* MatchImageFlowCoverViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */; };
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
 		1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDA118418F900F90704 /* MatchWebViewController.m */; };
@@ -98,6 +99,8 @@
 		1A5A5859118374F900499565 /* websites.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = websites.plist; sourceTree = "<group>"; };
 		1A6DAD241184A5D00035A968 /* label.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label.png; sourceTree = "<group>"; };
 		1A6DAD4D1184B5AF0035A968 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
+		1A83766711860E0100B3864D /* MatchImageFlowCoverViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchImageFlowCoverViewDelegate.h; sourceTree = "<group>"; };
+		1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchImageFlowCoverViewDelegate.m; sourceTree = "<group>"; };
 		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
 		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
@@ -286,6 +289,8 @@
 			children = (
 				1D3623240D0F684500981E51 /* ATP_CalendarAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ATP_CalendarAppDelegate.m */,
+				1A83766711860E0100B3864D /* MatchImageFlowCoverViewDelegate.h */,
+				1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */,
 			);
 			path = delegate;
 			sourceTree = "<group>";
@@ -443,6 +448,7 @@
 				1A5A563911834FA100499565 /* GDataXMLNode.m in Sources */,
 				1A5A56F511835E0700499565 /* GDataXMLNode-Extension.m in Sources */,
 				1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */,
+				1A83766911860E0100B3864D /* MatchImageFlowCoverViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

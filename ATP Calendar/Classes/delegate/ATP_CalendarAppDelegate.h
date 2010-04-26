@@ -7,19 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MatchImageFlowCoverViewDelegate.h"
 
 @interface ATP_CalendarAppDelegate : NSObject <UIApplicationDelegate> {
-    
     UIWindow *window;
     UINavigationController *navigationController;
-	
 	NSArray *store;
+	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-
 @property (nonatomic, retain) NSArray *store;
+@property (nonatomic, retain) MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate;
 
 @end
 

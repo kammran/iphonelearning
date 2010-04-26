@@ -15,9 +15,14 @@
 @synthesize window;
 @synthesize navigationController;
 @synthesize store;
+@synthesize matchImageFlowCoverViewDelegate;
 
 - (void)initStore {
 	self.store = [ResourceLoader loadData];
+}
+
+- (void)initMatchImageFlowCoverViewDelegate {
+	self.matchImageFlowCoverViewDelegate = [[MatchImageFlowCoverViewDelegate alloc] init];
 }
 
 #pragma mark -
@@ -28,8 +33,8 @@
 	
 	[window addSubview:[navigationController view]];
     [window makeKeyAndVisible];
-	
 	[self initStore];
+	[self initMatchImageFlowCoverViewDelegate];
 	
 	return YES;
 }
@@ -44,6 +49,7 @@
 #pragma mark Memory management
 
 - (void)dealloc {
+	[matchImageFlowCoverViewDelegate release];
 	[navigationController release];
 	[window release];
 	[store release];
