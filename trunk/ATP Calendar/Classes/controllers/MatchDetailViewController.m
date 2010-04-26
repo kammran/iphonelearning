@@ -88,7 +88,7 @@
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	FlowCoverView *flowCoverView = (FlowCoverView *) coverFlowController.view;
 	flowCoverView.delegate = matchImageFlowCoverViewDelegate;
-	NSString *title = [[NSString alloc] initWithFormat:@"Pictures of %@", match.name];
+	NSString *title = [[NSString alloc] initWithFormat:@"Pictures Of %@", match.name];
 	coverFlowController.title = title;
 	[title release];
 	//[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];

@@ -197,7 +197,48 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>1A83772E11861C4600B3864D</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>MatchListViewController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>1A83772F11861C4600B3864D</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>MatchListViewController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>1A83774211861CDB00B3864D</string>
+						<key>history</key>
+						<array>
+							<string>1A83772611861B4400B3864D</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1223, 619}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>15 118 1223 660 0 0 1280 778 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -285,15 +326,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>50</integer>
-									<integer>49</integer>
-									<integer>47</integer>
-									<integer>45</integer>
+									<integer>21</integer>
+									<integer>17</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 543}, {293, 602}}</string>
+							<string>{{0, 288}, {293, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -340,7 +380,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A8377101186196E00B3864D</string>
+										<string>1A83774111861CDB00B3864D</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -572,7 +612,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1A8377111186196E00B3864D</string>
 		<string>1A83765711860B1E00B3864D</string>
 		<string>1A83767C11860F8400B3864D</string>
 		<string>1A8376301186072200B3864D</string>
@@ -580,6 +619,7 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1AE35FE811778401001243DD</string>
 		<string>/Users/James/iphone/iphonelearning/ATP Calendar/ATP Calendar.xcodeproj</string>
+		<string>1A83772E11861C4600B3864D</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
