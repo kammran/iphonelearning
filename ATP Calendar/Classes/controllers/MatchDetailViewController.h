@@ -23,7 +23,7 @@
 	UILabel *singleWinnerLabel;
 	UILabel *doubleWinnersLabel;
 }
-@property (nonatomic, assign) Match *match;
+@property (nonatomic, retain) Match *match;
 @property (nonatomic, retain) IBOutlet UILabel *nameLabel;
 @property (nonatomic, retain) IBOutlet UIButton *imageButton;
 @property (nonatomic, retain) IBOutlet UILabel *dateLabel;
