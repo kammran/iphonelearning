@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1A83774211861CDB00B3864D</string>
+						<string>1A8377E01186370300B3864D</string>
 						<key>history</key>
 						<array>
 							<string>1A83772611861B4400B3864D</string>
@@ -317,7 +317,8 @@
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
 								<string>1AE35FD2117780D8001243DD</string>
-								<string>1A5A582911836F3900499565</string>
+								<string>1A9BDA2E1178D89500245AE6</string>
+								<string>1A837753118620ED00B3864D</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -326,14 +327,15 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>21</integer>
-									<integer>17</integer>
-									<integer>1</integer>
+									<integer>52</integer>
+									<integer>51</integer>
+									<integer>47</integer>
+									<integer>45</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 288}, {293, 602}}</string>
+							<string>{{0, 451}, {293, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -368,7 +370,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MatchWebViewController.m</string>
+								<string>MatchImageFlowCoverViewDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -376,11 +378,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MatchWebViewController.m</string>
+										<string>MatchImageFlowCoverViewDelegate.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A83774111861CDB00B3864D</string>
+										<string>1A8377DF1186370300B3864D</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -412,9 +414,9 @@
 											<string>1A83767311860F8400B3864D</string>
 											<string>1A83767511860F8400B3864D</string>
 											<string>1A8376AE1186117900B3864D</string>
-											<string>1A8376D91186147C00B3864D</string>
 											<string>1A8376DA1186147C00B3864D</string>
-											<string>1A83767411860F8400B3864D</string>
+											<string>1A8377DD1186370300B3864D</string>
+											<string>1A8377DE1186370300B3864D</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -619,7 +621,6 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1AE35FE811778401001243DD</string>
 		<string>/Users/James/iphone/iphonelearning/ATP Calendar/ATP Calendar.xcodeproj</string>
-		<string>1A83772E11861C4600B3864D</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -643,7 +644,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MatchDetailViewController.m</string>
+								<string>MatchImageFlowCoverViewDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

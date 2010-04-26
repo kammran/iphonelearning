@@ -23,9 +23,22 @@
 
 - (UIImage *)flowCover:(FlowCoverView *)view cover:(int)index
 {
-	NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d.png", matchName, index];
-	UIImage *image = [UIImage imageNamed:imageName];
-	[imageName release];
+	NSArray *supportedTypes = [[NSArray alloc] initWithObjects:@".png", @".jpg", nil];
+	UIImage *image = nil;
+	
+	for (id type in supportedTypes) {
+		NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d%@", matchName, index, type];
+		image = [UIImage imageNamed:imageName];
+		[imageName release];
+		if (image) {
+			break;
+		}
+	}
+	
+	[supportedTypes release];
+	if (!image) {
+		NSLog(@"Couldn't load image of %@-%d", matchName, index);
+	}
 	return image;
 }
 
