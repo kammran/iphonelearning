@@ -34,7 +34,7 @@
 	};
 	09946F9F117F372800A0403D /* MatchImageCoverFlowViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1214, 565}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1214, 588}}";
 			sepNavSelRange = "{253, 0}";
 			sepNavVisRange = "{0, 263}";
 			sepNavWindowFrame = "{{7, 62}, {1273, 716}}";
@@ -44,7 +44,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1214, 688}}";
 			sepNavSelRange = "{381, 0}";
-			sepNavVisRange = "{47, 866}";
+			sepNavVisRange = "{7, 927}";
 			sepNavWindowFrame = "{{7, 62}, {1273, 716}}";
 		};
 	};
@@ -1047,8 +1047,8 @@
 	1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1164, 688}}";
-			sepNavSelRange = "{704, 0}";
-			sepNavVisRange = "{144, 1219}";
+			sepNavSelRange = "{567, 0}";
+			sepNavVisRange = "{55, 1303}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -1056,7 +1056,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1284, 1952}}";
 			sepNavSelRange = "{3558, 0}";
-			sepNavVisRange = "{2485, 525}";
+			sepNavVisRange = "{2723, 897}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -1119,7 +1119,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {904, 816}}";
 			sepNavSelRange = "{248, 0}";
-			sepNavVisRange = "{0, 431}";
+			sepNavVisRange = "{0, 432}";
 			sepNavWindowFrame = "{{7, 62}, {1273, 716}}";
 		};
 	};
