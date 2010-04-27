@@ -23,7 +23,8 @@ class Rename
 	end	
 	
 	def supported?(file)
-		yield if file =~ /jpg|png/ 
+		#yield if file =~ /jpg|png/ 
+		yield if file =~ /png/ 
 	end
 
 	def rename(dir, file)
