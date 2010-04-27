@@ -240,6 +240,16 @@
 		vrLen = 1119;
 		vrLoc = 1415;
 	};
+	09B8F2BA1187307600BC295D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09F1307A118729030027DF20 /* test_mini_magick_test.rb */;
+		name = "test_mini_magick_test.rb: 73";
+		rLen = 0;
+		rLoc = 1847;
+		rType = 0;
+		vrLen = 1171;
+		vrLoc = 1415;
+	};
 	09F1300F11870CD90027DF20 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 0952A76A11807A8A008970A6 /* FlowCoverView.h */;
@@ -357,7 +367,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1525, 2667}}";
 			sepNavSelRange = "{1847, 0}";
-			sepNavVisRange = "{1415, 1119}";
+			sepNavVisRange = "{1415, 1171}";
 		};
 	};
 	1A474A421180C3E0004A9572 /* Brisbane International-0.png */ = {
@@ -586,6 +596,7 @@
 			0996697B1178AA5300AEF5AC = 0996697B1178AA5300AEF5AC /* PBXTextBookmark */;
 			0996697C1178AA5300AEF5AC = 0996697C1178AA5300AEF5AC /* PBXTextBookmark */;
 			09B8F2AB118729D400BC295D /* PBXTextBookmark */ = 09B8F2AB118729D400BC295D /* PBXTextBookmark */;
+			09B8F2BA1187307600BC295D /* PBXTextBookmark */ = 09B8F2BA1187307600BC295D /* PBXTextBookmark */;
 			09F1300F11870CD90027DF20 = 09F1300F11870CD90027DF20 /* PBXTextBookmark */;
 			09F13070118729030027DF20 = 09F13070118729030027DF20 /* PBXTextBookmark */;
 			09F13071118729030027DF20 = 09F13071118729030027DF20 /* PBXTextBookmark */;
