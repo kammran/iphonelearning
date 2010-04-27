@@ -26,12 +26,11 @@
 @synthesize ticketInfoLabel;
 @synthesize singleWinnerLabel;
 @synthesize doubleWinnersLabel;
-@synthesize imageButton;
+@synthesize imageView;
 
 - (void)extractData {
 	self.nameLabel.text = match.name;
-	[self.imageButton setBackgroundImage:[match categoryImage] forState:UIControlStateNormal];
-	[self.imageButton setBackgroundImage:[match categoryImage] forState:UIControlStateHighlighted];
+	self.imageView.image = [match categoryImage];
 	self.dateLabel.text = match.date;
 	NSMutableString *tournament = [[NSMutableString alloc] init];
 	[tournament appendString:match.city];
@@ -68,6 +67,22 @@
 	[winners release];
 }
 
+- (void)addPicturesButton {
+	UIBarButtonItem *picturesButton = [[UIBarButtonItem alloc] 
+									  initWithTitle:@"Pictures" 
+									  style:UIBarButtonItemStyleBordered 
+									  target:self 
+									  action:@selector(showPictures:)];
+	self.navigationItem.rightBarButtonItem = picturesButton;
+	[picturesButton release];
+}
+
+- (void)viewDidLoad {
+	[self extractData];
+	[self addPicturesButton];
+	[super viewDidLoad];
+}
+
 - (IBAction)hyperlinkPressed:(id)sender {
 	UIButton *button = (UIButton *)sender;
 	NSString *currentTitle = button.currentTitle;
@@ -96,17 +111,13 @@
 	[coverFlowController release];
 }
 
-- (void)viewDidLoad {
-	[self extractData];
-}
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
 }
 
 - (void)viewDidUnload {
 	self.nameLabel = nil;
-	self.imageButton = nil;
+	self.imageView = nil;
 	self.dateLabel = nil;
 	self.tournamentLabel = nil;
 	self.surfaceLabel = nil;
@@ -120,7 +131,7 @@
 
 - (void)dealloc {
 	[self.nameLabel release];
-	[self.imageButton release];
+	[self.imageView release];
 	[self.dateLabel release];
 	[self.tournamentLabel release];
 	[self.surfaceLabel release];

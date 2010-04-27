@@ -52,7 +52,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	Match *match = [self match: indexPath];
 	MatchDetailViewController *detailViewController = [[MatchDetailViewController alloc] initWithNibName:@"MatchDetailView" bundle:nil];
-	detailViewController.title = match.name;
+	detailViewController.title = @"Detail";
 	detailViewController.match = match;
 	UIScrollView *view = (UIScrollView *) detailViewController.view;
 	view.scrollEnabled = YES;
