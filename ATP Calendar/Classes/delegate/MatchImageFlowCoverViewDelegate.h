@@ -9,8 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "FlowCoverView.h"
 
+#define kMaxImagesCount	20
+
 @interface MatchImageFlowCoverViewDelegate : NSObject <FlowCoverViewDelegate> {
 	NSString *matchName;
+	NSMutableDictionary *images;
 }
 @property (nonatomic, retain) NSString *matchName;
+@property (nonatomic, retain) NSMutableDictionary *images;
 @end
+
