@@ -69,7 +69,7 @@
 
 - (void)addPicturesButton {
 	UIBarButtonItem *picturesButton = [[UIBarButtonItem alloc] 
-									  initWithTitle:@"Pictures" 
+									  initWithTitle:@"Gallery" 
 									  style:UIBarButtonItemStyleBordered 
 									  target:self 
 									  action:@selector(showPictures:)];
@@ -103,7 +103,7 @@
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	FlowCoverView *flowCoverView = (FlowCoverView *) coverFlowController.view;
 	flowCoverView.delegate = matchImageFlowCoverViewDelegate;
-	NSString *title = [[NSString alloc] initWithFormat:@"Pictures Of %@", match.name];
+	NSString *title = [[NSString alloc] initWithFormat:@"Gallery Of %@", match.name];
 	coverFlowController.title = title;
 	[title release];
 	//[[UIDevice currentDevice] setOrientation:UIInterfaceOrientationLandscapeRight];

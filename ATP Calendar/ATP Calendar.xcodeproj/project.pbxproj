@@ -16,6 +16,26 @@
 		09946FC6117F3BB700A0403D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09946FC5117F3BB700A0403D /* Default.png */; };
 		099668BC1178989C00AEF5AC /* ResourceLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */; };
 		099669A31178AC5500AEF5AC /* MatchListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 099669A21178AC5500AEF5AC /* MatchListViewController.m */; };
+		09F1302E118711BF0027DF20 /* Qatar ExxonMobil Open-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13024118711BF0027DF20 /* Qatar ExxonMobil Open-9.png */; };
+		09F1302F118711BF0027DF20 /* Qatar ExxonMobil Open-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13025118711BF0027DF20 /* Qatar ExxonMobil Open-8.png */; };
+		09F13030118711BF0027DF20 /* Qatar ExxonMobil Open-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13026118711BF0027DF20 /* Qatar ExxonMobil Open-7.png */; };
+		09F13031118711BF0027DF20 /* Qatar ExxonMobil Open-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13027118711BF0027DF20 /* Qatar ExxonMobil Open-6.png */; };
+		09F13032118711BF0027DF20 /* Qatar ExxonMobil Open-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13028118711BF0027DF20 /* Qatar ExxonMobil Open-5.png */; };
+		09F13033118711BF0027DF20 /* Qatar ExxonMobil Open-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13029118711BF0027DF20 /* Qatar ExxonMobil Open-4.png */; };
+		09F13034118711BF0027DF20 /* Qatar ExxonMobil Open-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1302A118711BF0027DF20 /* Qatar ExxonMobil Open-3.png */; };
+		09F13035118711BF0027DF20 /* Qatar ExxonMobil Open-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1302B118711BF0027DF20 /* Qatar ExxonMobil Open-2.png */; };
+		09F13036118711BF0027DF20 /* Qatar ExxonMobil Open-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1302C118711BF0027DF20 /* Qatar ExxonMobil Open-1.png */; };
+		09F13037118711BF0027DF20 /* Qatar ExxonMobil Open-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1302D118711BF0027DF20 /* Qatar ExxonMobil Open-0.png */; };
+		09F13060118717740027DF20 /* Medibank International Sydney-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13056118717740027DF20 /* Medibank International Sydney-9.png */; };
+		09F13061118717740027DF20 /* Medibank International Sydney-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13057118717740027DF20 /* Medibank International Sydney-8.png */; };
+		09F13062118717740027DF20 /* Medibank International Sydney-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13058118717740027DF20 /* Medibank International Sydney-7.png */; };
+		09F13063118717740027DF20 /* Medibank International Sydney-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F13059118717740027DF20 /* Medibank International Sydney-6.png */; };
+		09F13064118717740027DF20 /* Medibank International Sydney-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305A118717740027DF20 /* Medibank International Sydney-5.png */; };
+		09F13065118717740027DF20 /* Medibank International Sydney-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305B118717740027DF20 /* Medibank International Sydney-4.png */; };
+		09F13066118717740027DF20 /* Medibank International Sydney-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305C118717740027DF20 /* Medibank International Sydney-3.png */; };
+		09F13067118717740027DF20 /* Medibank International Sydney-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305D118717740027DF20 /* Medibank International Sydney-2.png */; };
+		09F13068118717740027DF20 /* Medibank International Sydney-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305E118717740027DF20 /* Medibank International Sydney-1.png */; };
+		09F13069118717740027DF20 /* Medibank International Sydney-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F1305F118717740027DF20 /* Medibank International Sydney-0.png */; };
 		1A474A4C1180C3E0004A9572 /* Brisbane International-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A421180C3E0004A9572 /* Brisbane International-0.png */; };
 		1A474A4D1180C3E0004A9572 /* Brisbane International-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A431180C3E0004A9572 /* Brisbane International-1.png */; };
 		1A474A4F1180C3E0004A9572 /* Brisbane International-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A474A451180C3E0004A9572 /* Brisbane International-3.png */; };
@@ -84,6 +104,26 @@
 		099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResourceLoader.m; sourceTree = "<group>"; };
 		099669A11178AC5500AEF5AC /* MatchListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchListViewController.h; sourceTree = "<group>"; };
 		099669A21178AC5500AEF5AC /* MatchListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchListViewController.m; sourceTree = "<group>"; };
+		09F13024118711BF0027DF20 /* Qatar ExxonMobil Open-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-9.png"; sourceTree = "<group>"; };
+		09F13025118711BF0027DF20 /* Qatar ExxonMobil Open-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-8.png"; sourceTree = "<group>"; };
+		09F13026118711BF0027DF20 /* Qatar ExxonMobil Open-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-7.png"; sourceTree = "<group>"; };
+		09F13027118711BF0027DF20 /* Qatar ExxonMobil Open-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-6.png"; sourceTree = "<group>"; };
+		09F13028118711BF0027DF20 /* Qatar ExxonMobil Open-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-5.png"; sourceTree = "<group>"; };
+		09F13029118711BF0027DF20 /* Qatar ExxonMobil Open-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-4.png"; sourceTree = "<group>"; };
+		09F1302A118711BF0027DF20 /* Qatar ExxonMobil Open-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-3.png"; sourceTree = "<group>"; };
+		09F1302B118711BF0027DF20 /* Qatar ExxonMobil Open-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-2.png"; sourceTree = "<group>"; };
+		09F1302C118711BF0027DF20 /* Qatar ExxonMobil Open-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-1.png"; sourceTree = "<group>"; };
+		09F1302D118711BF0027DF20 /* Qatar ExxonMobil Open-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Qatar ExxonMobil Open-0.png"; sourceTree = "<group>"; };
+		09F13056118717740027DF20 /* Medibank International Sydney-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-9.png"; sourceTree = "<group>"; };
+		09F13057118717740027DF20 /* Medibank International Sydney-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-8.png"; sourceTree = "<group>"; };
+		09F13058118717740027DF20 /* Medibank International Sydney-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-7.png"; sourceTree = "<group>"; };
+		09F13059118717740027DF20 /* Medibank International Sydney-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-6.png"; sourceTree = "<group>"; };
+		09F1305A118717740027DF20 /* Medibank International Sydney-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-5.png"; sourceTree = "<group>"; };
+		09F1305B118717740027DF20 /* Medibank International Sydney-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-4.png"; sourceTree = "<group>"; };
+		09F1305C118717740027DF20 /* Medibank International Sydney-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-3.png"; sourceTree = "<group>"; };
+		09F1305D118717740027DF20 /* Medibank International Sydney-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-2.png"; sourceTree = "<group>"; };
+		09F1305E118717740027DF20 /* Medibank International Sydney-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-1.png"; sourceTree = "<group>"; };
+		09F1305F118717740027DF20 /* Medibank International Sydney-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Medibank International Sydney-0.png"; sourceTree = "<group>"; };
 		1A474A421180C3E0004A9572 /* Brisbane International-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-0.png"; sourceTree = "<group>"; };
 		1A474A431180C3E0004A9572 /* Brisbane International-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-1.png"; sourceTree = "<group>"; };
 		1A474A451180C3E0004A9572 /* Brisbane International-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brisbane International-3.png"; sourceTree = "<group>"; };
@@ -192,6 +232,40 @@
 			path = coverflow;
 			sourceTree = "<group>";
 		};
+		09F1301E11870DBC0027DF20 /* Qatar ExxonMobil Open */ = {
+			isa = PBXGroup;
+			children = (
+				09F13024118711BF0027DF20 /* Qatar ExxonMobil Open-9.png */,
+				09F13025118711BF0027DF20 /* Qatar ExxonMobil Open-8.png */,
+				09F13026118711BF0027DF20 /* Qatar ExxonMobil Open-7.png */,
+				09F13027118711BF0027DF20 /* Qatar ExxonMobil Open-6.png */,
+				09F13028118711BF0027DF20 /* Qatar ExxonMobil Open-5.png */,
+				09F13029118711BF0027DF20 /* Qatar ExxonMobil Open-4.png */,
+				09F1302A118711BF0027DF20 /* Qatar ExxonMobil Open-3.png */,
+				09F1302B118711BF0027DF20 /* Qatar ExxonMobil Open-2.png */,
+				09F1302C118711BF0027DF20 /* Qatar ExxonMobil Open-1.png */,
+				09F1302D118711BF0027DF20 /* Qatar ExxonMobil Open-0.png */,
+			);
+			path = "Qatar ExxonMobil Open";
+			sourceTree = "<group>";
+		};
+		09F130551187174B0027DF20 /* Medibank International Sydney */ = {
+			isa = PBXGroup;
+			children = (
+				09F13056118717740027DF20 /* Medibank International Sydney-9.png */,
+				09F13057118717740027DF20 /* Medibank International Sydney-8.png */,
+				09F13058118717740027DF20 /* Medibank International Sydney-7.png */,
+				09F13059118717740027DF20 /* Medibank International Sydney-6.png */,
+				09F1305A118717740027DF20 /* Medibank International Sydney-5.png */,
+				09F1305B118717740027DF20 /* Medibank International Sydney-4.png */,
+				09F1305C118717740027DF20 /* Medibank International Sydney-3.png */,
+				09F1305D118717740027DF20 /* Medibank International Sydney-2.png */,
+				09F1305E118717740027DF20 /* Medibank International Sydney-1.png */,
+				09F1305F118717740027DF20 /* Medibank International Sydney-0.png */,
+			);
+			path = "Medibank International Sydney";
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +336,8 @@
 		1A9BDA2E1178D89500245AE6 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				09F130551187174B0027DF20 /* Medibank International Sydney */,
+				09F1301E11870DBC0027DF20 /* Qatar ExxonMobil Open */,
 				1A837753118620ED00B3864D /* Aircel Chennai Open */,
 				1A474A411180C3B5004A9572 /* Brisbane International */,
 			);
@@ -469,6 +545,26 @@
 				1A8377D51186362700B3864D /* Aircel Chennai Open-7.jpg in Resources */,
 				1A8377D61186362700B3864D /* Aircel Chennai Open-8.jpg in Resources */,
 				1A8377D71186362700B3864D /* Aircel Chennai Open-9.jpg in Resources */,
+				09F1302E118711BF0027DF20 /* Qatar ExxonMobil Open-9.png in Resources */,
+				09F1302F118711BF0027DF20 /* Qatar ExxonMobil Open-8.png in Resources */,
+				09F13030118711BF0027DF20 /* Qatar ExxonMobil Open-7.png in Resources */,
+				09F13031118711BF0027DF20 /* Qatar ExxonMobil Open-6.png in Resources */,
+				09F13032118711BF0027DF20 /* Qatar ExxonMobil Open-5.png in Resources */,
+				09F13033118711BF0027DF20 /* Qatar ExxonMobil Open-4.png in Resources */,
+				09F13034118711BF0027DF20 /* Qatar ExxonMobil Open-3.png in Resources */,
+				09F13035118711BF0027DF20 /* Qatar ExxonMobil Open-2.png in Resources */,
+				09F13036118711BF0027DF20 /* Qatar ExxonMobil Open-1.png in Resources */,
+				09F13037118711BF0027DF20 /* Qatar ExxonMobil Open-0.png in Resources */,
+				09F13060118717740027DF20 /* Medibank International Sydney-9.png in Resources */,
+				09F13061118717740027DF20 /* Medibank International Sydney-8.png in Resources */,
+				09F13062118717740027DF20 /* Medibank International Sydney-7.png in Resources */,
+				09F13063118717740027DF20 /* Medibank International Sydney-6.png in Resources */,
+				09F13064118717740027DF20 /* Medibank International Sydney-5.png in Resources */,
+				09F13065118717740027DF20 /* Medibank International Sydney-4.png in Resources */,
+				09F13066118717740027DF20 /* Medibank International Sydney-3.png in Resources */,
+				09F13067118717740027DF20 /* Medibank International Sydney-2.png in Resources */,
+				09F13068118717740027DF20 /* Medibank International Sydney-1.png in Resources */,
+				09F13069118717740027DF20 /* Medibank International Sydney-0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
