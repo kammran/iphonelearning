@@ -63,4 +63,5 @@ class Rename
 
 end
 
-Rename.new.do
+Rename.new.do if __FILE__ == $0
+
