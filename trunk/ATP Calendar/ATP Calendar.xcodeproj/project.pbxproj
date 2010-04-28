@@ -181,6 +181,41 @@
 		1A8377D71186362700B3864D /* Aircel Chennai Open-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1A8377CD1186362700B3864D /* Aircel Chennai Open-9.jpg */; };
 		1A9BD95E1178CE3100245AE6 /* MatchDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */; };
 		1A9BD9651178CF3400245AE6 /* MatchDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */; };
+		1AB2256D1188A75000EECE4F /* Open 13-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225631188A75000EECE4F /* Open 13-0.png */; };
+		1AB2256E1188A75000EECE4F /* Open 13-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225641188A75000EECE4F /* Open 13-1.png */; };
+		1AB2256F1188A75000EECE4F /* Open 13-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225651188A75000EECE4F /* Open 13-2.png */; };
+		1AB225701188A75000EECE4F /* Open 13-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225661188A75000EECE4F /* Open 13-3.png */; };
+		1AB225711188A75000EECE4F /* Open 13-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225671188A75000EECE4F /* Open 13-4.png */; };
+		1AB225721188A75000EECE4F /* Open 13-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225681188A75000EECE4F /* Open 13-5.png */; };
+		1AB225731188A75000EECE4F /* Open 13-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225691188A75000EECE4F /* Open 13-6.png */; };
+		1AB225741188A75000EECE4F /* Open 13-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2256A1188A75000EECE4F /* Open 13-7.png */; };
+		1AB225751188A75000EECE4F /* Open 13-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2256B1188A75000EECE4F /* Open 13-8.png */; };
+		1AB225761188A75000EECE4F /* Open 13-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2256C1188A75000EECE4F /* Open 13-9.png */; };
+		1AB225951188AA0B00EECE4F /* Regions Morgan Keegan Championships-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225871188AA0B00EECE4F /* Regions Morgan Keegan Championships-0.png */; };
+		1AB225961188AA0B00EECE4F /* Regions Morgan Keegan Championships-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225881188AA0B00EECE4F /* Regions Morgan Keegan Championships-1.png */; };
+		1AB225971188AA0B00EECE4F /* Regions Morgan Keegan Championships-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225891188AA0B00EECE4F /* Regions Morgan Keegan Championships-2.png */; };
+		1AB225981188AA0B00EECE4F /* Regions Morgan Keegan Championships-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258A1188AA0B00EECE4F /* Regions Morgan Keegan Championships-3.png */; };
+		1AB225991188AA0B00EECE4F /* Regions Morgan Keegan Championships-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258B1188AA0B00EECE4F /* Regions Morgan Keegan Championships-4.png */; };
+		1AB2259A1188AA0B00EECE4F /* Regions Morgan Keegan Championships-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258C1188AA0B00EECE4F /* Regions Morgan Keegan Championships-5.png */; };
+		1AB2259B1188AA0B00EECE4F /* Regions Morgan Keegan Championships-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258D1188AA0B00EECE4F /* Regions Morgan Keegan Championships-6.png */; };
+		1AB2259C1188AA0B00EECE4F /* Regions Morgan Keegan Championships-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258E1188AA0B00EECE4F /* Regions Morgan Keegan Championships-7.png */; };
+		1AB2259D1188AA0B00EECE4F /* Regions Morgan Keegan Championships-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2258F1188AA0B00EECE4F /* Regions Morgan Keegan Championships-8.png */; };
+		1AB2259E1188AA0B00EECE4F /* Regions Morgan Keegan Championships-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225901188AA0B00EECE4F /* Regions Morgan Keegan Championships-9.png */; };
+		1AB2259F1188AA0B00EECE4F /* Regions Morgan Keegan Championships-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225911188AA0B00EECE4F /* Regions Morgan Keegan Championships-10.png */; };
+		1AB225A01188AA0B00EECE4F /* Regions Morgan Keegan Championships-11.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225921188AA0B00EECE4F /* Regions Morgan Keegan Championships-11.png */; };
+		1AB225A11188AA0B00EECE4F /* Regions Morgan Keegan Championships-12.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225931188AA0B00EECE4F /* Regions Morgan Keegan Championships-12.png */; };
+		1AB225A21188AA0B00EECE4F /* Regions Morgan Keegan Championships-13.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225941188AA0B00EECE4F /* Regions Morgan Keegan Championships-13.png */; };
+		1AB225B21188AC9800EECE4F /* Copa Telmex-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225A71188AC9800EECE4F /* Copa Telmex-0.png */; };
+		1AB225B31188AC9800EECE4F /* Copa Telmex-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225A81188AC9800EECE4F /* Copa Telmex-1.png */; };
+		1AB225B41188AC9800EECE4F /* Copa Telmex-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225A91188AC9800EECE4F /* Copa Telmex-2.png */; };
+		1AB225B51188AC9800EECE4F /* Copa Telmex-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AA1188AC9800EECE4F /* Copa Telmex-3.png */; };
+		1AB225B61188AC9800EECE4F /* Copa Telmex-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AB1188AC9800EECE4F /* Copa Telmex-4.png */; };
+		1AB225B71188AC9800EECE4F /* Copa Telmex-5.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AC1188AC9800EECE4F /* Copa Telmex-5.png */; };
+		1AB225B81188AC9800EECE4F /* Copa Telmex-6.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AD1188AC9800EECE4F /* Copa Telmex-6.png */; };
+		1AB225B91188AC9800EECE4F /* Copa Telmex-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AE1188AC9800EECE4F /* Copa Telmex-7.png */; };
+		1AB225BA1188AC9800EECE4F /* Copa Telmex-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225AF1188AC9800EECE4F /* Copa Telmex-8.png */; };
+		1AB225BB1188AC9800EECE4F /* Copa Telmex-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225B01188AC9800EECE4F /* Copa Telmex-9.png */; };
+		1AB225BC1188AC9800EECE4F /* Copa Telmex-10.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB225B11188AC9800EECE4F /* Copa Telmex-10.png */; };
 		1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ACE6CDA118418F900F90704 /* MatchWebViewController.m */; };
 		1ACE6DDC11842A0D00F90704 /* MatchWebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1ACE6DDB11842A0D00F90704 /* MatchWebView.xib */; };
 		1AE35FFA11778560001243DD /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE35FF911778560001243DD /* Context.m */; };
@@ -382,6 +417,41 @@
 		1A9BD95C1178CE3100245AE6 /* MatchDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchDetailViewController.h; sourceTree = "<group>"; };
 		1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchDetailViewController.m; sourceTree = "<group>"; };
 		1A9BD9641178CF3400245AE6 /* MatchDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchDetailView.xib; sourceTree = "<group>"; };
+		1AB225631188A75000EECE4F /* Open 13-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-0.png"; sourceTree = "<group>"; };
+		1AB225641188A75000EECE4F /* Open 13-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-1.png"; sourceTree = "<group>"; };
+		1AB225651188A75000EECE4F /* Open 13-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-2.png"; sourceTree = "<group>"; };
+		1AB225661188A75000EECE4F /* Open 13-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-3.png"; sourceTree = "<group>"; };
+		1AB225671188A75000EECE4F /* Open 13-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-4.png"; sourceTree = "<group>"; };
+		1AB225681188A75000EECE4F /* Open 13-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-5.png"; sourceTree = "<group>"; };
+		1AB225691188A75000EECE4F /* Open 13-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-6.png"; sourceTree = "<group>"; };
+		1AB2256A1188A75000EECE4F /* Open 13-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-7.png"; sourceTree = "<group>"; };
+		1AB2256B1188A75000EECE4F /* Open 13-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-8.png"; sourceTree = "<group>"; };
+		1AB2256C1188A75000EECE4F /* Open 13-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Open 13-9.png"; sourceTree = "<group>"; };
+		1AB225871188AA0B00EECE4F /* Regions Morgan Keegan Championships-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-0.png"; sourceTree = "<group>"; };
+		1AB225881188AA0B00EECE4F /* Regions Morgan Keegan Championships-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-1.png"; sourceTree = "<group>"; };
+		1AB225891188AA0B00EECE4F /* Regions Morgan Keegan Championships-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-2.png"; sourceTree = "<group>"; };
+		1AB2258A1188AA0B00EECE4F /* Regions Morgan Keegan Championships-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-3.png"; sourceTree = "<group>"; };
+		1AB2258B1188AA0B00EECE4F /* Regions Morgan Keegan Championships-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-4.png"; sourceTree = "<group>"; };
+		1AB2258C1188AA0B00EECE4F /* Regions Morgan Keegan Championships-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-5.png"; sourceTree = "<group>"; };
+		1AB2258D1188AA0B00EECE4F /* Regions Morgan Keegan Championships-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-6.png"; sourceTree = "<group>"; };
+		1AB2258E1188AA0B00EECE4F /* Regions Morgan Keegan Championships-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-7.png"; sourceTree = "<group>"; };
+		1AB2258F1188AA0B00EECE4F /* Regions Morgan Keegan Championships-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-8.png"; sourceTree = "<group>"; };
+		1AB225901188AA0B00EECE4F /* Regions Morgan Keegan Championships-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-9.png"; sourceTree = "<group>"; };
+		1AB225911188AA0B00EECE4F /* Regions Morgan Keegan Championships-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-10.png"; sourceTree = "<group>"; };
+		1AB225921188AA0B00EECE4F /* Regions Morgan Keegan Championships-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-11.png"; sourceTree = "<group>"; };
+		1AB225931188AA0B00EECE4F /* Regions Morgan Keegan Championships-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-12.png"; sourceTree = "<group>"; };
+		1AB225941188AA0B00EECE4F /* Regions Morgan Keegan Championships-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Regions Morgan Keegan Championships-13.png"; sourceTree = "<group>"; };
+		1AB225A71188AC9800EECE4F /* Copa Telmex-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-0.png"; sourceTree = "<group>"; };
+		1AB225A81188AC9800EECE4F /* Copa Telmex-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-1.png"; sourceTree = "<group>"; };
+		1AB225A91188AC9800EECE4F /* Copa Telmex-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-2.png"; sourceTree = "<group>"; };
+		1AB225AA1188AC9800EECE4F /* Copa Telmex-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-3.png"; sourceTree = "<group>"; };
+		1AB225AB1188AC9800EECE4F /* Copa Telmex-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-4.png"; sourceTree = "<group>"; };
+		1AB225AC1188AC9800EECE4F /* Copa Telmex-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-5.png"; sourceTree = "<group>"; };
+		1AB225AD1188AC9800EECE4F /* Copa Telmex-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-6.png"; sourceTree = "<group>"; };
+		1AB225AE1188AC9800EECE4F /* Copa Telmex-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-7.png"; sourceTree = "<group>"; };
+		1AB225AF1188AC9800EECE4F /* Copa Telmex-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-8.png"; sourceTree = "<group>"; };
+		1AB225B01188AC9800EECE4F /* Copa Telmex-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-9.png"; sourceTree = "<group>"; };
+		1AB225B11188AC9800EECE4F /* Copa Telmex-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Copa Telmex-10.png"; sourceTree = "<group>"; };
 		1ACE6CD9118418F900F90704 /* MatchWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchWebViewController.h; sourceTree = "<group>"; };
 		1ACE6CDA118418F900F90704 /* MatchWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchWebViewController.m; sourceTree = "<group>"; };
 		1ACE6DDB11842A0D00F90704 /* MatchWebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MatchWebView.xib; sourceTree = "<group>"; };
@@ -726,6 +796,9 @@
 		1A9BDA2E1178D89500245AE6 /* Matches */ = {
 			isa = PBXGroup;
 			children = (
+				1AB225A51188AA5E00EECE4F /* Copa Telmex */,
+				1AB2257E1188A9D200EECE4F /* Regions Morgan Keegan Championships */,
+				1AB225601188A70A00EECE4F /* Open 13 */,
 				09F5F0311188786100FE36D5 /* Brasil Open */,
 				09F5EFD411886C4A00FE36D5 /* ABN AMRO World Tennis Tournament */,
 				09F5EFCE11886C0800FE36D5 /* SAP Open */,
@@ -740,6 +813,62 @@
 				1A474A411180C3B5004A9572 /* Brisbane International */,
 			);
 			path = Matches;
+			sourceTree = "<group>";
+		};
+		1AB225601188A70A00EECE4F /* Open 13 */ = {
+			isa = PBXGroup;
+			children = (
+				1AB225631188A75000EECE4F /* Open 13-0.png */,
+				1AB225641188A75000EECE4F /* Open 13-1.png */,
+				1AB225651188A75000EECE4F /* Open 13-2.png */,
+				1AB225661188A75000EECE4F /* Open 13-3.png */,
+				1AB225671188A75000EECE4F /* Open 13-4.png */,
+				1AB225681188A75000EECE4F /* Open 13-5.png */,
+				1AB225691188A75000EECE4F /* Open 13-6.png */,
+				1AB2256A1188A75000EECE4F /* Open 13-7.png */,
+				1AB2256B1188A75000EECE4F /* Open 13-8.png */,
+				1AB2256C1188A75000EECE4F /* Open 13-9.png */,
+			);
+			path = "Open 13";
+			sourceTree = "<group>";
+		};
+		1AB2257E1188A9D200EECE4F /* Regions Morgan Keegan Championships */ = {
+			isa = PBXGroup;
+			children = (
+				1AB225871188AA0B00EECE4F /* Regions Morgan Keegan Championships-0.png */,
+				1AB225881188AA0B00EECE4F /* Regions Morgan Keegan Championships-1.png */,
+				1AB225891188AA0B00EECE4F /* Regions Morgan Keegan Championships-2.png */,
+				1AB2258A1188AA0B00EECE4F /* Regions Morgan Keegan Championships-3.png */,
+				1AB2258B1188AA0B00EECE4F /* Regions Morgan Keegan Championships-4.png */,
+				1AB2258C1188AA0B00EECE4F /* Regions Morgan Keegan Championships-5.png */,
+				1AB2258D1188AA0B00EECE4F /* Regions Morgan Keegan Championships-6.png */,
+				1AB2258E1188AA0B00EECE4F /* Regions Morgan Keegan Championships-7.png */,
+				1AB2258F1188AA0B00EECE4F /* Regions Morgan Keegan Championships-8.png */,
+				1AB225901188AA0B00EECE4F /* Regions Morgan Keegan Championships-9.png */,
+				1AB225911188AA0B00EECE4F /* Regions Morgan Keegan Championships-10.png */,
+				1AB225921188AA0B00EECE4F /* Regions Morgan Keegan Championships-11.png */,
+				1AB225931188AA0B00EECE4F /* Regions Morgan Keegan Championships-12.png */,
+				1AB225941188AA0B00EECE4F /* Regions Morgan Keegan Championships-13.png */,
+			);
+			path = "Regions Morgan Keegan Championships";
+			sourceTree = "<group>";
+		};
+		1AB225A51188AA5E00EECE4F /* Copa Telmex */ = {
+			isa = PBXGroup;
+			children = (
+				1AB225A71188AC9800EECE4F /* Copa Telmex-0.png */,
+				1AB225A81188AC9800EECE4F /* Copa Telmex-1.png */,
+				1AB225A91188AC9800EECE4F /* Copa Telmex-2.png */,
+				1AB225AA1188AC9800EECE4F /* Copa Telmex-3.png */,
+				1AB225AB1188AC9800EECE4F /* Copa Telmex-4.png */,
+				1AB225AC1188AC9800EECE4F /* Copa Telmex-5.png */,
+				1AB225AD1188AC9800EECE4F /* Copa Telmex-6.png */,
+				1AB225AE1188AC9800EECE4F /* Copa Telmex-7.png */,
+				1AB225AF1188AC9800EECE4F /* Copa Telmex-8.png */,
+				1AB225B01188AC9800EECE4F /* Copa Telmex-9.png */,
+				1AB225B11188AC9800EECE4F /* Copa Telmex-10.png */,
+			);
+			path = "Copa Telmex";
 			sourceTree = "<group>";
 		};
 		1AE35FD2117780D8001243DD /* Images */ = {
@@ -1073,6 +1202,41 @@
 				09F5F04E1188789A00FE36D5 /* Brasil Open-10.png in Resources */,
 				09F5F04F1188789A00FE36D5 /* Brasil Open-1.png in Resources */,
 				09F5F0501188789A00FE36D5 /* Brasil Open-0.png in Resources */,
+				1AB2256D1188A75000EECE4F /* Open 13-0.png in Resources */,
+				1AB2256E1188A75000EECE4F /* Open 13-1.png in Resources */,
+				1AB2256F1188A75000EECE4F /* Open 13-2.png in Resources */,
+				1AB225701188A75000EECE4F /* Open 13-3.png in Resources */,
+				1AB225711188A75000EECE4F /* Open 13-4.png in Resources */,
+				1AB225721188A75000EECE4F /* Open 13-5.png in Resources */,
+				1AB225731188A75000EECE4F /* Open 13-6.png in Resources */,
+				1AB225741188A75000EECE4F /* Open 13-7.png in Resources */,
+				1AB225751188A75000EECE4F /* Open 13-8.png in Resources */,
+				1AB225761188A75000EECE4F /* Open 13-9.png in Resources */,
+				1AB225951188AA0B00EECE4F /* Regions Morgan Keegan Championships-0.png in Resources */,
+				1AB225961188AA0B00EECE4F /* Regions Morgan Keegan Championships-1.png in Resources */,
+				1AB225971188AA0B00EECE4F /* Regions Morgan Keegan Championships-2.png in Resources */,
+				1AB225981188AA0B00EECE4F /* Regions Morgan Keegan Championships-3.png in Resources */,
+				1AB225991188AA0B00EECE4F /* Regions Morgan Keegan Championships-4.png in Resources */,
+				1AB2259A1188AA0B00EECE4F /* Regions Morgan Keegan Championships-5.png in Resources */,
+				1AB2259B1188AA0B00EECE4F /* Regions Morgan Keegan Championships-6.png in Resources */,
+				1AB2259C1188AA0B00EECE4F /* Regions Morgan Keegan Championships-7.png in Resources */,
+				1AB2259D1188AA0B00EECE4F /* Regions Morgan Keegan Championships-8.png in Resources */,
+				1AB2259E1188AA0B00EECE4F /* Regions Morgan Keegan Championships-9.png in Resources */,
+				1AB2259F1188AA0B00EECE4F /* Regions Morgan Keegan Championships-10.png in Resources */,
+				1AB225A01188AA0B00EECE4F /* Regions Morgan Keegan Championships-11.png in Resources */,
+				1AB225A11188AA0B00EECE4F /* Regions Morgan Keegan Championships-12.png in Resources */,
+				1AB225A21188AA0B00EECE4F /* Regions Morgan Keegan Championships-13.png in Resources */,
+				1AB225B21188AC9800EECE4F /* Copa Telmex-0.png in Resources */,
+				1AB225B31188AC9800EECE4F /* Copa Telmex-1.png in Resources */,
+				1AB225B41188AC9800EECE4F /* Copa Telmex-2.png in Resources */,
+				1AB225B51188AC9800EECE4F /* Copa Telmex-3.png in Resources */,
+				1AB225B61188AC9800EECE4F /* Copa Telmex-4.png in Resources */,
+				1AB225B71188AC9800EECE4F /* Copa Telmex-5.png in Resources */,
+				1AB225B81188AC9800EECE4F /* Copa Telmex-6.png in Resources */,
+				1AB225B91188AC9800EECE4F /* Copa Telmex-7.png in Resources */,
+				1AB225BA1188AC9800EECE4F /* Copa Telmex-8.png in Resources */,
+				1AB225BB1188AC9800EECE4F /* Copa Telmex-9.png in Resources */,
+				1AB225BC1188AC9800EECE4F /* Copa Telmex-10.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
