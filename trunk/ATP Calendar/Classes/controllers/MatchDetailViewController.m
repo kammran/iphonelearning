@@ -68,6 +68,12 @@
 }
 
 - (void)addPicturesButton {
+	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
+	matchImageFlowCoverViewDelegate.matchName = self.match.name;
+	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
+		return;
+	}
+	
 	UIBarButtonItem *picturesButton = [[UIBarButtonItem alloc] 
 									  initWithTitle:@"Gallery" 
 									  style:UIBarButtonItemStyleBordered 
@@ -99,10 +105,8 @@
 
 - (IBAction)showPictures:(id)sender {
 	MatchImageCoverFlowViewController *coverFlowController = [[MatchImageCoverFlowViewController alloc] initWithNibName:@"MatchImageCoverFlowView" bundle:nil];
-	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
-	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	FlowCoverView *flowCoverView = (FlowCoverView *) coverFlowController.view;
-	flowCoverView.delegate = matchImageFlowCoverViewDelegate;
+	flowCoverView.delegate = [Context delegate].matchImageFlowCoverViewDelegate;
 	NSString *title = [[NSString alloc] initWithFormat:@"Gallery Of %@", match.name];
 	coverFlowController.title = title;
 	[title release];
