@@ -51,7 +51,7 @@ class Rename
 			original_height = image[:height]
 			new_width = 200
 			if (-5..5).include?(original_width - new_width) 
-				puts "Skipped #{file}"
+				#puts "Skipped #{file}"
 				next
 			end
 			new_height = 200 * original_height / original_width 
