@@ -49,7 +49,7 @@ class Rename
 			image = Image.new(file)
 			original_width = image[:width]
 			original_height = image[:height]
-			new_width = 200
+			new_width = 160 
 			if (-5..5).include?(original_width - new_width) 
 				#puts "Skipped #{file}"
 				next
