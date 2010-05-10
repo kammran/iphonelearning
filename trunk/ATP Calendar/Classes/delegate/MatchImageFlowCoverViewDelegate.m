@@ -13,27 +13,24 @@
 @synthesize images;
 
 - (void)initImages {
+	NSDictionary *plist = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:matchName ofType:@"plist"]];
+	NSInteger imageCount = [[plist valueForKey:@"ImageCount"] intValue];
+	NSString *imageType = [plist valueForKey:@"ImageType"];
+	
 	[self.images release];
 	self.images = nil;
-	self.images = [[NSMutableDictionary alloc] initWithCapacity:kMaxImagesCount];
+	self.images = [[NSMutableDictionary alloc] initWithCapacity:imageCount];
 	
-	NSArray *supportedTypes = [[NSArray alloc] initWithObjects:@".png", @".jpg", nil];
-	
-	for (int i = 0; i < kMaxImagesCount; i++) {
-		UIImage *image = nil;
-		
-		for (id type in supportedTypes) {
-			NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d%@", matchName, i, type];
-			image = [UIImage imageNamed:imageName];
-			[imageName release];
-			if (image) {
-				[self.images setObject:image forKey:[NSString stringWithFormat:@"%d", i]];
-				break;
-			}
+	for (int i = 0; i < imageCount; i++) {
+		NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d.%@", matchName, i, imageType];
+		UIImage *image = [UIImage imageNamed:imageName];
+		if (image) {
+			[self.images setObject:image forKey:[NSString stringWithFormat:@"%d", i]];
+		} else {
+			NSLog(@"Couldn't load image %@", imageName);
 		}
+		[imageName release];
 	}
-
-	[supportedTypes release];
 }
 
 

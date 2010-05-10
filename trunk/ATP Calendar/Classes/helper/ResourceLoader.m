@@ -9,15 +9,22 @@
 #import "ResourceLoader.h"
 #import "Month2Matches.h"
 #import "Match.h"
+#import "NSObject-Dialog.h"
 
 @implementation ResourceLoader
 
 
 + (NSArray *)loadData {
 	NSMutableArray *array = [[NSMutableArray alloc] init];
-	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];
+	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];	
 	
-	NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"xml"]];
+	//NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"xml"]];
+	
+	NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://192.168.1.166/var/mobile/Downloads/data.xml"]];
+	if ([data length] == 0) {
+		[@"Couldn't load data." showInDialog];
+	}
+	
 	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
 	GDataXMLElement * root = [doc rootElement];
 	NSArray *monthes = [root elementsForName:@"month"];
@@ -51,6 +58,7 @@
 	
 	[data release];
 	[doc release];
+	[websites release];
 	return array;
 }
 
