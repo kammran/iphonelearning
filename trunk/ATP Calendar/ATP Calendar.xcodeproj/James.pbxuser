@@ -726,6 +726,16 @@
 		vrLen = 237;
 		vrLoc = 2789;
 	};
+	1A91BDD11199CE7600E20C28 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
+		name = "MatchDetailViewController.m: 82";
+		rLen = 0;
+		rLoc = 2840;
+		rType = 0;
+		vrLen = 343;
+		vrLoc = 2475;
+	};
 	1A9462F1118C134A00DF4BF7 /* Abierto Mexicano Telcel-6.png */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = image.png;
@@ -753,9 +763,9 @@
 	};
 	1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1219, 2496}}";
-			sepNavSelRange = "{2814, 0}";
-			sepNavVisRange = "{1960, 595}";
+			sepNavIntBoundsRect = "{{0, 0}, {1068, 2512}}";
+			sepNavSelRange = "{2840, 0}";
+			sepNavVisRange = "{2475, 343}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -1265,6 +1275,7 @@
 			1A91BDC21199CC4300E20C28 /* PBXTextBookmark */ = 1A91BDC21199CC4300E20C28 /* PBXTextBookmark */;
 			1A91BDC51199CC4300E20C28 /* PBXTextBookmark */ = 1A91BDC51199CC4300E20C28 /* PBXTextBookmark */;
 			1A91BDC61199CDBE00E20C28 /* PBXTextBookmark */ = 1A91BDC61199CDBE00E20C28 /* PBXTextBookmark */;
+			1A91BDD11199CE7600E20C28 /* PBXTextBookmark */ = 1A91BDD11199CE7600E20C28 /* PBXTextBookmark */;
 			1A9BD91E1178CA6D00245AE6 = 1A9BD91E1178CA6D00245AE6 /* PBXTextBookmark */;
 			1A9BD9FD1178D6C100245AE6 = 1A9BD9FD1178D6C100245AE6 /* PBXTextBookmark */;
 			1A9BD9FE1178D6C100245AE6 = 1A9BD9FE1178D6C100245AE6 /* PBXTextBookmark */;
