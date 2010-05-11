@@ -67,45 +67,35 @@
 	[winners release];
 }
 
-- (void) showLoadingGalleryButton {
-	UIBarButtonItem *loadingButton = [[UIBarButtonItem alloc] 
+- (void) addGalleryButton {
+	UIBarButtonItem *galleryButton = [[UIBarButtonItem alloc] 
 									   initWithTitle:@"Loading Gallery..." 
 									   style:UIBarButtonItemStyleBordered 
 									   target:nil 
 									   action:nil];
-	self.navigationItem.rightBarButtonItem = loadingButton;
-	[loadingButton release];
+	self.navigationItem.rightBarButtonItem = galleryButton;
+	[galleryButton release];
 }
 
-- (void)addPicturesButton {
+- (void)loadGallery {
 	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
 	
 	//Actual load, this stemp is slow
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	
 	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
-		UIBarButtonItem *noGalleryButton = [[UIBarButtonItem alloc] 
-										  initWithTitle:@"Gallery Coming Soon" 
-										  style:UIBarButtonItemStyleBordered 
-										  target:nil 
-										  action:nil];
-		self.navigationItem.rightBarButtonItem = noGalleryButton;
-		[noGalleryButton release];
+		self.navigationItem.rightBarButtonItem.title = @"Gallery Not Found";
 		return;
 	}
 	
-	UIBarButtonItem *picturesButton = [[UIBarButtonItem alloc] 
-									  initWithTitle:@"Gallery" 
-									  style:UIBarButtonItemStyleBordered 
-									  target:self 
-									  action:@selector(showPictures:)];
-	self.navigationItem.rightBarButtonItem = picturesButton;
-	[picturesButton release];
+	self.navigationItem.rightBarButtonItem.title = @"Gallery";
+	self.navigationItem.rightBarButtonItem.target = self;
+	self.navigationItem.rightBarButtonItem.action = @selector(showPictures:);
 }
 
 - (void)viewDidLoad {
 	[self extractData];
-	[self showLoadingGalleryButton];
+	[self addGalleryButton];
 	[self performSelectorInBackground:@selector(addPicturesButton) withObject:nil];
 	[super viewDidLoad];
 }
