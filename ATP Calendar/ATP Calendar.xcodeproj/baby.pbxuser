@@ -202,9 +202,9 @@
 	};
 	099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1635, 1491}}";
-			sepNavSelRange = "{682, 0}";
-			sepNavVisRange = "{147, 1898}";
+			sepNavIntBoundsRect = "{{0, 0}, {1691.72, 1176}}";
+			sepNavSelRange = "{277, 0}";
+			sepNavVisRange = "{0, 2259}";
 			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
 		};
 	};
@@ -398,14 +398,6 @@
 	};
 	1A474A581180C4E2004A9572 /* Brisbane International-2.png */ = {
 		uiCtxt = {
-			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
-		};
-	};
-	1A5A560D11834AAD00499565 /* data.xml */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1635, 24108}}";
-			sepNavSelRange = "{169, 22}";
-			sepNavVisRange = "{39, 1399}";
 			sepNavWindowFrame = "{{15, 64}, {1694, 1114}}";
 		};
 	};
