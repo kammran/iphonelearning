@@ -128,11 +128,6 @@
 		09F5F00F118870E900FE36D5 /* ABN AMRO World Tennis Tournament-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F005118870E900FE36D5 /* ABN AMRO World Tennis Tournament-2.png */; };
 		09F5F010118870E900FE36D5 /* ABN AMRO World Tennis Tournament-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F006118870E900FE36D5 /* ABN AMRO World Tennis Tournament-1.png */; };
 		09F5F011118870E900FE36D5 /* ABN AMRO World Tennis Tournament-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F007118870E900FE36D5 /* ABN AMRO World Tennis Tournament-0.png */; };
-		09F5F023118875EA00FE36D5 /* Roger-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F01E118875EA00FE36D5 /* Roger-4.png */; };
-		09F5F024118875EA00FE36D5 /* Roger-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F01F118875EA00FE36D5 /* Roger-2.png */; };
-		09F5F025118875EA00FE36D5 /* Roger-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F020118875EA00FE36D5 /* Roger-0.png */; };
-		09F5F026118875EA00FE36D5 /* Roger-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F021118875EA00FE36D5 /* Roger-3.png */; };
-		09F5F027118875EA00FE36D5 /* Roger-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F022118875EA00FE36D5 /* Roger-1.png */; };
 		09F5F0451188789A00FE36D5 /* Brasil Open-9.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F0391188789A00FE36D5 /* Brasil Open-9.png */; };
 		09F5F0461188789A00FE36D5 /* Brasil Open-8.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F03A1188789A00FE36D5 /* Brasil Open-8.png */; };
 		09F5F0471188789A00FE36D5 /* Brasil Open-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 09F5F03B1188789A00FE36D5 /* Brasil Open-7.png */; };
@@ -517,11 +512,6 @@
 		09F5F005118870E900FE36D5 /* ABN AMRO World Tennis Tournament-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABN AMRO World Tennis Tournament-2.png"; sourceTree = "<group>"; };
 		09F5F006118870E900FE36D5 /* ABN AMRO World Tennis Tournament-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABN AMRO World Tennis Tournament-1.png"; sourceTree = "<group>"; };
 		09F5F007118870E900FE36D5 /* ABN AMRO World Tennis Tournament-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ABN AMRO World Tennis Tournament-0.png"; sourceTree = "<group>"; };
-		09F5F01E118875EA00FE36D5 /* Roger-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roger-4.png"; sourceTree = "<group>"; };
-		09F5F01F118875EA00FE36D5 /* Roger-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roger-2.png"; sourceTree = "<group>"; };
-		09F5F020118875EA00FE36D5 /* Roger-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roger-0.png"; sourceTree = "<group>"; };
-		09F5F021118875EA00FE36D5 /* Roger-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roger-3.png"; sourceTree = "<group>"; };
-		09F5F022118875EA00FE36D5 /* Roger-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Roger-1.png"; sourceTree = "<group>"; };
 		09F5F0391188789A00FE36D5 /* Brasil Open-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brasil Open-9.png"; sourceTree = "<group>"; };
 		09F5F03A1188789A00FE36D5 /* Brasil Open-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brasil Open-8.png"; sourceTree = "<group>"; };
 		09F5F03B1188789A00FE36D5 /* Brasil Open-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Brasil Open-7.png"; sourceTree = "<group>"; };
@@ -1021,11 +1011,6 @@
 		09F5F01C1188758100FE36D5 /* Roger */ = {
 			isa = PBXGroup;
 			children = (
-				09F5F01E118875EA00FE36D5 /* Roger-4.png */,
-				09F5F01F118875EA00FE36D5 /* Roger-2.png */,
-				09F5F020118875EA00FE36D5 /* Roger-0.png */,
-				09F5F021118875EA00FE36D5 /* Roger-3.png */,
-				09F5F022118875EA00FE36D5 /* Roger-1.png */,
 			);
 			path = Roger;
 			sourceTree = "<group>";
@@ -2064,11 +2049,6 @@
 				09F5F00F118870E900FE36D5 /* ABN AMRO World Tennis Tournament-2.png in Resources */,
 				09F5F010118870E900FE36D5 /* ABN AMRO World Tennis Tournament-1.png in Resources */,
 				09F5F011118870E900FE36D5 /* ABN AMRO World Tennis Tournament-0.png in Resources */,
-				09F5F023118875EA00FE36D5 /* Roger-4.png in Resources */,
-				09F5F024118875EA00FE36D5 /* Roger-2.png in Resources */,
-				09F5F025118875EA00FE36D5 /* Roger-0.png in Resources */,
-				09F5F026118875EA00FE36D5 /* Roger-3.png in Resources */,
-				09F5F027118875EA00FE36D5 /* Roger-1.png in Resources */,
 				09F5F0451188789A00FE36D5 /* Brasil Open-9.png in Resources */,
 				09F5F0461188789A00FE36D5 /* Brasil Open-8.png in Resources */,
 				09F5F0471188789A00FE36D5 /* Brasil Open-7.png in Resources */,

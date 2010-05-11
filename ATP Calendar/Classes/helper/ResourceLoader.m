@@ -20,7 +20,7 @@
 	
 	//NSData *data = [[NSData alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"data" ofType:@"xml"]];
 	
-	NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://freezedisk.googlecode.com/svn/trunk/data.xml"]];
+	NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://freezedisk.googlecode.com/svn/trunk/iphone/ATP-Calendar/data.xml"]];
 	if ([data length] == 0) {
 		[@"Couldn't load data." showInDialog];
 	}
