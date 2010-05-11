@@ -16,8 +16,9 @@
 
 + (NSArray *)loadData {
 	NSMutableArray *array = [[NSMutableArray alloc] init];
-	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];	
-	NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:@"http://freezedisk.googlecode.com/svn/trunk/iphone/ATP-Calendar/data.xml"]];
+	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@data.xml", SERVICE_URL]];
+	NSData *data = [[NSData alloc] initWithContentsOfURL:url];
 	if ([data length] == 0) {
 		[@"Couldn't load data." showInDialog];
 	}
