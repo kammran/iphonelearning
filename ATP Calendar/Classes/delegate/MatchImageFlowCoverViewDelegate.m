@@ -7,13 +7,17 @@
 //
 
 #import "MatchImageFlowCoverViewDelegate.h"
+#import "ResourceLoader.h"
 
 
 @implementation MatchImageFlowCoverViewDelegate
 @synthesize images;
 
 - (void)initImages {
-	NSDictionary *plist = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:matchName ofType:@"plist"]];
+	NSString *plistPath = [[NSString stringWithFormat:@"%@Images/Matches/%@/%@.plist", SERVICE_URL, matchName, matchName] 
+						   stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
+	NSDictionary *plist = [[NSDictionary alloc] initWithContentsOfURL:[NSURL URLWithString:plistPath]];
+	
 	NSInteger imageCount = [[plist valueForKey:@"ImageCount"] intValue];
 	NSString *imageType = [plist valueForKey:@"ImageType"];
 	
@@ -21,15 +25,20 @@
 	self.images = nil;
 	self.images = [[NSMutableDictionary alloc] initWithCapacity:imageCount];
 	
-	for (int i = 0; i < imageCount; i++) {
-		NSString *imageName = [[NSString alloc] initWithFormat:@"%@-%d.%@", matchName, i, imageType];
-		UIImage *image = [UIImage imageNamed:imageName];
+	for (int i = 0; i < imageCount; i++) {				
+		NSString *imagePath = [[NSString stringWithFormat:@"%@Images/Matches/%@/%@-%d.%@", SERVICE_URL, matchName, matchName, i, imageType] 
+							   stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
+		
+		NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imagePath]];
+		UIImage *image = [[UIImage alloc] initWithData:data];
+		
 		if (image) {
 			[self.images setObject:image forKey:[NSString stringWithFormat:@"%d", i]];
 		} else {
-			NSLog(@"Couldn't load image %@", imageName);
+			NSLog(@"Couldn't load image %@", imagePath);
 		}
-		[imageName release];
+		
+		[image release];
 	}
 }
 

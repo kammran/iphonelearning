@@ -67,10 +67,30 @@
 	[winners release];
 }
 
+- (void) showLoadingGalleryButton {
+	UIBarButtonItem *loadingButton = [[UIBarButtonItem alloc] 
+									   initWithTitle:@"Loading Gallery..." 
+									   style:UIBarButtonItemStyleBordered 
+									   target:nil 
+									   action:nil];
+	self.navigationItem.rightBarButtonItem = loadingButton;
+	[loadingButton release];
+}
+
 - (void)addPicturesButton {
 	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
+	
+	//Actual load, this stemp is slow
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
+	
 	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
+		UIBarButtonItem *noGalleryButton = [[UIBarButtonItem alloc] 
+										  initWithTitle:@"Gallery Coming Soon" 
+										  style:UIBarButtonItemStyleBordered 
+										  target:nil 
+										  action:nil];
+		self.navigationItem.rightBarButtonItem = noGalleryButton;
+		[noGalleryButton release];
 		return;
 	}
 	
@@ -85,7 +105,8 @@
 
 - (void)viewDidLoad {
 	[self extractData];
-	[self addPicturesButton];
+	[self showLoadingGalleryButton];
+	[self performSelectorInBackground:@selector(addPicturesButton) withObject:nil];
 	[super viewDidLoad];
 }
 
