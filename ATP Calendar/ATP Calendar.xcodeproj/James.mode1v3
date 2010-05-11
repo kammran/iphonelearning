@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1A91BD571199BFE200E20C28</string>
+				<string>1A91BDC31199CC4300E20C28</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>MatchDetailViewController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1A91BD581199BFE200E20C28</string>
+						<string>1A91BDC41199CC4300E20C28</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>MatchDetailViewController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1A91BD741199C0AF00E20C28</string>
+						<string>1A91BDC51199CC4300E20C28</string>
 						<key>history</key>
 						<array>
-							<string>1A91BD711199C08600E20C28</string>
+							<string>1A91BDBE1199CC2A00E20C28</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -310,9 +310,10 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>1AE3616E11779E51001243DD</string>
 								<string>1AE3617811779F29001243DD</string>
-								<string>1AE3602D11778800001243DD</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>1AE35FD2117780D8001243DD</string>
+								<string>1A9BDA2E1178D89500245AE6</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
@@ -363,7 +364,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ResourceLoader.m</string>
+								<string>MatchDetailViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -371,11 +372,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>ResourceLoader.m</string>
+										<string>MatchDetailViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A91BD731199C0AF00E20C28</string>
+										<string>1A91BDC21199CC4300E20C28</string>
 										<key>history</key>
 										<array>
 											<string>1AE3600A117786D1001243DD</string>
@@ -404,13 +405,13 @@
 											<string>1A83767311860F8400B3864D</string>
 											<string>1A83767511860F8400B3864D</string>
 											<string>1A8376AE1186117900B3864D</string>
-											<string>1A8376DA1186147C00B3864D</string>
 											<string>1A8377DD1186370300B3864D</string>
 											<string>1A08E59A118DC3BB008AB07C</string>
 											<string>1A6E2D8B1198580D005ABCE7</string>
 											<string>1A6E2DA111985D27005ABCE7</string>
 											<string>1A91BD551199BFE200E20C28</string>
-											<string>1A5A58631183765700499565</string>
+											<string>1A91BDA71199C9F600E20C28</string>
+											<string>1A91BDC11199CC4300E20C28</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -608,8 +609,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>1A91BD751199C0AF00E20C28</string>
-		<string>1A91BD6F1199C02700E20C28</string>
+		<string>1A91BDA51199C9F400E20C28</string>
 		<string>1A91BD621199BFE200E20C28</string>
 		<string>1A91BD691199BFE200E20C28</string>
 		<string>1A91BD6A1199BFE200E20C28</string>
@@ -617,7 +617,7 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1AE35FE811778401001243DD</string>
 		<string>/Users/James/iphone/iphonelearning/ATP Calendar/ATP Calendar.xcodeproj</string>
-		<string>1A91BD571199BFE200E20C28</string>
+		<string>1A91BDC31199CC4300E20C28</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -641,7 +641,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>MatchDetailViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -658,6 +658,8 @@
 							<string>156pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -954,6 +956,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1250,8 +1254,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>1A6E2E0B119862B6005ABCE7</string>
-				<string>1A6E2E0C119862B6005ABCE7</string>
+				<string>1A91BDA51199C9F400E20C28</string>
+				<string>1A91BDA61199C9F400E20C28</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1260,7 +1264,7 @@
 			<key>WindowString</key>
 			<string>46 346 744 409 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
-			<string>1A6E2E0B119862B6005ABCE7</string>
+			<string>1A91BDA51199C9F400E20C28</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

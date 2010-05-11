@@ -14,6 +14,7 @@
 #import "ATP_CalendarAppDelegate.h"
 #import "MatchImageFlowCoverViewDelegate.h"
 
+
 @implementation MatchDetailViewController
 @synthesize match;
 @synthesize nameLabel;
@@ -78,25 +79,28 @@
 }
 
 - (void)loadGallery {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+    
 	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
 	
 	//Actual load, this stemp is slow
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	
 	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
-		self.navigationItem.rightBarButtonItem.title = @"Gallery Not Found";
-		return;
+		self.navigationItem.rightBarButtonItem.title = @"Gallery Coming Soon";
+	} else {
+		self.navigationItem.rightBarButtonItem.title = @"Gallery";
+		self.navigationItem.rightBarButtonItem.target = self;
+		self.navigationItem.rightBarButtonItem.action = @selector(showPictures:);
 	}
 	
-	self.navigationItem.rightBarButtonItem.title = @"Gallery";
-	self.navigationItem.rightBarButtonItem.target = self;
-	self.navigationItem.rightBarButtonItem.action = @selector(showPictures:);
+    [pool release];
 }
 
 - (void)viewDidLoad {
 	[self extractData];
 	[self addGalleryButton];
-	[self performSelectorInBackground:@selector(addPicturesButton) withObject:nil];
+	[self performSelectorInBackground:@selector(loadGallery) withObject:nil];
 	[super viewDidLoad];
 }
 
