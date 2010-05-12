@@ -10,6 +10,7 @@
 #import "Month2Matches.h"
 #import "Match.h"
 #import "NSObject-Dialog.h"
+#import "Context.h"
 
 @implementation ResourceLoader
 
@@ -17,13 +18,26 @@
 + (NSArray *)loadData {
 	NSMutableArray *array = [[NSMutableArray alloc] init];
 	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];
-	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@data.xml", SERVICE_URL]];
-	NSData *data = [[NSData alloc] initWithContentsOfURL:url];
-	if ([data length] == 0) {
-		[@"Couldn't load data." showInDialog];
+	NSURL *url = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:DATA_XML]];
+	
+	NSData *data2use = nil;
+	NSData *dataFromRemote = [[NSData alloc] initWithContentsOfURL:url];
+	NSString *localDataPath = [[Context documentsDirectory] stringByAppendingPathComponent:DATA_XML];
+	
+	if ([dataFromRemote length] == 0) {
+		if ([[NSFileManager defaultManager] fileExistsAtPath:localDataPath]) {
+			data2use = [[NSData alloc] initWithContentsOfFile:localDataPath];
+			[@"You don't have a internet connection, will use the cached data, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
+		} else {
+			//the first time of app lanuch
+			[@"Unable to load. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];
+		}
+	} else {
+		data2use = [dataFromRemote copy];
+		[dataFromRemote writeToFile:localDataPath atomically:YES];
 	}
 	
-	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:0 error:nil];
+	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data2use options:0 error:nil];
 	GDataXMLElement * root = [doc rootElement];
 	NSArray *monthes = [root elementsForName:@"month"];
 	
@@ -54,7 +68,8 @@
 		}
 	}
 	
-	[data release];
+	[dataFromRemote release];
+	[data2use release];
 	[doc release];
 	[websites release];
 	return array;

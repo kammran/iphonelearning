@@ -8,5 +8,8 @@
 
 
 @interface NSObject (Dialog) 
--(void)showInDialog;
+
+- (void)showInDialog;
+- (void)showInDialogWithTitle:(NSString *) title;
+
 @end

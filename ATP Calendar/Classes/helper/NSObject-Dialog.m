@@ -11,16 +11,20 @@
 
 @implementation NSObject (Dialog)
 
--(void)showInDialog {
+- (void)showInDialog {
+	[self showInDialogWithTitle:@"Error"];
+}
+
+- (void)showInDialogWithTitle:(NSString *) title {
 	NSString *message = [[NSString alloc] initWithFormat:@"%@", self];
-	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message" 
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
 													message:message 
 												   delegate:nil 
 										  cancelButtonTitle:@"OK" 
 										  otherButtonTitles:nil];
 	[alert show];
 	[alert release];
-	[message release];
+	[message release];	
 }
 
 @end

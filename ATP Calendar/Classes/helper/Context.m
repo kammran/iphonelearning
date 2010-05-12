@@ -19,4 +19,9 @@
 	return [self delegate].store;
 }
 
++ (NSString *)documentsDirectory {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	return [paths objectAtIndex:0];
+}
+
 @end
