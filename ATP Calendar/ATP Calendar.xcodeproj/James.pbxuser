@@ -59,8 +59,8 @@
 	099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1212, 1392}}";
-			sepNavSelRange = "{1292, 0}";
-			sepNavVisRange = "{0, 1339}";
+			sepNavSelRange = "{633, 0}";
+			sepNavVisRange = "{300, 869}";
 			sepNavWindowFrame = "{{25, 62}, {1223, 716}}";
 		};
 	};
@@ -150,7 +150,7 @@
 		ignoreCount = 0;
 		lineNumber = 60;
 		location = "ATP Calendar";
-		modificationTime = 295291347.31038;
+		modificationTime = 295379646.249277;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -168,7 +168,7 @@
 		ignoreCount = 0;
 		lineNumber = 61;
 		location = "ATP Calendar";
-		modificationTime = 295291347.310573;
+		modificationTime = 295379646.249576;
 		originalNumberOfMultipleMatches = 1;
 		state = 2;
 	};
@@ -249,9 +249,9 @@
 	};
 	1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1214, 1232}}";
-			sepNavSelRange = "{1040, 0}";
-			sepNavVisRange = "{153, 1346}";
+			sepNavIntBoundsRect = "{{0, 0}, {1219, 1104}}";
+			sepNavSelRange = "{642, 0}";
+			sepNavVisRange = "{227, 843}";
 			sepNavWindowFrame = "{{7, 62}, {1273, 716}}";
 		};
 	};
@@ -315,42 +315,6 @@
 		vrLen = 618;
 		vrLoc = 153;
 	};
-	1A91BD9A1199C9CE00E20C28 /* MatchDetailViewController.m:84 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
-		functionName = "-loadGallery";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 84;
-		location = "ATP Calendar";
-		modificationTime = 295291347.310655;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	1A91BDA21199C9F200E20C28 /* MatchDetailViewController.m:72 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
-		functionName = "-addGalleryButton";
-		hitCount = 2;
-		ignoreCount = 0;
-		lineNumber = 72;
-		location = "ATP Calendar";
-		modificationTime = 295291445.423251;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
 	1A91BDA71199C9F600E20C28 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
@@ -406,9 +370,9 @@
 	};
 	1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1068, 2496}}";
-			sepNavSelRange = "{2840, 0}";
-			sepNavVisRange = "{2495, 406}";
+			sepNavIntBoundsRect = "{{0, 0}, {1164, 2576}}";
+			sepNavSelRange = "{3248, 0}";
+			sepNavVisRange = "{2586, 1194}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
 		};
 	};
@@ -1075,6 +1039,56 @@
 		vrLen = 309;
 		vrLoc = 298;
 	};
+	1AC3D194119B1E1C00FF95DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 24";
+		rLen = 0;
+		rLoc = 633;
+		rType = 0;
+		vrLen = 824;
+		vrLoc = 300;
+	};
+	1AC3D197119B1E1C00FF95DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */;
+		name = "MatchImageFlowCoverViewDelegate.m: 29";
+		rLen = 0;
+		rLoc = 1040;
+		rType = 0;
+		vrLen = 1427;
+		vrLoc = 41;
+	};
+	1AC3D198119B1E1C00FF95DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A83766811860E0100B3864D /* MatchImageFlowCoverViewDelegate.m */;
+		name = "MatchImageFlowCoverViewDelegate.m: 29";
+		rLen = 0;
+		rLoc = 1040;
+		rType = 0;
+		vrLen = 1427;
+		vrLoc = 41;
+	};
+	1AC3D1CC119B25D400FF95DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 24";
+		rLen = 0;
+		rLoc = 633;
+		rType = 0;
+		vrLen = 404;
+		vrLoc = 298;
+	};
+	1AC3D1CE119B25EA00FF95DB /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 24";
+		rLen = 0;
+		rLoc = 633;
+		rType = 0;
+		vrLen = 869;
+		vrLoc = 300;
+	};
 	1ACE6CD9118418F900F90704 /* MatchWebViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1214, 565}}";
@@ -1362,7 +1376,7 @@
 	};
 	1D3623250D0F684500981E51 /* ATP_CalendarAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1164, 992}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1164, 928}}";
 			sepNavSelRange = "{511, 0}";
 			sepNavVisRange = "{50, 944}";
 			sepNavWindowFrame = "{{15, 62}, {1223, 716}}";
@@ -1402,7 +1416,7 @@
 		activeArchitecturePreference = armv6;
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 1AE35FBE117780B4001243DD /* ATP Calendar */;
-		activeSDKPreference = iphonesimulator3.1.2;
+		activeSDKPreference = iphoneos3.1.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* ATP Calendar */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* ATP Calendar */,
@@ -1410,8 +1424,6 @@
 		breakpoints = (
 			1A5A57711183656E00499565 /* ResourceLoader.m:60 */,
 			1A5A57D11183680700499565 /* ResourceLoader.m:61 */,
-			1A91BD9A1199C9CE00E20C28 /* MatchDetailViewController.m:84 */,
-			1A91BDA21199C9F200E20C28 /* MatchDetailViewController.m:72 */,
 		);
 		codeSenseManager = 1AE35FD0117780D4001243DD /* Code sense */;
 		executables = (
@@ -1573,6 +1585,11 @@
 			1AC3D18B119B1D0700FF95DB /* PBXTextBookmark */ = 1AC3D18B119B1D0700FF95DB /* PBXTextBookmark */;
 			1AC3D18C119B1D0700FF95DB /* PBXTextBookmark */ = 1AC3D18C119B1D0700FF95DB /* PBXTextBookmark */;
 			1AC3D18D119B1D4000FF95DB /* PBXTextBookmark */ = 1AC3D18D119B1D4000FF95DB /* PBXTextBookmark */;
+			1AC3D194119B1E1C00FF95DB /* PBXTextBookmark */ = 1AC3D194119B1E1C00FF95DB /* PBXTextBookmark */;
+			1AC3D197119B1E1C00FF95DB /* PBXTextBookmark */ = 1AC3D197119B1E1C00FF95DB /* PBXTextBookmark */;
+			1AC3D198119B1E1C00FF95DB /* PBXTextBookmark */ = 1AC3D198119B1E1C00FF95DB /* PBXTextBookmark */;
+			1AC3D1CC119B25D400FF95DB /* PBXTextBookmark */ = 1AC3D1CC119B25D400FF95DB /* PBXTextBookmark */;
+			1AC3D1CE119B25EA00FF95DB /* PBXTextBookmark */ = 1AC3D1CE119B25EA00FF95DB /* PBXTextBookmark */;
 			1ACE6CE3118419E300F90704 = 1ACE6CE3118419E300F90704 /* PlistBookmark */;
 			1ACE6CE6118419E300F90704 = 1ACE6CE6118419E300F90704 /* PBXTextBookmark */;
 			1AE3600A117786D1001243DD = 1AE3600A117786D1001243DD /* PBXTextBookmark */;

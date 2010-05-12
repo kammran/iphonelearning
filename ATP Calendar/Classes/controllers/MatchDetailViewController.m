@@ -87,7 +87,7 @@
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	
 	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
-		self.navigationItem.rightBarButtonItem.title = @"Gallery Coming Soon";
+		self.navigationItem.rightBarButtonItem.title = @"No Gallery";
 	} else {
 		self.navigationItem.rightBarButtonItem.title = @"Gallery";
 		self.navigationItem.rightBarButtonItem.target = self;
