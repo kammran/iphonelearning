@@ -10,6 +10,7 @@
 #import "GDataXMLNode-Extension.h"
 
 #define SERVICE_URL	@"http://freezedisk.googlecode.com/svn/trunk/iphone/ATP-Calendar/"
+#define DATA_XML @"data.xml"
 
 @interface ResourceLoader : NSObject {
 

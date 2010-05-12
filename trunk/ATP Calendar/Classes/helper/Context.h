@@ -14,5 +14,6 @@
 
 + (ATP_CalendarAppDelegate *)delegate;
 + (NSArray *)store;
++ (NSString *)documentsDirectory;
 
 @end
