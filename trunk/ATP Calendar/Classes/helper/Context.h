@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Reachability.h"
 @class ATP_CalendarAppDelegate;
+
 
 @interface Context : NSObject {	
 }
@@ -15,5 +17,6 @@
 + (ATP_CalendarAppDelegate *)delegate;
 + (NSArray *)store;
 + (NSString *)documentsDirectory;
++ (NetworkStatus)networkStatus;
 
 @end
