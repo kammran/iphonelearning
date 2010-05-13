@@ -16,6 +16,7 @@
 @synthesize navigationController;
 @synthesize store;
 @synthesize matchImageFlowCoverViewDelegate;
+@synthesize serverReachability;
 
 - (void)initStore {
 	self.store = [ResourceLoader loadData];
@@ -23,6 +24,20 @@
 
 - (void)initMatchImageFlowCoverViewDelegate {
 	self.matchImageFlowCoverViewDelegate = [[MatchImageFlowCoverViewDelegate alloc] init];
+}
+
+//Called by Reachability whenever status changes.
+- (void) reachabilityChanged: (NSNotification*) note
+{
+	NSParameterAssert([[note object] isKindOfClass: [Reachability class]]);
+	self.serverReachability = [note object];
+}
+
+- (void)initServerReachability {
+	self.serverReachability = [Reachability reachabilityWithHostName:SERVER];
+	[self.serverReachability startNotifer];
+	
+	[[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
 }
 
 #pragma mark -
@@ -35,6 +50,7 @@
     [window makeKeyAndVisible];
 	[self initStore];
 	[self initMatchImageFlowCoverViewDelegate];
+	[self initServerReachability];
 	
 	return YES;
 }
@@ -42,6 +58,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
 	// Save data if appropriate
+	[self.serverReachability stopNotifer];
 }
 
 
@@ -53,6 +70,7 @@
 	[navigationController release];
 	[window release];
 	[store release];
+	[serverReachability release];
 	[super dealloc];
 }
 

@@ -27,7 +27,7 @@
 	if ([dataFromRemote length] == 0) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:localDataPath]) {
 			data2use = [[NSData alloc] initWithContentsOfFile:localDataPath];
-			[@"You don't have a internet connection, will use the cached data, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
+			[@"No internet connection detected, the cached data will be used, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
 		} else {
 			//the first time of app lanuch
 			[@"Unable to load. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];

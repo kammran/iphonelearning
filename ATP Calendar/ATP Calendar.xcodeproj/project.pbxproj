@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0950D2BC119C2A71000BC2FC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0950D2BB119C2A71000BC2FC /* Reachability.m */; };
+		0950D2D2119C2A85000BC2FC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0950D2D1119C2A85000BC2FC /* SystemConfiguration.framework */; };
 		0952A759118079FB008970A6 /* DataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952A758118079FB008970A6 /* DataCache.m */; };
 		0952A76C11807A8A008970A6 /* FlowCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0952A76B11807A8A008970A6 /* FlowCoverView.m */; };
 		0952A78F11808261008970A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0952A78E11808261008970A6 /* QuartzCore.framework */; };
@@ -48,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0950D2BA119C2A71000BC2FC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0950D2BB119C2A71000BC2FC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0950D2D1119C2A85000BC2FC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		0952A757118079FB008970A6 /* DataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCache.h; sourceTree = "<group>"; };
 		0952A758118079FB008970A6 /* DataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCache.m; sourceTree = "<group>"; };
 		0952A76A11807A8A008970A6 /* FlowCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlowCoverView.h; sourceTree = "<group>"; };
@@ -118,6 +123,7 @@
 				2892E4100DC94CBA00A64D0F /* CoreGraphics.framework in Frameworks */,
 				0952A78F11808261008970A6 /* QuartzCore.framework in Frameworks */,
 				0952A7AB118082B5008970A6 /* OpenGLES.framework in Frameworks */,
+				0950D2D2119C2A85000BC2FC /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +133,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0950D2B9119C2A4B000BC2FC /* network */,
 				1A5A563611834F7900499565 /* xml */,
 				0952A72F1180789B008970A6 /* coverflow */,
 				1AE360D31177916F001243DD /* models */,
@@ -135,6 +142,15 @@
 				1AE3602D11778800001243DD /* helper */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		0950D2B9119C2A4B000BC2FC /* network */ = {
+			isa = PBXGroup;
+			children = (
+				0950D2BA119C2A71000BC2FC /* Reachability.h */,
+				0950D2BB119C2A71000BC2FC /* Reachability.m */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 		0952A72F1180789B008970A6 /* coverflow */ = {
@@ -297,6 +313,7 @@
 				2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */,
 				0952A78E11808261008970A6 /* QuartzCore.framework */,
 				0952A7AA118082B5008970A6 /* OpenGLES.framework */,
+				0950D2D1119C2A85000BC2FC /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -393,6 +410,7 @@
 				1A5A56F511835E0700499565 /* GDataXMLNode-Extension.m in Sources */,
 				1ACE6CDB118418F900F90704 /* MatchWebViewController.m in Sources */,
 				1A83766911860E0100B3864D /* MatchImageFlowCoverViewDelegate.m in Sources */,
+				0950D2BC119C2A71000BC2FC /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

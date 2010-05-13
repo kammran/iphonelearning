@@ -13,7 +13,7 @@
 #import "Context.h"
 #import "ATP_CalendarAppDelegate.h"
 #import "MatchImageFlowCoverViewDelegate.h"
-
+#import "NSObject-Dialog.h"
 
 @implementation MatchDetailViewController
 @synthesize match;
@@ -99,8 +99,14 @@
 
 - (void)viewDidLoad {
 	[self extractData];
+	
 	[self addGalleryButton];
-	[self performSelectorInBackground:@selector(loadGallery) withObject:nil];
+	if ([Context networkStatus] == NotReachable) {
+		self.navigationItem.rightBarButtonItem.title = @"No Internet Connection";
+	} else {
+		[self performSelectorInBackground:@selector(loadGallery) withObject:nil];
+	}
+	
 	[super viewDidLoad];
 }
 

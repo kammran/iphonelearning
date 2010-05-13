@@ -9,7 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "GDataXMLNode-Extension.h"
 
-#define SERVICE_URL	@"http://freezedisk.googlecode.com/svn/trunk/iphone/ATP-Calendar/"
+#define SERVER @"freezedisk.googlecode.com"
+#define PATH @"/svn/trunk/iphone/ATP-Calendar/"
+#define SERVICE_URL	[NSString stringWithFormat:@"http://%@%@", SERVER, PATH]
 #define DATA_XML @"data.xml"
 
 @interface ResourceLoader : NSObject {

@@ -24,4 +24,9 @@
 	return [paths objectAtIndex:0];
 }
 
++ (NetworkStatus)networkStatus {
+	return [[self delegate].serverReachability currentReachabilityStatus];
+}
+
+
 @end
