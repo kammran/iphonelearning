@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>0968F85211A18D3A00549A5A</string>
+						<string>0968F88B11A1910800549A5A</string>
 						<key>history</key>
 						<array>
 							<string>0968F83311A18B9800549A5A</string>
@@ -270,6 +270,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -314,6 +316,7 @@
 								<string>1AE35FD2117780D8001243DD</string>
 								<string>09F5F01C1188758100FE36D5</string>
 								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -356,8 +359,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -375,7 +376,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0968F85111A18D3A00549A5A</string>
+										<string>0968F88A11A1910800549A5A</string>
 										<key>history</key>
 										<array>
 											<string>09947014117F40D400A0403D</string>
@@ -403,7 +404,7 @@
 											<string>0968F81311A18A8100549A5A</string>
 											<string>0968F83E11A18C7600549A5A</string>
 											<string>0968F84C11A18D2C00549A5A</string>
-											<string>0968F84D11A18D2C00549A5A</string>
+											<string>0968F87211A18FB600549A5A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -601,7 +602,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>0968F85011A18D2C00549A5A</string>
+		<string>0968F88611A190EC00549A5A</string>
+		<string>0968F87511A18FB900549A5A</string>
 		<string>0968F7D811A1819F00549A5A</string>
 		<string>0968F7CF11A1817400549A5A</string>
 		<string>1C78EAAD065D492600B07095</string>
@@ -777,13 +779,13 @@
 									<key>DebugVariablesTableConfiguration</key>
 									<array>
 										<string>Name</string>
-										<real>120</real>
+										<real>211</real>
 										<string>Type</string>
 										<real>164</real>
 										<string>Value</string>
 										<real>137</real>
 										<string>Summary</string>
-										<real>440</real>
+										<real>349</real>
 									</array>
 									<key>Frame</key>
 									<string>{{744, 0}, {889, 495}}</string>
@@ -1246,8 +1248,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>0950D2DD119C2B66000BC2FC</string>
-				<string>0950D2DE119C2B66000BC2FC</string>
+				<string>0968F87511A18FB900549A5A</string>
+				<string>0968F87611A18FB900549A5A</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1256,7 +1258,7 @@
 			<key>WindowString</key>
 			<string>42 723 744 409 0 0 1920 1178 </string>
 			<key>WindowToolGUID</key>
-			<string>0950D2DD119C2B66000BC2FC</string>
+			<string>0968F87511A18FB900549A5A</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

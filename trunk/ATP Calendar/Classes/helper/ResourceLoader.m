@@ -26,7 +26,7 @@
 	NSData *dataFromRemote = [[NSData alloc] initWithContentsOfURL:dataUrl];
 	NSDictionary *websitesFromRemote = [[NSDictionary alloc] initWithContentsOfURL:websitesPlistUrl];
 	NSString *localDataPath = [[Context documentsDirectory] stringByAppendingPathComponent:DATA_XML];
-	NSString *localWebsitesPath = [[Context documentsDirectory] stringByAppendingString:WEB_SITES_PLISt];
+	NSString *localWebsitesPath = [[Context documentsDirectory] stringByAppendingPathComponent:WEB_SITES_PLISt];
 	
 	if ([dataFromRemote length] == 0) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:localDataPath]) {
@@ -44,10 +44,8 @@
 	if ([[websitesFromRemote allKeys] count] == 0) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:localWebsitesPath]) {
 			websites2use = [[NSDictionary alloc] initWithContentsOfFile:localWebsitesPath];
-			[@"No internet connection detected, the cached data will be used, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
 		} else {
-			//the first time of app lanuch
-			[@"Unable to load websites. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];
+			websites2use = [[NSDictionary alloc] init];
 		}
 	} else {
 		websites2use = [websitesFromRemote copy];
