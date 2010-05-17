@@ -65,7 +65,7 @@
 		fRef = 099668BA1178989C00AEF5AC /* ResourceLoader.h */;
 		name = "ResourceLoader.h: 17";
 		rLen = 0;
-		rLoc = 483;
+		rLoc = 484;
 		rType = 0;
 		vrLen = 488;
 		vrLoc = 0;
@@ -534,7 +534,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 1923;
 		vrLoc = 2252;
@@ -544,7 +544,7 @@
 		fRef = 099668BA1178989C00AEF5AC /* ResourceLoader.h */;
 		name = "ResourceLoader.h: 22";
 		rLen = 0;
-		rLoc = 522;
+		rLoc = 523;
 		rType = 0;
 		vrLen = 529;
 		vrLoc = 0;
@@ -554,7 +554,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2176;
 		vrLoc = 218;
@@ -564,7 +564,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 1923;
 		vrLoc = 2252;
@@ -574,7 +574,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2176;
 		vrLoc = 218;
@@ -584,7 +584,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2176;
 		vrLoc = 218;
@@ -594,7 +594,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 2121;
 		vrLoc = 2008;
@@ -604,7 +604,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2190;
 		vrLoc = 218;
@@ -614,7 +614,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 2121;
 		vrLoc = 2008;
@@ -624,7 +624,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2190;
 		vrLoc = 218;
@@ -653,7 +653,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 952;
 		vrLoc = 3098;
@@ -663,7 +663,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 2121;
 		vrLoc = 2008;
@@ -673,7 +673,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 35";
 		rLen = 0;
-		rLoc = 1341;
+		rLoc = 1343;
 		rType = 0;
 		vrLen = 2190;
 		vrLoc = 218;
@@ -683,7 +683,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 3098;
@@ -697,7 +697,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 92";
 		rLen = 0;
-		rLoc = 4175;
+		rLoc = 4177;
 		rType = 0;
 		vrLen = 979;
 		vrLoc = 3098;
@@ -728,7 +728,7 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 44";
 		rLen = 0;
-		rLoc = 1617;
+		rLoc = 1619;
 		rType = 0;
 		vrLen = 2116;
 		vrLoc = 382;
@@ -738,12 +738,72 @@
 		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
 		name = "ResourceLoader.m: 40";
 		rLen = 0;
-		rLoc = 1550;
+		rLoc = 1552;
 		rType = 0;
 		vrLen = 2221;
 		vrLoc = 246;
 	};
 	0968F84611A18C7600549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
+		name = "MatchDetailViewController.m: 123";
+		rLen = 0;
+		rLoc = 4307;
+		rType = 0;
+		vrLen = 1692;
+		vrLoc = 3506;
+	};
+	0968F84C11A18D2C00549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BA1178989C00AEF5AC /* ResourceLoader.h */;
+		name = "ResourceLoader.h: 16";
+		rLen = 0;
+		rLoc = 432;
+		rType = 0;
+		vrLen = 530;
+		vrLoc = 0;
+	};
+	0968F84D11A18D2C00549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 22";
+		rLen = 15;
+		rLoc = 555;
+		rType = 0;
+		vrLen = 1701;
+		vrLoc = 43;
+	};
+	0968F84E11A18D2C00549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 17";
+		rLen = 0;
+		rLoc = 299;
+		rType = 0;
+		vrLen = 1626;
+		vrLoc = 43;
+	};
+	0968F84F11A18D2C00549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
+		name = "MatchDetailViewController.m: 123";
+		rLen = 0;
+		rLoc = 4307;
+		rType = 0;
+		vrLen = 1692;
+		vrLoc = 3506;
+	};
+	0968F85111A18D3A00549A5A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 099668BB1178989C00AEF5AC /* ResourceLoader.m */;
+		name = "ResourceLoader.m: 52";
+		rLen = 0;
+		rLoc = 2157;
+		rType = 0;
+		vrLen = 2091;
+		vrLoc = 470;
+	};
+	0968F85211A18D3A00549A5A /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 1A9BD95D1178CE3100245AE6 /* MatchDetailViewController.m */;
 		name = "MatchDetailViewController.m: 123";
@@ -841,17 +901,17 @@
 	};
 	099668BA1178989C00AEF5AC /* ResourceLoader.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1635, 986}}";
-			sepNavSelRange = "{456, 0}";
-			sepNavVisRange = "{0, 529}";
+			sepNavIntBoundsRect = "{{0, 0}, {1525, 864}}";
+			sepNavSelRange = "{432, 0}";
+			sepNavVisRange = "{0, 530}";
 			sepNavWindowFrame = "{{20, 64}, {1694, 1114}}";
 		};
 	};
 	099668BB1178989C00AEF5AC /* ResourceLoader.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1635, 2163}}";
-			sepNavSelRange = "{1550, 0}";
-			sepNavVisRange = "{246, 2221}";
+			sepNavIntBoundsRect = "{{0, 0}, {1626.7, 2121}}";
+			sepNavSelRange = "{2157, 0}";
+			sepNavVisRange = "{470, 2091}";
 			sepNavWindowFrame = "{{20, 64}, {1694, 1114}}";
 		};
 	};
@@ -1269,6 +1329,12 @@
 			0968F84011A18C7600549A5A /* PBXTextBookmark */ = 0968F84011A18C7600549A5A /* PBXTextBookmark */;
 			0968F84311A18C7600549A5A /* PBXTextBookmark */ = 0968F84311A18C7600549A5A /* PBXTextBookmark */;
 			0968F84611A18C7600549A5A /* PBXTextBookmark */ = 0968F84611A18C7600549A5A /* PBXTextBookmark */;
+			0968F84C11A18D2C00549A5A /* PBXTextBookmark */ = 0968F84C11A18D2C00549A5A /* PBXTextBookmark */;
+			0968F84D11A18D2C00549A5A /* PBXTextBookmark */ = 0968F84D11A18D2C00549A5A /* PBXTextBookmark */;
+			0968F84E11A18D2C00549A5A /* PBXTextBookmark */ = 0968F84E11A18D2C00549A5A /* PBXTextBookmark */;
+			0968F84F11A18D2C00549A5A /* PBXTextBookmark */ = 0968F84F11A18D2C00549A5A /* PBXTextBookmark */;
+			0968F85111A18D3A00549A5A /* PBXTextBookmark */ = 0968F85111A18D3A00549A5A /* PBXTextBookmark */;
+			0968F85211A18D3A00549A5A /* PBXTextBookmark */ = 0968F85211A18D3A00549A5A /* PBXTextBookmark */;
 			09947014117F40D400A0403D = 09947014117F40D400A0403D /* PlistBookmark */;
 			09947016117F40D400A0403D = 09947016117F40D400A0403D /* PBXTextBookmark */;
 			09947058117F435600A0403D = 09947058117F435600A0403D /* PBXBookmark */;
