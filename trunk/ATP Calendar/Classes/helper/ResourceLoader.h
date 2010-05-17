@@ -13,6 +13,7 @@
 #define PATH @"/svn/trunk/iphone/ATP-Calendar/"
 #define SERVICE_URL	[NSString stringWithFormat:@"http://%@%@", SERVER, PATH]
 #define DATA_XML @"data.xml"
+#define WEB_SITE_PLISt @"websites.plist"
 
 @interface ResourceLoader : NSObject {
 

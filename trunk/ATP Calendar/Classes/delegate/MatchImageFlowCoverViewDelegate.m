@@ -16,8 +16,12 @@
 - (void)initImages {
 	NSString *plistPath = [[NSString stringWithFormat:@"%@Images/Matches/%@/%@.plist", SERVICE_URL, matchName, matchName] 
 						   stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
-	NSDictionary *plist = [[NSDictionary alloc] initWithContentsOfURL:[NSURL URLWithString:plistPath]];
 	
+	if (plistPath == nil) {
+		return;
+	}
+	
+	NSDictionary *plist = [[NSDictionary alloc] initWithContentsOfURL:[NSURL URLWithString:plistPath]];
 	NSInteger imageCount = [[plist valueForKey:@"ImageCount"] intValue];
 	NSString *imageType = [plist valueForKey:@"ImageType"];
 	
