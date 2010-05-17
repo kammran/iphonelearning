@@ -19,14 +19,14 @@
 	NSMutableArray *array = [[NSMutableArray alloc] init];
 	
 	NSURL *dataUrl = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:DATA_XML]];
-	NSURL *websitesPlistUrl = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:WEB_SITE_PLISt]];
+	NSURL *websitesPlistUrl = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:WEB_SITES_PLISt]];
 	
 	NSData *data2use = nil;
 	NSDictionary *websites2use = nil;
 	NSData *dataFromRemote = [[NSData alloc] initWithContentsOfURL:dataUrl];
 	NSDictionary *websitesFromRemote = [[NSDictionary alloc] initWithContentsOfURL:websitesPlistUrl];
 	NSString *localDataPath = [[Context documentsDirectory] stringByAppendingPathComponent:DATA_XML];
-	NSString *localWebsitesPath = [[Context documentsDirectory] stringByAppendingString:WEB_SITE_PLISt];
+	NSString *localWebsitesPath = [[Context documentsDirectory] stringByAppendingString:WEB_SITES_PLISt];
 	
 	if ([dataFromRemote length] == 0) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:localDataPath]) {
