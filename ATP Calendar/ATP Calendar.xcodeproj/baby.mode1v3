@@ -197,89 +197,7 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>0950D3F7119C457B000BC2FC</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ResourceLoader.h</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>0950D3F8119C457B000BC2FC</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ResourceLoader.h</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0950D3FA119C457B000BC2FC</string>
-						<key>history</key>
-						<array>
-							<string>0950D3F9119C457B000BC2FC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1694, 1017}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>20 120 1694 1058 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
-				<string>0950D3EF119C3BDF000BC2FC</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>ResourceLoader.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>0950D3F0119C3BDF000BC2FC</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>ResourceLoader.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>0950D3FD119C457B000BC2FC</string>
-						<key>history</key>
-						<array>
-							<string>0950D3FB119C457B000BC2FC</string>
-							<string>0950D3FC119C457B000BC2FC</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1694, 1017}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>20 120 1694 1058 0 0 1920 1178 </string>
-			</dict>
-		</dict>
-	</array>
+	<array/>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -416,7 +334,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>0950D3F6119C457B000BC2FC</string>
+										<string>0950D400119C464D000BC2FC</string>
 										<key>history</key>
 										<array>
 											<string>09947014117F40D400A0403D</string>
@@ -641,6 +559,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>0950D3F7119C457B000BC2FC</string>
+		<string>0950D3EF119C3BDF000BC2FC</string>
 		<string>0950D2DD119C2B66000BC2FC</string>
 		<string>0950D2E6119C2B6A000BC2FC</string>
 		<string>0950D2E7119C2B6A000BC2FC</string>
@@ -648,8 +568,6 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>0996693A1178A1B800AEF5AC</string>
 		<string>/Users/baby/iphone/iphonelearning/ATP Calendar/ATP Calendar.xcodeproj</string>
-		<string>0950D3EF119C3BDF000BC2FC</string>
-		<string>0950D3F7119C457B000BC2FC</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1920 1059 0 0 1920 1178 </string>
