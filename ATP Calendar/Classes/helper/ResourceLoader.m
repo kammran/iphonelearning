@@ -17,12 +17,16 @@
 
 + (NSArray *)loadData {
 	NSMutableArray *array = [[NSMutableArray alloc] init];
-	NSDictionary *websites = [[NSDictionary alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"websites" ofType:@"plist"]];
-	NSURL *url = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:DATA_XML]];
+	
+	NSURL *dataUrl = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:DATA_XML]];
+	NSURL *websitesPlistUrl = [NSURL URLWithString:[SERVICE_URL stringByAppendingString:WEB_SITE_PLISt]];
 	
 	NSData *data2use = nil;
-	NSData *dataFromRemote = [[NSData alloc] initWithContentsOfURL:url];
+	NSDictionary *websites2use = nil;
+	NSData *dataFromRemote = [[NSData alloc] initWithContentsOfURL:dataUrl];
+	NSDictionary *websitesFromRemote = [[NSDictionary alloc] initWithContentsOfURL:websitesPlistUrl];
 	NSString *localDataPath = [[Context documentsDirectory] stringByAppendingPathComponent:DATA_XML];
+	NSString *localWebsitesPath = [[Context documentsDirectory] stringByAppendingString:WEB_SITE_PLISt];
 	
 	if ([dataFromRemote length] == 0) {
 		if ([[NSFileManager defaultManager] fileExistsAtPath:localDataPath]) {
@@ -30,11 +34,24 @@
 			[@"No internet connection detected, the cached data will be used, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
 		} else {
 			//the first time of app lanuch
-			[@"Unable to load. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];
+			[@"Unable to load data. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];
 		}
 	} else {
 		data2use = [dataFromRemote copy];
 		[dataFromRemote writeToFile:localDataPath atomically:YES];
+	}
+	
+	if ([[websitesFromRemote allKeys] count] == 0) {
+		if ([[NSFileManager defaultManager] fileExistsAtPath:localWebsitesPath]) {
+			websites2use = [[NSDictionary alloc] initWithContentsOfFile:localWebsitesPath];
+			[@"No internet connection detected, the cached data will be used, but the gallery won't be available." showInDialogWithTitle:@"Warning"];
+		} else {
+			//the first time of app lanuch
+			[@"Unable to load websites. Please try again or check your network settings. Edge/3G or WiFi must be enabled." showInDialog];
+		}
+	} else {
+		websites2use = [websitesFromRemote copy];
+		[websitesFromRemote writeToFile:localWebsitesPath atomically:YES];
 	}
 	
 	GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data2use options:0 error:nil];
@@ -63,15 +80,16 @@
 			match.ticketEmail = [matchElement stringValueForName:@"email"];
 			match.ticketPhone = [matchElement stringValueForName:@"tel"];
 			match.totalFinancialCommitment = [matchElement stringValueForName:@"total"];
-			match.website = [websites valueForKey:match.name];
+			match.website = [websites2use valueForKey:match.name];
 			[month2Matches addMatch:match];
 		}
 	}
 	
 	[dataFromRemote release];
 	[data2use release];
+	[websitesFromRemote release];
+	[websites2use release];
 	[doc release];
-	[websites release];
 	return array;
 }
 
