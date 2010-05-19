@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A13AF4711A4543100EBC04C /* rabbit.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A13AF4511A4543100EBC04C /* rabbit.png */; };
+		1A13AF4811A4543100EBC04C /* turtle.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A13AF4611A4543100EBC04C /* turtle.png */; };
 		1A730CFB11A30A4800E1E20F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A730CFA11A30A4800E1E20F /* Settings.bundle */; };
 		1A730D1511A30EBC00E1E20F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A730D1411A30EBC00E1E20F /* icon.png */; };
 		1D3623260D0F684500981E51 /* AppSettingsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppSettingsAppDelegate.m */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A13AF4511A4543100EBC04C /* rabbit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rabbit.png; sourceTree = "<group>"; };
+		1A13AF4611A4543100EBC04C /* turtle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = turtle.png; sourceTree = "<group>"; };
 		1A730CFA11A30A4800E1E20F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		1A730D1411A30EBC00E1E20F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +123,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1A13AF4511A4543100EBC04C /* rabbit.png */,
+				1A13AF4611A4543100EBC04C /* turtle.png */,
 				1A730D1411A30EBC00E1E20F /* icon.png */,
 				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
@@ -192,6 +198,8 @@
 				280E754F0DD40C5E005A515E /* MainWindow.xib in Resources */,
 				1A730CFB11A30A4800E1E20F /* Settings.bundle in Resources */,
 				1A730D1511A30EBC00E1E20F /* icon.png in Resources */,
+				1A13AF4711A4543100EBC04C /* rabbit.png in Resources */,
+				1A13AF4811A4543100EBC04C /* turtle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
