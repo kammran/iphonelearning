@@ -13,7 +13,12 @@
 
 @interface FlipsideViewController : UIViewController {
 	id <FlipsideViewControllerDelegate> delegate;
+	UISwitch *engineSwitch;
+	UISlider *warpFactorSlider;
 }
+
+@property (nonatomic, retain) IBOutlet UISwitch *engineSwitch;
+@property (nonatomic, retain) IBOutlet UISlider *warpFactorSlider;
 
 @property (nonatomic, assign) id <FlipsideViewControllerDelegate> delegate;
 - (IBAction)done;
