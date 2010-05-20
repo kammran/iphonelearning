@@ -7,16 +7,29 @@
 //
 
 #import "FlipsideViewController.h"
+#import "MainViewController.h"
 
 
 @implementation FlipsideViewController
 
 @synthesize delegate;
+@synthesize engineSwitch;
+@synthesize warpFactorSlider;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];      
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	self.engineSwitch.on = [[userDefaults stringForKey:kWarpDriveKey] isEqualToString:@"Engaged"];
+	self.warpFactorSlider.value = [userDefaults floatForKey:kWarpFactorKey];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+	NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+	NSString *engineState = self.engineSwitch.on ? @"Engaged" : @"Disabled";
+	[userDefaults setValue:engineState forKey:kWarpDriveKey];
+	[userDefaults setFloat:self.warpFactorSlider.value forKey:kWarpFactorKey];
+	[super viewWillAppear:animated];
 }
 
 
