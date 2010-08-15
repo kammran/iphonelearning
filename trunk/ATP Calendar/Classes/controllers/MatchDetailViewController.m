@@ -83,7 +83,7 @@
     
 	MatchImageFlowCoverViewDelegate *matchImageFlowCoverViewDelegate = [Context delegate].matchImageFlowCoverViewDelegate;
 	
-	//Actual load, this stemp is slow
+	//Actual load, this step is slow
 	matchImageFlowCoverViewDelegate.matchName = self.match.name;
 	
 	if ([matchImageFlowCoverViewDelegate.images count] == 0) {
