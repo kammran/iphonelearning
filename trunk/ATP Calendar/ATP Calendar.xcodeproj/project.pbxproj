@@ -417,12 +417,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: James Wang";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos3.1.2;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3567FE32-C722-4D22-AA1A-F9574F788A17";
+				SDKROOT = iphoneos4.0;
 			};
 			name = Distribution;
 		};
@@ -496,6 +498,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "Tennis Calendar";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
@@ -513,7 +516,7 @@
 				PREBINDING = NO;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
-				SDKROOT = iphoneos3.1.2;
+				SDKROOT = iphoneos4.0;
 			};
 			name = Release;
 		};

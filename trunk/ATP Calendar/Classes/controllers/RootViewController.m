@@ -20,7 +20,7 @@
 #pragma mark View lifecycle
 
 - (void)viewDidLoad {
-	self.title = @"ATP Tour 2010 Calendar";
+	self.title = @"Tennis 2010 Calendar";
 	[super viewDidLoad];
 }
 
