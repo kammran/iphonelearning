@@ -1,0 +1,147 @@
+// !$*UTF8*$!
+{
+	1A8A970A12290AA600E38751 /* Cosplaying */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Cosplaying;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	1A8A971C12290AB400E38751 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	1A8A971D12290AB400E38751 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	1A8A972012290B3400E38751 /* cosplay-small-icon.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
+		};
+	};
+	1A8A972A12290D9800E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Cosplaying-Info.plist */;
+	};
+	1A8A973312290DBD00E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */;
+	};
+	1A8A973412290DBD00E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */;
+	};
+	1A8A973712290DBD00E38751 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Cosplaying-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	1A8A975112290ED500E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */;
+	};
+	1A8A975212290ED500E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */;
+	};
+	1A8A97611229106400E38751 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */;
+	};
+	1D6058900D05DD3D006BFB54 /* Cosplaying */ = {
+		activeExec = 0;
+		executables = (
+			1A8A970A12290AA600E38751 /* Cosplaying */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 1A8A970A12290AA600E38751 /* Cosplaying */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Cosplaying */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Cosplaying */,
+		);
+		codeSenseManager = 1A8A971D12290AB400E38751 /* Code sense */;
+		executables = (
+			1A8A970A12290AA600E38751 /* Cosplaying */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					833,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 304679590;
+			PBXWorkspaceStateSaveDate = 304679590;
+		};
+		perUserProjectItems = {
+			1A8A972A12290D9800E38751 /* PBXBookmark */ = 1A8A972A12290D9800E38751 /* PBXBookmark */;
+			1A8A973312290DBD00E38751 /* PBXBookmark */ = 1A8A973312290DBD00E38751 /* PBXBookmark */;
+			1A8A973412290DBD00E38751 /* PBXBookmark */ = 1A8A973412290DBD00E38751 /* PBXBookmark */;
+			1A8A973712290DBD00E38751 /* PlistBookmark */ = 1A8A973712290DBD00E38751 /* PlistBookmark */;
+			1A8A975112290ED500E38751 /* PBXBookmark */ = 1A8A975112290ED500E38751 /* PBXBookmark */;
+			1A8A975212290ED500E38751 /* PBXBookmark */ = 1A8A975212290ED500E38751 /* PBXBookmark */;
+			1A8A97611229106400E38751 /* PBXBookmark */ = 1A8A97611229106400E38751 /* PBXBookmark */;
+		};
+		sourceControlManager = 1A8A971C12290AB400E38751 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* Cosplaying-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
+		};
+	};
+}
