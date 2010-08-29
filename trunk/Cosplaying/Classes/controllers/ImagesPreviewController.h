@@ -18,5 +18,6 @@
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
 
 - (IBAction)searchButtonPressed;
+- (IBAction)segmentPressed:(id) sender;
 
 @end

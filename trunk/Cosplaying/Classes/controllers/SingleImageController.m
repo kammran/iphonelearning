@@ -8,6 +8,8 @@
 
 #import "SingleImageController.h"
 #import "NSObject-Dialog.h"
+#import "AnimationDefinition.h"
+#import "UINavigationController-Animation.h"
 
 @implementation SingleImageController
 @synthesize imageView;
@@ -43,8 +45,13 @@
     [super dealloc];
 }
 
-- (IBAction)backToSuperView:(id) sender {
-	[self.navigationController popViewControllerAnimated:YES];
+- (IBAction)backToSuperView:(id) sender {	
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlUp
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	[self.navigationController popViewControllerWithAnimation:animationDefinition];
+	[animationDefinition release];
 }
 
 

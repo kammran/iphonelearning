@@ -9,6 +9,8 @@
 #import "ImagesPreviewController.h"
 #import "SingleImageController.h"
 #import "NSObject-Dialog.h"
+#import "UINavigationController-Animation.h"
+#import "AnimationDefinition.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -46,9 +48,14 @@
 			
 			SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
 			singleImageController.image = imageView.image;
-			[self.navigationController pushViewController:singleImageController animated:YES];
-			//[self.view insertSubview:singleImageController.view atIndex:100];
+			
+			AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+														initWithTransition:UIViewAnimationTransitionCurlDown
+														curve:UIViewAnimationCurveEaseInOut
+														duration:1];
+			[self.navigationController pushViewController:singleImageController withAnimation:animationDefinition];
 			[singleImageController release];
+			[animationDefinition release];
 		}
 	}	
 	
@@ -63,6 +70,11 @@
 - (IBAction)searchButtonPressed {
 	self.searchBar.hidden = NO;
 	[self.searchBar becomeFirstResponder];
+}
+
+- (IBAction)segmentPressed:(id) sender {
+	UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
+	[[NSString stringWithFormat:@"%d", segmentedControl.selectedSegmentIndex] showInDialog];
 }
 
 #pragma mark -
