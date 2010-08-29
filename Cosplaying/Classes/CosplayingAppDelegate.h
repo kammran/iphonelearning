@@ -8,15 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@class ImagesPreviewController;
-
 @interface CosplayingAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
-	ImagesPreviewController *imagesPreviewController;
+	UINavigationController *navigationController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet ImagesPreviewController *imagesPreviewController;
+@property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
 
 @end
 

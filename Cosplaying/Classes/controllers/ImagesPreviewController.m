@@ -7,40 +7,15 @@
 //
 
 #import "ImagesPreviewController.h"
-
+#import "SingleImageController.h"
+#import "NSObject-Dialog.h"
 
 @implementation ImagesPreviewController
+@synthesize searchBar;
 
-/*
- // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+	[super viewDidLoad];
 }
 
 - (void)viewDidUnload {
@@ -54,5 +29,54 @@
     [super dealloc];
 }
 
+#pragma mark -
+
+#pragma mark Methods For Touch Events
+
+- (BOOL)canResignFirstResponder {
+	return YES;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	for (UITouch *touch in touches) {
+		UIView *touchedView = [touch view];
+		NSLog(@"%@", [touchedView class]);
+		if ([touchedView isKindOfClass:[UIImageView class]]) {
+			UIImageView *imageView = (UIImageView *) touchedView;
+			
+			SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
+			singleImageController.image = imageView.image;
+			[self.navigationController pushViewController:singleImageController animated:YES];
+			//[self.view insertSubview:singleImageController.view atIndex:100];
+			[singleImageController release];
+		}
+	}	
+	
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+}
+
+#pragma mark -
+#pragma mark IBAction Methods
+
+- (IBAction)searchButtonPressed {
+	self.searchBar.hidden = NO;
+	[self.searchBar becomeFirstResponder];
+}
+
+#pragma mark -
+#pragma mark UISearchBarDelegate Methods
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
+	[[NSString stringWithFormat:@"You searched %@", theSearchBar.text] showInDialogWithTitle:@"Message"];
+	[self.searchBar resignFirstResponder];
+	self.searchBar.hidden = YES;	
+}
+
+- (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar {
+	[self.searchBar resignFirstResponder];
+	self.searchBar.hidden = YES;
+}
 
 @end

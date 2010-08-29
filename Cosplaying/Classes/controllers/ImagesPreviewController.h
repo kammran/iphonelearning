@@ -9,8 +9,14 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ImagesPreviewController : UIViewController {
+@interface ImagesPreviewController : UIViewController <UISearchBarDelegate> {
 
+	UISearchBar *searchBar;
+	
 }
+
+@property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+
+- (IBAction)searchButtonPressed;
 
 @end

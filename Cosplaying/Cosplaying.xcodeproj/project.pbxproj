@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
+		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
+		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
 		1A8A972112290B3400E38751 /* cosplay-small-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972012290B3400E38751 /* cosplay-small-icon.png */; };
 		1A8A972812290D8B00E38751 /* ff-girl-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972612290D8B00E38751 /* ff-girl-small.png */; };
 		1A8A972912290D8B00E38751 /* ff-yuna-smalll.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */; };
@@ -22,6 +25,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
+		1A8909FE122A61C9009B92ED /* SingleImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageController.m; sourceTree = "<group>"; };
+		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
+		1A890A7C122A68D8009B92ED /* NSObject-Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Dialog.h"; sourceTree = "<group>"; };
+		1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-Dialog.m"; sourceTree = "<group>"; };
 		1A8A972012290B3400E38751 /* cosplay-small-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosplay-small-icon.png"; sourceTree = "<group>"; };
 		1A8A972612290D8B00E38751 /* ff-girl-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff-girl-small.png"; sourceTree = "<group>"; };
 		1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff-yuna-smalll.png"; sourceTree = "<group>"; };
@@ -58,6 +66,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1A890A7B122A689F009B92ED /* helper */,
 				1A8A97A41229179600E38751 /* controllers */,
 				1A8A978E1229125E00E38751 /* delegates */,
 			);
@@ -70,6 +79,15 @@
 				1D6058910D05DD3D006BFB54 /* Cosplaying.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1A890A7B122A689F009B92ED /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1A890A7C122A68D8009B92ED /* NSObject-Dialog.h */,
+				1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */,
+			);
+			path = helper;
 			sourceTree = "<group>";
 		};
 		1A8A971F12290AE800E38751 /* Images */ = {
@@ -98,6 +116,9 @@
 				1A8A97A51229181E00E38751 /* ImagesPreviewController.h */,
 				1A8A97A61229181E00E38751 /* ImagesPreviewController.m */,
 				1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */,
+				1A8909FD122A61C9009B92ED /* SingleImageController.h */,
+				1A8909FE122A61C9009B92ED /* SingleImageController.m */,
+				1A8909FF122A61C9009B92ED /* SingleImageController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -194,6 +215,7 @@
 				1A8A972912290D8B00E38751 /* ff-yuna-smalll.png in Resources */,
 				1A8A976B1229116500E38751 /* Default.png in Resources */,
 				1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */,
+				1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +229,8 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* CosplayingAppDelegate.m in Sources */,
 				1A8A97A81229181E00E38751 /* ImagesPreviewController.m in Sources */,
+				1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */,
+				1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
