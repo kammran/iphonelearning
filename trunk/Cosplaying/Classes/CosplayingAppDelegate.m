@@ -12,7 +12,7 @@
 @implementation CosplayingAppDelegate
 
 @synthesize window;
-@synthesize imagesPreviewController;
+@synthesize navigationController;
 
 
 #pragma mark -
@@ -21,7 +21,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
-	[window addSubview:imagesPreviewController.view];
+	[window addSubview:navigationController.view];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
     [window makeKeyAndVisible];
 	
@@ -29,7 +29,7 @@
 }
 
 - (void)dealloc {
-	[imagesPreviewController release];
+	[navigationController release];
     [window release];
     [super dealloc];
 }
