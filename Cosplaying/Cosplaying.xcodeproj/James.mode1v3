@@ -202,24 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1A890D0B122AB144009B92ED</string>
+				<string>1A890E7E122AC65B009B92ED</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>ImagesPreviewController.m</string>
+				<string>UIView.h</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1A890D0C122AB144009B92ED</string>
+						<string>1A890E7F122AC65B009B92ED</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>ImagesPreviewController.m</string>
+						<string>UIView.h</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1A890D1D122AB2C7009B92ED</string>
+						<string>1A890ED8122AC9D0009B92ED</string>
 						<key>history</key>
 						<array>
-							<string>1A890D03122AB0EF009B92ED</string>
+							<string>1A890E80122AC65B009B92ED</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -308,6 +308,7 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>1A890A7B122A689F009B92ED</string>
 								<string>1A8A97A41229179600E38751</string>
 								<string>1A8A978E1229125E00E38751</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
@@ -316,8 +317,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
-									<integer>3</integer>
+									<integer>11</integer>
+									<integer>9</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -358,7 +359,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>SingleImageController.h</string>
+								<string>UINavigationController-Animation.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -366,11 +367,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>SingleImageController.h</string>
+										<string>UINavigationController-Animation.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A890D1C122AB2C7009B92ED</string>
+										<string>1A890ED7122AC9D0009B92ED</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -378,7 +379,14 @@
 											<string>1A890A14122A62E0009B92ED</string>
 											<string>1A890A69122A678D009B92ED</string>
 											<string>1A890C26122AA6FF009B92ED</string>
-											<string>1A890A86122A69C2009B92ED</string>
+											<string>1A890E6E122AC65B009B92ED</string>
+											<string>1A890E6F122AC65B009B92ED</string>
+											<string>1A890E70122AC65B009B92ED</string>
+											<string>1A890E71122AC65B009B92ED</string>
+											<string>1A890E73122AC65B009B92ED</string>
+											<string>1A890E74122AC65B009B92ED</string>
+											<string>1A890E75122AC65B009B92ED</string>
+											<string>1A890EC4122AC954009B92ED</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -576,6 +584,9 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1A890ED3122AC982009B92ED</string>
+		<string>1A890EC6122AC954009B92ED</string>
+		<string>1A890EC9122AC954009B92ED</string>
 		<string>1A890A35122A6397009B92ED</string>
 		<string>1A890A38122A6397009B92ED</string>
 		<string>1A890A39122A6397009B92ED</string>
@@ -583,7 +594,6 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1A890D0B122AB144009B92ED</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -607,7 +617,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>ImagesPreviewController.m</string>
+								<string>UINavigationController-Animation.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

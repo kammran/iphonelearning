@@ -10,6 +10,8 @@
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
 		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
+		1A890E37122AC1F8009B92ED /* UINavigationController-Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890E36122AC1F8009B92ED /* UINavigationController-Animation.m */; };
+		1A890E4B122AC312009B92ED /* AnimationDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890E4A122AC312009B92ED /* AnimationDefinition.m */; };
 		1A8A972112290B3400E38751 /* cosplay-small-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972012290B3400E38751 /* cosplay-small-icon.png */; };
 		1A8A972812290D8B00E38751 /* ff-girl-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972612290D8B00E38751 /* ff-girl-small.png */; };
 		1A8A972912290D8B00E38751 /* ff-yuna-smalll.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */; };
@@ -30,6 +32,10 @@
 		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
 		1A890A7C122A68D8009B92ED /* NSObject-Dialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-Dialog.h"; sourceTree = "<group>"; };
 		1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-Dialog.m"; sourceTree = "<group>"; };
+		1A890E35122AC1F8009B92ED /* UINavigationController-Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController-Animation.h"; sourceTree = "<group>"; };
+		1A890E36122AC1F8009B92ED /* UINavigationController-Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController-Animation.m"; sourceTree = "<group>"; };
+		1A890E49122AC312009B92ED /* AnimationDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationDefinition.h; sourceTree = "<group>"; };
+		1A890E4A122AC312009B92ED /* AnimationDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationDefinition.m; sourceTree = "<group>"; };
 		1A8A972012290B3400E38751 /* cosplay-small-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cosplay-small-icon.png"; sourceTree = "<group>"; };
 		1A8A972612290D8B00E38751 /* ff-girl-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff-girl-small.png"; sourceTree = "<group>"; };
 		1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ff-yuna-smalll.png"; sourceTree = "<group>"; };
@@ -85,7 +91,11 @@
 			isa = PBXGroup;
 			children = (
 				1A890A7C122A68D8009B92ED /* NSObject-Dialog.h */,
+				1A890E35122AC1F8009B92ED /* UINavigationController-Animation.h */,
+				1A890E36122AC1F8009B92ED /* UINavigationController-Animation.m */,
 				1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */,
+				1A890E49122AC312009B92ED /* AnimationDefinition.h */,
+				1A890E4A122AC312009B92ED /* AnimationDefinition.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -231,6 +241,8 @@
 				1A8A97A81229181E00E38751 /* ImagesPreviewController.m in Sources */,
 				1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */,
 				1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */,
+				1A890E37122AC1F8009B92ED /* UINavigationController-Animation.m in Sources */,
+				1A890E4B122AC312009B92ED /* AnimationDefinition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
