@@ -7,7 +7,7 @@
 //
 
 #import "Core_Data_PersistenceAppDelegate.h"
-
+#import "PersistenceViewController.h"
 
 @interface Core_Data_PersistenceAppDelegate (PrivateCoreDataStack)
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
@@ -19,7 +19,7 @@
 @implementation Core_Data_PersistenceAppDelegate
 
 @synthesize window;
-
+@synthesize rootController;
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -28,6 +28,7 @@
 	
     // Override point for customization after application launch
 	
+	[window addSubview:self.rootController.view];
     [window makeKeyAndVisible];
 	
 	return YES;
@@ -143,6 +144,7 @@
     [managedObjectModel release];
     [persistentStoreCoordinator release];
     
+	[rootController release];
 	[window release];
 	[super dealloc];
 }

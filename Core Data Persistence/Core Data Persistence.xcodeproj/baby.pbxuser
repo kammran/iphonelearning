@@ -1,5 +1,68 @@
 // !$*UTF8*$!
 {
+	091F4419122BF03B0003A004 /* PersistenceViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1632, 986}}";
+			sepNavSelRange = "{578, 0}";
+			sepNavVisRange = "{0, 578}";
+			sepNavWindowFrame = "{{15, 64}, {1691, 1114}}";
+		};
+	};
+	091F441A122BF03B0003A004 /* PersistenceViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1516, 2163}}";
+			sepNavSelRange = "{1672, 0}";
+			sepNavVisRange = "{1851, 742}";
+			sepNavWindowFrame = "{{15, 64}, {1596, 1114}}";
+		};
+	};
+	091F4422122BF7930003A004 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 091F4419122BF03B0003A004 /* PersistenceViewController.h */;
+		name = "PersistenceViewController.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 258;
+		vrLoc = 0;
+	};
+	091F4437122BF87A0003A004 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Request for member 'view' in something not a structure or union";
+		fRef = 1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 30;
+		rType = 1;
+	};
+	091F4471122BF9E50003A004 /* PersistenceViewController.m:53 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 091F441A122BF03B0003A004 /* PersistenceViewController.m */;
+		functionName = "-applicationWillTerminate:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 53;
+		location = "Core Data Persistence";
+		modificationTime = 304871938.669902;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	091F447F122BFADD0003A004 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */;
+		name = "Core_Data_PersistenceAppDelegate.m: 31";
+		rLen = 0;
+		rLoc = 930;
+		rType = 0;
+		vrLen = 776;
+		vrLoc = 256;
+	};
 	09A641B811CA5CE5007E369A /* Core Data Persistence */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -7,7 +70,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -24,9 +87,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = "Core Data Persistence";
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	09A641D211CA5CF1007E369A /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -52,33 +119,19 @@
 		vrLen = 608;
 		vrLoc = 0;
 	};
-	09A641EA11CA61B0007E369A /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */;
-	};
-	09A641EB11CA61B0007E369A /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */;
-		name = "Core_Data_PersistenceAppDelegate.m: 124";
-		rLen = 0;
-		rLoc = 4453;
-		rType = 0;
-		vrLen = 688;
-		vrLoc = 4117;
-	};
 	1D3623240D0F684500981E51 /* Core_Data_PersistenceAppDelegate.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1482, 567}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 608}";
+			sepNavIntBoundsRect = "{{0, 0}, {1632, 986}}";
+			sepNavSelRange = "{575, 0}";
+			sepNavVisRange = "{0, 768}";
 			sepNavWindowFrame = "{{15, 64}, {1691, 1114}}";
 		};
 	};
 	1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {3620.69, 3276}}";
-			sepNavSelRange = "{4453, 0}";
-			sepNavVisRange = "{4117, 688}";
+			sepNavIntBoundsRect = "{{0, 0}, {1482, 3465}}";
+			sepNavSelRange = "{930, 0}";
+			sepNavVisRange = "{256, 776}";
 			sepNavWindowFrame = "{{15, 64}, {1691, 1114}}";
 		};
 	};
@@ -124,8 +177,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {1105, 220}}",
-							"{{1110, 0}, {581, 220}}",
+							"{{0, 0}, {1105, 218}}",
+							"{{1110, 0}, {581, 218}}",
 						);
 					};
 					diagramSplitGeometry = {
@@ -135,7 +188,7 @@
 						isCollapsed = yes;
 						sizes = (
 							"{{0, 0}, {1691, 220}}",
-							"{{0, 225}, {1691, 753}}",
+							"{{0, 225}, {1691, 776}}",
 						);
 					};
 					tableSplitGeometry = {
@@ -144,8 +197,8 @@
 						_percentageOfCollapsedView = 0;
 						isCollapsed = yes;
 						sizes = (
-							"{{0, 0}, {363, 220}}",
-							"{{368, 0}, {737, 220}}",
+							"{{0, 0}, {363, 218}}",
+							"{{368, 0}, {737, 218}}",
 						);
 					};
 				};
@@ -242,7 +295,7 @@
 					);
 				};
 				"xdesign model browser state key - shown/hidden" = 1;
-				"xdesign model diagram view visible rect key" = "{{-514, -153}, {1676, 738}}";
+				"xdesign model diagram view visible rect key" = "{{-514, -165}, {1676, 761}}";
 			};
 			sepNavWindowFrame = "{{15, 64}, {1691, 1114}}";
 		};
@@ -251,6 +304,12 @@
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 09A641B811CA5CE5007E369A /* Core Data Persistence */;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* Core Data Persistence */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Core Data Persistence */,
+		);
+		breakpoints = (
+			091F4471122BF9E50003A004 /* PersistenceViewController.m:53 */,
+		);
 		codeSenseManager = 09A641D311CA5CF1007E369A /* Code sense */;
 		executables = (
 			09A641B811CA5CE5007E369A /* Core Data Persistence */,
@@ -263,7 +322,7 @@
 					20,
 					1304,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -278,13 +337,14 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 298474725;
-			PBXWorkspaceStateSaveDate = 298474725;
+			PBXPerProjectTemplateStateSaveDate = 304868864;
+			PBXWorkspaceStateSaveDate = 304868864;
 		};
 		perUserProjectItems = {
+			091F4422122BF7930003A004 /* PBXTextBookmark */ = 091F4422122BF7930003A004 /* PBXTextBookmark */;
+			091F4437122BF87A0003A004 /* XCBuildMessageTextBookmark */ = 091F4437122BF87A0003A004 /* XCBuildMessageTextBookmark */;
+			091F447F122BFADD0003A004 /* PBXTextBookmark */ = 091F447F122BFADD0003A004 /* PBXTextBookmark */;
 			09A641E911CA61B0007E369A /* PBXTextBookmark */ = 09A641E911CA61B0007E369A /* PBXTextBookmark */;
-			09A641EA11CA61B0007E369A /* PBXBookmark */ = 09A641EA11CA61B0007E369A /* PBXBookmark */;
-			09A641EB11CA61B0007E369A /* PBXTextBookmark */ = 09A641EB11CA61B0007E369A /* PBXTextBookmark */;
 		};
 		sourceControlManager = 09A641D211CA5CF1007E369A /* Source Control */;
 		userBuildSettings = {
