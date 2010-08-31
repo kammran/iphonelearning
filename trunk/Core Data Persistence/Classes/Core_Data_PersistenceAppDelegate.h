@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+@class PersistenceViewController;
 
 @interface Core_Data_PersistenceAppDelegate : NSObject <UIApplicationDelegate> {
 
@@ -16,11 +17,13 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
     UIWindow *window;
+	PersistenceViewController *rootController;
 }
 
 - (NSString *)applicationDocumentsDirectory;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
+@property (nonatomic, retain) IBOutlet PersistenceViewController *rootController;
 
 @end
 

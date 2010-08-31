@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		091F441C122BF03B0003A004 /* PersistenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 091F441A122BF03B0003A004 /* PersistenceViewController.m */; };
+		091F441D122BF03B0003A004 /* PersistenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 091F441B122BF03B0003A004 /* PersistenceViewController.xib */; };
 		1D3623260D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -18,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		091F4419122BF03B0003A004 /* PersistenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersistenceViewController.h; sourceTree = "<group>"; };
+		091F441A122BF03B0003A004 /* PersistenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersistenceViewController.m; sourceTree = "<group>"; };
+		091F441B122BF03B0003A004 /* PersistenceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersistenceViewController.xib; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* Core_Data_PersistenceAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Core_Data_PersistenceAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Core_Data_PersistenceAppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +57,9 @@
 			children = (
 				1D3623240D0F684500981E51 /* Core_Data_PersistenceAppDelegate.h */,
 				1D3623250D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m */,
+				091F4419122BF03B0003A004 /* PersistenceViewController.h */,
+				091F441A122BF03B0003A004 /* PersistenceViewController.m */,
+				091F441B122BF03B0003A004 /* PersistenceViewController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -149,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				091F441D122BF03B0003A004 /* PersistenceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +171,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* Core_Data_PersistenceAppDelegate.m in Sources */,
 				28193060112F816700ECF9B4 /* Core_Data_Persistence.xcdatamodeld in Sources */,
+				091F441C122BF03B0003A004 /* PersistenceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
