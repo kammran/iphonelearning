@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1AF7BC62123A793000998FBB</string>
+				<string>1AF7BDED123AA2F900998FBB</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>ImagesPreviewController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1AF7BC63123A793000998FBB</string>
+						<string>1AF7BDEE123AA2F900998FBB</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>ImagesPreviewController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1AF7BCA8123A7B9900998FBB</string>
+						<string>1AF7BE1A123AA62500998FBB</string>
 						<key>history</key>
 						<array>
-							<string>1AF7BC5D123A792B00998FBB</string>
+							<string>1AF7BDF9123AA45400998FBB</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -331,7 +331,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>375</real>
+								<real>349</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -344,21 +344,23 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
+								<string>1A890A7B122A689F009B92ED</string>
 								<string>1A8A97A41229179600E38751</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>1A8A971F12290AE800E38751</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>6</integer>
-									<integer>4</integer>
+									<integer>12</integer>
+									<integer>10</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {375, 602}}</string>
+							<string>{{0, 6}, {349, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -370,11 +372,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {392, 620}}</string>
+						<string>{{0, 0}, {366, 620}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>375</real>
+							<real>349</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 117 1280 661 0 0 1280 778 </string>
@@ -382,7 +384,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>392pt</string>
+					<string>366pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -405,7 +407,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AF7BCA7123A7B9900998FBB</string>
+										<string>1AF7BE19123AA62500998FBB</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -420,7 +422,8 @@
 											<string>1A890E74122AC65B009B92ED</string>
 											<string>1A890E75122AC65B009B92ED</string>
 											<string>1AF7BB9D123A6AEA00998FBB</string>
-											<string>1AF7BC60123A793000998FBB</string>
+											<string>1AF7BCEA123A889200998FBB</string>
+											<string>1AF7BDAF123A9E6A00998FBB</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -432,7 +435,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {883, 415}}</string>
+								<string>{{0, 0}, {909, 415}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 661 0 0 1280 778 </string>
 							</dict>
@@ -452,7 +455,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 420}, {883, 200}}</string>
+								<string>{{0, 420}, {909, 200}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 117 1280 661 0 0 1280 778 </string>
 							</dict>
@@ -463,7 +466,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>883pt</string>
+					<string>909pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -618,11 +621,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1AF7BDB2123A9E6D00998FBB</string>
+		<string>1AF7BDBA123A9E7300998FBB</string>
+		<string>1AF7BDBB123A9E7300998FBB</string>
+		<string>1AF7BD20123A916800998FBB</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1AF7BC62123A793000998FBB</string>
+		<string>1AF7BDED123AA2F900998FBB</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -717,7 +724,7 @@
 			<key>WindowToolGUID</key>
 			<string>1A8A971312290AB300E38751</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -1006,7 +1013,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1257,8 +1264,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>1A890A35122A6397009B92ED</string>
-				<string>1A890A36122A6397009B92ED</string>
+				<string>1AF7BDB2123A9E6D00998FBB</string>
+				<string>1AF7BDB3123A9E6D00998FBB</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1267,7 +1274,7 @@
 			<key>WindowString</key>
 			<string>36 267 1031 488 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
-			<string>1A890A35122A6397009B92ED</string>
+			<string>1AF7BDB2123A9E6D00998FBB</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>
