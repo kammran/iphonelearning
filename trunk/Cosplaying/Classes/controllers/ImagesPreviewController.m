@@ -11,13 +11,59 @@
 #import "NSObject-Dialog.h"
 #import "UINavigationController-Animation.h"
 #import "AnimationDefinition.h"
+#import "JSON.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
+@synthesize imageView1;
+@synthesize imageView2;
+@synthesize imageView3;
+@synthesize imageView4;
+
+
+- (void)render:(NSArray *) array {
+	int i = 1;
+	for (NSDictionary *each in array) {
+		NSString *folder = [each valueForKey:@"folder"];
+		NSString *name = [each valueForKey:@"name"];
+		NSString *url = [NSString stringWithFormat:@"%@/%@/%@", IMAGE_SERVER, folder, name];
+		NSLog(@"%@", url);
+		
+		if (i <= 4) {
+			UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
+			imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
+		}
+		
+		i++;
+	}
+}
+
+#pragma mark -
+#pragma mark Remoting Methods
+- (void) requestRecents {
+	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
+	NSString *q = @"recent";
+	int offset = 0;
+	NSString *url = [[NSString stringWithFormat:@"%@/images?q=%@&offset=%d", SERVICE_URL, q, offset] 
+					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
+	
+	
+	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+	NSArray *array = [response JSONValue];
+	
+	[self render:array];
+	
+	[response release];
+
+	[pool release];
+}
+
 
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	[self performSelectorInBackground:@selector(requestRecents) withObject:nil];
 }
 
 - (void)viewDidUnload {
