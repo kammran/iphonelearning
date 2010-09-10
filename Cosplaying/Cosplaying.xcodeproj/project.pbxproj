@@ -23,6 +23,7 @@
 		1AF7BC10123A74EA00998FBB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BC09123A74EA00998FBB /* SBJsonBase.m */; };
 		1AF7BC11123A74EA00998FBB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BC0B123A74EA00998FBB /* SBJsonParser.m */; };
 		1AF7BC12123A74EA00998FBB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF7BC0D123A74EA00998FBB /* SBJsonWriter.m */; };
+		1AF7BCAC123A7E5400998FBB /* downloading.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AF7BCAB123A7E5400998FBB /* downloading.png */; };
 		1D3623260D0F684500981E51 /* CosplayingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -59,6 +60,7 @@
 		1AF7BC0B123A74EA00998FBB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
 		1AF7BC0C123A74EA00998FBB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		1AF7BC0D123A74EA00998FBB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		1AF7BCAB123A7E5400998FBB /* downloading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downloading.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* CosplayingAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosplayingAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CosplayingAppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		1A8A971F12290AE800E38751 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1AF7BCAB123A7E5400998FBB /* downloading.png */,
 				1A8A976A1229116500E38751 /* Default.png */,
 				1A8A972612290D8B00E38751 /* ff-girl-small.png */,
 				1A8A972712290D8B00E38751 /* ff-yuna-smalll.png */,
@@ -261,6 +264,7 @@
 				1A8A976B1229116500E38751 /* Default.png in Resources */,
 				1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */,
 				1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */,
+				1AF7BCAC123A7E5400998FBB /* downloading.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
