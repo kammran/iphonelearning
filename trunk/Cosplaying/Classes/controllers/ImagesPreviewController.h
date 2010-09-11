@@ -36,6 +36,8 @@
 @property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
 @property (nonatomic, retain) IBOutlet UIButton *jumpToDateButton;
 
+@property (nonatomic, retain) NSString *q;
+@property (nonatomic, retain) NSString *keyword;
 
 
 - (IBAction)searchButtonPressed;

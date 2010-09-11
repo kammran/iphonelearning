@@ -21,6 +21,11 @@
 @synthesize imageView4;
 @synthesize datePicker;
 @synthesize jumpToDateButton;
+@synthesize q;
+@synthesize keyword;
+
+#pragma mark -
+#pragma mark Image Downloading Methods
 
 - (void)downloadImage:(NSArray *)array {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -51,13 +56,10 @@
 }
 
 
-#pragma mark -
-#pragma mark Remoting Methods
-
 - (void) request {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
-	NSString *url = [[NSString stringWithFormat:@"%@/images?q=%@&offset=%d&keyword=%@", SERVICE_URL, q, offset, keyword] 
+	NSString *url = [[NSString stringWithFormat:@"%@/images?q=%@&offset=%d&keyword=%@", SERVICE_URL, self.q, offset, self.keyword] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
 	
@@ -74,9 +76,12 @@
 }
 
 - (void) requestRecents {
-	q = @"recent";
+	self.q = @"recent";
 	[self requestInBackground];
 }
+
+#pragma mark -
+#pragma mark <#label#>
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -84,13 +89,29 @@
 }
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
+	self.imageView1 = nil;
+    self.imageView2 = nil;
+	self.imageView3 = nil;
+	self.imageView4 = nil;
+	self.searchBar = nil;
+	self.jumpToDateButton = nil;
+	self.q = nil;
+	self.keyword = nil;
+	self.datePicker = nil;
+	[super viewDidUnload];
 }
 
 
 - (void)dealloc {
+	[self.imageView1 release];
+	[self.imageView2 release];
+	[self.imageView3 release];
+	[self.imageView4 release];
+	[self.searchBar release];
+	[self.jumpToDateButton release];
+	[self.q release];
+	[self.keyword release];
+	[self.datePicker release];
     [super dealloc];
 }
 
@@ -193,10 +214,10 @@
 	
 	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
 	[formatter setDateFormat:@"yyyy-MM-dd"];
-	keyword = [formatter stringFromDate:self.datePicker.date];
+	self.keyword = [formatter stringFromDate:self.datePicker.date];
 	[formatter release];
 	
-	q = @"folder";
+	self.q = @"folder";
 	offset = 0;
 	[self requestInBackground];
 }
