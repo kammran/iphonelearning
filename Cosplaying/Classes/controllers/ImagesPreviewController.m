@@ -15,14 +15,19 @@
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
+@synthesize segmentedControl;
 @synthesize imageView1;
 @synthesize imageView2;
 @synthesize imageView3;
 @synthesize imageView4;
 @synthesize datePicker;
-@synthesize jumpToDateButton;
+@synthesize previousButton;
+@synthesize nextButton;
 @synthesize q;
 @synthesize keyword;
+@synthesize offset;
+
+
 
 #pragma mark -
 #pragma mark Image Downloading Methods
@@ -36,10 +41,6 @@
 }
 
 - (void)render:(NSArray *) array {
-	if ([array count] ==0) {
-		[@"Sorry, no images for your selection." showInDialog];
-	}
-	
 	int i = 1;
 	for (NSDictionary *each in array) {
 		NSString *folder = [each valueForKey:@"folder"];
@@ -50,14 +51,27 @@
 			NSArray *array = [NSArray arrayWithObjects:imageView, url, nil];
 			[self performSelectorInBackground:@selector(downloadImage:) withObject:array];
 		}
-		
 		i++;
+	}
+	
+	for (; i <= IMAGES_PER_PAGE; i++) {
+		UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
+		imageView.image = [UIImage imageNamed:@"nomore.png"];
+	}
+	
+}
+
+- (void)resetImages2Downloading {
+	for (int i = 1; i <= IMAGES_PER_PAGE; i++) {
+		UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
+		imageView.image = [UIImage imageNamed:@"downloading.png"];
 	}
 }
 
-
 - (void) request {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
+	
+	[self resetImages2Downloading];
 
 	NSString *url = [[NSString stringWithFormat:@"%@/images?q=%@&offset=%d&keyword=%@", SERVICE_URL, self.q, offset, self.keyword] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
@@ -77,14 +91,46 @@
 
 - (void) requestRecents {
 	self.q = @"recent";
+	self.offset = 0;
+	[self requestInBackground];
+}
+
+- (void) requestTopRated {
+	self.q = @"toprated";
+	self.offset = 0;
+	[self requestInBackground];
+}
+
+- (void) requestPopular {
+	self.q = @"popular";
+	self.offset = 0;
+	[self requestInBackground];
+}
+
+- (void) requestSelectedFolder {
+	self.q = @"folder";
+	self.offset = 0;
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+	[formatter setDateFormat:@"yyyy-MM-dd"];
+	self.keyword = [formatter stringFromDate:self.datePicker.date];
+	[formatter release];
 	[self requestInBackground];
 }
 
 #pragma mark -
-#pragma mark <#label#>
+#pragma mark View Controller LifeCycle Methods
+
+- (void) setStyle {
+	//self.segmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
+	self.segmentedControl.tintColor = [UIColor darkGrayColor];
+	[self.previousButton setImage:[UIImage imageNamed:@"previous-highlight.png"] forState:UIControlStateHighlighted];
+	[self.nextButton setImage:[UIImage imageNamed:@"next-highlight.png"] forState:UIControlStateHighlighted];
+}
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.datePicker = [[UIDatePicker alloc] init];
+	[self setStyle];
 	[self requestRecents];
 }
 
@@ -94,10 +140,12 @@
 	self.imageView3 = nil;
 	self.imageView4 = nil;
 	self.searchBar = nil;
-	self.jumpToDateButton = nil;
+	self.segmentedControl = nil;
 	self.q = nil;
 	self.keyword = nil;
 	self.datePicker = nil;
+	self.previousButton = nil;
+	self.nextButton = nil;
 	[super viewDidUnload];
 }
 
@@ -108,10 +156,12 @@
 	[self.imageView3 release];
 	[self.imageView4 release];
 	[self.searchBar release];
-	[self.jumpToDateButton release];
+	[self.segmentedControl release];
 	[self.q release];
 	[self.keyword release];
 	[self.datePicker release];
+	[self.previousButton release];
+	[self.nextButton release];
     [super dealloc];
 }
 
@@ -151,21 +201,67 @@
 #pragma mark -
 #pragma mark IBAction Methods
 
+- (void)hiddeSearch {
+	[self.searchBar resignFirstResponder];
+	self.searchBar.hidden = YES;
+}
+
+
 - (IBAction)searchButtonPressed {
 	self.searchBar.hidden = NO;
 	[self.searchBar becomeFirstResponder];
 }
 
-- (IBAction)segmentPressed:(id) sender {
-	UISegmentedControl *segmentedControl = (UISegmentedControl *) sender;
-	if (segmentedControl.selectedSegmentIndex == 2) {
-		//jump to date
-		self.datePicker.hidden = NO;
-		self.jumpToDateButton.hidden = NO;
-	} else {
-		self.datePicker.hidden = YES;
-		self.jumpToDateButton.hidden = YES;		
+- (IBAction)segmentPressed {
+	[self hiddeSearch];
+	
+	if (self.segmentedControl.selectedSegmentIndex == 0) {
+		[self requestRecents];
+	} else if (self.segmentedControl.selectedSegmentIndex == 1) {
+		[self requestTopRated];
+	} else if (self.segmentedControl.selectedSegmentIndex == 2) {
+		[self requestPopular];
 	}
+}
+
+- (IBAction)showDatePicker {
+	[self hiddeSearch];
+	
+	//TODO find a better way for UIActionSheet 
+	UIActionSheet *actionSheet = [[UIActionSheet alloc] 
+								  initWithTitle:@"\r\r\r\r\r\r\r\r\r\r\r\r"
+								  delegate:self
+								  cancelButtonTitle:@"Cancel"
+								  destructiveButtonTitle:@"Go to selected date" 
+								  otherButtonTitles:nil,
+								  nil];
+	
+	self.datePicker.datePickerMode = UIDatePickerModeDate;
+	
+	[actionSheet showInView:self.view];
+	
+	[actionSheet addSubview:self.datePicker];
+	
+	[actionSheet setBounds:CGRectMake(0, 0, 320, 400)];
+	
+    CGRect pickerRect = self.datePicker.bounds;
+    self.datePicker.bounds = pickerRect;
+	
+	[actionSheet release];
+}
+
+- (IBAction)previousPressed {
+	self.offset -= IMAGES_PER_PAGE;
+	if (self.offset < 0) {
+		self.offset = 0;
+		return;
+	}
+	[self requestInBackground];
+}
+
+- (IBAction)nextPressed {
+	self.offset += IMAGES_PER_PAGE;
+	[self requestInBackground];
 }
 
 #pragma mark -
@@ -178,48 +274,17 @@
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar {
-	[self.searchBar resignFirstResponder];
-	self.searchBar.hidden = YES;
+	[self hiddeSearch];
 }
 
 #pragma mark -
-#pragma mark UI Buttons Methods
+#pragma mark UIActionSheetDelegate Methods
 
-- (void)resetImages2Downloading {
-	for (int i = 1; i <= IMAGES_PER_PAGE; i++) {
-		UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
-		imageView.image = [UIImage imageNamed:@"downloading.png"];
+- (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
+	if (buttonIndex != [actionSheet cancelButtonIndex])  {
+		[self requestSelectedFolder];
 	}
 }
 
-- (IBAction)previousPressed {
-	offset -= IMAGES_PER_PAGE;
-	if (offset < 0) {
-		offset = 0;
-		return;
-	}
-	[self resetImages2Downloading];
-	[self requestInBackground];
-}
-
-- (IBAction)nextPressed {
-	offset += IMAGES_PER_PAGE;
-	[self resetImages2Downloading];
-	[self requestInBackground];
-}
-
-- (IBAction)jumpToDatePressed {
-	self.datePicker.hidden = YES;
-	self.jumpToDateButton.hidden = YES;
-	
-	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
-	[formatter setDateFormat:@"yyyy-MM-dd"];
-	self.keyword = [formatter stringFromDate:self.datePicker.date];
-	[formatter release];
-	
-	self.q = @"folder";
-	offset = 0;
-	[self requestInBackground];
-}
 
 @end
