@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09310272123BC8BE009F029C /* nomore.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310271123BC8BE009F029C /* nomore.png */; };
+		09310278123BCAF8009F029C /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310276123BCAF8009F029C /* next.png */; };
+		0931028B123BCCE5009F029C /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 0931028A123BCCE5009F029C /* previous.png */; };
+		09310343123BD892009F029C /* previous-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310341123BD892009F029C /* previous-highlight.png */; };
+		09310344123BD892009F029C /* next-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310342123BD892009F029C /* next-highlight.png */; };
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
 		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
@@ -33,6 +38,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09310271123BC8BE009F029C /* nomore.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nomore.png; sourceTree = "<group>"; };
+		09310276123BCAF8009F029C /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		0931028A123BCCE5009F029C /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = previous.png; path = ../../../Desktop/previous.png; sourceTree = SOURCE_ROOT; };
+		09310341123BD892009F029C /* previous-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous-highlight.png"; sourceTree = "<group>"; };
+		09310342123BD892009F029C /* next-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next-highlight.png"; sourceTree = "<group>"; };
 		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
 		1A8909FE122A61C9009B92ED /* SingleImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageController.m; sourceTree = "<group>"; };
 		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
@@ -122,6 +132,11 @@
 		1A8A971F12290AE800E38751 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09310341123BD892009F029C /* previous-highlight.png */,
+				09310342123BD892009F029C /* next-highlight.png */,
+				0931028A123BCCE5009F029C /* previous.png */,
+				09310276123BCAF8009F029C /* next.png */,
+				09310271123BC8BE009F029C /* nomore.png */,
 				1AF7BCAB123A7E5400998FBB /* downloading.png */,
 				1A8A976A1229116500E38751 /* Default.png */,
 				1A8A972612290D8B00E38751 /* ff-girl-small.png */,
@@ -265,6 +280,11 @@
 				1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */,
 				1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */,
 				1AF7BCAC123A7E5400998FBB /* downloading.png in Resources */,
+				09310272123BC8BE009F029C /* nomore.png in Resources */,
+				09310278123BCAF8009F029C /* next.png in Resources */,
+				0931028B123BCCE5009F029C /* previous.png in Resources */,
+				09310343123BD892009F029C /* previous-highlight.png in Resources */,
+				09310344123BD892009F029C /* next-highlight.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

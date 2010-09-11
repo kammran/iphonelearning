@@ -12,9 +12,10 @@
 #define IMAGE_SERVER @"http://freezedisk.googlecode.com/svn/trunk/iphone/cosplaying/images/real"
 #define IMAGES_PER_PAGE 4
 
-@interface ImagesPreviewController : UIViewController <UISearchBarDelegate> {
+@interface ImagesPreviewController : UIViewController <UISearchBarDelegate, UIActionSheetDelegate> {
 
 	UISearchBar *searchBar;
+	UISegmentedControl *segmentedControl;
 	UIImageView *imageView1;
 	UIImageView *imageView2;
 	UIImageView *imageView3;
@@ -25,25 +26,29 @@
 	NSString *keyword;
 	
 	UIDatePicker *datePicker;
-	UIButton *jumpToDateButton;
+	UIButton *previousButton;
+	UIButton *nextButton;
 }
 
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;
+@property (nonatomic, retain) IBOutlet UISegmentedControl *segmentedControl;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView1;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView2;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView3;
 @property (nonatomic, retain) IBOutlet UIImageView *imageView4;
 @property (nonatomic, retain) IBOutlet UIDatePicker *datePicker;
-@property (nonatomic, retain) IBOutlet UIButton *jumpToDateButton;
+@property (nonatomic, retain) IBOutlet UIButton *previousButton;
+@property (nonatomic, retain) IBOutlet UIButton *nextButton;
+
 
 @property (nonatomic, retain) NSString *q;
 @property (nonatomic, retain) NSString *keyword;
-
+@property (nonatomic) int offset;
 
 - (IBAction)searchButtonPressed;
-- (IBAction)segmentPressed:(id) sender;
+- (IBAction)segmentPressed;
 - (IBAction)previousPressed;
 - (IBAction)nextPressed;
-- (IBAction)jumpToDatePressed;
+- (IBAction)showDatePicker;
 
 @end
