@@ -11,6 +11,10 @@
 		09310278123BCAF8009F029C /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310276123BCAF8009F029C /* next.png */; };
 		09310343123BD892009F029C /* previous-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310341123BD892009F029C /* previous-highlight.png */; };
 		09310344123BD892009F029C /* next-highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = 09310342123BD892009F029C /* next-highlight.png */; };
+		097EACC512425E87009AB2FE /* ImageInformationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */; };
+		097EACC612425E87009AB2FE /* ImageInformationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACC412425E87009AB2FE /* ImageInformationController.xib */; };
+		097EACD91242619A009AB2FE /* WriteReviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EACD71242619A009AB2FE /* WriteReviewController.m */; };
+		097EACDA1242619A009AB2FE /* WriteReviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACD81242619A009AB2FE /* WriteReviewController.xib */; };
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
 		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
@@ -42,6 +46,12 @@
 		09310276123BCAF8009F029C /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		09310341123BD892009F029C /* previous-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "previous-highlight.png"; sourceTree = "<group>"; };
 		09310342123BD892009F029C /* next-highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next-highlight.png"; sourceTree = "<group>"; };
+		097EACC212425E87009AB2FE /* ImageInformationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageInformationController.h; sourceTree = "<group>"; };
+		097EACC312425E87009AB2FE /* ImageInformationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageInformationController.m; sourceTree = "<group>"; };
+		097EACC412425E87009AB2FE /* ImageInformationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageInformationController.xib; sourceTree = "<group>"; };
+		097EACD61242619A009AB2FE /* WriteReviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteReviewController.h; sourceTree = "<group>"; };
+		097EACD71242619A009AB2FE /* WriteReviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteReviewController.m; sourceTree = "<group>"; };
+		097EACD81242619A009AB2FE /* WriteReviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteReviewController.xib; sourceTree = "<group>"; };
 		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
 		1A8909FE122A61C9009B92ED /* SingleImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageController.m; sourceTree = "<group>"; };
 		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
@@ -164,6 +174,12 @@
 				1A8909FD122A61C9009B92ED /* SingleImageController.h */,
 				1A8909FE122A61C9009B92ED /* SingleImageController.m */,
 				1A8909FF122A61C9009B92ED /* SingleImageController.xib */,
+				097EACC212425E87009AB2FE /* ImageInformationController.h */,
+				097EACC312425E87009AB2FE /* ImageInformationController.m */,
+				097EACC412425E87009AB2FE /* ImageInformationController.xib */,
+				097EACD61242619A009AB2FE /* WriteReviewController.h */,
+				097EACD71242619A009AB2FE /* WriteReviewController.m */,
+				097EACD81242619A009AB2FE /* WriteReviewController.xib */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -285,6 +301,8 @@
 				09310343123BD892009F029C /* previous-highlight.png in Resources */,
 				09310344123BD892009F029C /* next-highlight.png in Resources */,
 				1ADF77D3123BF9FA00F0013D /* previous.png in Resources */,
+				097EACC612425E87009AB2FE /* ImageInformationController.xib in Resources */,
+				097EACDA1242619A009AB2FE /* WriteReviewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +325,8 @@
 				1AF7BC10123A74EA00998FBB /* SBJsonBase.m in Sources */,
 				1AF7BC11123A74EA00998FBB /* SBJsonParser.m in Sources */,
 				1AF7BC12123A74EA00998FBB /* SBJsonWriter.m in Sources */,
+				097EACC512425E87009AB2FE /* ImageInformationController.m in Sources */,
+				097EACD91242619A009AB2FE /* WriteReviewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
