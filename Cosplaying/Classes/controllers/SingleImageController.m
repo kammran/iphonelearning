@@ -10,11 +10,16 @@
 #import "NSObject-Dialog.h"
 #import "AnimationDefinition.h"
 #import "UINavigationController-Animation.h"
+#import "ImageInformationController.h"
 
 @implementation SingleImageController
 @synthesize imageView;
 @synthesize uid;
 @synthesize image;
+
+
+#pragma mark -
+#pragma mark UIViewController Delegate Methods
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
@@ -45,6 +50,9 @@
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark IBAction Methods
+
 - (IBAction)backToSuperView:(id) sender {	
 	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
 												initWithTransition:UIViewAnimationTransitionCurlUp
@@ -52,6 +60,12 @@
 												duration:1];
 	[self.navigationController popViewControllerWithAnimation:animationDefinition];
 	[animationDefinition release];
+}
+
+-(IBAction)viewInformation:(id)sender {
+	ImageInformationController *imageInformationController = [[ImageInformationController alloc] initWithNibName:@"ImageInformationController" bundle:nil];
+	[self.navigationController pushViewController:imageInformationController animated:YES];
+	[imageInformationController release];
 }
 
 

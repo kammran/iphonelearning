@@ -21,5 +21,6 @@
 
 
 - (IBAction)backToSuperView:(id) sender;
+- (IBAction)viewInformation:(id) sender;
 
 @end
