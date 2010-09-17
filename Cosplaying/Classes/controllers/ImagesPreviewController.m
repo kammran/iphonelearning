@@ -12,6 +12,7 @@
 #import "UINavigationController-Animation.h"
 #import "AnimationDefinition.h"
 #import "JSON.h"
+#import "Configuration.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;

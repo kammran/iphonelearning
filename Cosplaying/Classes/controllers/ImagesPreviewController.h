@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#define SERVICE_URL @"http://localhost:8080"
-#define IMAGE_SERVER @"http://freezedisk.googlecode.com/svn/trunk/iphone/cosplaying/images/real"
 #define IMAGES_PER_PAGE 4
 
 @interface ImagesPreviewController : UIViewController <UISearchBarDelegate, UIActionSheetDelegate> {
