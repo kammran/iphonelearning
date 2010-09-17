@@ -54,6 +54,10 @@
     [super dealloc];
 }
 
+- (IBAction)back {
+	[self.navigationController popViewControllerAnimated:YES];
+}
+
 - (IBAction)writeReview:(id) sender {
 	WriteReviewController *writeReviewController = [[WriteReviewController alloc] initWithNibName:@"WriteReviewController" bundle:nil];
 	[self.navigationController pushViewController:writeReviewController animated:YES];

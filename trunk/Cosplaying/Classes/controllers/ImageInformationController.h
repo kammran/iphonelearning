@@ -13,6 +13,7 @@
 
 }
 
+- (IBAction)back;
 - (IBAction)writeReview:(id)sender;
 
 @end

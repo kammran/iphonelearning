@@ -12,7 +12,7 @@
 @implementation NSObject (Dialog)
 
 - (void)showInDialog {
-	[self showInDialogWithTitle:@"Error"];
+	[self showInDialogWithTitle:@"Message"];
 }
 
 - (void)showInDialogWithTitle:(NSString *) title {
