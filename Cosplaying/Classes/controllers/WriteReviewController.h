@@ -11,6 +11,18 @@
 
 @interface WriteReviewController : UIViewController {
 
+	UITextField *characterNameTextField;
+	UITextField *keyworldsTextField;
+	UITextView *reviewTextView;
+	
 }
+
+@property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
+@property (nonatomic, retain) IBOutlet UITextField *keyworldsTextField;
+@property (nonatomic, retain) IBOutlet UITextView *reviewTextView;
+
+
+- (IBAction)back;
+- (IBAction)sendReview;
 
 @end
