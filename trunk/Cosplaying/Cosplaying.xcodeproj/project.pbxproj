@@ -27,6 +27,7 @@
 		1A8A97A81229181E00E38751 /* ImagesPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A97A61229181E00E38751 /* ImagesPreviewController.m */; };
 		1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */; };
 		1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */; };
+		1AC3A2DE12450C5F0030254B /* UITableView-WithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */; };
 		1ADF77D3123BF9FA00F0013D /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF77D2123BF9FA00F0013D /* previous.png */; };
 		1AF6177912440EAF006E9AAC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6176A12440EAF006E9AAC /* ASIAuthenticationDialog.m */; };
 		1AF6177A12440EAF006E9AAC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6176D12440EAF006E9AAC /* ASIDownloadCache.m */; };
@@ -84,6 +85,8 @@
 		1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesPreviewController.xib; sourceTree = "<group>"; };
 		1AC3A1DA1244BFA50030254B /* UIImageWithKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageWithKey.h; sourceTree = "<group>"; };
 		1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageWithKey.m; sourceTree = "<group>"; };
+		1AC3A2DC12450C5F0030254B /* UITableView-WithCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView-WithCell.h"; sourceTree = "<group>"; };
+		1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView-WithCell.m"; sourceTree = "<group>"; };
 		1ADF77D2123BF9FA00F0013D /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
 		1AF6176912440EAF006E9AAC /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		1AF6176A12440EAF006E9AAC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 		1A890A7B122A689F009B92ED /* helper */ = {
 			isa = PBXGroup;
 			children = (
+				1AC3A2DC12450C5F0030254B /* UITableView-WithCell.h */,
+				1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */,
 				1A890A7C122A68D8009B92ED /* NSObject-Dialog.h */,
 				1A890E35122AC1F8009B92ED /* UINavigationController-Animation.h */,
 				1A890E36122AC1F8009B92ED /* UINavigationController-Animation.m */,
@@ -435,6 +440,7 @@
 				1AF617A2124410B0006E9AAC /* ReachabilityAppDelegate.m in Sources */,
 				1AF617D212441435006E9AAC /* Configuration.m in Sources */,
 				1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */,
+				1AC3A2DE12450C5F0030254B /* UITableView-WithCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

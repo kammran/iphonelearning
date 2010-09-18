@@ -9,9 +9,15 @@
 #import <UIKit/UIKit.h>
 
 
-@interface ImageInformationController : UIViewController {
-		
+@interface ImageInformationController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+	
+	NSMutableArray *array;
+	UITableView *reviewsView;
+
 }
+
+@property (nonatomic, retain) NSMutableArray *array;
+@property (nonatomic, retain) IBOutlet UITableView *reviewsView;
 
 - (IBAction)back;
 - (IBAction)writeReview:(id)sender;

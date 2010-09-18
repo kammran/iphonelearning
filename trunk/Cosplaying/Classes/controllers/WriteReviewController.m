@@ -18,6 +18,7 @@
 @synthesize characterNameTextField;
 @synthesize keywordsTextField;
 @synthesize commentTextView;
+@synthesize sendButton;
 
 
 #pragma mark -
@@ -35,6 +36,7 @@
 	characterNameTextField = nil;
 	keywordsTextField = nil;
 	commentTextView = nil;
+	sendButton = nil;
 }
 
 
@@ -45,6 +47,7 @@
 	[characterNameTextField release];
 	[keywordsTextField release];
 	[commentTextView release];
+	[sendButton release];
 }
 
 #pragma mark -
@@ -75,6 +78,14 @@
 		[error showInDialogWithTitle:@"Oops, Error"];
 	}
 	
+}
+
+- (IBAction)textValueChanged:(id) sender {
+	BOOL allNotNullFieldsHaveValue = [self.reviewerTextField.text length] > 0 
+										&& [self.characterNameTextField.text length] > 0 
+										&& [self.keywordsTextField.text length] > 0;
+
+	self.sendButton.enabled = allNotNullFieldsHaveValue;
 }
 
 @end

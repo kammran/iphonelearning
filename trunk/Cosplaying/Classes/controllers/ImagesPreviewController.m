@@ -31,7 +31,6 @@
 @synthesize offset;
 
 
-
 #pragma mark -
 #pragma mark Image Downloading Methods
 
@@ -189,11 +188,16 @@
 			
 			SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
 			
-			UIImageWithKey *image = (UIImageWithKey *) imageView.image;
-			CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-			delegate.activeImageKey = image.key;
+			UIImage *selectedImage = (UIImage *) imageView.image;
+			SEL keyAccessor = @selector(key);
+			if (![selectedImage respondsToSelector:keyAccessor]) {
+				return;
+			}
 			
-			singleImageController.image = imageView.image;
+			CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			delegate.activeImageKey = [selectedImage performSelector:keyAccessor];
+			
+			singleImageController.image = selectedImage;
 			
 			AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
 														initWithTransition:UIViewAnimationTransitionCurlDown
