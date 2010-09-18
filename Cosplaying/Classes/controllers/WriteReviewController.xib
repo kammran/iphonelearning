@@ -76,6 +76,7 @@
 								<int key="IBUISystemItemIdentifier">5</int>
 							</object>
 							<object class="IBUIBarButtonItem" id="991536252">
+								<bool key="IBUIEnabled">NO</bool>
 								<string key="IBUITitle">Send</string>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 								<int key="IBUIStyle">2</int>
@@ -167,7 +168,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<int key="IBSegmentControlStyle">2</int>
 						<int key="IBNumberOfSegments">5</int>
-						<int key="IBSelectedSegmentIndex">0</int>
+						<int key="IBSelectedSegmentIndex">2</int>
 						<object class="NSArray" key="IBSegmentTitles">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>*</string>
@@ -209,7 +210,7 @@
 							<reference ref="4"/>
 						</object>
 					</object>
-					<object class="IBUITextField" id="444336112">
+					<object class="IBUITextField" id="151030095">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{-1, 117}, {322, 31}}</string>
@@ -307,9 +308,44 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">reviewerTextField</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="444336112"/>
+						<reference key="destination" ref="151030095"/>
 					</object>
 					<int key="connectionID">36</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">textValueChanged:</string>
+						<reference key="source" ref="151030095"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">18</int>
+					</object>
+					<int key="connectionID">38</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">textValueChanged:</string>
+						<reference key="source" ref="749703072"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">18</int>
+					</object>
+					<int key="connectionID">39</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchEventConnection" key="connection">
+						<string key="label">textValueChanged:</string>
+						<reference key="source" ref="843220393"/>
+						<reference key="destination" ref="372490531"/>
+						<int key="IBEventType">18</int>
+					</object>
+					<int key="connectionID">41</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">sendButton</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="991536252"/>
+					</object>
+					<int key="connectionID">42</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -331,7 +367,7 @@
 							<reference ref="554897791"/>
 							<reference ref="620811920"/>
 							<reference ref="1036462170"/>
-							<reference ref="444336112"/>
+							<reference ref="151030095"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -412,7 +448,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">35</int>
-						<reference key="object" ref="444336112"/>
+						<reference key="object" ref="151030095"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -468,7 +504,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">36</int>
+			<int key="maxID">42</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -503,9 +539,11 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>back</string>
 							<string>sendReview</string>
+							<string>textValueChanged:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -516,6 +554,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>back</string>
 							<string>sendReview</string>
+							<string>textValueChanged:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -525,6 +564,10 @@
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">sendReview</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">textValueChanged:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
@@ -538,6 +581,7 @@
 							<string>keywordsTextField</string>
 							<string>rateSegment</string>
 							<string>reviewerTextField</string>
+							<string>sendButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -546,6 +590,7 @@
 							<string>UITextField</string>
 							<string>UISegmentedControl</string>
 							<string>UITextField</string>
+							<string>UIBarItem</string>
 						</object>
 					</object>
 					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
@@ -557,6 +602,7 @@
 							<string>keywordsTextField</string>
 							<string>rateSegment</string>
 							<string>reviewerTextField</string>
+							<string>sendButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -579,6 +625,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">reviewerTextField</string>
 								<string key="candidateClassName">UITextField</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">sendButton</string>
+								<string key="candidateClassName">UIBarItem</string>
 							</object>
 						</object>
 					</object>

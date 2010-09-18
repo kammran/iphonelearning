@@ -16,6 +16,7 @@
 	UITextField *characterNameTextField;
 	UITextField *keywordsTextField;
 	UITextView *commentTextView;
+	UIBarItem *sendButton;
 	
 }
 
@@ -24,9 +25,11 @@
 @property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *keywordsTextField;
 @property (nonatomic, retain) IBOutlet UITextView *commentTextView;
+@property (nonatomic, retain) IBOutlet UIBarItem *sendButton;
 
 
 - (IBAction)back;
 - (IBAction)sendReview;
+- (IBAction)textValueChanged:(id) sender;
 
 @end
