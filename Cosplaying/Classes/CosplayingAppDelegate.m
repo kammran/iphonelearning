@@ -13,6 +13,7 @@
 
 @synthesize window;
 @synthesize navigationController;
+@synthesize activeImageKey;
 
 
 #pragma mark -
@@ -29,6 +30,7 @@
 }
 
 - (void)dealloc {
+	[activeImageKey release];
 	[navigationController release];
     [window release];
     [super dealloc];
