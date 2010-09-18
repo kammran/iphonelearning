@@ -26,6 +26,7 @@
 		1A8A976B1229116500E38751 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A976A1229116500E38751 /* Default.png */; };
 		1A8A97A81229181E00E38751 /* ImagesPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A97A61229181E00E38751 /* ImagesPreviewController.m */; };
 		1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */; };
+		1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */; };
 		1ADF77D3123BF9FA00F0013D /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF77D2123BF9FA00F0013D /* previous.png */; };
 		1AF6177912440EAF006E9AAC /* ASIAuthenticationDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6176A12440EAF006E9AAC /* ASIAuthenticationDialog.m */; };
 		1AF6177A12440EAF006E9AAC /* ASIDownloadCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AF6176D12440EAF006E9AAC /* ASIDownloadCache.m */; };
@@ -81,6 +82,8 @@
 		1A8A97A51229181E00E38751 /* ImagesPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagesPreviewController.h; sourceTree = "<group>"; };
 		1A8A97A61229181E00E38751 /* ImagesPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagesPreviewController.m; sourceTree = "<group>"; };
 		1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesPreviewController.xib; sourceTree = "<group>"; };
+		1AC3A1DA1244BFA50030254B /* UIImageWithKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageWithKey.h; sourceTree = "<group>"; };
+		1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageWithKey.m; sourceTree = "<group>"; };
 		1ADF77D2123BF9FA00F0013D /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
 		1AF6176912440EAF006E9AAC /* ASIAuthenticationDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIAuthenticationDialog.h; sourceTree = "<group>"; };
 		1AF6176A12440EAF006E9AAC /* ASIAuthenticationDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIAuthenticationDialog.m; sourceTree = "<group>"; };
@@ -153,6 +156,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1AC3A1881244B9800030254B /* models */,
 				1AF6179912440F04006E9AAC /* network */,
 				1AF6176812440E75006E9AAC /* asi-http-request */,
 				1AF7BC02123A74EA00998FBB /* JSON */,
@@ -229,6 +233,15 @@
 				1AF617D112441435006E9AAC /* Configuration.m */,
 			);
 			path = controllers;
+			sourceTree = "<group>";
+		};
+		1AC3A1881244B9800030254B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				1AC3A1DA1244BFA50030254B /* UIImageWithKey.h */,
+				1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		1AF6176812440E75006E9AAC /* asi-http-request */ = {
@@ -421,6 +434,7 @@
 				1AF617A1124410B0006E9AAC /* Reachability.m in Sources */,
 				1AF617A2124410B0006E9AAC /* ReachabilityAppDelegate.m in Sources */,
 				1AF617D212441435006E9AAC /* Configuration.m in Sources */,
+				1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

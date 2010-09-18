@@ -11,10 +11,12 @@
 @interface CosplayingAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	UINavigationController *navigationController;
+	NSString *activeImageKey;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
+@property (nonatomic, retain) NSString *activeImageKey;
 
 @end
 

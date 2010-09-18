@@ -13,6 +13,8 @@
 #import "AnimationDefinition.h"
 #import "JSON.h"
 #import "Configuration.h"
+#import "UIImageWithKey.h"
+#import "CosplayingAppDelegate.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -37,7 +39,10 @@
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	UIImageView *imageView = [array objectAtIndex:0];
 	NSString *url = [array objectAtIndex:1];
-	imageView.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
+	UIImageWithKey *image = [[UIImageWithKey alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
+	image.key = [array objectAtIndex:2];
+	imageView.image = image;
+	[image release];
 	[pool release];
 }
 
@@ -46,10 +51,11 @@
 	for (NSDictionary *each in array) {
 		NSString *folder = [each valueForKey:@"folder"];
 		NSString *name = [each valueForKey:@"name"];
+		NSString *key = [each valueForKey:@"key"];
 		NSString *url = [NSString stringWithFormat:@"%@/%@/%@", IMAGE_SERVER, folder, name];
 		if (i <= IMAGES_PER_PAGE) {
 			UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
-			NSArray *array = [NSArray arrayWithObjects:imageView, url, nil];
+			NSArray *array = [NSArray arrayWithObjects:imageView, url, key, nil];
 			[self performSelectorInBackground:@selector(downloadImage:) withObject:array];
 		}
 		i++;
@@ -182,6 +188,11 @@
 			UIImageView *imageView = (UIImageView *) touchedView;
 			
 			SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
+			
+			UIImageWithKey *image = (UIImageWithKey *) imageView.image;
+			CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+			delegate.activeImageKey = image.key;
+			
 			singleImageController.image = imageView.image;
 			
 			AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 

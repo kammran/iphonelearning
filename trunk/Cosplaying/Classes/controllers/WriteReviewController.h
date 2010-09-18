@@ -12,17 +12,18 @@
 @interface WriteReviewController : UIViewController {
 
 	UISegmentedControl *rateSegment;
+	UITextField *reviewerTextField;
 	UITextField *characterNameTextField;
 	UITextField *keywordsTextField;
-	UITextView *reviewTextView;
+	UITextView *commentTextView;
 	
 }
 
-
 @property (nonatomic, retain) IBOutlet UISegmentedControl *rateSegment;
+@property (nonatomic, retain) IBOutlet UITextField *reviewerTextField;
 @property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *keywordsTextField;
-@property (nonatomic, retain) IBOutlet UITextView *reviewTextView;
+@property (nonatomic, retain) IBOutlet UITextView *commentTextView;
 
 
 - (IBAction)back;
