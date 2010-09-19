@@ -10,23 +10,41 @@
 #import "WriteReviewController.h"
 #import "UITableView-WithCell.h"
 #import "NSObject-Dialog.h"
+#import "CosplayingAppDelegate.h"
+#import "Configuration.h"
+#import "JSON.h"
 
 @implementation ImageInformationController
 @synthesize reviewsView;
 @synthesize array;
+@synthesize offset;
+
+
+
+- (NSArray *) requestNewData {
+	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSString *imageKey = delegate.activeImageKey;
+	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&offset=%d", SERVICE_URL, imageKey, self.offset] 
+					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
+	
+	
+	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+	NSArray *jsonArray = [response JSONValue];
+	return jsonArray;
+}
 
 - (void)initializeDataArray {
 	self.array = [[NSMutableArray alloc] init];
-	[self.array addObject:@"A"];
-	[self.array addObject:@"A"];
-	[self.array addObject:@"A"];
+	[self.array addObjectsFromArray:[self requestNewData]];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	[self initializeDataArray];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+	[self initializeDataArray];
+}
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -64,14 +82,28 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueOrInit:@"MatchListCell" withStyle:UITableViewCellStyleSubtitle];
+
 	
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
 		//TODO doesn't work
 		[cell textLabel].textAlignment = UITextAlignmentCenter;
 		cell.textLabel.text = @"More Reviews...";
+	} else if ([indexPath row] == 0) {
+		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
+		cell.textLabel.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"count"]];
+		NSString *detail = [NSString stringWithFormat:@"Average Rate %@", [dict valueForKey:@"average_rate"]];
+		cell.detailTextLabel.text = detail;
 	} else {
-		cell.textLabel.text = [self.array objectAtIndex:[indexPath row]];
+		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
+		cell.textLabel.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [dict valueForKey:@"character_name"]];
+		NSString *detail = [NSString stringWithFormat:@"Rate %@ by %@ on %@\n%@", 
+							[dict valueForKey:@"rate"],
+							[dict valueForKey:@"reviewer"],
+							[dict valueForKey:@"created_at"],
+							[dict valueForKey:@"comment"]];
+		cell.detailTextLabel.numberOfLines = 5;
+		cell.detailTextLabel.text = detail;
 	}
 
 	return cell;
@@ -80,16 +112,23 @@
 #pragma mark -
 #pragma mark UITableViewDelegate Methods
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
+	return lastRow? indexPath : nil;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
-		int responseCount = 2;
+		self.offset = [self.array count] - 1;
+		NSArray *jsonArray = [self requestNewData];
+		[self.array addObjectsFromArray:jsonArray];
+		int responseCount = [jsonArray count];		
 		NSInteger row = [indexPath row] - 1;
 		
 		NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
 		
 		for (int i = 0; i < responseCount; i++) {
-			[self.array addObject:@"Added"];
 			[insertIndexPaths addObject:[NSIndexPath indexPathForRow:++row inSection:0]];
 		}
 			
@@ -97,10 +136,11 @@
 		[tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationRight];
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 		[tableView endUpdates];
-	} else {
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 	}
+}
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	return 100;
 }
 
 @end
