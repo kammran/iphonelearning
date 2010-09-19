@@ -13,11 +13,13 @@
 	
 	NSMutableArray *array;
 	UITableView *reviewsView;
+	int offset;
 
 }
 
 @property (nonatomic, retain) NSMutableArray *array;
 @property (nonatomic, retain) IBOutlet UITableView *reviewsView;
+@property (nonatomic) int offset;
 
 - (IBAction)back;
 - (IBAction)writeReview:(id)sender;
