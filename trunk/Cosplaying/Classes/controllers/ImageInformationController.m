@@ -81,14 +81,15 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueOrInit:@"MatchListCell" withStyle:UITableViewCellStyleSubtitle];
+	UITableViewCell *cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
 
 	
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
 		//TODO doesn't work
 		[cell textLabel].textAlignment = UITextAlignmentCenter;
-		cell.textLabel.text = @"More Reviews...";
+		cell.textLabel.text = @"           More Reviews...";
+		cell.detailTextLabel.text = nil;
 	} else if ([indexPath row] == 0) {
 		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
 		cell.textLabel.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"count"]];
@@ -124,8 +125,12 @@
 		NSArray *jsonArray = [self requestNewData];
 		[self.array addObjectsFromArray:jsonArray];
 		int responseCount = [jsonArray count];		
-		NSInteger row = [indexPath row] - 1;
+		if (responseCount == 0) {
+			[tableView deselectRowAtIndexPath:indexPath animated:YES];
+			return;
+		}
 		
+		NSInteger row = [indexPath row] - 1;
 		NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
 		
 		for (int i = 0; i < responseCount; i++) {
@@ -133,7 +138,7 @@
 		}
 			
 		[tableView beginUpdates];
-		[tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationRight];
+		[tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
 		[tableView deselectRowAtIndexPath:indexPath animated:YES];
 		[tableView endUpdates];
 	}
