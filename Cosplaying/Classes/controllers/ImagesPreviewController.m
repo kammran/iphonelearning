@@ -95,31 +95,38 @@
 	[self performSelectorInBackground:@selector(request) withObject:nil];
 }
 
-- (void) requestRecents {
-	self.q = @"recent";
+- (void) resetStateWith:(NSString *) theQ {
 	self.offset = 0;
+	self.q = theQ;
+}
+
+- (void) requestRecents {
+	[self resetStateWith:@"recent"];
 	[self requestInBackground];
 }
 
 - (void) requestTopRated {
-	self.q = @"toprated";
-	self.offset = 0;
+	[self resetStateWith:@"toprated"];
 	[self requestInBackground];
 }
 
 - (void) requestPopular {
-	self.q = @"popular";
-	self.offset = 0;
+	[self resetStateWith:@"popular"];
 	[self requestInBackground];
 }
 
 - (void) requestSelectedFolder {
-	self.q = @"folder";
-	self.offset = 0;
+	[self resetStateWith:@"folder"];
 	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
 	[formatter setDateFormat:@"yyyy-MM-dd"];
 	self.keyword = [formatter stringFromDate:self.datePicker.date];
 	[formatter release];
+	[self requestInBackground];
+}
+
+- (void) requestSearch {
+	[self resetStateWith:@"search"];
+	self.keyword = self.searchBar.text;
 	[self requestInBackground];
 }
 
@@ -283,10 +290,11 @@
 #pragma mark -
 #pragma mark UISearchBarDelegate Methods
 
+
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
-	[[NSString stringWithFormat:@"You searched %@", theSearchBar.text] showInDialogWithTitle:@"Message"];
 	[self.searchBar resignFirstResponder];
 	self.searchBar.hidden = YES;	
+	[self requestSearch];
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *)theSearchBar {
