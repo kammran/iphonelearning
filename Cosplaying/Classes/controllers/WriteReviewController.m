@@ -63,7 +63,7 @@
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/reviews", SERVICE_URL]];
 	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	[request addPostValue:delegate.activeImageKey forKey:@"image_key"];
+	[request addPostValue:delegate.context.activeImageKey forKey:@"image_key"];
 	[request addPostValue:self.reviewerTextField.text forKey:@"reviewer"];
 	[request addPostValue:rate forKey:@"rate"];
 	[request addPostValue:self.characterNameTextField.text forKey:@"character_name"];

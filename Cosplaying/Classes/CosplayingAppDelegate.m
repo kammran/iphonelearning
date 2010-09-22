@@ -13,7 +13,7 @@
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize activeImageKey;
+@synthesize context;
 
 
 #pragma mark -
@@ -25,12 +25,12 @@
 	[window addSubview:navigationController.view];
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
     [window makeKeyAndVisible];
-	
+	context = [[Context alloc] init];
 	return YES;
 }
 
 - (void)dealloc {
-	[activeImageKey release];
+	[context release];
 	[navigationController release];
     [window release];
     [super dealloc];

@@ -15,6 +15,7 @@
 #import "Configuration.h"
 #import "UIImageWithKey.h"
 #import "CosplayingAppDelegate.h"
+#import "Context.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -92,12 +93,15 @@
 }
 
 - (void) requestInBackground {
+	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	delegate.context.keyword = self.keyword;
 	[self performSelectorInBackground:@selector(request) withObject:nil];
 }
 
 - (void) resetStateWith:(NSString *) theQ {
 	self.offset = 0;
 	self.q = theQ;
+	self.keyword = @"";
 }
 
 - (void) requestRecents {
@@ -202,7 +206,7 @@
 			}
 			
 			CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-			delegate.activeImageKey = [selectedImage performSelector:keyAccessor];
+			delegate.context.activeImageKey = [selectedImage performSelector:keyAccessor];
 			
 			singleImageController.image = selectedImage;
 			
@@ -260,13 +264,9 @@
 								  nil];
 	
 	self.datePicker.datePickerMode = UIDatePickerModeDate;
-	
 	[actionSheet showInView:self.view];
-	
 	[actionSheet addSubview:self.datePicker];
-	
 	[actionSheet setBounds:CGRectMake(0, 0, 320, 400)];
-	
     CGRect pickerRect = self.datePicker.bounds;
     self.datePicker.bounds = pickerRect;
 	
@@ -294,6 +294,7 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)theSearchBar {
 	[self.searchBar resignFirstResponder];
 	self.searchBar.hidden = YES;	
+	[self.segmentedControl setSelectedSegmentIndex:-1];
 	[self requestSearch];
 }
 
