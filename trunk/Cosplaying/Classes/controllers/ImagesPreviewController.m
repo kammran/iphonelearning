@@ -16,6 +16,7 @@
 #import "UIImageWithKey.h"
 #import "CosplayingAppDelegate.h"
 #import "Context.h"
+#import "NSDataCache.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -38,9 +39,21 @@
 - (void)downloadImage:(NSArray *)array {
 	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	UIImageView *imageView = [array objectAtIndex:0];
-	NSString *url = [array objectAtIndex:1];
-	UIImageWithKey *image = [[UIImageWithKey alloc] initWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:url]]];
-	image.key = [array objectAtIndex:2];
+	NSString *folder = [array objectAtIndex:1];
+	NSString *name = [array objectAtIndex:2];
+	NSString *key = [array objectAtIndex:3];
+	NSString *url = [array objectAtIndex:4];
+	
+	NSData *imageData = nil;
+	if ([NSDataCache dataExistsInFolder:folder name:name]) {
+		imageData = [NSDataCache loadDataInFolder:folder name:name];
+	} else {
+		imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:url]];
+		[NSDataCache saveData:imageData inFolder:folder name:name];
+	}
+	
+	UIImageWithKey *image = [[UIImageWithKey alloc] initWithData:imageData];
+	image.key = key;
 	imageView.image = image;
 	[image release];
 	[pool release];
@@ -55,7 +68,7 @@
 		NSString *url = [NSString stringWithFormat:@"%@/%@/%@", IMAGE_SERVER, folder, name];
 		if (i <= IMAGES_PER_PAGE) {
 			UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
-			NSArray *array = [NSArray arrayWithObjects:imageView, url, key, nil];
+			NSArray *array = [NSArray arrayWithObjects:imageView, folder, name, key, url, nil];
 			[self performSelectorInBackground:@selector(downloadImage:) withObject:array];
 		}
 		i++;
