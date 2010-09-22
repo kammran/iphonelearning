@@ -27,13 +27,13 @@
 	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, self.offset] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
-	
 	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
 	NSArray *jsonArray = [response JSONValue];
 	return jsonArray;
 }
 
 - (void)initializeDataArray {
+	self.offset = 0;
 	self.array = [[NSMutableArray alloc] init];
 	[self.array addObjectsFromArray:[self requestNewData:YES]];
 }
@@ -45,6 +45,7 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
 }
+
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -93,7 +94,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
-
 	
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
