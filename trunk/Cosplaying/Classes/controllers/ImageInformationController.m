@@ -80,6 +80,17 @@
 	return [indexPath row] == (rows - 1);		
 }
 
+- (NSString *)mark:(NSString *)source {
+	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	NSString *keyword = delegate.context.keyword;
+	
+	NSRange range = [source rangeOfString:keyword];
+	if (range.location == NSNotFound) {
+		return source;
+	}
+	return [source stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@"<%@>", keyword]];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
 
@@ -100,12 +111,12 @@
 		cell.detailTextLabel.text = detail;
 	} else {
 		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
-		cell.textLabel.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [dict valueForKey:@"character_name"]];
+		cell.textLabel.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
 		NSString *detail = [NSString stringWithFormat:@"Rate %@ by %@ on %@\nKeywords:%@\n%@", 
 							[dict valueForKey:@"rate"],
 							[dict valueForKey:@"reviewer"],
 							[dict valueForKey:@"created_at"],
-							[dict valueForKey:@"keywords"],
+							[self mark:[dict valueForKey:@"keywords"]],
 							[dict valueForKey:@"comment"]];
 		cell.detailTextLabel.numberOfLines = 5;
 		cell.detailTextLabel.text = detail;

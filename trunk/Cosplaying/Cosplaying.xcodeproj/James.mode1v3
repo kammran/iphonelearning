@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1AC381F11249D4E0000CAE28</string>
+				<string>1AC3821B1249DA87000CAE28</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>ImageInformationController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1AC381F21249D4E0000CAE28</string>
+						<string>1AC3821C1249DA87000CAE28</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>ImageInformationController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1AC381FB1249D57A000CAE28</string>
+						<string>1AC3823A1249DE43000CAE28</string>
 						<key>history</key>
 						<array>
-							<string>1AC381ED1249D4CE000CAE28</string>
+							<string>1AC3821D1249DA87000CAE28</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -373,7 +373,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AC381FA1249D57A000CAE28</string>
+										<string>1AC382391249DE43000CAE28</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -600,7 +600,7 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1AC381F11249D4E0000CAE28</string>
+		<string>1AC3821B1249DA87000CAE28</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
