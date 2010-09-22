@@ -21,10 +21,10 @@
 
 
 
-- (NSArray *) requestNewData {
+- (NSArray *) requestNewData:(BOOL) withHeader {
 	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-	NSString *imageKey = delegate.activeImageKey;
-	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&offset=%d", SERVICE_URL, imageKey, self.offset] 
+	NSString *imageKey = delegate.context.activeImageKey;
+	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, self.offset] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
 	
@@ -35,7 +35,7 @@
 
 - (void)initializeDataArray {
 	self.array = [[NSMutableArray alloc] init];
-	[self.array addObjectsFromArray:[self requestNewData]];
+	[self.array addObjectsFromArray:[self requestNewData:YES]];
 }
 
 - (void)viewDidLoad {
@@ -92,16 +92,20 @@
 		cell.detailTextLabel.text = nil;
 	} else if ([indexPath row] == 0) {
 		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
-		cell.textLabel.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"count"]];
-		NSString *detail = [NSString stringWithFormat:@"Average Rate %@", [dict valueForKey:@"average_rate"]];
+		cell.textLabel.text = [NSString stringWithFormat:@"Average of %@ reviews", [dict valueForKey:@"count"]];
+		NSString *detail = [NSString stringWithFormat:@"Average Rate %@\nDate %@", 
+							[dict valueForKey:@"average_rate"],
+							[dict valueForKey:@"folder"]];
+		cell.detailTextLabel.numberOfLines = 2;
 		cell.detailTextLabel.text = detail;
 	} else {
 		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
 		cell.textLabel.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [dict valueForKey:@"character_name"]];
-		NSString *detail = [NSString stringWithFormat:@"Rate %@ by %@ on %@\n%@", 
+		NSString *detail = [NSString stringWithFormat:@"Rate %@ by %@ on %@\nKeywords:%@\n%@", 
 							[dict valueForKey:@"rate"],
 							[dict valueForKey:@"reviewer"],
 							[dict valueForKey:@"created_at"],
+							[dict valueForKey:@"keywords"],
 							[dict valueForKey:@"comment"]];
 		cell.detailTextLabel.numberOfLines = 5;
 		cell.detailTextLabel.text = detail;
@@ -122,7 +126,7 @@
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
 		self.offset = [self.array count] - 1;
-		NSArray *jsonArray = [self requestNewData];
+		NSArray *jsonArray = [self requestNewData:NO];
 		[self.array addObjectsFromArray:jsonArray];
 		int responseCount = [jsonArray count];		
 		if (responseCount == 0) {

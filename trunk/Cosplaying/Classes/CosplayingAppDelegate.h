@@ -7,16 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Context.h"
 
 @interface CosplayingAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
 	UINavigationController *navigationController;
-	NSString *activeImageKey;
+	Context *context;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-@property (nonatomic, retain) NSString *activeImageKey;
+@property (nonatomic, retain) Context *context;
 
 @end
 
