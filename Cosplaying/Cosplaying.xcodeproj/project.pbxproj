@@ -27,6 +27,7 @@
 		1A8A97A81229181E00E38751 /* ImagesPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8A97A61229181E00E38751 /* ImagesPreviewController.m */; };
 		1A8A97A91229181F00E38751 /* ImagesPreviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */; };
 		1AC381911249D0A8000CAE28 /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC381901249D0A8000CAE28 /* Context.m */; };
+		1AC38359124A13CD000CAE28 /* NSDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC38358124A13CD000CAE28 /* NSDataCache.m */; };
 		1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */; };
 		1AC3A2DE12450C5F0030254B /* UITableView-WithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */; };
 		1ADF77D3123BF9FA00F0013D /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF77D2123BF9FA00F0013D /* previous.png */; };
@@ -86,6 +87,8 @@
 		1A8A97A71229181E00E38751 /* ImagesPreviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImagesPreviewController.xib; sourceTree = "<group>"; };
 		1AC3818F1249D0A8000CAE28 /* Context.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		1AC381901249D0A8000CAE28 /* Context.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		1AC38357124A13CD000CAE28 /* NSDataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataCache.h; sourceTree = "<group>"; };
+		1AC38358124A13CD000CAE28 /* NSDataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataCache.m; sourceTree = "<group>"; };
 		1AC3A1DA1244BFA50030254B /* UIImageWithKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageWithKey.h; sourceTree = "<group>"; };
 		1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageWithKey.m; sourceTree = "<group>"; };
 		1AC3A2DC12450C5F0030254B /* UITableView-WithCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView-WithCell.h"; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */,
 				1A890E49122AC312009B92ED /* AnimationDefinition.h */,
 				1A890E4A122AC312009B92ED /* AnimationDefinition.m */,
+				1AC38357124A13CD000CAE28 /* NSDataCache.h */,
+				1AC38358124A13CD000CAE28 /* NSDataCache.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -453,6 +458,7 @@
 				1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */,
 				1AC3A2DE12450C5F0030254B /* UITableView-WithCell.m in Sources */,
 				1AC381911249D0A8000CAE28 /* Context.m in Sources */,
+				1AC38359124A13CD000CAE28 /* NSDataCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
