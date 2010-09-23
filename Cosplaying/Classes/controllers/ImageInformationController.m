@@ -137,6 +137,17 @@
 	return size.height + 20;
 }
 
+- (UIColor *) colorOf:(int) row {
+	int mod = row % 3;
+	if (mod == 1) {
+		return [[[UIColor alloc] initWithRed:0.6 green:0.8	blue:1.0 alpha:1.0] autorelease];
+	} 
+	if (mod == 2) {
+		return [[[UIColor alloc] initWithRed:0.6 green:1.0	blue:0.8 alpha:1.0] autorelease];
+	}
+	return [[[UIColor alloc] initWithRed:1.0 green:0.8	blue:1.0 alpha:1.0] autorelease];
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = nil;
 	NSUInteger row = [indexPath row];
@@ -160,16 +171,20 @@
 		[cell.contentView addSubview:ratingCellView];
 		[ratingCellView release];
 	} else {
+		UIColor *bgColor = [self colorOf:row];
+
 		cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
 		NSDictionary *dict = [self.array objectAtIndex:row];
 		
 		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
 		title.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
+		title.backgroundColor = bgColor;
 		[cell.contentView addSubview:title];
 		[title release];
 
 		RatingCellView *ratingCellView = [[RatingCellView alloc] initWithFrame:CGRectMake(10, 30, 50, 20)];
 		ratingCellView.rating = [[dict valueForKey:@"rate"] floatValue];
+		ratingCellView.backgroundColor = bgColor;
 		[cell.contentView addSubview:ratingCellView];
 		[ratingCellView release];
 
@@ -179,6 +194,7 @@
 						 [dict valueForKey:@"created_at"]];
 		reviewer.textColor = [UIColor grayColor];
 		reviewer.font = [UIFont systemFontOfSize:12]; 
+		reviewer.backgroundColor = bgColor;
 		[cell.contentView addSubview:reviewer];
 		[reviewer release];
 		
@@ -186,6 +202,7 @@
 		keywords.text = [NSString stringWithFormat:@"Keywords: %@", [dict valueForKey:@"keywords"]];
 		keywords.textColor = [UIColor grayColor];
 		keywords.font = [UIFont systemFontOfSize:12]; 
+		keywords.backgroundColor = bgColor;
 		[cell.contentView addSubview:keywords];
 		[keywords release];
 	
@@ -196,16 +213,11 @@
 		comment.text = [dict valueForKey:@"comment"];
 		comment.textColor = [UIColor grayColor];
 		comment.font = [UIFont systemFontOfSize:12]; 
+		comment.backgroundColor = bgColor;
 		[cell.contentView addSubview:comment];
-		[comment release];
+		[comment release];		
 		
-		//if (row % 2 == 1) {
-			UIColor *color = [[UIColor alloc] initWithRed:0.6 green:0.8	blue:0.8 alpha:1.0];
-			cell.textLabel.backgroundColor = color;
-			cell.contentView.backgroundColor = color;
-			cell.detailTextLabel.backgroundColor = color;			
-			[color release];
-		//} 
+		cell.contentView.backgroundColor = bgColor;
 	}
 
 	return cell;
@@ -215,7 +227,6 @@
 #pragma mark UITableViewDelegate Methods
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {	
-	[[NSString stringWithFormat:@"%d", [indexPath row]] showInDialog];
 	return nil;
 }
 
