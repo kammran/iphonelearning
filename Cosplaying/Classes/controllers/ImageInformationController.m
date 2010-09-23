@@ -43,9 +43,18 @@
     [super viewDidLoad];
 }
 
+- (UIButton *)moreReviewsButton {
+	UIButton *moreReviews = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	moreReviews.frame = CGRectMake(0, 0, 320, 50); 	
+	[moreReviews setTitle:@"MoreReviews" forState:UIControlStateNormal];
+	[moreReviews addTarget:self action:@selector(loadMoreReviews) forControlEvents:UIControlEventTouchUpInside];
+	return moreReviews;
+}
+
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
 	[self.reviewsView reloadData];
+	self.reviewsView.tableFooterView = [self moreReviewsButton];
 }
 
 
@@ -62,6 +71,9 @@
     [super dealloc];
 }
 
+#pragma mark -
+#pragma mark IBAction Methods
+
 - (IBAction)back {
 	[self.navigationController popViewControllerAnimated:YES];
 }
@@ -72,15 +84,35 @@
 	[writeReviewController release];
 }
 
-#pragma mark -
-#pragma mark UITableViewDataSource Methods
-- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
-	return [array count] + 1;
+- (IBAction)loadMoreReviews {
+	NSInteger rowsBeforeRequest = [self.array count] - 1;
+	self.offset = [self.array count] - 1;
+	if (self.offset < 0) {
+		self.offset = 0;
+	}
+	NSArray *jsonArray = [self requestNewData:NO];
+	[self.array addObjectsFromArray:jsonArray];
+	int responseCount = [jsonArray count];		
+	if (responseCount == 0) {
+		return;
+	}
+	
+	NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
+	
+	for (int i = 0; i < responseCount; i++) {
+		[insertIndexPaths addObject:[NSIndexPath indexPathForRow:++rowsBeforeRequest inSection:0]];
+	}
+	
+	[self.reviewsView beginUpdates];
+	[self.reviewsView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
+	[self.reviewsView endUpdates];
 }
 
-- (BOOL)tableView:(UITableView *)tableView isLastRow:(NSIndexPath *)indexPath {
-	NSInteger rows = [tableView numberOfRowsInSection:0];
-	return [indexPath row] == (rows - 1);		
+#pragma mark -
+#pragma mark UITableViewDataSource Methods
+
+- (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {
+	return [array count];
 }
 
 - (NSString *)mark:(NSString *)source {
@@ -94,17 +126,21 @@
 	return [source stringByReplacingCharactersInRange:range withString:[NSString stringWithFormat:@"<%@>", keyword]];
 }
 
+- (CGFloat)heightOfComment:(NSIndexPath *) indexPath maxWidth:(CGFloat) maxWidth {
+	NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
+	NSString *commentValue = [dict valueForKey:@"comment"];
+	if ([commentValue length] == 0) {
+		return 0;
+	} 
+	UIFont *font = [UIFont systemFontOfSize:12];
+	CGSize size =  [commentValue sizeWithFont:font constrainedToSize:CGSizeMake(maxWidth, MAXFLOAT) lineBreakMode:UILineBreakModeCharacterWrap];
+	return size.height + 20;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	UITableViewCell *cell = nil;
-	
 	NSUInteger row = [indexPath row];
-	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
-	if (lastRow) {
-		cell = [tableView dequeueOrInit:@"MoreReviewsCell" withStyle:UITableViewCellStyleSubtitle];
-		[cell textLabel].textAlignment = UITextAlignmentCenter;
-		cell.textLabel.text = @"           More Reviews...";
-		cell.detailTextLabel.text = nil;
-	} else if (row == 0) {
+	if (row == 0) {
 		cell = [tableView dequeueOrInit:@"HeaderCell" withStyle:UITableViewCellStyleSubtitle];
 
 		NSDictionary *dict = [self.array objectAtIndex:row];
@@ -152,23 +188,24 @@
 		keywords.font = [UIFont systemFontOfSize:12]; 
 		[cell.contentView addSubview:keywords];
 		[keywords release];
-		
 	
-		UILabel *comment = [[UILabel alloc] initWithFrame:CGRectMake(10, 70, 300, 20)];
-		comment.numberOfLines = 5; 
+		CGFloat maxWidth = 300;
+		CGFloat height = [self heightOfComment:indexPath maxWidth:maxWidth];
+		UILabel *comment = [[UILabel alloc] initWithFrame:CGRectMake(10, 70, maxWidth, height)];
+		comment.numberOfLines = 0; 
 		comment.text = [dict valueForKey:@"comment"];
 		comment.textColor = [UIColor grayColor];
 		comment.font = [UIFont systemFontOfSize:12]; 
 		[cell.contentView addSubview:comment];
 		[comment release];
 		
-		if (row % 2 == 1) {
+		//if (row % 2 == 1) {
 			UIColor *color = [[UIColor alloc] initWithRed:0.6 green:0.8	blue:0.8 alpha:1.0];
 			cell.textLabel.backgroundColor = color;
 			cell.contentView.backgroundColor = color;
 			cell.detailTextLabel.backgroundColor = color;			
 			[color release];
-		} 
+		//} 
 	}
 
 	return cell;
@@ -177,46 +214,20 @@
 #pragma mark -
 #pragma mark UITableViewDelegate Methods
 
-- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
-	return lastRow? indexPath : nil;
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {	
+	[[NSString stringWithFormat:@"%d", [indexPath row]] showInDialog];
+	return nil;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
-	if (lastRow) {
-		self.offset = [self.array count] - 1;
-		if (self.offset < 0) {
-			self.offset = 0;
-		}
-		NSArray *jsonArray = [self requestNewData:NO];
-		[self.array addObjectsFromArray:jsonArray];
-		int responseCount = [jsonArray count];		
-		if (responseCount == 0) {
-			[tableView deselectRowAtIndexPath:indexPath animated:YES];
-			return;
-		}
-		
-		NSInteger row = [indexPath row] - 1;
-		NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
-		
-		for (int i = 0; i < responseCount; i++) {
-			[insertIndexPaths addObject:[NSIndexPath indexPathForRow:++row inSection:0]];
-		}
-			
-		[tableView beginUpdates];
-		[tableView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-		[tableView endUpdates];
-	}
-}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 	int row = [indexPath row];
 	if (row == 0) {
 		return 80;
 	}
-	return 100;
+	
+	CGFloat commentHeight = [self heightOfComment:indexPath maxWidth:300];
+	return commentHeight + 70;
 }
 
 @end
