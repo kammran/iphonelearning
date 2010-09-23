@@ -138,6 +138,9 @@
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
 		self.offset = [self.array count] - 1;
+		if (self.offset < 0) {
+			self.offset = 0;
+		}
 		NSArray *jsonArray = [self requestNewData:NO];
 		[self.array addObjectsFromArray:jsonArray];
 		int responseCount = [jsonArray count];		
