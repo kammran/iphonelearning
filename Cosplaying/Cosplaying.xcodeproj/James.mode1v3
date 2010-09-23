@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1AE64C97124B9FDA00B644B4</string>
+				<string>1AE64EAD124BC76B00B644B4</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>ImageInformationController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1AE64C98124B9FDA00B644B4</string>
+						<string>1AE64EAE124BC76B00B644B4</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>ImageInformationController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1AE64C99124B9FDA00B644B4</string>
+						<string>1AE64EAF124BC76B00B644B4</string>
 						<key>history</key>
 						<array>
-							<string>1AE64C93124B9FBE00B644B4</string>
+							<string>1AE64EA9124BC75100B644B4</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -308,25 +308,23 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>1AC3A1881244B9800030254B</string>
-								<string>1A890A7B122A689F009B92ED</string>
+								<string>1AE64CA1124BAA2100B644B4</string>
 								<string>1A8A97A41229179600E38751</string>
 								<string>1A8A978E1229125E00E38751</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>1A8A971F12290AE800E38751</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>29</integer>
 									<integer>21</integer>
+									<integer>13</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 87}, {349, 602}}</string>
+							<string>{{0, 88}, {349, 602}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -373,7 +371,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1AE64C96124B9FDA00B644B4</string>
+										<string>1AE64EAC124BC76B00B644B4</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -400,7 +398,8 @@
 											<string>1AC383D6124A1C4C000CAE28</string>
 											<string>1AE64C50124B981100B644B4</string>
 											<string>1AE64C6D124B98F100B644B4</string>
-											<string>1AE64B95124B89D800B644B4</string>
+											<string>1AE64CED124BAECB00B644B4</string>
+											<string>1AE64E09124BBDE100B644B4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -605,7 +604,7 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1AE64C97124B9FDA00B644B4</string>
+		<string>1AE64EAD124BC76B00B644B4</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -629,7 +628,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>NSDataCache.m</string>
+								<string>ImageInformationController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>

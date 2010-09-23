@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SCRatingView.h"
 
 @interface WriteReviewController : UIViewController {
 
-	UISegmentedControl *rateSegment;
+	SCRatingView *ratingView;
 	UITextField *reviewerTextField;
 	UITextField *characterNameTextField;
 	UITextField *keywordsTextField;
@@ -20,7 +20,7 @@
 	
 }
 
-@property (nonatomic, retain) IBOutlet UISegmentedControl *rateSegment;
+@property (nonatomic, retain) IBOutlet SCRatingView *ratingView;
 @property (nonatomic, retain) IBOutlet UITextField *reviewerTextField;
 @property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *keywordsTextField;
