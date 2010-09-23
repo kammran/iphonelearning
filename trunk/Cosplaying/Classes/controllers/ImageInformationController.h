@@ -23,5 +23,6 @@
 
 - (IBAction)back;
 - (IBAction)writeReview:(id)sender;
+- (IBAction)loadMoreReviews;
 
 @end
