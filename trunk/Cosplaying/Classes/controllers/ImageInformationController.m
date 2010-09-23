@@ -13,6 +13,7 @@
 #import "CosplayingAppDelegate.h"
 #import "Configuration.h"
 #import "JSON.h"
+#import "RatingCellView.h"
 
 @implementation ImageInformationController
 @synthesize reviewsView;
@@ -94,33 +95,80 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
+	UITableViewCell *cell = nil;
 	
+	NSUInteger row = [indexPath row];
 	BOOL lastRow = [self tableView:tableView isLastRow:indexPath];
 	if (lastRow) {
-		//TODO doesn't work
+		cell = [tableView dequeueOrInit:@"MoreReviewsCell" withStyle:UITableViewCellStyleSubtitle];
 		[cell textLabel].textAlignment = UITextAlignmentCenter;
 		cell.textLabel.text = @"           More Reviews...";
 		cell.detailTextLabel.text = nil;
-	} else if ([indexPath row] == 0) {
-		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
-		cell.textLabel.text = [NSString stringWithFormat:@"Average of %@ reviews", [dict valueForKey:@"count"]];
-		NSString *detail = [NSString stringWithFormat:@"Average Rate %@\nDate %@", 
-							[dict valueForKey:@"average_rate"],
-							[dict valueForKey:@"folder"]];
-		cell.detailTextLabel.numberOfLines = 2;
-		cell.detailTextLabel.text = detail;
+	} else if (row == 0) {
+		cell = [tableView dequeueOrInit:@"HeaderCell" withStyle:UITableViewCellStyleSubtitle];
+
+		NSDictionary *dict = [self.array objectAtIndex:row];
+		
+		UILabel *date = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+		date.text = [NSString stringWithFormat:@"Upload date %@", [dict valueForKey:@"folder"]];
+		[cell.contentView addSubview:date];
+		[date release];
+		
+		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 20)];
+		title.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"count"]];
+		[cell.contentView addSubview:title];
+		[title release];
+		
+		RatingCellView *ratingCellView = [[RatingCellView alloc] initWithFrame:CGRectMake(10, 50, 50, 20)];
+		ratingCellView.rating = [[dict valueForKey:@"average_rate"] floatValue];
+		[cell.contentView addSubview:ratingCellView];
+		[ratingCellView release];
 	} else {
-		NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
-		cell.textLabel.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
-		NSString *detail = [NSString stringWithFormat:@"Rate %@ by %@ on %@\nKeywords:%@\n%@", 
-							[dict valueForKey:@"rate"],
-							[dict valueForKey:@"reviewer"],
-							[dict valueForKey:@"created_at"],
-							[self mark:[dict valueForKey:@"keywords"]],
-							[dict valueForKey:@"comment"]];
-		cell.detailTextLabel.numberOfLines = 5;
-		cell.detailTextLabel.text = detail;
+		cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
+		NSDictionary *dict = [self.array objectAtIndex:row];
+		
+		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+		title.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
+		[cell.contentView addSubview:title];
+		[title release];
+
+		RatingCellView *ratingCellView = [[RatingCellView alloc] initWithFrame:CGRectMake(10, 30, 50, 20)];
+		ratingCellView.rating = [[dict valueForKey:@"rate"] floatValue];
+		[cell.contentView addSubview:ratingCellView];
+		[ratingCellView release];
+
+		UILabel *reviewer = [[UILabel alloc] initWithFrame:CGRectMake(70, 30, 300, 20)];
+		reviewer.text = [NSString stringWithFormat:@"by %@ at %@", 
+						 [self mark:[dict valueForKey:@"reviewer"]],
+						 [dict valueForKey:@"created_at"]];
+		reviewer.textColor = [UIColor grayColor];
+		reviewer.font = [UIFont systemFontOfSize:12]; 
+		[cell.contentView addSubview:reviewer];
+		[reviewer release];
+		
+		UILabel *keywords = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 300, 20)];
+		keywords.text = [NSString stringWithFormat:@"Keywords: %@", [dict valueForKey:@"keywords"]];
+		keywords.textColor = [UIColor grayColor];
+		keywords.font = [UIFont systemFontOfSize:12]; 
+		[cell.contentView addSubview:keywords];
+		[keywords release];
+		
+	
+		UILabel *comment = [[UILabel alloc] initWithFrame:CGRectMake(10, 70, 300, 20)];
+		comment.numberOfLines = 5; 
+		comment.text = [dict valueForKey:@"comment"];
+		comment.textColor = [UIColor grayColor];
+		comment.font = [UIFont systemFontOfSize:12]; 
+		[cell.contentView addSubview:comment];
+		[comment release];
+		
+		if (row % 2 == 1) {
+			UIColor *color = [[UIColor alloc] initWithRed:0.6 green:0.8	blue:0.8 alpha:1.0];
+			cell.textLabel.backgroundColor = color;
+			cell.contentView.backgroundColor = color;
+			cell.detailTextLabel.backgroundColor = color;			
+			[color release];
+		} 
 	}
 
 	return cell;
@@ -164,6 +212,10 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+	int row = [indexPath row];
+	if (row == 0) {
+		return 80;
+	}
 	return 100;
 }
 

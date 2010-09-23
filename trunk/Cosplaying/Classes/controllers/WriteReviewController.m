@@ -13,7 +13,7 @@
 #import "CosplayingAppDelegate.h"
 
 @implementation WriteReviewController
-@synthesize rateSegment;
+@synthesize ratingView;
 @synthesize reviewerTextField;
 @synthesize characterNameTextField;
 @synthesize keywordsTextField;
@@ -24,14 +24,25 @@
 #pragma mark -
 #pragma mark ViewController Methods
 
+- (void) initRatingView {
+	[ratingView setStarImage:[UIImage imageNamed:@"star-halfselected.png"] forState:kSCRatingViewHalfSelected];
+	[ratingView setStarImage:[UIImage imageNamed:@"star-highlighted.png"] forState:kSCRatingViewHighlighted];
+	[ratingView setStarImage:[UIImage imageNamed:@"star-hot.png"] forState:kSCRatingViewHot];
+	[ratingView setStarImage:[UIImage imageNamed:@"star-nonselected.png"] forState:kSCRatingViewNonSelected];
+	[ratingView setStarImage:[UIImage imageNamed:@"star-selected.png"] forState:kSCRatingViewSelected];
+	[ratingView setStarImage:[UIImage imageNamed:@"star-userselected.png"] forState:kSCRatingViewUserSelected];
+	ratingView.userRating = 3;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+	[self initRatingView];
 }
 
 
 - (void)viewDidUnload {
     [super viewDidUnload];
-	rateSegment = nil;
+	ratingView = nil;
 	reviewerTextField = nil;
 	characterNameTextField = nil;
 	keywordsTextField = nil;
@@ -42,7 +53,7 @@
 
 - (void)dealloc {
     [super dealloc];
-	[rateSegment release];
+	[ratingView release];
 	[reviewerTextField release];
 	[characterNameTextField release];
 	[keywordsTextField release];
@@ -58,8 +69,7 @@
 }
 
 - (IBAction)sendReview {
-	NSString *rate = [NSString stringWithFormat:@"%d", [self.rateSegment selectedSegmentIndex] + 1];
-	
+	NSString *rate = [NSString stringWithFormat:@"%d", self.ratingView.userRating];
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/reviews", SERVICE_URL]];
 	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
 	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
