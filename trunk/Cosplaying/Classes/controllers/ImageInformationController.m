@@ -44,6 +44,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
+	[self.reviewsView reloadData];
 }
 
 
