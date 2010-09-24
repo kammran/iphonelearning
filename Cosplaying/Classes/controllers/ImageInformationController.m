@@ -171,58 +171,71 @@
 		[cell.contentView addSubview:ratingCellView];
 		[ratingCellView release];
 	} else {
-		UIColor *bgColor = [self colorOf:row];
-
-		cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
-		
-		NSArray *subviews = [[NSArray alloc] initWithArray:cell.contentView.subviews];
-		for (UIView *subview in subviews) {
-			[subview removeFromSuperview];
-		}
-		[subviews release];
-		
 		NSDictionary *dict = [self.array objectAtIndex:row];
+		UIColor *bgColor = [self colorOf:row];
+		static NSString *identifier = @"ReviewCell";
+		cell = [tableView dequeueReusableCellWithIdentifier:identifier];
 		
-		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+		if (cell == nil) {
+			cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifier] autorelease];
+			
+			UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
+			title.tag = -1;
+			[cell.contentView addSubview:title];
+			[title release];
+			
+			RatingCellView *ratingCellView = [[RatingCellView alloc] initWithFrame:CGRectMake(10, 30, 50, 20)];
+			ratingCellView.tag = -2;
+			[cell.contentView addSubview:ratingCellView];
+			[ratingCellView release];
+			
+			UILabel *reviewer = [[UILabel alloc] initWithFrame:CGRectMake(70, 30, 300, 20)];
+			reviewer.tag = -3;
+			reviewer.textColor = [UIColor grayColor];
+			reviewer.font = [UIFont systemFontOfSize:12]; 
+			[cell.contentView addSubview:reviewer];
+			[reviewer release];
+			
+			UILabel *keywords = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 300, 20)];
+			keywords.tag = -4;
+			keywords.textColor = [UIColor grayColor];
+			keywords.font = [UIFont systemFontOfSize:12]; 
+			[cell.contentView addSubview:keywords];
+			[keywords release];
+			
+			UILabel *comment = [[UILabel alloc] init];
+			comment.tag = -5;
+			comment.numberOfLines = 0; 
+			comment.textColor = [UIColor grayColor];
+			comment.font = [UIFont systemFontOfSize:12]; 
+			[cell.contentView addSubview:comment];
+			[comment release];		
+		}
+		
+		UILabel *title = (UILabel *) [cell.contentView viewWithTag:-1];
 		title.text = [NSString stringWithFormat:@"%d. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
 		title.backgroundColor = bgColor;
-		[cell.contentView addSubview:title];
-		[title release];
-
-		RatingCellView *ratingCellView = [[RatingCellView alloc] initWithFrame:CGRectMake(10, 30, 50, 20)];
+		
+		RatingCellView *ratingCellView = (RatingCellView *) [cell.contentView viewWithTag:-2];;
 		ratingCellView.rating = [[dict valueForKey:@"rate"] floatValue];
 		ratingCellView.backgroundColor = bgColor;
-		[cell.contentView addSubview:ratingCellView];
-		[ratingCellView release];
-
-		UILabel *reviewer = [[UILabel alloc] initWithFrame:CGRectMake(70, 30, 300, 20)];
+		
+		UILabel *reviewer = (UILabel *) [cell.contentView viewWithTag:-3];
 		reviewer.text = [NSString stringWithFormat:@"by %@ at %@", 
 						 [self mark:[dict valueForKey:@"reviewer"]],
 						 [dict valueForKey:@"created_at"]];
-		reviewer.textColor = [UIColor grayColor];
-		reviewer.font = [UIFont systemFontOfSize:12]; 
 		reviewer.backgroundColor = bgColor;
-		[cell.contentView addSubview:reviewer];
-		[reviewer release];
 		
-		UILabel *keywords = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 300, 20)];
+		UILabel *keywords = (UILabel *) [cell.contentView viewWithTag:-4];
 		keywords.text = [NSString stringWithFormat:@"Keywords: %@", [dict valueForKey:@"keywords"]];
-		keywords.textColor = [UIColor grayColor];
-		keywords.font = [UIFont systemFontOfSize:12]; 
 		keywords.backgroundColor = bgColor;
-		[cell.contentView addSubview:keywords];
-		[keywords release];
-	
+		
+		UILabel *comment = (UILabel *) [cell.contentView viewWithTag:-5];
 		CGFloat maxWidth = 300;
 		CGFloat height = [self heightOfComment:indexPath maxWidth:maxWidth];
-		UILabel *comment = [[UILabel alloc] initWithFrame:CGRectMake(10, 70, maxWidth, height)];
-		comment.numberOfLines = 0; 
-		comment.text = [dict valueForKey:@"comment"];
-		comment.textColor = [UIColor grayColor];
-		comment.font = [UIFont systemFontOfSize:12]; 
+		comment.frame = CGRectMake(10, 70, maxWidth, height);
 		comment.backgroundColor = bgColor;
-		[cell.contentView addSubview:comment];
-		[comment release];		
+		comment.text = [dict valueForKey:@"comment"];
 		
 		cell.contentView.backgroundColor = bgColor;
 	}
