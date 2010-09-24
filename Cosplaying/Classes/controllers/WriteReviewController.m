@@ -12,6 +12,7 @@
 #import "Configuration.h"
 #import "CosplayingAppDelegate.h"
 #import "NSDataCache.h"
+#import "AnimationDefinition.h"
 
 @implementation WriteReviewController
 @synthesize ratingView;
@@ -91,7 +92,12 @@
 #pragma mark IBAction Methods
 
 - (IBAction)back {
-	[self.navigationController popViewControllerAnimated:YES];
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlUp
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	[self.navigationController popViewControllerWithAnimation:animationDefinition];
+	[animationDefinition release];
 }
 
 - (IBAction)sendReview {

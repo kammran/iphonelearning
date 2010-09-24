@@ -14,11 +14,14 @@
 #import "Configuration.h"
 #import "JSON.h"
 #import "RatingCellView.h"
+#import "UINavigationController-Animation.h"
+#import "AnimationDefinition.h"
 
 @implementation ImageInformationController
 @synthesize reviewsView;
 @synthesize array;
 @synthesize offset;
+@synthesize titleBarItem;
 
 
 
@@ -54,6 +57,8 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
+	NSDictionary *dict = [self.array objectAtIndex:0];
+	self.titleBarItem.title = [NSString stringWithFormat:@"Previews (%@)", [dict valueForKey:@"reviewed_times"]];
 	[self.reviewsView reloadData];
 	self.reviewsView.tableFooterView = [self moreReviewsButton];
 }
@@ -63,12 +68,14 @@
     [super viewDidUnload];
 	array = nil;
 	reviewsView = nil;
+	titleBarItem = nil;
 }
 
 
 - (void)dealloc {
 	[array release];
 	[reviewsView release];
+	[titleBarItem release];
     [super dealloc];
 }
 
@@ -76,13 +83,24 @@
 #pragma mark IBAction Methods
 
 - (IBAction)back {
-	[self.navigationController popViewControllerAnimated:YES];
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlUp
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	[self.navigationController popViewControllerWithAnimation:animationDefinition];
+	[animationDefinition release];
 }
 
 - (IBAction)writeReview:(id) sender {
 	WriteReviewController *writeReviewController = [[WriteReviewController alloc] initWithNibName:@"WriteReviewController" bundle:nil];
-	[self.navigationController pushViewController:writeReviewController animated:YES];
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlDown
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	
+	[self.navigationController pushViewController:writeReviewController withAnimation:animationDefinition];
 	[writeReviewController release];
+	[animationDefinition release];
 }
 
 - (IBAction)loadMoreReviews {
@@ -163,7 +181,7 @@
 		[date release];
 		
 		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 30, 300, 20)];
-		title.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"count"]];
+		title.text = [NSString stringWithFormat:@"Average of %@ ratings", [dict valueForKey:@"reviewed_times"]];
 		[cell.contentView addSubview:title];
 		[title release];
 		

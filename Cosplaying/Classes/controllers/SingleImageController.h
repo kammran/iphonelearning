@@ -23,7 +23,7 @@
 
 
 
-- (IBAction)backToSuperView:(id) sender;
+- (IBAction)back:(id) sender;
 - (IBAction)viewInformation:(id) sender;
 - (IBAction)saveImage;
 @end
