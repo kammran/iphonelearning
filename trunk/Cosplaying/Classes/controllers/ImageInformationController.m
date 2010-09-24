@@ -46,7 +46,8 @@
 - (UIButton *)moreReviewsButton {
 	UIButton *moreReviews = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	moreReviews.frame = CGRectMake(0, 0, 320, 50); 	
-	[moreReviews setTitle:@"MoreReviews" forState:UIControlStateNormal];
+	[moreReviews setTitle:@"MoreReviews..." forState:UIControlStateNormal];
+	[moreReviews setTitle:@"Loading, Please Wait..." forState:UIControlStateHighlighted];
 	[moreReviews addTarget:self action:@selector(loadMoreReviews) forControlEvents:UIControlEventTouchUpInside];
 	return moreReviews;
 }

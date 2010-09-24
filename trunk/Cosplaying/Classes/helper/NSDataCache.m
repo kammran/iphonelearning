@@ -31,10 +31,10 @@
 } 
 
 + (NSData *)loadDataInFolder:(NSString *) folder name:(NSString *) name {
-	return [[NSData alloc] initWithContentsOfFile:[self pathForFolder:folder name:name]];
+	return [[[NSData alloc] initWithContentsOfFile:[self pathForFolder:folder name:name]] autorelease];
 }
 
-+ (void) createFolder:(NSString *) folder {
++ (void) createFolderIfRequired:(NSString *) folder {
 	NSString *path = [self pathForFolder:folder];
 	NSFileManager *fileManager = [NSFileManager defaultManager];
 	BOOL dir = YES;
@@ -51,7 +51,7 @@
 }
 
 + (void)saveData:(NSData *) data inFolder:(NSString *) folder name:(NSString *) name {
-	[self createFolder:folder];
+	[self createFolderIfRequired:folder];
 	[data writeToFile:[self pathForFolder:folder name:name] atomically:YES];
 }
 

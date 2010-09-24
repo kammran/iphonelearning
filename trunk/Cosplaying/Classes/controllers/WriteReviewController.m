@@ -11,9 +11,11 @@
 #import "ASIFormDataRequest.h"
 #import "Configuration.h"
 #import "CosplayingAppDelegate.h"
+#import "NSDataCache.h"
 
 @implementation WriteReviewController
 @synthesize ratingView;
+@synthesize ratingLabel;
 @synthesize reviewerTextField;
 @synthesize characterNameTextField;
 @synthesize keywordsTextField;
@@ -32,17 +34,38 @@
 	[ratingView setStarImage:[UIImage imageNamed:@"star-selected.png"] forState:kSCRatingViewSelected];
 	[ratingView setStarImage:[UIImage imageNamed:@"star-userselected.png"] forState:kSCRatingViewUserSelected];
 	ratingView.userRating = 3;
+	ratingView.delegate = self;
+}
+
+- (NSString *) settingFilePath {
+	return [NSDataCache pathForFolder:SETTINGS_FOLDER name:SETTING_FILE_NAME];
+}
+
+- (void) initTextFields {
+	if ([NSDataCache dataExistsInFolder:SETTINGS_FOLDER name:SETTING_FILE_NAME]) {
+		NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:[self settingFilePath]]; 
+		self.reviewerTextField.text = [dict valueForKey:REVIEWER_KEY];
+		[dict release];
+	}
+}
+
+- (void)saveReviewer {
+	NSDictionary *dict = [NSDictionary dictionaryWithObject:self.reviewerTextField.text forKey:REVIEWER_KEY];
+	[dict writeToFile:[self settingFilePath] atomically:YES];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self initRatingView];
+	[NSDataCache createFolderIfRequired:SETTINGS_FOLDER];
+	[self initTextFields];
 }
 
 
 - (void)viewDidUnload {
     [super viewDidUnload];
 	ratingView = nil;
+	ratingLabel = nil;
 	reviewerTextField = nil;
 	characterNameTextField = nil;
 	keywordsTextField = nil;
@@ -54,6 +77,7 @@
 - (void)dealloc {
     [super dealloc];
 	[ratingView release];
+	[ratingLabel release];
 	[reviewerTextField release];
 	[characterNameTextField release];
 	[keywordsTextField release];
@@ -69,6 +93,7 @@
 }
 
 - (IBAction)sendReview {
+	[self saveReviewer];
 	NSString *rate = [NSString stringWithFormat:@"%d", self.ratingView.userRating];
 	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/reviews", SERVICE_URL]];
 	ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
@@ -96,6 +121,13 @@
 										&& [self.keywordsTextField.text length] > 0;
 
 	self.sendButton.enabled = allNotNullFieldsHaveValue;
+}
+
+#pragma mark -
+#pragma mark SCRatingDelegate Methods
+
+- (void)ratingView:(SCRatingView *)ratingView didChangeUserRatingFrom:(NSInteger)previousUserRating to:(NSInteger)userRating {
+	self.ratingLabel.hidden = YES;
 }
 
 @end
