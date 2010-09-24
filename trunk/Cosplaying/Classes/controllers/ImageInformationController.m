@@ -174,10 +174,17 @@
 		UIColor *bgColor = [self colorOf:row];
 
 		cell = [tableView dequeueOrInit:@"ReviewCell" withStyle:UITableViewCellStyleSubtitle];
+		
+		NSArray *subviews = [[NSArray alloc] initWithArray:cell.contentView.subviews];
+		for (UIView *subview in subviews) {
+			[subview removeFromSuperview];
+		}
+		[subviews release];
+		
 		NSDictionary *dict = [self.array objectAtIndex:row];
 		
 		UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
-		title.text = [NSString stringWithFormat:@"%D. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
+		title.text = [NSString stringWithFormat:@"%d. %@", [indexPath row], [self mark:[dict valueForKey:@"character_name"]]];
 		title.backgroundColor = bgColor;
 		[cell.contentView addSubview:title];
 		[title release];
