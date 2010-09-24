@@ -49,7 +49,7 @@
 #pragma mark -
 #pragma mark IBAction Methods
 
-- (IBAction)backToSuperView:(id) sender {	
+- (IBAction)back:(id) sender {	
 	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
 												initWithTransition:UIViewAnimationTransitionCurlUp
 												curve:UIViewAnimationCurveEaseInOut
@@ -60,8 +60,13 @@
 
 - (IBAction)viewInformation:(id)sender {
 	ImageInformationController *imageInformationController = [[ImageInformationController alloc] initWithNibName:@"ImageInformationController" bundle:nil];
-	[self.navigationController pushViewController:imageInformationController animated:YES];
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlDown
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	[self.navigationController pushViewController:imageInformationController withAnimation:animationDefinition];
 	[imageInformationController release];
+	[animationDefinition release];
 }
 
 - (void)image:(UIImage *)theImage didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
