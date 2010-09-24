@@ -202,7 +202,7 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1ACA9E44124CDB4D00ED06F6</string>
+				<string>1A1A8622124D0D3A00EAA011</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>ImageInformationController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
@@ -210,16 +210,16 @@
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1ACA9E45124CDB4D00ED06F6</string>
+						<string>1A1A8623124D0D3A00EAA011</string>
 						<key>PBXProjectModuleLabel</key>
 						<string>ImageInformationController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1A1A85EC124D01FE00EAA011</string>
+						<string>1A1A8629124D0DE500EAA011</string>
 						<key>history</key>
 						<array>
-							<string>1A1A85AB124CFBCD00EAA011</string>
+							<string>1A1A861E124D0D0C00EAA011</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -371,7 +371,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1A1A85EB124D01FE00EAA011</string>
+										<string>1A1A8628124D0DE500EAA011</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -599,11 +599,11 @@
 	<array>
 		<string>1A1A85B3124CFBE600EAA011</string>
 		<string>1A1A85AE124CFBCD00EAA011</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>1ACA9E44124CDB4D00ED06F6</string>
+		<string>1A1A8622124D0D3A00EAA011</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -987,7 +987,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

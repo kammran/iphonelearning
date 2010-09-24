@@ -9,9 +9,14 @@
 #import <UIKit/UIKit.h>
 #import "SCRatingView.h"
 
-@interface WriteReviewController : UIViewController {
+#define SETTINGS_FOLDER @"settings"
+#define SETTING_FILE_NAME @"info.plist"
+#define REVIEWER_KEY @"reviewer"
+
+@interface WriteReviewController : UIViewController <SCRatingDelegate> {
 
 	SCRatingView *ratingView;
+	UILabel *ratingLabel;
 	UITextField *reviewerTextField;
 	UITextField *characterNameTextField;
 	UITextField *keywordsTextField;
@@ -21,6 +26,7 @@
 }
 
 @property (nonatomic, retain) IBOutlet SCRatingView *ratingView;
+@property (nonatomic, retain) IBOutlet UILabel *ratingLabel;
 @property (nonatomic, retain) IBOutlet UITextField *reviewerTextField;
 @property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *keywordsTextField;

@@ -15,25 +15,25 @@
 	};
 	097EACC312425E87009AB2FE /* ImageInformationController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 3952}}";
-			sepNavSelRange = "{7609, 0}";
-			sepNavVisRange = "{6576, 1501}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 4464}}";
+			sepNavSelRange = "{1740, 0}";
+			sepNavVisRange = "{1113, 968}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
 	097EACD61242619A009AB2FE /* WriteReviewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 576}}";
-			sepNavSelRange = "{435, 0}";
-			sepNavVisRange = "{0, 940}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 656}}";
+			sepNavSelRange = "{266, 33}";
+			sepNavVisRange = "{0, 1081}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
 	097EACD71242619A009AB2FE /* WriteReviewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 1632}}";
-			sepNavSelRange = "{1961, 0}";
-			sepNavVisRange = "{524, 1178}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 2096}}";
+			sepNavSelRange = "{1959, 0}";
+			sepNavVisRange = "{472, 1463}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -42,7 +42,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -52,7 +52,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 174";
 		rLen = 0;
-		rLoc = 5734;
+		rLoc = 5824;
 		rType = 0;
 		vrLen = 1536;
 		vrLoc = 5134;
@@ -62,7 +62,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -72,7 +72,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 182";
 		rLen = 0;
-		rLoc = 7174;
+		rLoc = 7264;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 5134;
@@ -82,7 +82,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -92,7 +92,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 179";
 		rLen = 0;
-		rLoc = 5784;
+		rLoc = 5874;
 		rType = 0;
 		vrLen = 1441;
 		vrLoc = 5134;
@@ -102,7 +102,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -112,7 +112,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 174";
 		rLen = 0;
-		rLoc = 5734;
+		rLoc = 5824;
 		rType = 0;
 		vrLen = 1464;
 		vrLoc = 5116;
@@ -122,7 +122,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -132,7 +132,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 184";
 		rLen = 0;
-		rLoc = 7177;
+		rLoc = 7267;
 		rType = 0;
 		vrLen = 1441;
 		vrLoc = 5134;
@@ -142,7 +142,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -152,7 +152,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 224";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1738;
 		vrLoc = 5373;
@@ -162,7 +162,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -172,7 +172,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 224";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1744;
 		vrLoc = 5478;
@@ -182,7 +182,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 224";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1660;
 		vrLoc = 5478;
@@ -192,7 +192,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -202,7 +202,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 224";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1660;
 		vrLoc = 5478;
@@ -212,7 +212,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -222,7 +222,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 226";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1671;
 		vrLoc = 5478;
@@ -232,7 +232,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 599;
 		vrLoc = 1287;
@@ -242,7 +242,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 227";
 		rLen = 0;
-		rLoc = 7173;
+		rLoc = 7263;
 		rType = 0;
 		vrLen = 1665;
 		vrLoc = 5478;
@@ -252,7 +252,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -262,7 +262,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 222";
 		rLen = 0;
-		rLoc = 7058;
+		rLoc = 7148;
 		rType = 0;
 		vrLen = 1562;
 		vrLoc = 6574;
@@ -272,7 +272,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -282,7 +282,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 226";
 		rLen = 0;
-		rLoc = 7111;
+		rLoc = 7201;
 		rType = 0;
 		vrLen = 1407;
 		vrLoc = 7223;
@@ -292,7 +292,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -302,7 +302,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 229";
 		rLen = 0;
-		rLoc = 7177;
+		rLoc = 7267;
 		rType = 0;
 		vrLen = 1419;
 		vrLoc = 7223;
@@ -312,7 +312,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -322,7 +322,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 230";
 		rLen = 0;
-		rLoc = 8079;
+		rLoc = 8169;
 		rType = 0;
 		vrLen = 1421;
 		vrLoc = 7223;
@@ -332,7 +332,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -342,7 +342,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 225";
 		rLen = 0;
-		rLoc = 7111;
+		rLoc = 7201;
 		rType = 0;
 		vrLen = 1426;
 		vrLoc = 7223;
@@ -352,7 +352,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -362,7 +362,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 230";
 		rLen = 0;
-		rLoc = 8079;
+		rLoc = 8169;
 		rType = 0;
 		vrLen = 1424;
 		vrLoc = 7223;
@@ -372,7 +372,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -382,7 +382,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 213";
 		rLen = 0;
-		rLoc = 6846;
+		rLoc = 6936;
 		rType = 0;
 		vrLen = 1490;
 		vrLoc = 6997;
@@ -392,7 +392,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -402,7 +402,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 240";
 		rLen = 0;
-		rLoc = 8079;
+		rLoc = 8169;
 		rType = 0;
 		vrLen = 1507;
 		vrLoc = 7664;
@@ -412,7 +412,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -422,7 +422,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 249";
 		rLen = 0;
-		rLoc = 8079;
+		rLoc = 8169;
 		rType = 0;
 		vrLen = 1373;
 		vrLoc = 7951;
@@ -432,7 +432,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -442,7 +442,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 261";
 		rLen = 0;
-		rLoc = 8388;
+		rLoc = 8478;
 		rType = 0;
 		vrLen = 1458;
 		vrLoc = 8260;
@@ -452,7 +452,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -462,7 +462,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 237";
 		rLen = 0;
-		rLoc = 8337;
+		rLoc = 8427;
 		rType = 0;
 		vrLen = 1441;
 		vrLoc = 7015;
@@ -472,7 +472,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 610;
 		vrLoc = 1262;
@@ -482,10 +482,104 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 222";
 		rLen = 0;
-		rLoc = 7609;
+		rLoc = 7699;
 		rType = 0;
 		vrLen = 1501;
 		vrLoc = 6576;
+	};
+	1A1A85EF124D026600EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 54";
+		rLen = 0;
+		rLoc = 1783;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 1262;
+	};
+	1A1A85F0124D026600EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 43";
+		rLen = 0;
+		rLoc = 1286;
+		rType = 0;
+		vrLen = 987;
+		vrLoc = 925;
+	};
+	1A1A85F3124D029000EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 54";
+		rLen = 0;
+		rLoc = 1783;
+		rType = 0;
+		vrLen = 613;
+		vrLoc = 1262;
+	};
+	1A1A861E124D0D0C00EAA011 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+	};
+	1A1A8621124D0D3A00EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 55";
+		rLen = 0;
+		rLoc = 1783;
+		rType = 0;
+		vrLen = 673;
+		vrLoc = 1262;
+	};
+	1A1A8624124D0D3A00EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 47";
+		rLen = 0;
+		rLoc = 1399;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 1113;
+	};
+	1A1A8625124D0D9900EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 55";
+		rLen = 0;
+		rLoc = 1783;
+		rType = 0;
+		vrLen = 673;
+		vrLoc = 1262;
+	};
+	1A1A8626124D0D9900EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 52";
+		rLen = 0;
+		rLoc = 1740;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 1113;
+	};
+	1A1A8628124D0DE500EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 55";
+		rLen = 0;
+		rLoc = 1783;
+		rType = 0;
+		vrLen = 673;
+		vrLoc = 1262;
+	};
+	1A1A8629124D0DE500EAA011 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
+		name = "ImageInformationController.m: 52";
+		rLen = 0;
+		rLoc = 1740;
+		rType = 0;
+		vrLen = 968;
+		vrLoc = 1113;
 	};
 	1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {
 		uiCtxt = {
@@ -707,9 +801,9 @@
 	};
 	1A8A97A61229181E00E38751 /* ImagesPreviewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {848, 5376}}";
-			sepNavSelRange = "{1197, 0}";
-			sepNavVisRange = "{885, 773}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 5312}}";
+			sepNavSelRange = "{1170, 0}";
+			sepNavVisRange = "{707, 1098}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -743,7 +837,7 @@
 		fRef = 097EACD71242619A009AB2FE /* WriteReviewController.m */;
 		name = "WriteReviewController.m: 63";
 		rLen = 0;
-		rLoc = 1994;
+		rLoc = 2810;
 		rType = 0;
 		vrLen = 851;
 		vrLoc = 942;
@@ -771,16 +865,16 @@
 	1AC38357124A13CD000CAE28 /* NSDataCache.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1206, 565}}";
-			sepNavSelRange = "{441, 0}";
-			sepNavVisRange = "{0, 442}";
+			sepNavSelRange = "{329, 0}";
+			sepNavVisRange = "{0, 567}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
 	1AC38358124A13CD000CAE28 /* NSDataCache.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1198, 976}}";
-			sepNavSelRange = "{1656, 0}";
-			sepNavVisRange = "{1318, 416}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 976}}";
+			sepNavSelRange = "{1052, 54}";
+			sepNavVisRange = "{579, 1195}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -789,7 +883,7 @@
 		fRef = 1AC38357124A13CD000CAE28 /* NSDataCache.h */;
 		name = "NSDataCache.h: 19";
 		rLen = 0;
-		rLoc = 436;
+		rLoc = 561;
 		rType = 0;
 		vrLen = 429;
 		vrLoc = 0;
@@ -853,7 +947,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 245";
 		rLen = 0;
-		rLoc = 8903;
+		rLoc = 8993;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 1287;
@@ -867,7 +961,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 245";
 		rLen = 0;
-		rLoc = 8903;
+		rLoc = 8993;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 1287;
@@ -877,7 +971,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -887,7 +981,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 180";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1704;
 		vrLoc = 4905;
@@ -897,7 +991,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -907,7 +1001,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 181";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1681;
 		vrLoc = 4905;
@@ -917,7 +1011,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -927,7 +1021,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 154";
 		rLen = 0;
-		rLoc = 4759;
+		rLoc = 4849;
 		rType = 0;
 		vrLen = 1647;
 		vrLoc = 4484;
@@ -937,7 +1031,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -947,7 +1041,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 177";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1595;
 		vrLoc = 5134;
@@ -957,7 +1051,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -967,7 +1061,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 179";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1492;
 		vrLoc = 5134;
@@ -977,7 +1071,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -987,7 +1081,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 189";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1535;
 		vrLoc = 5373;
@@ -997,7 +1091,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 54";
 		rLen = 0;
-		rLoc = 1693;
+		rLoc = 1783;
 		rType = 0;
 		vrLen = 619;
 		vrLoc = 1287;
@@ -1007,7 +1101,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 180";
 		rLen = 0;
-		rLoc = 8434;
+		rLoc = 8524;
 		rType = 0;
 		vrLen = 1440;
 		vrLoc = 4570;
@@ -1039,6 +1133,11 @@
 		name = SCRatingView.m;
 		path = /Users/James/iphone/iphonelearning/Cosplaying/Classes/TouchCustoms/SCRatingView.m;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 5184}}";
+			sepNavSelRange = "{950, 29}";
+			sepNavVisRange = "{183, 926}";
+		};
 	};
 	1AE64CED124BAECB00B644B4 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1058,9 +1157,9 @@
 	};
 	1AE64D1A124BAFAB00B644B4 /* SCRatingView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 1360}}";
-			sepNavSelRange = "{1925, 0}";
-			sepNavVisRange = "{1460, 1176}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 1408}}";
+			sepNavSelRange = "{918, 126}";
+			sepNavVisRange = "{519, 1094}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -1085,12 +1184,12 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 98";
 		rLen = 0;
-		rLoc = 3824;
+		rLoc = 3914;
 		rType = 0;
 		vrLen = 1051;
 		vrLoc = 2690;
 	};
-	1AE64FB4124BE2EB00B644B4 /* ImageInformationController.m:88 */ = {
+	1AE64FB4124BE2EB00B644B4 /* ImageInformationController.m:89 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1102,7 +1201,7 @@
 		functionName = "-loadMoreReviews";
 		hitCount = 0;
 		ignoreCount = 0;
-		lineNumber = 88;
+		lineNumber = 89;
 		location = Cosplaying;
 		modificationTime = 307035087.688562;
 		originalNumberOfMultipleMatches = 1;
@@ -1113,7 +1212,7 @@
 		fRef = 097EACC312425E87009AB2FE /* ImageInformationController.m */;
 		name = "ImageInformationController.m: 245";
 		rLen = 0;
-		rLoc = 8903;
+		rLoc = 8993;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 1287;
@@ -1258,6 +1357,12 @@
 		name = NSData.h;
 		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h;
 		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 2400}}";
+			sepNavSelRange = "{3536, 42}";
+			sepNavVisRange = "{2867, 1938}";
+			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
+		};
 	};
 	1AF7BCEA123A889200998FBB /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1301,7 +1406,7 @@
 		);
 		breakpoints = (
 			1A890B0D122A96FE009B92ED /* SwitchViewController.m:36 */,
-			1AE64FB4124BE2EB00B644B4 /* ImageInformationController.m:88 */,
+			1AE64FB4124BE2EB00B644B4 /* ImageInformationController.m:89 */,
 		);
 		codeSenseManager = 1A8A971D12290AB400E38751 /* Code sense */;
 		executables = (
@@ -1403,6 +1508,16 @@
 			1A1A85EA124D01AD00EAA011 /* PBXTextBookmark */ = 1A1A85EA124D01AD00EAA011 /* PBXTextBookmark */;
 			1A1A85EB124D01FE00EAA011 /* PBXTextBookmark */ = 1A1A85EB124D01FE00EAA011 /* PBXTextBookmark */;
 			1A1A85EC124D01FE00EAA011 /* PBXTextBookmark */ = 1A1A85EC124D01FE00EAA011 /* PBXTextBookmark */;
+			1A1A85EF124D026600EAA011 /* PBXTextBookmark */ = 1A1A85EF124D026600EAA011 /* PBXTextBookmark */;
+			1A1A85F0124D026600EAA011 /* PBXTextBookmark */ = 1A1A85F0124D026600EAA011 /* PBXTextBookmark */;
+			1A1A85F3124D029000EAA011 /* PBXTextBookmark */ = 1A1A85F3124D029000EAA011 /* PBXTextBookmark */;
+			1A1A861E124D0D0C00EAA011 /* PBXBookmark */ = 1A1A861E124D0D0C00EAA011 /* PBXBookmark */;
+			1A1A8621124D0D3A00EAA011 /* PBXTextBookmark */ = 1A1A8621124D0D3A00EAA011 /* PBXTextBookmark */;
+			1A1A8624124D0D3A00EAA011 /* PBXTextBookmark */ = 1A1A8624124D0D3A00EAA011 /* PBXTextBookmark */;
+			1A1A8625124D0D9900EAA011 /* PBXTextBookmark */ = 1A1A8625124D0D9900EAA011 /* PBXTextBookmark */;
+			1A1A8626124D0D9900EAA011 /* PBXTextBookmark */ = 1A1A8626124D0D9900EAA011 /* PBXTextBookmark */;
+			1A1A8628124D0DE500EAA011 /* PBXTextBookmark */ = 1A1A8628124D0DE500EAA011 /* PBXTextBookmark */;
+			1A1A8629124D0DE500EAA011 /* PBXTextBookmark */ = 1A1A8629124D0DE500EAA011 /* PBXTextBookmark */;
 			1A890E6F122AC65B009B92ED = 1A890E6F122AC65B009B92ED /* PBXTextBookmark */;
 			1A890E70122AC65B009B92ED = 1A890E70122AC65B009B92ED /* PBXTextBookmark */;
 			1A890E71122AC65B009B92ED = 1A890E71122AC65B009B92ED /* PBXTextBookmark */;
