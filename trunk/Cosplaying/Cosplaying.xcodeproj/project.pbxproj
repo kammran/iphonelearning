@@ -15,6 +15,7 @@
 		097EACC612425E87009AB2FE /* ImageInformationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACC412425E87009AB2FE /* ImageInformationController.xib */; };
 		097EACD91242619A009AB2FE /* WriteReviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EACD71242619A009AB2FE /* WriteReviewController.m */; };
 		097EACDA1242619A009AB2FE /* WriteReviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACD81242619A009AB2FE /* WriteReviewController.xib */; };
+		1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */; };
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
 		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
@@ -86,6 +87,8 @@
 		097EACD61242619A009AB2FE /* WriteReviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteReviewController.h; sourceTree = "<group>"; };
 		097EACD71242619A009AB2FE /* WriteReviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteReviewController.m; sourceTree = "<group>"; };
 		097EACD81242619A009AB2FE /* WriteReviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteReviewController.xib; sourceTree = "<group>"; };
+		1A1A862D124D0FA400EAA011 /* TextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewWithPlaceholder.h; sourceTree = "<group>"; };
+		1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewWithPlaceholder.m; sourceTree = "<group>"; };
 		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
 		1A8909FE122A61C9009B92ED /* SingleImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageController.m; sourceTree = "<group>"; };
 		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
@@ -235,6 +238,8 @@
 				1A890E4A122AC312009B92ED /* AnimationDefinition.m */,
 				1AC38357124A13CD000CAE28 /* NSDataCache.h */,
 				1AC38358124A13CD000CAE28 /* NSDataCache.m */,
+				1A1A862D124D0FA400EAA011 /* TextViewWithPlaceholder.h */,
+				1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -549,6 +554,7 @@
 				1AC38359124A13CD000CAE28 /* NSDataCache.m in Sources */,
 				1AE64D1C124BAFAB00B644B4 /* SCRatingView.m in Sources */,
 				1AE64D6E124BB44D00B644B4 /* RatingCellView.m in Sources */,
+				1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

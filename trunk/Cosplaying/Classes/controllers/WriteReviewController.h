@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SCRatingView.h"
+#import "TextViewWithPlaceholder.h";
 
 #define SETTINGS_FOLDER @"settings"
 #define SETTING_FILE_NAME @"info.plist"
@@ -20,7 +21,7 @@
 	UITextField *reviewerTextField;
 	UITextField *characterNameTextField;
 	UITextField *keywordsTextField;
-	UITextView *commentTextView;
+	TextViewWithPlaceholder *commentTextView;
 	UIBarItem *sendButton;
 	
 }
@@ -30,7 +31,7 @@
 @property (nonatomic, retain) IBOutlet UITextField *reviewerTextField;
 @property (nonatomic, retain) IBOutlet UITextField *characterNameTextField;
 @property (nonatomic, retain) IBOutlet UITextField *keywordsTextField;
-@property (nonatomic, retain) IBOutlet UITextView *commentTextView;
+@property (nonatomic, retain) IBOutlet TextViewWithPlaceholder *commentTextView;
 @property (nonatomic, retain) IBOutlet UIBarItem *sendButton;
 
 

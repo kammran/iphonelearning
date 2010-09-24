@@ -128,7 +128,11 @@
 						<bool key="IBUIDelaysContentTouches">NO</bool>
 						<bool key="IBUICanCancelContentTouches">NO</bool>
 						<bool key="IBUIBouncesZoom">NO</bool>
-						<string key="IBUIText">Comment</string>
+						<string key="IBUIText"/>
+						<object class="NSColor" key="IBUITextColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MCAwIDAAA</bytes>
+						</object>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 							<int key="IBUIAutocapitalizationType">2</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -202,7 +206,7 @@
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBUILabel" id="354980444">
+					<object class="IBUILabel" id="684455085">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{87, 88}, {123, 21}}</string>
@@ -343,7 +347,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">ratingLabel</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="354980444"/>
+						<reference key="destination" ref="684455085"/>
 					</object>
 					<int key="connectionID">46</int>
 				</object>
@@ -368,7 +372,7 @@
 							<reference ref="151030095"/>
 							<reference ref="843220393"/>
 							<reference ref="650522099"/>
-							<reference ref="354980444"/>
+							<reference ref="684455085"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -457,7 +461,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">45</int>
-						<reference key="object" ref="354980444"/>
+						<reference key="object" ref="684455085"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -472,6 +476,7 @@
 					<string>1.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
+					<string>21.CustomClassName</string>
 					<string>21.IBPluginDependency</string>
 					<string>22.IBPluginDependency</string>
 					<string>27.IBPluginDependency</string>
@@ -490,6 +495,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>TextViewWithPlaceholder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -563,6 +569,14 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">TextViewWithPlaceholder</string>
+					<string key="superclassName">UITextView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/helper/TextViewWithPlaceholder.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">WriteReviewController</string>
 					<string key="superclassName">UIViewController</string>
 					<object class="NSMutableDictionary" key="actions">
@@ -619,7 +633,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UITextField</string>
-							<string>UITextView</string>
+							<string>TextViewWithPlaceholder</string>
 							<string>UITextField</string>
 							<string>UILabel</string>
 							<string>SCRatingView</string>
@@ -647,7 +661,7 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">commentTextView</string>
-								<string key="candidateClassName">UITextView</string>
+								<string key="candidateClassName">TextViewWithPlaceholder</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">keywordsTextField</string>
