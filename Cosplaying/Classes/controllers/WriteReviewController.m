@@ -47,6 +47,8 @@
 		self.reviewerTextField.text = [dict valueForKey:REVIEWER_KEY];
 		[dict release];
 	}
+	self.commentTextView.placeholder = @"Write your comment here...";
+	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
 }
 
 - (void)saveReviewer {
@@ -105,13 +107,16 @@
 	[request addPostValue:self.keywordsTextField.text forKey:@"keywords"];
 	[request addPostValue:self.commentTextView.text forKey:@"comment"];
 	[request startSynchronous];
-	NSError *error = [request error];
-	if (!error) {
-		NSString *response = [request responseString];
-		[response showInDialog];
-	} else {
-		[error showInDialogWithTitle:@"Oops, Error"];
-	}
+	
+	[self back];
+	
+//	NSError *error = [request error];
+//	if (!error) {
+//		NSString *response = [request responseString];
+//		[response showInDialog];
+//	} else {
+//		[error showInDialogWithTitle:@"Oops, Error"];
+//	}
 	
 }
 
