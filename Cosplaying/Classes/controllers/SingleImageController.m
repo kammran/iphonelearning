@@ -14,6 +14,7 @@
 
 @implementation SingleImageController
 @synthesize imageView;
+@synthesize scrollView;
 @synthesize image;
 @synthesize progressView;
 @synthesize progressLabel;
@@ -24,12 +25,15 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 436)];
 	self.imageView.image = self.image;
+	[self.scrollView addSubview:imageView];
 	[super viewDidLoad];
 }
 
 - (void)viewDidUnload {
 	self.imageView = nil;
+	self.scrollView = nil;
 	self.image = nil;
 	self.progressView = nil;
 	self.progressLabel = nil;
@@ -40,10 +44,24 @@
 
 - (void)dealloc {
 	[self.imageView release];
+	[self.scrollView release];
 	[self.image release];
 	[self.progressView release];
 	[self.progressLabel release];
     [super dealloc];
+}
+
+#pragma mark -
+#pragma mark UIScrollViewDelegate Methods
+
+- (UIView *) viewForZoomingInScrollView: (UIScrollView *) scrollView {
+	return self.imageView;
+}
+
+- (void) scrollViewDidEndZooming: (UIScrollView *) scrollView withView: (UIView *) view atScale: (float) scale {
+	CGAffineTransform transform = CGAffineTransformIdentity;
+	transform = CGAffineTransformScale(transform, scale, scale);
+	view.transform = transform;
 }
 
 #pragma mark -
