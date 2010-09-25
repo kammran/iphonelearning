@@ -202,25 +202,24 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>09976C42124E33D500F6FD48</string>
+				<string>09976C89124E378500F6FD48</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>SingleImageController.h</string>
+				<string>ImageInformationController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>09976C43124E33D500F6FD48</string>
+						<string>09976C8A124E378500F6FD48</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>SingleImageController.h</string>
+						<string>ImageInformationController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>09976C83124E36F600F6FD48</string>
+						<string>09976CA6124E38E400F6FD48</string>
 						<key>history</key>
 						<array>
-							<string>09976C7D124E36D200F6FD48</string>
-							<string>09976C75124E364D00F6FD48</string>
+							<string>09976C87124E377400F6FD48</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -257,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>09976C84124E36F600F6FD48</string>
+						<string>09976CA7124E38E400F6FD48</string>
 						<key>history</key>
 						<array>
 							<string>09B683C31248F3430079BEF3</string>
@@ -359,7 +358,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>13</integer>
+									<integer>16</integer>
 									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -413,7 +412,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>09976C82124E36F600F6FD48</string>
+										<string>09976CA5124E38E400F6FD48</string>
 										<key>history</key>
 										<array>
 											<string>0931036A123BDD76009F029C</string>
@@ -630,9 +629,9 @@
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>09310206123B7286009F029C</string>
 		<string>09310374123BDD76009F029C</string>
-		<string>/Users/baby/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>09976C42124E33D500F6FD48</string>
+		<string>/Users/baby/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
+		<string>09976C89124E378500F6FD48</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 119 1920 1059 0 0 1920 1178 </string>
