@@ -157,14 +157,11 @@
 }
 
 - (UIColor *) colorOf:(int) row {
-	int mod = row % 3;
+	int mod = row % 2;
 	if (mod == 1) {
-		return [[[UIColor alloc] initWithRed:0.6 green:0.8	blue:1.0 alpha:1.0] autorelease];
+		return [[[UIColor alloc] initWithRed:0.6 green:0.8	blue:0.8 alpha:1.0] autorelease];
 	} 
-	if (mod == 2) {
-		return [[[UIColor alloc] initWithRed:0.6 green:1.0	blue:0.8 alpha:1.0] autorelease];
-	}
-	return [[[UIColor alloc] initWithRed:1.0 green:0.8	blue:1.0 alpha:1.0] autorelease];
+	return [[[UIColor alloc] initWithRed:200 green:200	blue:200 alpha:1.0] autorelease];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
