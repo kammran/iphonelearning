@@ -47,6 +47,10 @@
 						<int key="NSvFlags">266</int>
 						<string key="NSFrameSize">{320, 44}</string>
 						<reference key="NSSuperview" ref="191373211"/>
+						<object class="NSColor" key="IBUIBackgroundColor">
+							<int key="NSColorSpace">1</int>
+							<bytes key="NSRGB">MC42IDAuOCAwLjgAA</bytes>
+						</object>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -106,7 +110,7 @@
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
 					</object>
-					<object class="IBUIScrollView" id="318662140">
+					<object class="IBUIScrollView" id="397054079">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">268</int>
 						<string key="NSFrame">{{0, 44}, {320, 436}}</string>
@@ -185,14 +189,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">scrollView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="318662140"/>
+						<reference key="destination" ref="397054079"/>
 					</object>
 					<int key="connectionID">41</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="318662140"/>
+						<reference key="source" ref="397054079"/>
 						<reference key="destination" ref="372490531"/>
 					</object>
 					<int key="connectionID">42</int>
@@ -215,7 +219,7 @@
 							<reference ref="683640744"/>
 							<reference ref="165054947"/>
 							<reference ref="381218119"/>
-							<reference ref="318662140"/>
+							<reference ref="397054079"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -277,7 +281,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">40</int>
-						<reference key="object" ref="318662140"/>
+						<reference key="object" ref="397054079"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
