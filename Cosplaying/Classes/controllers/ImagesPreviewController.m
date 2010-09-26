@@ -204,7 +204,13 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	for (UITouch *touch in touches) {
+		
+	
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UITouch *touch = [touches anyObject];
+	//for (UITouch *touch in touches) {
 		UIView *touchedView = [touch view];
 		NSLog(@"%@", [touchedView class]);
 		if ([touchedView isKindOfClass:[UIImageView class]]) {
@@ -231,11 +237,7 @@
 			[singleImageController release];
 			[animationDefinition release];
 		}
-	}	
-	
-}
-
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	//}
 }
 
 #pragma mark -
