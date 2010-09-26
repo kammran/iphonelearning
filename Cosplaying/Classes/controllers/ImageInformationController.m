@@ -60,6 +60,10 @@
 	self.reviewsView.tableFooterView = [self moreReviewsButton];
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+	[array release];
+}
+
 
 - (void)viewDidUnload {
     array = nil;
@@ -71,8 +75,7 @@
 
 
 - (void)dealloc {
-	[array release];
-	[reviewsView release];
+//	[reviewsView release];
 	[titleBarItem release];
 	[moreReviews release];
     [super dealloc];
@@ -82,13 +85,12 @@
 #pragma mark IBAction Methods
 
 - (IBAction)back {
-//	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
-//												initWithTransition:UIViewAnimationTransitionCurlUp
-//												curve:UIViewAnimationCurveEaseInOut
-//												duration:1];
-//	[self.navigationController popViewControllerWithAnimation:animationDefinition];
-//	[animationDefinition release];
-	[self.navigationController popViewControllerAnimated:NO];
+	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+												initWithTransition:UIViewAnimationTransitionCurlUp
+												curve:UIViewAnimationCurveEaseInOut
+												duration:1];
+	[self.navigationController popViewControllerWithAnimation:animationDefinition];
+	[animationDefinition release];
 }
 
 - (IBAction)writeReview:(id) sender {
