@@ -202,24 +202,25 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>1ABB3DA7124F8ACB008F8E58</string>
+				<string>1ABB3DDA124F940F008F8E58</string>
 				<key>PBXProjectModuleLabel</key>
-				<string>SingleImageController.m</string>
+				<string>ImageInformationController.m</string>
 				<key>PBXSplitModuleInNavigatorKey</key>
 				<dict>
 					<key>Split0</key>
 					<dict>
 						<key>PBXProjectModuleGUID</key>
-						<string>1ABB3DA8124F8ACB008F8E58</string>
+						<string>1ABB3DDB124F940F008F8E58</string>
 						<key>PBXProjectModuleLabel</key>
-						<string>SingleImageController.m</string>
+						<string>ImageInformationController.m</string>
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>1ABB3DB4124F8BC0008F8E58</string>
+						<string>1ABB3E1A124F9A3A008F8E58</string>
 						<key>history</key>
 						<array>
-							<string>1ABB3D9F124F8A96008F8E58</string>
+							<string>1ABB3E0E124F9979008F8E58</string>
+							<string>1ABB3E0F124F9979008F8E58</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -318,7 +319,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>30</integer>
+									<integer>33</integer>
 									<integer>25</integer>
 									<integer>1</integer>
 									<integer>0</integer>
@@ -360,7 +361,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>WriteReviewController.m</string>
+								<string>ImageInformationController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -368,11 +369,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>WriteReviewController.m</string>
+										<string>ImageInformationController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>1ABB3DB3124F8BC0008F8E58</string>
+										<string>1ABB3E19124F9A3A008F8E58</string>
 										<key>history</key>
 										<array>
 											<string>1A8A978F122912A700E38751</string>
@@ -400,8 +401,9 @@
 											<string>1A1A8640124D152400EAA011</string>
 											<string>1A1A8698124D19F200EAA011</string>
 											<string>1A1A8699124D19F200EAA011</string>
-											<string>1ABB3DA4124F8ACB008F8E58</string>
-											<string>1ABB3DA5124F8ACB008F8E58</string>
+											<string>1ABB3DDF124F94D2008F8E58</string>
+											<string>1ABB3DE0124F94D2008F8E58</string>
+											<string>1ABB3D54124F7EEA008F8E58</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -599,13 +601,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>1ABB3DE4124F94D2008F8E58</string>
 		<string>1ABB3DAA124F8ACB008F8E58</string>
 		<string>1ABB3DAB124F8ACB008F8E58</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>1A8A971312290AB300E38751</string>
 		<string>/Users/James/iphone/iphonelearning/Cosplaying/Cosplaying.xcodeproj</string>
-		<string>1ABB3DA7124F8ACB008F8E58</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>1ABB3DDA124F940F008F8E58</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 117 1280 661 0 0 1280 778 </string>
@@ -991,7 +994,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
@@ -1140,6 +1143,8 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBottomSmartGroupGIDs</key>
@@ -1168,10 +1173,13 @@
 									<key>PBXSmartGroupTreeModuleOutlineStateExpansionKey</key>
 									<array>
 										<string>1C77FABC04509CD000000102</string>
+										<string>1C3E0DCA080725EA00A55177</string>
+										<string>1C3E0DCC080725EA11A45113</string>
 									</array>
 									<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 									<array>
 										<array>
+											<integer>3</integer>
 											<integer>0</integer>
 										</array>
 									</array>
@@ -1201,8 +1209,6 @@
 							<string>185pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -1242,8 +1248,8 @@
 			<true/>
 			<key>TableOfContents</key>
 			<array>
-				<string>1AE64C69124B98EC00B644B4</string>
-				<string>1AE64C6A124B98EC00B644B4</string>
+				<string>1ABB3DE4124F94D2008F8E58</string>
+				<string>1ABB3DE5124F94D2008F8E58</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
 				<string>1CA1AED706398EBD00589147</string>
 			</array>
@@ -1252,7 +1258,7 @@
 			<key>WindowString</key>
 			<string>36 267 1031 488 0 0 1280 778 </string>
 			<key>WindowToolGUID</key>
-			<string>1AE64C69124B98EC00B644B4</string>
+			<string>1ABB3DE4124F94D2008F8E58</string>
 			<key>WindowToolIsVisible</key>
 			<false/>
 		</dict>

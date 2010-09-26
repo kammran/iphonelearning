@@ -19,8 +19,6 @@
 
 @implementation ImageInformationController
 @synthesize reviewsView;
-@synthesize array;
-@synthesize offset;
 @synthesize titleBarItem;
 
 
@@ -28,7 +26,7 @@
 - (NSArray *) requestNewData:(BOOL) withHeader {
 	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	NSString *imageKey = delegate.context.activeImageKey;
-	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, self.offset] 
+	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, offset] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
 	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
@@ -37,13 +35,9 @@
 }
 
 - (void)initializeDataArray {
-	self.offset = 0;
-	self.array = [[NSMutableArray alloc] init];
-	[self.array addObjectsFromArray:[self requestNewData:YES]];
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
+	offset = 0;
+	array = [[NSMutableArray alloc] init];
+	[array addObjectsFromArray:[self requestNewData:YES]];
 }
 
 - (UIButton *)moreReviewsButton {
@@ -54,9 +48,13 @@
 	return moreReviews;
 }
 
+- (void)viewDidLoad {
+	[super viewDidLoad];
+}
+
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
-	NSDictionary *dict = [self.array objectAtIndex:0];
+	NSDictionary *dict = [array objectAtIndex:0];
 	self.titleBarItem.title = [NSString stringWithFormat:@"Previews (%@)", [dict valueForKey:@"reviewed_times"]];
 	[self.reviewsView reloadData];
 	self.reviewsView.tableFooterView = [self moreReviewsButton];
@@ -64,11 +62,11 @@
 
 
 - (void)viewDidUnload {
-    [super viewDidUnload];
-	array = nil;
+    array = nil;
 	reviewsView = nil;
 	titleBarItem = nil;
 	moreReviews = nil;
+	[super viewDidUnload];
 }
 
 
@@ -84,12 +82,13 @@
 #pragma mark IBAction Methods
 
 - (IBAction)back {
-	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
-												initWithTransition:UIViewAnimationTransitionCurlUp
-												curve:UIViewAnimationCurveEaseInOut
-												duration:1];
-	[self.navigationController popViewControllerWithAnimation:animationDefinition];
-	[animationDefinition release];
+//	AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+//												initWithTransition:UIViewAnimationTransitionCurlUp
+//												curve:UIViewAnimationCurveEaseInOut
+//												duration:1];
+//	[self.navigationController popViewControllerWithAnimation:animationDefinition];
+//	[animationDefinition release];
+	[self.navigationController popViewControllerAnimated:NO];
 }
 
 - (IBAction)writeReview:(id) sender {
@@ -106,13 +105,13 @@
 
 - (IBAction)loadMoreReviews {
 	[moreReviews setTitle:@"Loading..." forState:UIControlStateNormal];
-	NSInteger rowsBeforeRequest = [self.array count] - 1;
-	self.offset = [self.array count] - 1;
-	if (self.offset < 0) {
-		self.offset = 0;
+	NSInteger rowsBeforeRequest = [array count] - 1;
+	offset = [array count] - 1;
+	if (offset < 0) {
+		offset = 0;
 	}
 	NSArray *jsonArray = [self requestNewData:NO];
-	[self.array addObjectsFromArray:jsonArray];
+	[array addObjectsFromArray:jsonArray];
 	int responseCount = [jsonArray count];		
 	if (responseCount > 0) {
 		NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
@@ -124,6 +123,7 @@
 		[self.reviewsView beginUpdates];
 		[self.reviewsView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
 		[self.reviewsView endUpdates];
+		[insertIndexPaths release];
 	}
 	[moreReviews setTitle:@"MoreReviews..." forState:UIControlStateNormal];
 }
@@ -147,7 +147,7 @@
 }
 
 - (CGFloat)heightOfComment:(NSIndexPath *) indexPath maxWidth:(CGFloat) maxWidth {
-	NSDictionary *dict = [self.array objectAtIndex:[indexPath row]];
+	NSDictionary *dict = [array objectAtIndex:[indexPath row]];
 	NSString *commentValue = [dict valueForKey:@"comment"];
 	if ([commentValue length] == 0) {
 		return 0;
@@ -171,7 +171,7 @@
 	if (row == 0) {
 		cell = [tableView dequeueOrInit:@"HeaderCell" withStyle:UITableViewCellStyleSubtitle];
 
-		NSDictionary *dict = [self.array objectAtIndex:row];
+		NSDictionary *dict = [array objectAtIndex:row];
 		
 		UILabel *date = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 300, 20)];
 		date.text = [NSString stringWithFormat:@"Upload date %@", [dict valueForKey:@"folder"]];
@@ -188,7 +188,7 @@
 		[cell.contentView addSubview:ratingCellView];
 		[ratingCellView release];
 	} else {
-		NSDictionary *dict = [self.array objectAtIndex:row];
+		NSDictionary *dict = [array objectAtIndex:row];
 		UIColor *bgColor = [self colorOf:row];
 		static NSString *identifier = @"ReviewCell";
 		cell = [tableView dequeueReusableCellWithIdentifier:identifier];
