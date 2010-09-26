@@ -15,6 +15,7 @@
 	UITableView *reviewsView;
 	int offset;
 	UIBarItem *titleBarItem;
+	UIButton *moreReviews;
 }
 
 @property (nonatomic, retain) NSMutableArray *array;

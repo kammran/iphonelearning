@@ -13,6 +13,7 @@
 #import "CosplayingAppDelegate.h"
 #import "NSDataCache.h"
 #import "AnimationDefinition.h"
+#import "UINavigationController-Animation.h"
 
 @implementation WriteReviewController
 @synthesize ratingView;

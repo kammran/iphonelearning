@@ -47,10 +47,9 @@
 }
 
 - (UIButton *)moreReviewsButton {
-	UIButton *moreReviews = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	moreReviews = [UIButton buttonWithType:UIButtonTypeRoundedRect];
 	moreReviews.frame = CGRectMake(0, 0, 320, 50); 	
 	[moreReviews setTitle:@"MoreReviews..." forState:UIControlStateNormal];
-	[moreReviews setTitle:@"Loading, Please Wait..." forState:UIControlStateHighlighted];
 	[moreReviews addTarget:self action:@selector(loadMoreReviews) forControlEvents:UIControlEventTouchUpInside];
 	return moreReviews;
 }
@@ -69,6 +68,7 @@
 	array = nil;
 	reviewsView = nil;
 	titleBarItem = nil;
+	moreReviews = nil;
 }
 
 
@@ -76,6 +76,7 @@
 	[array release];
 	[reviewsView release];
 	[titleBarItem release];
+	[moreReviews release];
     [super dealloc];
 }
 
@@ -104,6 +105,7 @@
 }
 
 - (IBAction)loadMoreReviews {
+	[moreReviews setTitle:@"Loading..." forState:UIControlStateNormal];
 	NSInteger rowsBeforeRequest = [self.array count] - 1;
 	self.offset = [self.array count] - 1;
 	if (self.offset < 0) {
@@ -112,19 +114,18 @@
 	NSArray *jsonArray = [self requestNewData:NO];
 	[self.array addObjectsFromArray:jsonArray];
 	int responseCount = [jsonArray count];		
-	if (responseCount == 0) {
-		return;
+	if (responseCount > 0) {
+		NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
+		
+		for (int i = 0; i < responseCount; i++) {
+			[insertIndexPaths addObject:[NSIndexPath indexPathForRow:++rowsBeforeRequest inSection:0]];
+		}
+		
+		[self.reviewsView beginUpdates];
+		[self.reviewsView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
+		[self.reviewsView endUpdates];
 	}
-	
-	NSMutableArray *insertIndexPaths = [[NSMutableArray alloc] initWithCapacity:responseCount];
-	
-	for (int i = 0; i < responseCount; i++) {
-		[insertIndexPaths addObject:[NSIndexPath indexPathForRow:++rowsBeforeRequest inSection:0]];
-	}
-	
-	[self.reviewsView beginUpdates];
-	[self.reviewsView insertRowsAtIndexPaths:insertIndexPaths withRowAnimation:UITableViewRowAnimationBottom];
-	[self.reviewsView endUpdates];
+	[moreReviews setTitle:@"MoreReviews..." forState:UIControlStateNormal];
 }
 
 #pragma mark -
