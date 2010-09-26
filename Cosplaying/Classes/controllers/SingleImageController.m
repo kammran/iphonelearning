@@ -108,7 +108,7 @@
 	self.progressView.progress = 0.0f;
 	self.progressView.hidden = NO;
 	self.progressLabel.hidden = NO;
-	[NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(increaseProgress) userInfo:nil repeats:YES];
+	[NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(increaseProgress) userInfo:nil repeats:YES];
 	UIImageWriteToSavedPhotosAlbum(self.image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 }
 

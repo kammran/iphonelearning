@@ -18,9 +18,7 @@
 	UIButton *moreReviews;
 }
 
-@property (nonatomic, retain) NSMutableArray *array;
 @property (nonatomic, retain) IBOutlet UITableView *reviewsView;
-@property (nonatomic) int offset;
 @property (nonatomic, retain) IBOutlet UIBarItem *titleBarItem;
 
 - (IBAction)back;
