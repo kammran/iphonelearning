@@ -49,6 +49,7 @@
 		self.reviewerTextField.text = [dict valueForKey:REVIEWER_KEY];
 		[dict release];
 	}
+	//FIXME textView kept out by keyboard
 	self.commentTextView.placeholder = @"Write your comment here...";
 	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
 }
