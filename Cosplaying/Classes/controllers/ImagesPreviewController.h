@@ -20,6 +20,7 @@
 	UIImageView *imageView4;
 	
 	int offset;
+	BOOL nomore;
 	NSString *q;
 	NSString *keyword;
 	

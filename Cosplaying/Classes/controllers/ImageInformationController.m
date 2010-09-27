@@ -246,7 +246,7 @@
 		reviewer.backgroundColor = bgColor;
 		
 		UILabel *keywords = (UILabel *) [cell.contentView viewWithTag:-4];
-		keywords.text = [NSString stringWithFormat:@"Keywords: %@", [dict valueForKey:@"keywords"]];
+		keywords.text = [NSString stringWithFormat:@"Keywords: %@", [self mark:[dict valueForKey:@"keywords"]]];
 		keywords.backgroundColor = bgColor;
 		
 		UILabel *comment = (UILabel *) [cell.contentView viewWithTag:-5];

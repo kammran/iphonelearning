@@ -15,6 +15,7 @@
 		097EACC612425E87009AB2FE /* ImageInformationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACC412425E87009AB2FE /* ImageInformationController.xib */; };
 		097EACD91242619A009AB2FE /* WriteReviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 097EACD71242619A009AB2FE /* WriteReviewController.m */; };
 		097EACDA1242619A009AB2FE /* WriteReviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACD81242619A009AB2FE /* WriteReviewController.xib */; };
+		09E30B6E1250D53A00848348 /* missing.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E30B6D1250D53A00848348 /* missing.png */; };
 		1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */; };
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
@@ -87,6 +88,7 @@
 		097EACD61242619A009AB2FE /* WriteReviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WriteReviewController.h; sourceTree = "<group>"; };
 		097EACD71242619A009AB2FE /* WriteReviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WriteReviewController.m; sourceTree = "<group>"; };
 		097EACD81242619A009AB2FE /* WriteReviewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WriteReviewController.xib; sourceTree = "<group>"; };
+		09E30B6D1250D53A00848348 /* missing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missing.png; sourceTree = "<group>"; };
 		1A1A862D124D0FA400EAA011 /* TextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewWithPlaceholder.h; sourceTree = "<group>"; };
 		1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewWithPlaceholder.m; sourceTree = "<group>"; };
 		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 		1A8A971F12290AE800E38751 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09E30B6D1250D53A00848348 /* missing.png */,
 				1AE64CF6124BAF3000B644B4 /* TouchCustoms */,
 				1ADF77D2123BF9FA00F0013D /* previous.png */,
 				09310341123BD892009F029C /* previous-highlight.png */,
@@ -464,6 +467,7 @@
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Cosplaying" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -515,6 +519,7 @@
 				1AE64D12124BAF6400B644B4 /* progress-bar-dot-empty.png in Resources */,
 				1AE64D13124BAF6400B644B4 /* btn-yellow.png in Resources */,
 				1AE64D14124BAF6400B644B4 /* btn-blue.png in Resources */,
+				09E30B6E1250D53A00848348 /* missing.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
