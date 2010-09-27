@@ -52,10 +52,15 @@
 		[NSDataCache saveData:imageData inFolder:folder name:name];
 	}
 	
-	UIImageWithKey *image = [[UIImageWithKey alloc] initWithData:imageData];
-	image.key = key;
-	imageView.image = image;
-	[image release];
+	if (imageData) {
+		UIImageWithKey *image = [[UIImageWithKey alloc] initWithData:imageData];
+		image.key = key;
+		imageView.image = image;
+		[image release];
+	} else {
+		imageView.image = [UIImage imageNamed:@"missing.png"];
+	}
+
 	[pool release];
 }
 
@@ -73,6 +78,8 @@
 		}
 		i++;
 	}
+	
+	nomore = (i < IMAGES_PER_PAGE);
 	
 	for (; i <= IMAGES_PER_PAGE; i++) {
 		UIImageView *imageView = [self valueForKey:[NSString stringWithFormat:@"imageView%d", i]];
@@ -298,6 +305,10 @@
 }
 
 - (IBAction)nextPressed {
+	if (nomore) {
+		return;
+	}
+	
 	self.offset += IMAGES_PER_PAGE;
 	[self requestInBackground];
 }
