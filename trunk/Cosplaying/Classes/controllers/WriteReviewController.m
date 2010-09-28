@@ -50,8 +50,8 @@
 		[dict release];
 	}
 	//FIXME textView kept out by keyboard
-	self.commentTextView.placeholder = @"Write your comment here...";
-	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
+//	self.commentTextView.placeholder = @"Write your comment here...";
+//	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
 }
 
 - (void)saveReviewer {
@@ -137,10 +137,34 @@
 }
 
 #pragma mark -
+#pragma mark UITextFieldDelegate Methods
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+	if (textField.text.length >= 50 && range.length == 0) {
+		return NO;
+	} else {
+		return YES;
+	}
+}
+
+
+#pragma mark -
 #pragma mark SCRatingDelegate Methods
 
 - (void)ratingView:(SCRatingView *)ratingView didChangeUserRatingFrom:(NSInteger)previousUserRating to:(NSInteger)userRating {
 	self.ratingLabel.hidden = YES;
 }
 
+#pragma mark -
+#pragma mark UITextViewDelegate Methods
+
+- (void)textViewDidChange:(UITextView *)textView {
+	int maxLenth = 300;
+    if (textView.text.length >= maxLenth) {
+        textView.text = [textView.text substringToIndex:maxLenth];
+    }
+	NSLog(@"%d", textView.scrollEnabled);
+	textView.scrollEnabled = YES;
+	[textView scrollRangeToVisible:NSMakeRange(textView.text.length, 1)];
+}
 @end

@@ -14,7 +14,7 @@
 #define SETTING_FILE_NAME @"info.plist"
 #define REVIEWER_KEY @"reviewer"
 
-@interface WriteReviewController : UIViewController <SCRatingDelegate> {
+@interface WriteReviewController : UIViewController <SCRatingDelegate, UITextViewDelegate, UITextFieldDelegate> {
 
 	SCRatingView *ratingView;
 	UILabel *ratingLabel;
