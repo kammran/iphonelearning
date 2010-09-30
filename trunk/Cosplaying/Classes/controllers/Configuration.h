@@ -11,6 +11,8 @@
 #define SERVICE_URL @"http://localhost:8080"
 //#define SERVICE_URL @"http://cosplayingserver.appspot.com"
 #define IMAGE_SERVER @"http://freezedisk.googlecode.com/svn/trunk/iphone/cosplaying/images/real"
+#define GAE_USER @"cosplaying"
+#define GAE_PASS @"$*%#&k)(^N"
 
 @interface Configuration {
 
