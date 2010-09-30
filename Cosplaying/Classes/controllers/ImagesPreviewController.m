@@ -17,6 +17,7 @@
 #import "CosplayingAppDelegate.h"
 #import "Context.h"
 #import "NSDataCache.h"
+#import "ASIHTTPRequest.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -103,11 +104,15 @@
 	NSString *url = [[NSString stringWithFormat:@"%@/images?q=%@&offset=%d&keyword=%@", SERVICE_URL, self.q, offset, self.keyword] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
-	
-	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
+	request.useKeychainPersistence = YES;
+	request.useSessionPersistence = YES;
+	[request setUsername:GAE_USER];
+	[request setPassword:GAE_PASS];
+	[request startSynchronous];
+	NSString *response = [request responseString];
 	NSArray *array = [response JSONValue];
 	[self render:array];
-	[response release];
 	
 	[pool release];
 }

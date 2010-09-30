@@ -16,6 +16,7 @@
 #import "RatingCellView.h"
 #import "UINavigationController-Animation.h"
 #import "AnimationDefinition.h"
+#import "ASIHTTPRequest.h";
 
 @implementation ImageInformationController
 @synthesize reviewsView;
@@ -29,7 +30,9 @@
 	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, offset] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
 	
-	NSString *response = [[NSString alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+	ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:[NSURL URLWithString:url]];
+	[request startSynchronous];
+	NSString *response = [request responseString];
 	NSArray *jsonArray = [response JSONValue];
 	return jsonArray;
 }
@@ -54,6 +57,10 @@
 
 - (void)viewWillAppear:(BOOL)animated {
 	[self initializeDataArray];
+	if ([array count] == 0) {
+		[@"Couldn't load reviews from server, please check your internet connection." showInDialogWithTitle:@"Oops! Error"];
+		return;
+	}
 	NSDictionary *dict = [array objectAtIndex:0];
 	self.titleBarItem.title = [NSString stringWithFormat:@"Previews (%@)", [dict valueForKey:@"reviewed_times"]];
 	[self.reviewsView reloadData];
