@@ -23,7 +23,6 @@
 	UITextField *keywordsTextField;
 	TextViewWithPlaceholder *commentTextView;
 	UIBarItem *sendButton;
-	
 }
 
 @property (nonatomic, retain) IBOutlet SCRatingView *ratingView;
