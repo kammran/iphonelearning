@@ -163,8 +163,12 @@
     if (textView.text.length >= maxLenth) {
         textView.text = [textView.text substringToIndex:maxLenth];
     }
-	NSLog(@"%d", textView.scrollEnabled);
-	textView.scrollEnabled = YES;
-	[textView scrollRangeToVisible:NSMakeRange(textView.text.length, 1)];
+//	textView.scrollEnabled = YES;	
+//	[textView scrollRangeToVisible:NSMakeRange(textView.text.length, 1)];
 }
+
+
+
+
+
 @end
