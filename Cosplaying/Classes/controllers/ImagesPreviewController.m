@@ -18,6 +18,7 @@
 #import "Context.h"
 #import "NSDataCache.h"
 #import "ASIHTTPRequest.h"
+#import "SimpleReachability.h"
 
 @implementation ImagesPreviewController
 @synthesize searchBar;
@@ -117,7 +118,15 @@
 	[pool release];
 }
 
+- (void)detectReachability {
+	if (![SimpleReachability internetAvailable]) {
+		[@"Unable to load. Please try again or check your network settings. WiFi or Edge/3G must be enabled to use Cosplaying." 
+		 showInDialogWithTitle:@"Error"];
+	}					  
+}
+
 - (void) requestInBackground {
+	[self detectReachability];
 	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
 	delegate.context.keyword = self.keyword;
 	[self performSelectorInBackground:@selector(request) withObject:nil];

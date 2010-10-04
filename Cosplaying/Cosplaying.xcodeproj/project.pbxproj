@@ -33,6 +33,7 @@
 		1AC3A1DC1244BFA50030254B /* UIImageWithKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A1DB1244BFA50030254B /* UIImageWithKey.m */; };
 		1AC3A2DE12450C5F0030254B /* UITableView-WithCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */; };
 		1ADF77D3123BF9FA00F0013D /* previous.png in Resources */ = {isa = PBXBuildFile; fileRef = 1ADF77D2123BF9FA00F0013D /* previous.png */; };
+		1AE2EBA3125A10E300AC3BBF /* SimpleReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE2EBA2125A10E300AC3BBF /* SimpleReachability.m */; };
 		1AE64D06124BAF6400B644B4 /* star-userselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE64CF7124BAF6400B644B4 /* star-userselected.png */; };
 		1AE64D07124BAF6400B644B4 /* star-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE64CF8124BAF6400B644B4 /* star-selected.png */; };
 		1AE64D08124BAF6400B644B4 /* star-nonselected.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AE64CF9124BAF6400B644B4 /* star-nonselected.png */; };
@@ -116,6 +117,8 @@
 		1AC3A2DC12450C5F0030254B /* UITableView-WithCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView-WithCell.h"; sourceTree = "<group>"; };
 		1AC3A2DD12450C5F0030254B /* UITableView-WithCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView-WithCell.m"; sourceTree = "<group>"; };
 		1ADF77D2123BF9FA00F0013D /* previous.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = previous.png; sourceTree = "<group>"; };
+		1AE2EBA1125A10E300AC3BBF /* SimpleReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleReachability.h; sourceTree = "<group>"; };
+		1AE2EBA2125A10E300AC3BBF /* SimpleReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleReachability.m; sourceTree = "<group>"; };
 		1AE64CF7124BAF6400B644B4 /* star-userselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-userselected.png"; sourceTree = "<group>"; };
 		1AE64CF8124BAF6400B644B4 /* star-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-selected.png"; sourceTree = "<group>"; };
 		1AE64CF9124BAF6400B644B4 /* star-nonselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-nonselected.png"; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				1AC38358124A13CD000CAE28 /* NSDataCache.m */,
 				1A1A862D124D0FA400EAA011 /* TextViewWithPlaceholder.h */,
 				1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */,
+				1AE2EBA1125A10E300AC3BBF /* SimpleReachability.h */,
+				1AE2EBA2125A10E300AC3BBF /* SimpleReachability.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -559,6 +564,7 @@
 				1AE64D1C124BAFAB00B644B4 /* SCRatingView.m in Sources */,
 				1AE64D6E124BB44D00B644B4 /* RatingCellView.m in Sources */,
 				1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */,
+				1AE2EBA3125A10E300AC3BBF /* SimpleReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

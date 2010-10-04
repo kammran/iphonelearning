@@ -26,5 +26,9 @@
 	<true/>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>UIApplicationExitsOnSuspend</key>
+	<true/>
+	<key>UIRequiresPersistentWiFi</key>
+	<true/>
 </dict>
 </plist>
