@@ -224,7 +224,6 @@
 	UITouch *touch = [touches anyObject];
 	//for (UITouch *touch in touches) {
 		UIView *touchedView = [touch view];
-		NSLog(@"%@", [touchedView class]);
 		if ([touchedView isKindOfClass:[UIImageView class]]) {
 			UIImageView *imageView = (UIImageView *) touchedView;
 			
