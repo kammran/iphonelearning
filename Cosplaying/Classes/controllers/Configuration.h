@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define SERVICE_URL @"http://localhost:8080"
+#define SERVICE_URL @"http://192.168.1.160:8080"
 //#define SERVICE_URL @"http://cosplayingserver.appspot.com"
 #define IMAGE_SERVER @"http://freezedisk.googlecode.com/svn/trunk/iphone/cosplaying/images/real"
 #define GAE_USER @"cosplaying"

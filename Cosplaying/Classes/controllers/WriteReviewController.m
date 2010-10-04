@@ -16,6 +16,7 @@
 #import "UINavigationController-Animation.h"
 
 @implementation WriteReviewController
+@synthesize scrollView;
 @synthesize ratingView;
 @synthesize ratingLabel;
 @synthesize reviewerTextField;
@@ -49,9 +50,8 @@
 		self.reviewerTextField.text = [dict valueForKey:REVIEWER_KEY];
 		[dict release];
 	}
-	//FIXME textView kept out by keyboard
-//	self.commentTextView.placeholder = @"Write your comment here...";
-//	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
+	self.commentTextView.placeholder = @"Write your comment here...";
+	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
 }
 
 - (void)saveReviewer {
@@ -69,6 +69,7 @@
 
 - (void)viewDidUnload {
     [super viewDidUnload];
+	scrollView = nil;
 	ratingView = nil;
 	ratingLabel = nil;
 	reviewerTextField = nil;
@@ -81,6 +82,7 @@
 
 - (void)dealloc {
     [super dealloc];
+	[scrollView release];
 	[ratingView release];
 	[ratingLabel release];
 	[reviewerTextField release];
@@ -163,12 +165,19 @@
     if (textView.text.length >= maxLenth) {
         textView.text = [textView.text substringToIndex:maxLenth];
     }
-//	textView.scrollEnabled = YES;	
-//	[textView scrollRangeToVisible:NSMakeRange(textView.text.length, 1)];
+
+	CGFloat height = textView.contentSize.height;
+
+	CGSize size = self.scrollView.contentSize;
+	size.height = 436 + height;
+	self.scrollView.contentSize = size;	
+	
+	CGPoint scrollPoint = [self.scrollView contentOffset];
+	scrollPoint.y = height - 40;
+	if (scrollPoint.y < 0.0f) {
+		scrollPoint.y = 0.0f;
+	}
+	[self.scrollView setContentOffset:scrollPoint animated:YES];	
 }
-
-
-
-
 
 @end

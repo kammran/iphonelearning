@@ -32,22 +32,22 @@
 }
 
 - (void)viewDidUnload {
-	self.imageView = nil;
-	self.scrollView = nil;
-	self.image = nil;
-	self.progressView = nil;
-	self.progressLabel = nil;
+	imageView = nil;
+	scrollView = nil;
+	image = nil;
+	progressView = nil;
+	progressLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
 
 
 - (void)dealloc {
-	[self.imageView release];
-	[self.scrollView release];
-	[self.image release];
-	[self.progressView release];
-	[self.progressLabel release];
+	[imageView release];
+	[scrollView release];
+	[image release];
+	[progressView release];
+	[progressLabel release];
     [super dealloc];
 }
 
