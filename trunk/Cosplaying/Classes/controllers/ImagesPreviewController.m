@@ -230,34 +230,36 @@
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+	UIViewController *topViewController = [self.navigationController topViewController];
+	if ([topViewController isKindOfClass:[SingleImageController class]]) {
+		NSLog(@"%@", @"User taped images simulately, ignored others.");
+		return;
+	}
+	
 	UITouch *touch = [touches anyObject];
-	//for (UITouch *touch in touches) {
-		UIView *touchedView = [touch view];
-		if ([touchedView isKindOfClass:[UIImageView class]]) {
-			UIImageView *imageView = (UIImageView *) touchedView;
-			
-			SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
-			
-			UIImage *selectedImage = (UIImage *) imageView.image;
-			SEL keyAccessor = @selector(key);
-			if (![selectedImage respondsToSelector:keyAccessor]) {
-				return;
-			}
-			
-			CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
-			delegate.context.activeImageKey = [selectedImage performSelector:keyAccessor];
-			
-			singleImageController.image = selectedImage;
-			
-			AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
-														initWithTransition:UIViewAnimationTransitionCurlDown
-														curve:UIViewAnimationCurveEaseInOut
-														duration:1];
-			[self.navigationController pushViewController:singleImageController withAnimation:animationDefinition];
-			[singleImageController release];
-			[animationDefinition release];
+	UIView *touchedView = [touch view];
+	if ([touchedView isKindOfClass:[UIImageView class]]) {
+		UIImageView *imageView = (UIImageView *) touchedView;
+		UIImage *selectedImage = (UIImage *) imageView.image;
+		SEL keyAccessor = @selector(key);
+		if (![selectedImage respondsToSelector:keyAccessor]) {
+			return;
 		}
-	//}
+			
+		CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		delegate.context.activeImageKey = [selectedImage performSelector:keyAccessor];
+		
+		SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];
+		singleImageController.image = selectedImage;
+		
+		AnimationDefinition *animationDefinition = [[AnimationDefinition alloc] 
+													initWithTransition:UIViewAnimationTransitionCurlDown
+													curve:UIViewAnimationCurveEaseInOut
+													duration:1];
+		[self.navigationController pushViewController:singleImageController withAnimation:animationDefinition];
+		[singleImageController release];
+		[animationDefinition release];
+	}
 }
 
 #pragma mark -
