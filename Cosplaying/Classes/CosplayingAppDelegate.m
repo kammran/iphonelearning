@@ -60,9 +60,13 @@
 }
 
 - (BOOL)shouldPresentReviewMessage {
-	NSInteger lunchTimes = [[NSUserDefaults standardUserDefaults] integerForKey:USER_DEFAULTS_LUNCH_TIMES];
-	return lunchTimes % 10 == 0;
-	//return YES;
+//	NSInteger lunchTimes = [[NSUserDefaults standardUserDefaults] integerForKey:USER_DEFAULTS_LUNCH_TIMES];
+//	return lunchTimes % 10 == 0;
+	return YES;
+}
+
+- (BOOL)onlyAppearOnce {
+	return YES;
 }
 
 

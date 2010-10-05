@@ -322,17 +322,17 @@
 	};
 	1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {848, 528}}";
-			sepNavSelRange = "{271, 0}";
-			sepNavVisRange = "{167, 374}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 592}}";
+			sepNavSelRange = "{226, 0}";
+			sepNavVisRange = "{0, 670}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
 	1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 736}}";
-			sepNavSelRange = "{731, 0}";
-			sepNavVisRange = "{131, 1048}";
+			sepNavIntBoundsRect = "{{0, 0}, {860, 944}}";
+			sepNavSelRange = "{298, 0}";
+			sepNavVisRange = "{41, 529}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -648,7 +648,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 44;
+		rLoc = 51;
 		rType = 1;
 	};
 	1A64BCB4125BC5F000A3DDFA /* PBXTextBookmark */ = {
@@ -667,7 +667,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 44;
+		rLoc = 51;
 		rType = 1;
 	};
 	1A64BCB6125BC5F000A3DDFA /* PBXTextBookmark */ = {
@@ -675,7 +675,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 19";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 0;
@@ -685,7 +685,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 16";
 		rLen = 0;
-		rLoc = 670;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 240;
 		vrLoc = 0;
@@ -705,7 +705,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 388;
 		vrLoc = 0;
@@ -746,7 +746,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 44;
+		rLoc = 51;
 		rType = 1;
 	};
 	1A64BCC4125BC67C00A3DDFA /* PBXTextBookmark */ = {
@@ -754,7 +754,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 388;
 		vrLoc = 0;
@@ -764,7 +764,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 388;
 		vrLoc = 0;
@@ -774,7 +774,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 388;
 		vrLoc = 0;
@@ -794,7 +794,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 463;
 		vrLoc = 0;
@@ -808,7 +808,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 21";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 465;
 		vrLoc = 0;
@@ -818,7 +818,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 44";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -828,7 +828,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 24";
 		rLen = 0;
-		rLoc = 460;
+		rLoc = 631;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 0;
@@ -838,7 +838,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 44";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -848,7 +848,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 28";
 		rLen = 0;
-		rLoc = 605;
+		rLoc = 776;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 0;
@@ -858,7 +858,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 43";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -868,7 +868,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 22";
 		rLen = 0;
-		rLoc = 396;
+		rLoc = 567;
 		rType = 0;
 		vrLen = 1104;
 		vrLoc = 0;
@@ -878,7 +878,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 43";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -888,7 +888,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 23";
 		rLen = 0;
-		rLoc = 457;
+		rLoc = 628;
 		rType = 0;
 		vrLen = 1109;
 		vrLoc = 0;
@@ -898,7 +898,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 43";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -908,7 +908,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 23";
 		rLen = 3;
-		rLoc = 457;
+		rLoc = 628;
 		rType = 0;
 		vrLen = 1101;
 		vrLoc = 3;
@@ -918,7 +918,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 43";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -928,7 +928,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 32";
 		rLen = 0;
-		rLoc = 672;
+		rLoc = 843;
 		rType = 0;
 		vrLen = 1082;
 		vrLoc = 131;
@@ -938,7 +938,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 50";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -948,7 +948,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 12";
 		rLen = 19;
-		rLoc = 239;
+		rLoc = 301;
 		rType = 0;
 		vrLen = 275;
 		vrLoc = 0;
@@ -958,7 +958,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 37";
 		rLen = 0;
-		rLoc = 1178;
+		rLoc = 1442;
 		rType = 0;
 		vrLen = 1058;
 		vrLoc = 131;
@@ -968,7 +968,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 31";
 		rLen = 0;
-		rLoc = 670;
+		rLoc = 841;
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 244;
@@ -978,7 +978,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 52";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -988,12 +988,12 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 48";
 		rLen = 0;
-		rLoc = 1173;
+		rLoc = 1437;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 310;
 	};
-	1A64BD03125BCABA00A3DDFA /* ITuneReviewer.m:40 */ = {
+	1A64BD03125BCABA00A3DDFA /* ITuneReviewer.m:47 */ = {
 		isa = PBXFileBreakpoint;
 		actions = (
 		);
@@ -1005,7 +1005,7 @@
 		functionName = "-alertView:didDismissWithButtonIndex:";
 		hitCount = 1;
 		ignoreCount = 0;
-		lineNumber = 40;
+		lineNumber = 47;
 		location = Cosplaying;
 		modificationTime = 308005574.888714;
 		originalNumberOfMultipleMatches = 1;
@@ -1016,7 +1016,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 52";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 0;
@@ -1026,7 +1026,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 50";
 		rLen = 0;
-		rLoc = 1178;
+		rLoc = 1442;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 310;
@@ -1036,7 +1036,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 50";
 		rLen = 0;
-		rLoc = 1178;
+		rLoc = 1442;
 		rType = 0;
 		vrLen = 1111;
 		vrLoc = 310;
@@ -1046,7 +1046,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 52";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 234;
 		vrLoc = 0;
@@ -1057,7 +1057,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 15;
+		rLoc = 17;
 		rType = 1;
 	};
 	1A64BD1D125BCE9300A3DDFA /* PBXTextBookmark */ = {
@@ -1065,7 +1065,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 48";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 492;
 		vrLoc = 0;
@@ -1076,7 +1076,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 15;
+		rLoc = 17;
 		rType = 1;
 	};
 	1A64BD1F125BCE9300A3DDFA /* PBXTextBookmark */ = {
@@ -1084,7 +1084,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1094,7 +1094,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 14";
 		rLen = 0;
-		rLoc = 261;
+		rLoc = 323;
 		rType = 0;
 		vrLen = 584;
 		vrLoc = 0;
@@ -1104,7 +1104,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 19";
 		rLen = 0;
-		rLoc = 408;
+		rLoc = 470;
 		rType = 0;
 		vrLen = 550;
 		vrLoc = 0;
@@ -1124,7 +1124,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 16";
 		rLen = 0;
-		rLoc = 264;
+		rLoc = 435;
 		rType = 0;
 		vrLen = 1037;
 		vrLoc = 223;
@@ -1134,7 +1134,7 @@
 		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
 		name = "ITuneReviewer.m: 48";
 		rLen = 0;
-		rLoc = 1180;
+		rLoc = 1444;
 		rType = 0;
 		vrLen = 461;
 		vrLoc = 0;
@@ -1145,7 +1145,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 15;
+		rLoc = 17;
 		rType = 1;
 	};
 	1A64BD28125BCEB000A3DDFA /* PBXTextBookmark */ = {
@@ -1153,7 +1153,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 330;
 		vrLoc = 166;
@@ -1163,7 +1163,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 330;
 		vrLoc = 166;
@@ -1177,7 +1177,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1197,7 +1197,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1234,7 +1234,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1268,7 +1268,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1288,7 +1288,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 331;
 		vrLoc = 166;
@@ -1308,7 +1308,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 352;
 		vrLoc = 166;
@@ -1352,7 +1352,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 167;
@@ -1381,7 +1381,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 167;
@@ -1480,7 +1480,7 @@
 		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
 		name = "ITuneReviewer.h: 16";
 		rLen = 0;
-		rLoc = 271;
+		rLoc = 333;
 		rType = 0;
 		vrLen = 352;
 		vrLoc = 166;
@@ -1690,6 +1690,221 @@
 		rType = 0;
 		vrLen = 582;
 		vrLoc = 3679;
+	};
+	1A64BDA0125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A8A97A61229181E00E38751 /* ImagesPreviewController.m */;
+		name = "ImagesPreviewController.m: 130";
+		rLen = 0;
+		rLoc = 3910;
+		rType = 0;
+		vrLen = 582;
+		vrLoc = 3679;
+	};
+	1A64BDA1125BD62700A3DDFA /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Expected ']' before ';' token";
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 16;
+		rType = 1;
+	};
+	1A64BDA2125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 41;
+	};
+	1A64BDA5125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 1150;
+		vrLoc = 41;
+	};
+	1A64BDA6125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		rLen = 0;
+		rLoc = 9223372036854775806;
+		rType = 0;
+	};
+	1A64BDA7125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDAA125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 362;
+		rType = 0;
+		vrLen = 1150;
+		vrLoc = 41;
+	};
+	1A64BDAB125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 18";
+		rLen = 0;
+		rLoc = 374;
+		rType = 0;
+		vrLen = 650;
+		vrLoc = 0;
+	};
+	1A64BDAC125BD62700A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDAD125BD63500A3DDFA /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Incomplete implementation of class 'CosplayingAppDelegate'";
+		fRef = 1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 72;
+		rType = 1;
+	};
+	1A64BDB0125BD64F00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 41;
+	};
+	1A64BDB3125BD64F00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */;
+		name = "CosplayingAppDelegate.m: 69";
+		rLen = 0;
+		rLoc = 1758;
+		rType = 0;
+		vrLen = 619;
+		vrLoc = 1147;
+	};
+	1A64BDB4125BD64F00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDB5125BD64F00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDBA125BD6B400A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 393;
+		vrLoc = 41;
+	};
+	1A64BDBB125BD6B400A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */;
+		name = "CosplayingAppDelegate.m: 65";
+		rLen = 0;
+		rLoc = 1706;
+		rType = 0;
+		vrLen = 621;
+		vrLoc = 1147;
+	};
+	1A64BDBC125BD6B400A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDBD125BD6B400A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDC2125BD73B00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */;
+		name = "ITuneReviewer.m: 17";
+		rLen = 0;
+		rLoc = 298;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 41;
+	};
+	1A64BDC3125BD73B00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */;
+		name = "CosplayingAppDelegate.m: 65";
+		rLen = 0;
+		rLoc = 1717;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 1037;
+	};
+	1A64BDC4125BD73B00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 227;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
+	};
+	1A64BDC5125BD73B00A3DDFA /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */;
+		name = "ITuneReviewer.h: 11";
+		rLen = 0;
+		rLoc = 226;
+		rType = 0;
+		vrLen = 670;
+		vrLoc = 0;
 	};
 	1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {
 		uiCtxt = {
@@ -2350,9 +2565,9 @@
 	};
 	1D3623250D0F684500981E51 /* CosplayingAppDelegate.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1206, 1024}}";
-			sepNavSelRange = "{393, 0}";
-			sepNavVisRange = "{141, 1092}";
+			sepNavIntBoundsRect = "{{0, 0}, {1206, 1184}}";
+			sepNavSelRange = "{1717, 0}";
+			sepNavVisRange = "{1037, 725}";
 			sepNavWindowFrame = "{{15, 62}, {1265, 716}}";
 		};
 	};
@@ -2372,7 +2587,7 @@
 		);
 		breakpoints = (
 			1A64BC89125BC46F00A3DDFA /* ImagesPreviewController.m:207 */,
-			1A64BD03125BCABA00A3DDFA /* ITuneReviewer.m:40 */,
+			1A64BD03125BCABA00A3DDFA /* ITuneReviewer.m:47 */,
 		);
 		codeSenseManager = 1A8A971D12290AB400E38751 /* Code sense */;
 		executables = (
@@ -2594,6 +2809,28 @@
 			1A64BD93125BD41400A3DDFA /* XCBuildMessageTextBookmark */ = 1A64BD93125BD41400A3DDFA /* XCBuildMessageTextBookmark */;
 			1A64BD94125BD41400A3DDFA /* PBXTextBookmark */ = 1A64BD94125BD41400A3DDFA /* PBXTextBookmark */;
 			1A64BD96125BD42100A3DDFA /* PBXTextBookmark */ = 1A64BD96125BD42100A3DDFA /* PBXTextBookmark */;
+			1A64BDA0125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDA0125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDA1125BD62700A3DDFA /* XCBuildMessageTextBookmark */ = 1A64BDA1125BD62700A3DDFA /* XCBuildMessageTextBookmark */;
+			1A64BDA2125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDA2125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDA5125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDA5125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDA6125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDA6125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDA7125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDA7125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDAA125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDAA125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDAB125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDAB125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDAC125BD62700A3DDFA /* PBXTextBookmark */ = 1A64BDAC125BD62700A3DDFA /* PBXTextBookmark */;
+			1A64BDAD125BD63500A3DDFA /* XCBuildMessageTextBookmark */ = 1A64BDAD125BD63500A3DDFA /* XCBuildMessageTextBookmark */;
+			1A64BDB0125BD64F00A3DDFA /* PBXTextBookmark */ = 1A64BDB0125BD64F00A3DDFA /* PBXTextBookmark */;
+			1A64BDB3125BD64F00A3DDFA /* PBXTextBookmark */ = 1A64BDB3125BD64F00A3DDFA /* PBXTextBookmark */;
+			1A64BDB4125BD64F00A3DDFA /* PBXTextBookmark */ = 1A64BDB4125BD64F00A3DDFA /* PBXTextBookmark */;
+			1A64BDB5125BD64F00A3DDFA /* PBXTextBookmark */ = 1A64BDB5125BD64F00A3DDFA /* PBXTextBookmark */;
+			1A64BDBA125BD6B400A3DDFA /* PBXTextBookmark */ = 1A64BDBA125BD6B400A3DDFA /* PBXTextBookmark */;
+			1A64BDBB125BD6B400A3DDFA /* PBXTextBookmark */ = 1A64BDBB125BD6B400A3DDFA /* PBXTextBookmark */;
+			1A64BDBC125BD6B400A3DDFA /* PBXTextBookmark */ = 1A64BDBC125BD6B400A3DDFA /* PBXTextBookmark */;
+			1A64BDBD125BD6B400A3DDFA /* PBXTextBookmark */ = 1A64BDBD125BD6B400A3DDFA /* PBXTextBookmark */;
+			1A64BDC2125BD73B00A3DDFA /* PBXTextBookmark */ = 1A64BDC2125BD73B00A3DDFA /* PBXTextBookmark */;
+			1A64BDC3125BD73B00A3DDFA /* PBXTextBookmark */ = 1A64BDC3125BD73B00A3DDFA /* PBXTextBookmark */;
+			1A64BDC4125BD73B00A3DDFA /* PBXTextBookmark */ = 1A64BDC4125BD73B00A3DDFA /* PBXTextBookmark */;
+			1A64BDC5125BD73B00A3DDFA /* PBXTextBookmark */ = 1A64BDC5125BD73B00A3DDFA /* PBXTextBookmark */;
 			1A890E6F122AC65B009B92ED = 1A890E6F122AC65B009B92ED /* PBXTextBookmark */;
 			1A890E70122AC65B009B92ED = 1A890E70122AC65B009B92ED /* PBXTextBookmark */;
 			1A890E71122AC65B009B92ED = 1A890E71122AC65B009B92ED /* PBXTextBookmark */;

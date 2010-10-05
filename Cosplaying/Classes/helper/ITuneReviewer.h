@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define USER_DEFAULTS_REVIEWED_IN_ITUNE @"reviewd_in_itunes"
+
 @protocol ITuneReviewerDelegate;
 
 
@@ -28,6 +30,7 @@
 - (NSString *)appId;
 - (NSString *)appType;
 - (BOOL)shouldPresentReviewMessage;
+- (BOOL)onlyAppearOnce;
 
 @end
 
