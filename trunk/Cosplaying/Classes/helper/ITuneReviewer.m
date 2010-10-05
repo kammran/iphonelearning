@@ -13,6 +13,12 @@
 
 
 - (void)showReviewMessageIfRequired {
+	if ([_delegate onlyAppearOnce]) {
+		BOOL reviwed = [[NSUserDefaults standardUserDefaults] boolForKey:USER_DEFAULTS_REVIEWED_IN_ITUNE];
+		if (reviwed) {
+			return;
+		}
+	}
 	if ([_delegate shouldPresentReviewMessage]) {
 		NSString *message = @"Seems you like this app, would you like write a review for it?";
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
@@ -30,6 +36,7 @@
 #pragma mark UIAlertView delegate methods
 
 - (void)reviewInITune {
+	[[NSUserDefaults standardUserDefaults] setBool:YES forKey:USER_DEFAULTS_REVIEWED_IN_ITUNE];
 	NSString *url = [NSString stringWithFormat:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=%@&id=%@",
 					 [_delegate appType],
 					 [_delegate appId]];
