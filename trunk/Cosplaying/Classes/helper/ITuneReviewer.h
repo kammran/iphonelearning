@@ -28,7 +28,6 @@
 @protocol ITuneReviewerDelegate <NSObject>
 
 - (NSString *)appId;
-- (NSString *)appType;
 - (BOOL)shouldPresentReviewMessage;
 - (BOOL)onlyAppearOnce;
 

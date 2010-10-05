@@ -38,9 +38,9 @@
 - (void)reviewInITune {
 	[[NSUserDefaults standardUserDefaults] setBool:YES forKey:USER_DEFAULTS_REVIEWED_IN_ITUNE];
 	NSString *url = [NSString stringWithFormat:@"itms-apps://ax.itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?type=%@&id=%@",
-					 [_delegate appType],
+					 @"Purple+Software",
 					 [_delegate appId]];
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {

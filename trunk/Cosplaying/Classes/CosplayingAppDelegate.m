@@ -50,19 +50,13 @@
 #pragma mark -
 #pragma mark ITuneReviewerDelegate Methods
 
-//FIXME change type and appId
 - (NSString *)appId {
-	return @"289382458";
-}
-
-- (NSString *)appType {
-	return @"Purple+Software";
+	return @"396790003";
 }
 
 - (BOOL)shouldPresentReviewMessage {
-//	NSInteger lunchTimes = [[NSUserDefaults standardUserDefaults] integerForKey:USER_DEFAULTS_LUNCH_TIMES];
-//	return lunchTimes % 10 == 0;
-	return YES;
+	NSInteger lunchTimes = [[NSUserDefaults standardUserDefaults] integerForKey:USER_DEFAULTS_LUNCH_TIMES];
+	return lunchTimes % 10 == 0;
 }
 
 - (BOOL)onlyAppearOnce {
