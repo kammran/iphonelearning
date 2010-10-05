@@ -25,7 +25,7 @@
 
 
 - (NSArray *) requestNewData:(BOOL) withHeader {
-	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	CosplayingAppDelegate *delegate = (CosplayingAppDelegate *) [[UIApplication sharedApplication] delegate];
 	NSString *imageKey = delegate.context.activeImageKey;
 	NSString *url = [[NSString stringWithFormat:@"%@/reviews?image_key=%@&with_header=%d&offset=%d", SERVICE_URL, imageKey, withHeader, offset] 
 					 stringByAddingPercentEscapesUsingEncoding:NSStringEncodingConversionExternalRepresentation];
@@ -145,7 +145,7 @@
 }
 
 - (NSString *)mark:(NSString *)source {
-	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	CosplayingAppDelegate *delegate = (CosplayingAppDelegate *) [[UIApplication sharedApplication] delegate];
 	NSString *keyword = delegate.context.keyword;
 	
 	NSRange range = [source rangeOfString:keyword];
