@@ -182,7 +182,7 @@
 	[super viewDidLoad];
 	self.datePicker = [[UIDatePicker alloc] init];
 	[self setStyle];
-	[self requestRecents];
+	[self requestTopRated];
 }
 
 - (void)viewDidUnload {
@@ -280,11 +280,11 @@
 	[self hiddeSearch];
 	
 	if (self.segmentedControl.selectedSegmentIndex == 0) {
-		[self requestRecents];
-	} else if (self.segmentedControl.selectedSegmentIndex == 1) {
 		[self requestTopRated];
-	} else if (self.segmentedControl.selectedSegmentIndex == 2) {
+	} else if (self.segmentedControl.selectedSegmentIndex == 1) {
 		[self requestPopular];
+	} else if (self.segmentedControl.selectedSegmentIndex == 2) {
+		[self requestRecents];
 	}
 }
 
@@ -314,6 +314,7 @@
 	self.offset -= IMAGES_PER_PAGE;
 	if (self.offset < 0) {
 		self.offset = 0;
+		[@"You are at first page already." showInDialog];
 		return;
 	}
 	[self requestInBackground];
@@ -321,6 +322,7 @@
 
 - (IBAction)nextPressed {
 	if (nomore) {
+		[@"You are at last page already." showInDialog];
 		return;
 	}
 	
@@ -348,6 +350,7 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
 	if (buttonIndex != [actionSheet cancelButtonIndex])  {
+		[self.segmentedControl setSelectedSegmentIndex:-1];		
 		[self requestSelectedFolder];
 	}
 }
