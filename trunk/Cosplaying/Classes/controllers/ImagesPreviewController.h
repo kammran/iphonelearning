@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITuneReviewer.h"
 
 #define IMAGES_PER_PAGE 4
 
@@ -27,6 +28,7 @@
 	UIDatePicker *datePicker;
 	UIButton *previousButton;
 	UIButton *nextButton;
+	
 }
 
 @property (nonatomic, retain) IBOutlet UISearchBar *searchBar;

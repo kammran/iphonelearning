@@ -8,16 +8,19 @@
 
 #import <UIKit/UIKit.h>
 #import "Context.h"
+#import "ITuneReviewer.h"
 
-@interface CosplayingAppDelegate : NSObject <UIApplicationDelegate> {
+@interface CosplayingAppDelegate : NSObject <UIApplicationDelegate, ITuneReviewerDelegate> {
     UIWindow *window;
 	UINavigationController *navigationController;
 	Context *context;
+	ITuneReviewer *ituneReviewer;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UINavigationController *navigationController;
-@property (nonatomic, retain) Context *context;
+@property (nonatomic, assign) Context *context;
+@property (nonatomic, assign) ITuneReviewer *ituneReviewer;
 
 
 @end

@@ -17,6 +17,7 @@
 		097EACDA1242619A009AB2FE /* WriteReviewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097EACD81242619A009AB2FE /* WriteReviewController.xib */; };
 		09E30B6E1250D53A00848348 /* missing.png in Resources */ = {isa = PBXBuildFile; fileRef = 09E30B6D1250D53A00848348 /* missing.png */; };
 		1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */; };
+		1A64BC74125BC35600A3DDFA /* ITuneReviewer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */; };
 		1A890A00122A61C9009B92ED /* SingleImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A8909FE122A61C9009B92ED /* SingleImageController.m */; };
 		1A890A01122A61C9009B92ED /* SingleImageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8909FF122A61C9009B92ED /* SingleImageController.xib */; };
 		1A890A7E122A68D8009B92ED /* NSObject-Dialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A890A7D122A68D8009B92ED /* NSObject-Dialog.m */; };
@@ -92,6 +93,8 @@
 		09E30B6D1250D53A00848348 /* missing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = missing.png; sourceTree = "<group>"; };
 		1A1A862D124D0FA400EAA011 /* TextViewWithPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewWithPlaceholder.h; sourceTree = "<group>"; };
 		1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewWithPlaceholder.m; sourceTree = "<group>"; };
+		1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITuneReviewer.h; sourceTree = "<group>"; };
+		1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITuneReviewer.m; sourceTree = "<group>"; };
 		1A8909FD122A61C9009B92ED /* SingleImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleImageController.h; sourceTree = "<group>"; };
 		1A8909FE122A61C9009B92ED /* SingleImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleImageController.m; sourceTree = "<group>"; };
 		1A8909FF122A61C9009B92ED /* SingleImageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleImageController.xib; sourceTree = "<group>"; };
@@ -247,6 +250,8 @@
 				1A1A862E124D0FA400EAA011 /* TextViewWithPlaceholder.m */,
 				1AE2EBA1125A10E300AC3BBF /* SimpleReachability.h */,
 				1AE2EBA2125A10E300AC3BBF /* SimpleReachability.m */,
+				1A64BC72125BC35600A3DDFA /* ITuneReviewer.h */,
+				1A64BC73125BC35600A3DDFA /* ITuneReviewer.m */,
 			);
 			path = helper;
 			sourceTree = "<group>";
@@ -565,6 +570,7 @@
 				1AE64D6E124BB44D00B644B4 /* RatingCellView.m in Sources */,
 				1A1A862F124D0FA400EAA011 /* TextViewWithPlaceholder.m in Sources */,
 				1AE2EBA3125A10E300AC3BBF /* SimpleReachability.m in Sources */,
+				1A64BC74125BC35600A3DDFA /* ITuneReviewer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

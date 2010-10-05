@@ -10,10 +10,6 @@
 #import "SCRatingView.h"
 #import "TextViewWithPlaceholder.h";
 
-#define SETTINGS_FOLDER @"settings"
-#define SETTING_FILE_NAME @"info.plist"
-#define REVIEWER_KEY @"reviewer"
-
 @interface WriteReviewController : UIViewController <SCRatingDelegate, UITextViewDelegate, UITextFieldDelegate> {
 
 	UIScrollView *scrollView;

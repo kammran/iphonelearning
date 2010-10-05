@@ -14,6 +14,10 @@
 #define GAE_USER @"cosplaying"
 #define GAE_PASS @"$*%#&k)(^N"
 
+
+#define USER_DEFAULTS_REVIEWER_KEY @"reviewer"
+#define USER_DEFAULTS_LUNCH_TIMES @"lunch_times"
+
 @interface Configuration {
 
 }
