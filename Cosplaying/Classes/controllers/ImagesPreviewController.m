@@ -127,7 +127,7 @@
 
 - (void) requestInBackground {
 	[self detectReachability];
-	CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+	CosplayingAppDelegate *delegate = (CosplayingAppDelegate *) [[UIApplication sharedApplication] delegate];
 	delegate.context.keyword = self.keyword;
 	[self performSelectorInBackground:@selector(request) withObject:nil];
 }
@@ -183,37 +183,39 @@
 	self.datePicker = [[UIDatePicker alloc] init];
 	[self setStyle];
 	[self requestTopRated];
+	CosplayingAppDelegate *delegate = (CosplayingAppDelegate *) [[UIApplication sharedApplication] delegate];
+	[delegate.ituneReviewer showReviewMessageIfRequired];
 }
 
 - (void)viewDidUnload {
-	self.imageView1 = nil;
-    self.imageView2 = nil;
-	self.imageView3 = nil;
-	self.imageView4 = nil;
-	self.searchBar = nil;
-	self.segmentedControl = nil;
-	self.q = nil;
-	self.keyword = nil;
-	self.datePicker = nil;
-	self.previousButton = nil;
-	self.nextButton = nil;
+	imageView1 = nil;
+    imageView2 = nil;
+	imageView3 = nil;
+	imageView4 = nil;
+	searchBar = nil;
+	segmentedControl = nil;
+	q = nil;
+	keyword = nil;
+	datePicker = nil;
+	previousButton = nil;
+	nextButton = nil;
 	[super viewDidUnload];
 }
 
 
 - (void)dealloc {
-	[self.imageView1 release];
-	[self.imageView2 release];
-	[self.imageView3 release];
-	[self.imageView4 release];
-	[self.searchBar release];
-	[self.segmentedControl release];
-	[self.q release];
-	[self.keyword release];
-	[self.datePicker release];
-	[self.previousButton release];
-	[self.nextButton release];
-    [super dealloc];
+	[imageView1 release];
+	[imageView2 release];
+	[imageView3 release];
+	[imageView4 release];
+	[searchBar release];
+	[segmentedControl release];
+	[q release];
+	[keyword release];
+	[datePicker release];
+	[previousButton release];
+	[nextButton release];
+	[super dealloc];
 }
 
 #pragma mark -
@@ -246,7 +248,7 @@
 			return;
 		}
 			
-		CosplayingAppDelegate *delegate = [[UIApplication sharedApplication] delegate];
+		CosplayingAppDelegate *delegate = (CosplayingAppDelegate *) [[UIApplication sharedApplication] delegate];
 		delegate.context.activeImageKey = [selectedImage performSelector:keyAccessor];
 		
 		SingleImageController *singleImageController = [[SingleImageController alloc] initWithNibName:@"SingleImageController" bundle:nil];

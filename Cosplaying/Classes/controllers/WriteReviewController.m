@@ -40,29 +40,19 @@
 	ratingView.delegate = self;
 }
 
-- (NSString *) settingFilePath {
-	return [NSDataCache pathForFolder:SETTINGS_FOLDER name:SETTING_FILE_NAME];
-}
-
 - (void) initTextFields {
-	if ([NSDataCache dataExistsInFolder:SETTINGS_FOLDER name:SETTING_FILE_NAME]) {
-		NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:[self settingFilePath]]; 
-		self.reviewerTextField.text = [dict valueForKey:REVIEWER_KEY];
-		[dict release];
-	}
+	self.reviewerTextField.text = [[NSUserDefaults standardUserDefaults] objectForKey:USER_DEFAULTS_REVIEWER_KEY];
 	self.commentTextView.placeholder = @"Write your comment here...";
 	self.commentTextView.placeholderColor = [UIColor lightGrayColor];
 }
 
 - (void)saveReviewer {
-	NSDictionary *dict = [NSDictionary dictionaryWithObject:self.reviewerTextField.text forKey:REVIEWER_KEY];
-	[dict writeToFile:[self settingFilePath] atomically:YES];
+	[[NSUserDefaults standardUserDefaults] setObject:self.reviewerTextField.text forKey:USER_DEFAULTS_REVIEWER_KEY];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 	[self initRatingView];
-	[NSDataCache createFolderIfRequired:SETTINGS_FOLDER];
 	[self initTextFields];
 }
 
