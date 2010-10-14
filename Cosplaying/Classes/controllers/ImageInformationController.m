@@ -62,7 +62,7 @@
 		return;
 	}
 	NSDictionary *dict = [array objectAtIndex:0];
-	self.titleBarItem.title = [NSString stringWithFormat:@"Previews (%@)", [dict valueForKey:@"reviewed_times"]];
+	self.titleBarItem.title = [NSString stringWithFormat:@"Reviews (%@)", [dict valueForKey:@"reviewed_times"]];
 	[self.reviewsView reloadData];
 	self.reviewsView.tableFooterView = [self moreReviewsButton];
 }

@@ -20,7 +20,7 @@
 		}
 	}
 	if ([_delegate shouldPresentReviewMessage]) {
-		NSString *message = @"Seems you like this app, would you like write a review for it?";
+		NSString *message = @"Looks you like this app, would you like write a review for it?";
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil
 														message:message 
 													   delegate:self 
