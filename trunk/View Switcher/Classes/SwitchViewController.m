@@ -46,7 +46,7 @@
 			 [yellowController release];
 		}
 			 
-		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:self.view cache:YES];
+		[UIView setAnimationTransition:UIViewAnimationTransitionNone forView:self.view cache:YES];
 		
 		[blueViewController viewWillDisappear:YES];
 		[yellowViewController viewWillAppear:YES];
@@ -66,7 +66,7 @@
 			[blueController release];
 		}
 			
-		[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:self.view cache:YES];
+		[UIView setAnimationTransition:8 forView:self.view cache:YES];
 		
 		[blueViewController viewWillAppear:YES];
 		[yellowViewController viewWillDisappear:YES];
